@@ -1,0 +1,33 @@
+{
+  "color": {
+    "ground": "#F2F7F7",
+    "surface": "#FFFFFF",
+    "raised": "#F4F6F8",
+    "active": "#EBEDEE",
+    "text": "#131416",
+    "muted": "#5D5F60",
+    "border": "#E8EAEC",
+    "control": "#CDCED1",
+    "accent": "#1B6C80",
+    "primary": "#131416"
+  },
+  "radius": {
+    "sheet": 16,
+    "group": 8,
+    "control": 6
+  },
+  "layout": {
+    "topbar": 48,
+    "library": 228,
+    "inspector": 288,
+    "gap": 24,
+    "padding": 24,
+    "sheetInset": 8
+  },
+  "breakpoints": {
+    "mobileMax": 767,
+    "tabletMin": 768,
+    "desktopMin": 1100
+  },
+  "status": "proposed design tokens, not implemented"
+}

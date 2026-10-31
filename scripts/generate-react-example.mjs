@@ -1,0 +1,12 @@
+import { build } from 'esbuild';
+import { fileURLToPath } from 'node:url';
+import { writeFile, readFile } from 'node:fs/promises';
+const root=new URL('../',import.meta.url);
+const result=await build({entryPoints:[fileURLToPath(new URL('packages/document-core/src/index.ts',root))],bundle:true,write:false,format:'esm',platform:'node'});
+const core=await import(`data:text/javascript;base64,${Buffer.from(result.outputFiles[0].text).toString('base64')}`);
+const fixture=await readFile(new URL('apps/web/public/samples/orbit.json',root));
+const doc=core.parseDocument(fixture,'orbit.json');
+await writeFile(new URL('examples/react/src/orbit.moro.json',root),core.exportJson(doc,{}));
+await writeFile(new URL('examples/react/src/lottie-light.d.ts',root),core.LIGHT_DECLARATION);
+for(const trigger of ['auto','hover','click']) await writeFile(new URL(`examples/react/src/${trigger}.tsx`,root),core.reactSource('orbit.moro.json',{autoplay:true,loop:true,speed:1,trigger}));
+console.log('Generated all three React trigger examples from the actual exporter.');

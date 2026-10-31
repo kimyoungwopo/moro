@@ -1,0 +1,12 @@
+.DS_Store
+node_modules/
+.env
+.env.*
+!.env.example
+.openai/
+.impeccable/review/
+*.log
+coverage/
+.local-backups/
+dist/
+examples/react/dist/

@@ -1,0 +1,1 @@
+{"name":"moro-react-example","version":"0.1.0","private":true,"type":"module","scripts":{"dev":"vite --host 127.0.0.1","build":"tsc --noEmit && vite build"},"dependencies":{"lottie-web":"5.13.0","react":"19.3.1","react-dom":"19.3.1"},"devDependencies":{"@types/react":"19.3.0","@types/react-dom":"19.3.0","@vitejs/plugin-react":"5.1.1","typescript":"5.9.3","vite":"7.3.7"}}

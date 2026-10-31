@@ -1,0 +1,408 @@
+{
+  "schemaVersion": 2,
+  "generatedAt": "2026-10-31T03:05:21.193613+00:00",
+  "title": "Design System: Moro",
+  "extensions": {
+    "colorMeta": {
+      "ground": {
+        "role": "neutral",
+        "displayName": "Ground",
+        "tonalRamp": [
+          "oklch(0.15 0.0017 197.07)",
+          "oklch(0.27 0.0035 197.07)",
+          "oklch(0.39 0.0048 197.07)",
+          "oklch(0.51 0.0053 197.07)",
+          "oklch(0.63 0.0050 197.07)",
+          "oklch(0.75 0.0039 197.07)",
+          "oklch(0.87 0.0022 197.07)",
+          "oklch(0.95 0.0009 197.07)"
+        ]
+      },
+      "surface": {
+        "role": "neutral",
+        "displayName": "Surface",
+        "tonalRamp": [
+          "oklch(0.15 0.0000 89.88)",
+          "oklch(0.27 0.0000 89.88)",
+          "oklch(0.39 0.0000 89.88)",
+          "oklch(0.51 0.0000 89.88)",
+          "oklch(0.63 0.0000 89.88)",
+          "oklch(0.75 0.0000 89.88)",
+          "oklch(0.87 0.0000 89.88)",
+          "oklch(0.95 0.0000 89.88)"
+        ]
+      },
+      "raised": {
+        "role": "neutral",
+        "displayName": "Raised",
+        "tonalRamp": [
+          "oklch(0.15 0.0011 247.86)",
+          "oklch(0.27 0.0023 247.86)",
+          "oklch(0.39 0.0031 247.86)",
+          "oklch(0.51 0.0034 247.86)",
+          "oklch(0.63 0.0032 247.86)",
+          "oklch(0.75 0.0025 247.86)",
+          "oklch(0.87 0.0014 247.86)",
+          "oklch(0.95 0.0006 247.86)"
+        ]
+      },
+      "preview": {
+        "role": "neutral",
+        "displayName": "Preview",
+        "tonalRamp": [
+          "oklch(0.15 0.0008 228.78)",
+          "oklch(0.27 0.0017 228.78)",
+          "oklch(0.39 0.0023 228.78)",
+          "oklch(0.51 0.0025 228.78)",
+          "oklch(0.63 0.0024 228.78)",
+          "oklch(0.75 0.0019 228.78)",
+          "oklch(0.87 0.0010 228.78)",
+          "oklch(0.95 0.0004 228.78)"
+        ]
+      },
+      "selected": {
+        "role": "neutral",
+        "displayName": "Selected",
+        "tonalRamp": [
+          "oklch(0.15 0.0029 214.34)",
+          "oklch(0.27 0.0060 214.34)",
+          "oklch(0.39 0.0081 214.34)",
+          "oklch(0.51 0.0090 214.34)",
+          "oklch(0.63 0.0084 214.34)",
+          "oklch(0.75 0.0066 214.34)",
+          "oklch(0.87 0.0037 214.34)",
+          "oklch(0.95 0.0015 214.34)"
+        ]
+      },
+      "sample-hover": {
+        "role": "neutral",
+        "displayName": "Sample hover",
+        "tonalRamp": [
+          "oklch(0.15 0.0021 208.78)",
+          "oklch(0.27 0.0044 208.78)",
+          "oklch(0.39 0.0059 208.78)",
+          "oklch(0.51 0.0066 208.78)",
+          "oklch(0.63 0.0062 208.78)",
+          "oklch(0.75 0.0048 208.78)",
+          "oklch(0.87 0.0027 208.78)",
+          "oklch(0.95 0.0011 208.78)"
+        ]
+      },
+      "text": {
+        "role": "primary",
+        "displayName": "Text",
+        "tonalRamp": [
+          "oklch(0.15 0.0014 264.47)",
+          "oklch(0.27 0.0029 264.47)",
+          "oklch(0.39 0.0039 264.47)",
+          "oklch(0.51 0.0043 264.47)",
+          "oklch(0.63 0.0041 264.47)",
+          "oklch(0.75 0.0032 264.47)",
+          "oklch(0.87 0.0018 264.47)",
+          "oklch(0.95 0.0007 264.47)"
+        ]
+      },
+      "muted": {
+        "role": "neutral",
+        "displayName": "Muted",
+        "tonalRamp": [
+          "oklch(0.15 0.0010 228.83)",
+          "oklch(0.27 0.0020 228.83)",
+          "oklch(0.39 0.0027 228.83)",
+          "oklch(0.51 0.0030 228.83)",
+          "oklch(0.63 0.0028 228.83)",
+          "oklch(0.75 0.0022 228.83)",
+          "oklch(0.87 0.0013 228.83)",
+          "oklch(0.95 0.0005 228.83)"
+        ]
+      },
+      "border": {
+        "role": "neutral",
+        "displayName": "Border",
+        "tonalRamp": [
+          "oklch(0.15 0.0011 247.86)",
+          "oklch(0.27 0.0023 247.86)",
+          "oklch(0.39 0.0031 247.86)",
+          "oklch(0.51 0.0035 247.86)",
+          "oklch(0.63 0.0032 247.86)",
+          "oklch(0.75 0.0025 247.86)",
+          "oklch(0.87 0.0014 247.86)",
+          "oklch(0.95 0.0006 247.86)"
+        ]
+      },
+      "control": {
+        "role": "neutral",
+        "displayName": "Control",
+        "tonalRamp": [
+          "oklch(0.15 0.0014 271.36)",
+          "oklch(0.27 0.0028 271.36)",
+          "oklch(0.39 0.0039 271.36)",
+          "oklch(0.51 0.0043 271.36)",
+          "oklch(0.63 0.0040 271.36)",
+          "oklch(0.75 0.0031 271.36)",
+          "oklch(0.87 0.0018 271.36)",
+          "oklch(0.95 0.0007 271.36)"
+        ]
+      },
+      "accent": {
+        "role": "primary",
+        "displayName": "Accent",
+        "tonalRamp": [
+          "oklch(0.15 0.0260 218.56)",
+          "oklch(0.27 0.0533 218.56)",
+          "oklch(0.39 0.0723 218.56)",
+          "oklch(0.51 0.0801 218.56)",
+          "oklch(0.63 0.0754 218.56)",
+          "oklch(0.75 0.0590 218.56)",
+          "oklch(0.87 0.0334 218.56)",
+          "oklch(0.95 0.0132 218.56)"
+        ]
+      },
+      "primary-hover": {
+        "role": "neutral",
+        "displayName": "Primary hover",
+        "tonalRamp": [
+          "oklch(0.15 0.0025 240.06)",
+          "oklch(0.27 0.0051 240.06)",
+          "oklch(0.39 0.0069 240.06)",
+          "oklch(0.51 0.0076 240.06)",
+          "oklch(0.63 0.0072 240.06)",
+          "oklch(0.75 0.0056 240.06)",
+          "oklch(0.87 0.0032 240.06)",
+          "oklch(0.95 0.0013 240.06)"
+        ]
+      },
+      "preview-dark": {
+        "role": "neutral",
+        "displayName": "Preview dark",
+        "tonalRamp": [
+          "oklch(0.15 0.0041 243.35)",
+          "oklch(0.27 0.0085 243.35)",
+          "oklch(0.39 0.0115 243.35)",
+          "oklch(0.51 0.0127 243.35)",
+          "oklch(0.63 0.0120 243.35)",
+          "oklch(0.75 0.0094 243.35)",
+          "oklch(0.87 0.0053 243.35)",
+          "oklch(0.95 0.0021 243.35)"
+        ]
+      },
+      "warning": {
+        "role": "semantic",
+        "displayName": "Warning",
+        "tonalRamp": [
+          "oklch(0.15 0.0405 46.20)",
+          "oklch(0.27 0.0829 46.20)",
+          "oklch(0.39 0.1125 46.20)",
+          "oklch(0.51 0.1245 46.20)",
+          "oklch(0.63 0.1173 46.20)",
+          "oklch(0.75 0.0917 46.20)",
+          "oklch(0.87 0.0520 46.20)",
+          "oklch(0.95 0.0205 46.20)"
+        ]
+      },
+      "warning-surface": {
+        "role": "semantic",
+        "displayName": "Warning surface",
+        "tonalRamp": [
+          "oklch(0.15 0.0069 95.28)",
+          "oklch(0.27 0.0142 95.28)",
+          "oklch(0.39 0.0193 95.28)",
+          "oklch(0.51 0.0214 95.28)",
+          "oklch(0.63 0.0201 95.28)",
+          "oklch(0.75 0.0157 95.28)",
+          "oklch(0.87 0.0089 95.28)",
+          "oklch(0.95 0.0035 95.28)"
+        ]
+      },
+      "error": {
+        "role": "semantic",
+        "displayName": "Error",
+        "tonalRamp": [
+          "oklch(0.15 0.0584 25.46)",
+          "oklch(0.27 0.1197 25.46)",
+          "oklch(0.39 0.1624 25.46)",
+          "oklch(0.51 0.1798 25.46)",
+          "oklch(0.63 0.1693 25.46)",
+          "oklch(0.75 0.1324 25.46)",
+          "oklch(0.87 0.0750 25.46)",
+          "oklch(0.95 0.0296 25.46)"
+        ]
+      },
+      "error-surface": {
+        "role": "semantic",
+        "displayName": "Error surface",
+        "tonalRamp": [
+          "oklch(0.15 0.0065 28.90)",
+          "oklch(0.27 0.0133 28.90)",
+          "oklch(0.39 0.0181 28.90)",
+          "oklch(0.51 0.0200 28.90)",
+          "oklch(0.63 0.0188 28.90)",
+          "oklch(0.75 0.0147 28.90)",
+          "oklch(0.87 0.0084 28.90)",
+          "oklch(0.95 0.0033 28.90)"
+        ]
+      }
+    },
+    "typographyMeta": {
+      "display": {
+        "displayName": "Read heading",
+        "purpose": "Documentation headline; mobile 30px/38px."
+      },
+      "headline": {
+        "displayName": "Workbench filename",
+        "purpose": "Main stage title; mobile 20px/26px."
+      },
+      "title": {
+        "displayName": "Inspector title",
+        "purpose": "Panel heading."
+      },
+      "body": {
+        "displayName": "UI body",
+        "purpose": "Base interface typography with system Korean fallbacks."
+      },
+      "label": {
+        "displayName": "UI label",
+        "purpose": "Supporting UI labels; not all secondary copy shares one line-height."
+      },
+      "hex": {
+        "displayName": "Hex and code mono",
+        "purpose": "Desktop hex fields; mobile fields increase to 16px."
+      }
+    },
+    "shadows": [
+      {
+        "name": "dialog-overlay",
+        "value": "0 18px 60px #13141629",
+        "purpose": "Native modal dialogs only."
+      },
+      {
+        "name": "swatch-edge",
+        "value": "inset 0 0 0 1px #00000012",
+        "purpose": "Keep color swatches visible against white."
+      }
+    ],
+    "motion": [
+      {
+        "name": "compare-knob",
+        "value": "transform .12s ease",
+        "purpose": "Compare switch knob; reduced motion removes transitions."
+      }
+    ],
+    "breakpoints": [
+      {
+        "name": "mobile-max",
+        "value": "767px"
+      },
+      {
+        "name": "tablet-max",
+        "value": "1099px"
+      },
+      {
+        "name": "wide-preview-min",
+        "value": "1600px"
+      }
+    ]
+  },
+  "components": [
+    {
+      "name": "Primary action",
+      "kind": "button",
+      "refersTo": "button-primary",
+      "description": "Export and download actions; mobile targets grow to 44px.",
+      "html": "<button class=\"ds-primary\">Export <svg width=\"18\" height=\"18\" viewBox=\"0 0 24 24\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"1.6\" stroke-linecap=\"round\" stroke-linejoin=\"round\" aria-hidden=\"true\"><path d=\"M12 3v12m-5-5 5 5 5-5M4 16v5h16v-5\"/></svg></button>",
+      "css": ".ds-primary{font-family:'IBM Plex Sans',-apple-system,BlinkMacSystemFont,'Apple SD Gothic Neo','Malgun Gothic',sans-serif;font-size:14px;line-height:1.4286;color:#131416;display:inline-flex;justify-content:center;align-items:center;gap:8px;min-height:34px;border:1px solid #cdced1;border-radius:6px;padding:6px 11px;background:white;cursor:pointer;white-space:nowrap;background:#131416;color:#fff;border-color:#131416}.ds-primary:hover:not(:disabled){background:#33373a}.ds-primary:focus-visible{outline:2px solid var(--accent,#1b6c80);outline-offset:3px}.ds-primary:disabled{opacity:.4;cursor:default}@media(max-width:767px){.ds-primary{min-height:44px;min-width:44px}}"
+    },
+    {
+      "name": "Secondary action",
+      "kind": "button",
+      "refersTo": "button-secondary",
+      "description": "Ordinary outlined action.",
+      "html": "<button class=\"ds-secondary\">Reset colors</button>",
+      "css": ".ds-secondary{font-family:'IBM Plex Sans',-apple-system,BlinkMacSystemFont,'Apple SD Gothic Neo','Malgun Gothic',sans-serif;font-size:14px;line-height:1.4286;color:#131416;display:inline-flex;justify-content:center;align-items:center;gap:8px;min-height:34px;border:1px solid #cdced1;border-radius:6px;padding:6px 11px;background:white;cursor:pointer;white-space:nowrap;}.ds-secondary:hover:not(:disabled){background:var(--raised,#f4f6f8)}.ds-secondary:focus-visible{outline:2px solid var(--accent,#1b6c80);outline-offset:3px}.ds-secondary:disabled{opacity:.4;cursor:default}@media(max-width:767px){.ds-secondary{min-width:44px;min-height:44px}}"
+    },
+    {
+      "name": "Ghost icon action",
+      "kind": "button",
+      "refersTo": "button-ghost",
+      "description": "Quiet history or close control with an explicit accessible name.",
+      "html": "<button class=\"ds-ghost\" aria-label=\"Undo\"><svg viewBox=\"0 0 24 24\" width=\"18\" height=\"18\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"1.6\" stroke-linecap=\"round\" stroke-linejoin=\"round\" aria-hidden=\"true\"><path d=\"M8 4 3 9l5 5M3 9h11a6 6 0 0 1 0 12\"/></svg></button>",
+      "css": ".ds-ghost{font-family:'IBM Plex Sans',-apple-system,BlinkMacSystemFont,'Apple SD Gothic Neo','Malgun Gothic',sans-serif;font-size:14px;line-height:1.4286;color:#131416;display:inline-flex;justify-content:center;align-items:center;gap:8px;min-height:34px;border:1px solid #cdced1;border-radius:6px;padding:6px 11px;background:white;cursor:pointer;white-space:nowrap;border:0;background:transparent;width:32px;height:32px;min-height:32px;padding:0}.ds-ghost:hover:not(:disabled){background:var(--raised,#f4f6f8)}.ds-ghost:focus-visible{outline:2px solid var(--accent,#1b6c80);outline-offset:3px}.ds-ghost:disabled{opacity:.4;cursor:default}@media(max-width:767px){.ds-ghost{width:44px;height:44px;min-width:44px;min-height:44px}}"
+    },
+    {
+      "name": "Hex field",
+      "kind": "input",
+      "refersTo": "hex-field",
+      "description": "Mono input for a complete static-color replacement.",
+      "html": "<input class=\"ds-hex\" aria-label=\"Color 1 HEX\" value=\"#1B6C80\" maxlength=\"7\" spellcheck=\"false\">",
+      "css": ".ds-hex{font-family:'IBM Plex Sans',-apple-system,BlinkMacSystemFont,'Apple SD Gothic Neo','Malgun Gothic',sans-serif;font-size:14px;line-height:1.4286;color:#131416;font-family:\"IBM Plex Mono\",monospace;width:94px;min-width:0;border:1px solid #cdced1;border-radius:6px;background:#fff;padding:6px 7px;font-size:12px;line-height:18px;caret-color:var(--accent,#1b6c80)}.ds-hex:focus-visible{outline:2px solid var(--accent,#1b6c80);outline-offset:3px}.ds-hex[aria-invalid=true]{border-color:#c4242a}@media(max-width:767px){.ds-hex{font-size:16px;width:115px;min-height:44px}}"
+    },
+    {
+      "name": "Sample row",
+      "kind": "nav",
+      "refersTo": "sample-selected",
+      "description": "Static thumbnail and compact metadata with a selected surface.",
+      "html": "<button class=\"ds-sample\" aria-current=\"true\"><svg class=\"ds-thumb\" viewBox=\"0 0 48 48\" fill=\"none\" aria-hidden=\"true\"><circle cx=\"24\" cy=\"24\" r=\"14\" stroke=\"#D5E4E7\" stroke-width=\"2\"/><path d=\"M24 10a14 14 0 0 1 14 14\" stroke=\"#1B6C80\" stroke-width=\"3\" stroke-linecap=\"round\"/><circle cx=\"24\" cy=\"24\" r=\"3\" fill=\"#1B6C80\"/><circle cx=\"14\" cy=\"34\" r=\"3\" fill=\"#D79A4E\"/></svg><span><strong>Orbit loader</strong><small>A little motion, on repeat.</small></span></button>",
+      "css": ".ds-sample{font-family:'IBM Plex Sans',-apple-system,BlinkMacSystemFont,'Apple SD Gothic Neo','Malgun Gothic',sans-serif;font-size:14px;line-height:1.4286;color:#131416;display:inline-flex;justify-content:center;align-items:center;gap:8px;min-height:34px;border:1px solid #cdced1;border-radius:6px;padding:6px 11px;background:white;cursor:pointer;white-space:nowrap;border:0;background:#e5edef;width:100%;padding:9px 8px;text-align:left;justify-content:flex-start;gap:10px;border-radius:8px;white-space:normal}.ds-sample:hover{background:#e9eff0}.ds-sample:focus-visible{outline:2px solid var(--accent,#1b6c80);outline-offset:3px}.ds-thumb{width:48px;height:48px;flex:none;background:#f9fbfb;border-radius:8px}.ds-sample span{display:flex;flex-direction:column;min-width:0}.ds-sample strong{font-size:13px;font-weight:500}.ds-sample small{font-size:11px;line-height:16px;color:var(--muted,#5d5f60);margin-top:3px}@media(max-width:767px){.ds-sample{min-height:68px}.ds-sample strong{font-size:14px}.ds-sample small{font-size:12px}}"
+    },
+    {
+      "name": "Panel tabs",
+      "kind": "nav",
+      "refersTo": "sheet",
+      "description": "Text tabs with a quiet underline; behavior is supplied by the app.",
+      "html": "<div class=\"ds-tabs\" role=\"tablist\" aria-label=\"Editor panels\"><button role=\"tab\" aria-selected=\"true\">Colors</button><button role=\"tab\" aria-selected=\"false\" tabindex=\"-1\">Playback</button></div>",
+      "css": ".ds-tabs{display:flex;gap:18px;border-bottom:1px solid var(--border,#e8eaec)}.ds-tabs button{font-family:'IBM Plex Sans',-apple-system,BlinkMacSystemFont,'Apple SD Gothic Neo','Malgun Gothic',sans-serif;font-size:14px;line-height:1.4286;color:#131416;display:inline-flex;justify-content:center;align-items:center;gap:8px;min-height:34px;border:1px solid #cdced1;border-radius:6px;padding:6px 11px;background:white;cursor:pointer;white-space:nowrap;padding:0 0 12px;border:0;border-radius:0;background:none;min-height:32px;color:var(--muted,#5d5f60);position:relative}.ds-tabs button:hover{background:var(--raised,#f4f6f8)}.ds-tabs button:focus-visible{outline:2px solid var(--accent,#1b6c80);outline-offset:3px}.ds-tabs button[aria-selected=true]{color:#131416;font-weight:500}.ds-tabs button[aria-selected=true]:after{content:\"\";position:absolute;height:2px;background:#131416;bottom:0;left:0;right:0}@media(max-width:767px){.ds-tabs{gap:25px}.ds-tabs button{min-height:44px;min-width:44px;padding-bottom:13px}}"
+    },
+    {
+      "name": "Framed working sheet",
+      "kind": "custom",
+      "refersTo": "sheet",
+      "description": "Main white workspace container; not a generic card system.",
+      "html": "<section class=\"ds-sheet\"><div>Animation preview</div><aside>Colors</aside></section>",
+      "css": ".ds-sheet{font-family:'IBM Plex Sans',-apple-system,BlinkMacSystemFont,'Apple SD Gothic Neo','Malgun Gothic',sans-serif;font-size:14px;line-height:1.4286;color:#131416;display:grid;grid-template-columns:minmax(0,1fr) 288px;gap:24px;background:white;margin:0 8px 8px 0;border-radius:16px;padding:24px;min-width:0;min-height:0;overflow:hidden}.ds-sheet aside{border-left:1px solid var(--border,#e8eaec);padding-left:24px}@media(max-width:1099px){.ds-sheet{margin-left:8px;padding:20px;gap:20px}.ds-sheet aside{padding-left:20px}}@media(max-width:767px){.ds-sheet{display:flex;flex-direction:column;margin:0 8px 8px;padding:18px 16px;gap:27px;overflow:visible}.ds-sheet aside{border-left:0;padding-left:0}}"
+    },
+    {
+      "name": "Original to replacement mapping",
+      "kind": "custom",
+      "refersTo": "hex-field",
+      "description": "Signature color row with separate original and editable target.",
+      "html": "<div class=\"ds-row\"><span class=\"ds-swatch ds-original\" style=\"background:#1b6c80\" title=\"Original color\"></span><svg width=\"13\" height=\"18\" viewBox=\"0 0 24 24\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"1.6\" aria-hidden=\"true\"><path d=\"M4 12h16m-5-5 5 5-5 5\"/></svg><button class=\"ds-swatch ds-target\" style=\"background:#1b6c80\" aria-label=\"Choose color 1\"></button><input class=\"ds-rowhex\" aria-label=\"Color 1 HEX\" value=\"#1B6C80\"><span class=\"ds-count\" title=\"Static color properties\">2</span></div>",
+      "css": ".ds-row{font-family:'IBM Plex Sans',-apple-system,BlinkMacSystemFont,'Apple SD Gothic Neo','Malgun Gothic',sans-serif;font-size:14px;line-height:1.4286;color:#131416;display:flex;align-items:center;gap:9px;margin-bottom:16px}.ds-swatch{height:30px;width:30px;min-height:30px;flex:none;border-radius:6px;box-shadow:inset 0 0 0 1px #00000012;border:0;padding:0;background:#1b6c80}.ds-target{border:2px solid white;outline:1px solid #cdced1;cursor:pointer}.ds-target:hover{background:revert}.ds-target:focus-visible,.ds-rowhex:focus-visible{outline:2px solid var(--accent,#1b6c80);outline-offset:3px}.ds-row>svg{flex:none;color:#7c8387}.ds-rowhex{font-family:\"IBM Plex Mono\",monospace;width:94px;min-width:0;border:1px solid #cdced1;border-radius:6px;background:#fff;padding:6px 7px;font-size:12px;line-height:18px;color:#131416}.ds-count{font-size:11px;color:var(--muted,#5d5f60);margin-left:auto}@media(max-width:767px){.ds-row{gap:12px;margin-bottom:14px}.ds-swatch{width:38px;height:38px;min-height:38px}.ds-target{width:44px;height:44px;min-width:44px;min-height:44px}.ds-rowhex{font-size:16px;width:115px;min-height:44px}.ds-count{font-size:12px}}"
+    }
+  ],
+  "narrative": {
+    "northStar": "Framed sheet",
+    "overview": "A quiet, slightly teal frame holds a white working sheet. Animation and the user's palette provide the visual energy; chrome stays restrained, readable and direct. The recurring loop mark and original-to-replacement color rows give the tool its identity.\n\nThis is a scan of the implemented Moro workbench and Read documentation surface, based on `apps/web/src/main.tsx` and `apps/web/src/style.css`. It replaces the earlier Lottie Studio v0.2 design system under the user's approved identity replacement. The approved authority is `brief/PRODUCT-UI-SPEC.ko.md`, its layout SVGs and `brief/design-tokens.json`; the latter still labels itself proposed, so the tokens above capture actual source values rather than silently treating the proposal as implementation. This was code-led from the exact brief; no raster comp or QUALITY BAR card was selected.",
+    "keyCharacteristics": [
+      "A pale L-shaped frame around one white working sheet.",
+      "A large preview with precise, compact color mappings beside it.",
+      "Self-hosted IBM Plex typography and restrained teal focus cues.",
+      "Responsive composition that puts mobile controls in normal page flow."
+    ],
+    "rules": [
+      {
+        "name": "The Artwork Color Rule",
+        "body": "Keep chrome neutral and teal; allow the loaded animation and user-selected palette to be multicolored.",
+        "section": "colors"
+      },
+      {
+        "name": "The Flat Workbench Rule",
+        "body": "Reserve overlay lift for dialogs; use tone and a divider for the working regions.",
+        "section": "elevation"
+      }
+    ],
+    "dos": [
+      "**Do** keep one quiet frame and white working sheet around the animation.",
+      "**Do** preserve visible original-to-target color mappings and preview-only background labeling.",
+      "**Do** use Plex Sans for UI, Plex Mono for hex/code, and Korean system fallbacks.",
+      "**Do** retain the mobile minimum button target (44×44px) and normal page flow.",
+      "**Do** distinguish observed source values from proposed brief values and unverified device behavior."
+    ],
+    "donts": [
+      "**Don't** add decorative gradients, glass, glow, dot grids or routine panel entrance motion; the transparency checkerboard is functional.",
+      "**Don't** turn the workbench into a promotional landing page or a grid of nested dashboard cards.",
+      "**Don't** restore the superseded layer editor, timeline/keyframe lane or SVG editing controls.",
+      "**Don't** imply cloud saving, accounts, remote AI generation or a public GitHub destination.",
+      "**Don't** claim universal 16px mobile typography, complete Korean translation or verified physical-device keyboard behavior."
+    ]
+  }
+}

@@ -1,0 +1,54 @@
+{
+  "name": "moro-workbench",
+  "version": "0.1.0",
+  "description": "Local-first Lottie recoloring workbench with JSON and React export.",
+  "private": true,
+  "license": "MIT",
+  "type": "module",
+  "engines": {
+    "node": ">=22.13"
+  },
+  "scripts": {
+    "dev": "vite --host 127.0.0.1 --port 4173 --strictPort",
+    "build": "vite build",
+    "preview": "vite preview --host 127.0.0.1 --port 4173 --strictPort",
+    "serve": "node server.mjs",
+    "lint": "eslint apps/web/src packages examples/react/src tests vite.config.ts",
+    "typecheck": "tsc --noEmit && tsc --noEmit -p examples/react/tsconfig.json",
+    "test": "vitest run",
+    "example:generate": "node scripts/generate-react-example.mjs",
+    "example:dev": "vite --config examples/react/vite.config.ts --host 127.0.0.1 --port 4176 --strictPort",
+    "example:build": "vite build --config examples/react/vite.config.ts",
+    "skill:sync": "node scripts/sync-skill.mjs",
+    "skill:check": "node scripts/sync-skill.mjs --check",
+    "skill:install": "node scripts/install-skill.mjs",
+    "samples:generate": "node scripts/generate-samples.mjs",
+    "check": "npm run lint && npm run typecheck && npm test && npm run build && npm run example:build && npm run skill:check && npm run test:distribution",
+    "test:distribution": "node --test scripts/distribution.test.mjs"
+  },
+  "dependencies": {
+    "@fontsource/ibm-plex-mono": "5.3.0",
+    "@fontsource/ibm-plex-sans": "5.3.0",
+    "lottie-web": "5.13.0",
+    "react": "19.3.1",
+    "react-dom": "19.3.1"
+  },
+  "devDependencies": {
+    "@eslint/js": "10.0.1",
+    "@types/node": "24.10.0",
+    "@types/react": "19.3.0",
+    "@types/react-dom": "19.3.0",
+    "@vitejs/plugin-react": "5.1.1",
+    "esbuild": "0.28.2",
+    "eslint": "10.14.0",
+    "eslint-plugin-react-hooks": "7.1.1",
+    "globals": "17.13.0",
+    "typescript": "5.9.3",
+    "typescript-eslint": "8.72.1",
+    "vite": "7.3.7",
+    "vitest": "5.0.5"
+  },
+  "overrides": {
+    "minimatch": "11.0.1"
+  }
+}

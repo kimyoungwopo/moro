@@ -1,0 +1,4 @@
+interface:
+  display_name: "Moro — Lottie colors"
+  short_description: "Recolor Lottie locally and export JSON or React"
+  default_prompt: "Use $lottie-studio to customize this Lottie palette in the local Moro workbench and export the result."
