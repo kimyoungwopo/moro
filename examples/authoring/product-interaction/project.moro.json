@@ -1,0 +1,288 @@
+{
+  "version": 1,
+  "name": "Geometric product placement loop",
+  "width": 512,
+  "height": 512,
+  "fps": 60,
+  "durationFrames": 180,
+  "layers": [
+    {
+      "id": "card",
+      "name": "Quiet backing card",
+      "type": "rect",
+      "x": 256,
+      "y": 256,
+      "width": 328,
+      "height": 264,
+      "fill": "#F1F5F3",
+      "stroke": "#203B42",
+      "strokeWidth": 0,
+      "rotation": 0,
+      "opacity": 100,
+      "scale": 100,
+      "tracks": {}
+    },
+    {
+      "id": "tray",
+      "name": "Receiving tray",
+      "type": "rect",
+      "x": 256,
+      "y": 300,
+      "width": 160,
+      "height": 20,
+      "fill": "#BAD6CE",
+      "stroke": "#203B42",
+      "strokeWidth": 0,
+      "rotation": 0,
+      "opacity": 100,
+      "scale": 100,
+      "tracks": {}
+    },
+    {
+      "id": "product",
+      "name": "Moving geometric product",
+      "type": "rect",
+      "x": 176,
+      "y": 232,
+      "width": 80,
+      "height": 72,
+      "fill": "#1B6C80",
+      "stroke": "#203B42",
+      "strokeWidth": 0,
+      "rotation": 0,
+      "opacity": 100,
+      "scale": 100,
+      "tracks": {
+        "x": [
+          {
+            "frame": 0,
+            "value": 176,
+            "easing": "linear"
+          },
+          {
+            "frame": 18,
+            "value": 176,
+            "easing": "ease-in-out"
+          },
+          {
+            "frame": 50,
+            "value": 256,
+            "easing": "linear"
+          },
+          {
+            "frame": 124,
+            "value": 256,
+            "easing": "ease-in-out"
+          },
+          {
+            "frame": 146,
+            "value": 176,
+            "easing": "linear"
+          },
+          {
+            "frame": 179,
+            "value": 176,
+            "easing": "linear"
+          }
+        ],
+        "y": [
+          {
+            "frame": 0,
+            "value": 232,
+            "easing": "linear"
+          },
+          {
+            "frame": 18,
+            "value": 232,
+            "easing": "ease-out"
+          },
+          {
+            "frame": 32,
+            "value": 206,
+            "easing": "ease-in"
+          },
+          {
+            "frame": 50,
+            "value": 240,
+            "easing": "ease-out"
+          },
+          {
+            "frame": 60,
+            "value": 260,
+            "easing": "ease-in-out"
+          },
+          {
+            "frame": 70,
+            "value": 254,
+            "easing": "linear"
+          },
+          {
+            "frame": 124,
+            "value": 254,
+            "easing": "ease-in-out"
+          },
+          {
+            "frame": 146,
+            "value": 232,
+            "easing": "linear"
+          },
+          {
+            "frame": 179,
+            "value": 232,
+            "easing": "linear"
+          }
+        ],
+        "rotation": [
+          {
+            "frame": 0,
+            "value": 0,
+            "easing": "linear"
+          },
+          {
+            "frame": 18,
+            "value": 0,
+            "easing": "ease-out"
+          },
+          {
+            "frame": 32,
+            "value": -8,
+            "easing": "ease-in-out"
+          },
+          {
+            "frame": 50,
+            "value": 4,
+            "easing": "ease-in-out"
+          },
+          {
+            "frame": 70,
+            "value": 0,
+            "easing": "linear"
+          },
+          {
+            "frame": 179,
+            "value": 0,
+            "easing": "linear"
+          }
+        ],
+        "opacity": [
+          {
+            "frame": 0,
+            "value": 100,
+            "easing": "linear"
+          },
+          {
+            "frame": 112,
+            "value": 100,
+            "easing": "ease-in-out"
+          },
+          {
+            "frame": 124,
+            "value": 0,
+            "easing": "linear"
+          },
+          {
+            "frame": 154,
+            "value": 0,
+            "easing": "ease-out"
+          },
+          {
+            "frame": 166,
+            "value": 100,
+            "easing": "linear"
+          },
+          {
+            "frame": 179,
+            "value": 100,
+            "easing": "linear"
+          }
+        ]
+      }
+    },
+    {
+      "id": "feedback",
+      "name": "Placement feedback dot",
+      "type": "ellipse",
+      "x": 344,
+      "y": 202,
+      "width": 20,
+      "height": 20,
+      "fill": "#CB8D52",
+      "stroke": "#203B42",
+      "strokeWidth": 0,
+      "rotation": 0,
+      "opacity": 100,
+      "scale": 100,
+      "tracks": {
+        "opacity": [
+          {
+            "frame": 0,
+            "value": 0,
+            "easing": "linear"
+          },
+          {
+            "frame": 70,
+            "value": 0,
+            "easing": "ease-out"
+          },
+          {
+            "frame": 82,
+            "value": 100,
+            "easing": "linear"
+          },
+          {
+            "frame": 112,
+            "value": 100,
+            "easing": "ease-in-out"
+          },
+          {
+            "frame": 124,
+            "value": 0,
+            "easing": "linear"
+          },
+          {
+            "frame": 179,
+            "value": 0,
+            "easing": "linear"
+          }
+        ],
+        "scale": [
+          {
+            "frame": 0,
+            "value": 90,
+            "easing": "linear"
+          },
+          {
+            "frame": 70,
+            "value": 90,
+            "easing": "ease-out"
+          },
+          {
+            "frame": 82,
+            "value": 108,
+            "easing": "ease-in-out"
+          },
+          {
+            "frame": 94,
+            "value": 100,
+            "easing": "linear"
+          },
+          {
+            "frame": 124,
+            "value": 100,
+            "easing": "linear"
+          },
+          {
+            "frame": 146,
+            "value": 90,
+            "easing": "linear"
+          },
+          {
+            "frame": 179,
+            "value": 90,
+            "easing": "linear"
+          }
+        ]
+      }
+    }
+  ]
+}

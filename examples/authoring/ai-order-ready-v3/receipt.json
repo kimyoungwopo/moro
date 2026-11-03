@@ -1,0 +1,26 @@
+{
+  "provider": "codex",
+  "modelCalls": 4,
+  "thisAttemptCalls": 3,
+  "previousCalls": 1,
+  "previousJob": "j17754-1",
+  "campaignMax": 4,
+  "perStage": {
+    "style": "j20399-1",
+    "poses": "j20399-2",
+    "motion": "j20399-3"
+  },
+  "fixtures": false,
+  "manualArtwork": false,
+  "modelResponseRepaired": false,
+  "operatorStageAcceptance": true,
+  "userArtisticApproval": false,
+  "rawEqualsDownloaded": true,
+  "responseProjectEqualsApplied": true,
+  "lottieEqualsCoreExport": true,
+  "oneUndo": true,
+  "redo": true,
+  "freshReopen": true,
+  "observations": [],
+  "verifiedAt": "2026-11-01T09:27:40.145Z"
+}

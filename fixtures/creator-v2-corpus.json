@@ -1,0 +1,1168 @@
+{
+  "schemaVersion": 1,
+  "cases": [
+    {
+      "id": "empty",
+      "valid": true,
+      "project": {
+        "version": 2,
+        "name": "V2 corpus",
+        "width": 512,
+        "height": 512,
+        "fps": 60,
+        "durationFrames": 120,
+        "layers": []
+      }
+    },
+    {
+      "id": "curve-parent-pivot",
+      "valid": true,
+      "project": {
+        "version": 2,
+        "name": "V2 corpus",
+        "width": 512,
+        "height": 512,
+        "fps": 60,
+        "durationFrames": 120,
+        "layers": [
+          {
+            "id": "rig-root",
+            "name": "rig-root",
+            "type": "group",
+            "parentId": null,
+            "x": 256,
+            "y": 256,
+            "pivot": [
+              0,
+              0
+            ],
+            "scale": 75,
+            "rotation": 30,
+            "opacity": 100,
+            "tracks": {
+              "x": [],
+              "y": [],
+              "scale": [],
+              "rotation": [],
+              "opacity": []
+            }
+          },
+          {
+            "id": "curve",
+            "name": "curve",
+            "type": "path",
+            "parentId": "rig-root",
+            "x": 20,
+            "y": -40,
+            "pivot": [
+              16,
+              -8
+            ],
+            "scale": 100,
+            "rotation": 0,
+            "opacity": 100,
+            "tracks": {
+              "x": [],
+              "y": [],
+              "scale": [],
+              "rotation": [],
+              "opacity": []
+            },
+            "fill": "#1B6C80",
+            "stroke": "#203B42",
+            "strokeWidth": 4,
+            "path": {
+              "closed": true,
+              "vertices": [
+                [
+                  -60,
+                  30
+                ],
+                [
+                  0,
+                  -55
+                ],
+                [
+                  60,
+                  30
+                ]
+              ],
+              "inTangents": [
+                [
+                  -10,
+                  0
+                ],
+                [
+                  -30,
+                  0
+                ],
+                [
+                  0,
+                  -25
+                ]
+              ],
+              "outTangents": [
+                [
+                  0,
+                  -25
+                ],
+                [
+                  30,
+                  0
+                ],
+                [
+                  10,
+                  0
+                ]
+              ]
+            }
+          }
+        ]
+      }
+    },
+    {
+      "id": "open-curve",
+      "valid": true,
+      "project": {
+        "version": 2,
+        "name": "V2 corpus",
+        "width": 512,
+        "height": 512,
+        "fps": 60,
+        "durationFrames": 120,
+        "layers": [
+          {
+            "id": "rig-root",
+            "name": "rig-root",
+            "type": "group",
+            "parentId": null,
+            "x": 256,
+            "y": 256,
+            "pivot": [
+              0,
+              0
+            ],
+            "scale": 75,
+            "rotation": 30,
+            "opacity": 100,
+            "tracks": {
+              "x": [],
+              "y": [],
+              "scale": [],
+              "rotation": [],
+              "opacity": []
+            }
+          },
+          {
+            "id": "curve",
+            "name": "curve",
+            "type": "path",
+            "parentId": "rig-root",
+            "x": 20,
+            "y": -40,
+            "pivot": [
+              16,
+              -8
+            ],
+            "scale": 100,
+            "rotation": 0,
+            "opacity": 100,
+            "tracks": {
+              "x": [],
+              "y": [],
+              "scale": [],
+              "rotation": [],
+              "opacity": []
+            },
+            "fill": null,
+            "stroke": "#203B42",
+            "strokeWidth": 4,
+            "path": {
+              "closed": false,
+              "vertices": [
+                [
+                  -60,
+                  30
+                ],
+                [
+                  60,
+                  30
+                ]
+              ],
+              "inTangents": [
+                [
+                  0,
+                  0
+                ],
+                [
+                  -30,
+                  -90
+                ]
+              ],
+              "outTangents": [
+                [
+                  30,
+                  -90
+                ],
+                [
+                  0,
+                  0
+                ]
+              ]
+            }
+          }
+        ]
+      }
+    },
+    {
+      "id": "missing-parent",
+      "valid": false,
+      "project": {
+        "version": 2,
+        "name": "V2 corpus",
+        "width": 512,
+        "height": 512,
+        "fps": 60,
+        "durationFrames": 120,
+        "layers": [
+          {
+            "id": "rig-root",
+            "name": "rig-root",
+            "type": "group",
+            "parentId": null,
+            "x": 256,
+            "y": 256,
+            "pivot": [
+              0,
+              0
+            ],
+            "scale": 75,
+            "rotation": 30,
+            "opacity": 100,
+            "tracks": {
+              "x": [],
+              "y": [],
+              "scale": [],
+              "rotation": [],
+              "opacity": []
+            }
+          },
+          {
+            "id": "curve",
+            "name": "curve",
+            "type": "path",
+            "parentId": "absent",
+            "x": 20,
+            "y": -40,
+            "pivot": [
+              16,
+              -8
+            ],
+            "scale": 100,
+            "rotation": 0,
+            "opacity": 100,
+            "tracks": {
+              "x": [],
+              "y": [],
+              "scale": [],
+              "rotation": [],
+              "opacity": []
+            },
+            "fill": "#1B6C80",
+            "stroke": "#203B42",
+            "strokeWidth": 4,
+            "path": {
+              "closed": true,
+              "vertices": [
+                [
+                  -60,
+                  30
+                ],
+                [
+                  0,
+                  -55
+                ],
+                [
+                  60,
+                  30
+                ]
+              ],
+              "inTangents": [
+                [
+                  -10,
+                  0
+                ],
+                [
+                  -30,
+                  0
+                ],
+                [
+                  0,
+                  -25
+                ]
+              ],
+              "outTangents": [
+                [
+                  0,
+                  -25
+                ],
+                [
+                  30,
+                  0
+                ],
+                [
+                  10,
+                  0
+                ]
+              ]
+            }
+          }
+        ]
+      }
+    },
+    {
+      "id": "self-parent",
+      "valid": false,
+      "project": {
+        "version": 2,
+        "name": "V2 corpus",
+        "width": 512,
+        "height": 512,
+        "fps": 60,
+        "durationFrames": 120,
+        "layers": [
+          {
+            "id": "rig-root",
+            "name": "rig-root",
+            "type": "group",
+            "parentId": "rig-root",
+            "x": 256,
+            "y": 256,
+            "pivot": [
+              0,
+              0
+            ],
+            "scale": 75,
+            "rotation": 30,
+            "opacity": 100,
+            "tracks": {
+              "x": [],
+              "y": [],
+              "scale": [],
+              "rotation": [],
+              "opacity": []
+            }
+          },
+          {
+            "id": "curve",
+            "name": "curve",
+            "type": "path",
+            "parentId": "rig-root",
+            "x": 20,
+            "y": -40,
+            "pivot": [
+              16,
+              -8
+            ],
+            "scale": 100,
+            "rotation": 0,
+            "opacity": 100,
+            "tracks": {
+              "x": [],
+              "y": [],
+              "scale": [],
+              "rotation": [],
+              "opacity": []
+            },
+            "fill": "#1B6C80",
+            "stroke": "#203B42",
+            "strokeWidth": 4,
+            "path": {
+              "closed": true,
+              "vertices": [
+                [
+                  -60,
+                  30
+                ],
+                [
+                  0,
+                  -55
+                ],
+                [
+                  60,
+                  30
+                ]
+              ],
+              "inTangents": [
+                [
+                  -10,
+                  0
+                ],
+                [
+                  -30,
+                  0
+                ],
+                [
+                  0,
+                  -25
+                ]
+              ],
+              "outTangents": [
+                [
+                  0,
+                  -25
+                ],
+                [
+                  30,
+                  0
+                ],
+                [
+                  10,
+                  0
+                ]
+              ]
+            }
+          }
+        ]
+      }
+    },
+    {
+      "id": "non-group-parent",
+      "valid": false,
+      "project": {
+        "version": 2,
+        "name": "V2 corpus",
+        "width": 512,
+        "height": 512,
+        "fps": 60,
+        "durationFrames": 120,
+        "layers": [
+          {
+            "id": "rig-root",
+            "name": "rig-root",
+            "type": "group",
+            "parentId": "curve",
+            "x": 256,
+            "y": 256,
+            "pivot": [
+              0,
+              0
+            ],
+            "scale": 75,
+            "rotation": 30,
+            "opacity": 100,
+            "tracks": {
+              "x": [],
+              "y": [],
+              "scale": [],
+              "rotation": [],
+              "opacity": []
+            }
+          },
+          {
+            "id": "curve",
+            "name": "curve",
+            "type": "path",
+            "parentId": "rig-root",
+            "x": 20,
+            "y": -40,
+            "pivot": [
+              16,
+              -8
+            ],
+            "scale": 100,
+            "rotation": 0,
+            "opacity": 100,
+            "tracks": {
+              "x": [],
+              "y": [],
+              "scale": [],
+              "rotation": [],
+              "opacity": []
+            },
+            "fill": "#1B6C80",
+            "stroke": "#203B42",
+            "strokeWidth": 4,
+            "path": {
+              "closed": true,
+              "vertices": [
+                [
+                  -60,
+                  30
+                ],
+                [
+                  0,
+                  -55
+                ],
+                [
+                  60,
+                  30
+                ]
+              ],
+              "inTangents": [
+                [
+                  -10,
+                  0
+                ],
+                [
+                  -30,
+                  0
+                ],
+                [
+                  0,
+                  -25
+                ]
+              ],
+              "outTangents": [
+                [
+                  0,
+                  -25
+                ],
+                [
+                  30,
+                  0
+                ],
+                [
+                  10,
+                  0
+                ]
+              ]
+            }
+          }
+        ]
+      }
+    },
+    {
+      "id": "group-opacity",
+      "valid": false,
+      "project": {
+        "version": 2,
+        "name": "V2 corpus",
+        "width": 512,
+        "height": 512,
+        "fps": 60,
+        "durationFrames": 120,
+        "layers": [
+          {
+            "id": "rig-root",
+            "name": "rig-root",
+            "type": "group",
+            "parentId": null,
+            "x": 256,
+            "y": 256,
+            "pivot": [
+              0,
+              0
+            ],
+            "scale": 75,
+            "rotation": 30,
+            "opacity": 80,
+            "tracks": {
+              "x": [],
+              "y": [],
+              "scale": [],
+              "rotation": [],
+              "opacity": []
+            }
+          },
+          {
+            "id": "curve",
+            "name": "curve",
+            "type": "path",
+            "parentId": "rig-root",
+            "x": 20,
+            "y": -40,
+            "pivot": [
+              16,
+              -8
+            ],
+            "scale": 100,
+            "rotation": 0,
+            "opacity": 100,
+            "tracks": {
+              "x": [],
+              "y": [],
+              "scale": [],
+              "rotation": [],
+              "opacity": []
+            },
+            "fill": "#1B6C80",
+            "stroke": "#203B42",
+            "strokeWidth": 4,
+            "path": {
+              "closed": true,
+              "vertices": [
+                [
+                  -60,
+                  30
+                ],
+                [
+                  0,
+                  -55
+                ],
+                [
+                  60,
+                  30
+                ]
+              ],
+              "inTangents": [
+                [
+                  -10,
+                  0
+                ],
+                [
+                  -30,
+                  0
+                ],
+                [
+                  0,
+                  -25
+                ]
+              ],
+              "outTangents": [
+                [
+                  0,
+                  -25
+                ],
+                [
+                  30,
+                  0
+                ],
+                [
+                  10,
+                  0
+                ]
+              ]
+            }
+          }
+        ]
+      }
+    },
+    {
+      "id": "unequal-path-arrays",
+      "valid": false,
+      "project": {
+        "version": 2,
+        "name": "V2 corpus",
+        "width": 512,
+        "height": 512,
+        "fps": 60,
+        "durationFrames": 120,
+        "layers": [
+          {
+            "id": "rig-root",
+            "name": "rig-root",
+            "type": "group",
+            "parentId": null,
+            "x": 256,
+            "y": 256,
+            "pivot": [
+              0,
+              0
+            ],
+            "scale": 75,
+            "rotation": 30,
+            "opacity": 100,
+            "tracks": {
+              "x": [],
+              "y": [],
+              "scale": [],
+              "rotation": [],
+              "opacity": []
+            }
+          },
+          {
+            "id": "curve",
+            "name": "curve",
+            "type": "path",
+            "parentId": "rig-root",
+            "x": 20,
+            "y": -40,
+            "pivot": [
+              16,
+              -8
+            ],
+            "scale": 100,
+            "rotation": 0,
+            "opacity": 100,
+            "tracks": {
+              "x": [],
+              "y": [],
+              "scale": [],
+              "rotation": [],
+              "opacity": []
+            },
+            "fill": "#1B6C80",
+            "stroke": "#203B42",
+            "strokeWidth": 4,
+            "path": {
+              "closed": true,
+              "vertices": [
+                [
+                  -60,
+                  30
+                ],
+                [
+                  0,
+                  -55
+                ],
+                [
+                  60,
+                  30
+                ]
+              ],
+              "inTangents": [
+                [
+                  -10,
+                  0
+                ],
+                [
+                  -30,
+                  0
+                ]
+              ],
+              "outTangents": [
+                [
+                  0,
+                  -25
+                ],
+                [
+                  30,
+                  0
+                ],
+                [
+                  10,
+                  0
+                ]
+              ]
+            }
+          }
+        ]
+      }
+    },
+    {
+      "id": "unknown-field",
+      "valid": false,
+      "project": {
+        "version": 2,
+        "name": "V2 corpus",
+        "width": 512,
+        "height": 512,
+        "fps": 60,
+        "durationFrames": 120,
+        "layers": [
+          {
+            "id": "rig-root",
+            "name": "rig-root",
+            "type": "group",
+            "parentId": null,
+            "x": 256,
+            "y": 256,
+            "pivot": [
+              0,
+              0
+            ],
+            "scale": 75,
+            "rotation": 30,
+            "opacity": 100,
+            "tracks": {
+              "x": [],
+              "y": [],
+              "scale": [],
+              "rotation": [],
+              "opacity": []
+            }
+          },
+          {
+            "id": "curve",
+            "name": "curve",
+            "type": "path",
+            "parentId": "rig-root",
+            "x": 20,
+            "y": -40,
+            "pivot": [
+              16,
+              -8
+            ],
+            "scale": 100,
+            "rotation": 0,
+            "opacity": 100,
+            "tracks": {
+              "x": [],
+              "y": [],
+              "scale": [],
+              "rotation": [],
+              "opacity": []
+            },
+            "fill": "#1B6C80",
+            "stroke": "#203B42",
+            "strokeWidth": 4,
+            "path": {
+              "closed": true,
+              "vertices": [
+                [
+                  -60,
+                  30
+                ],
+                [
+                  0,
+                  -55
+                ],
+                [
+                  60,
+                  30
+                ]
+              ],
+              "inTangents": [
+                [
+                  -10,
+                  0
+                ],
+                [
+                  -30,
+                  0
+                ],
+                [
+                  0,
+                  -25
+                ]
+              ],
+              "outTangents": [
+                [
+                  0,
+                  -25
+                ],
+                [
+                  30,
+                  0
+                ],
+                [
+                  10,
+                  0
+                ]
+              ]
+            },
+            "code": "not executable"
+          }
+        ]
+      }
+    },
+    {
+      "id": "key-outside-duration",
+      "valid": false,
+      "project": {
+        "version": 2,
+        "name": "V2 corpus",
+        "width": 512,
+        "height": 512,
+        "fps": 60,
+        "durationFrames": 120,
+        "layers": [
+          {
+            "id": "rig-root",
+            "name": "rig-root",
+            "type": "group",
+            "parentId": null,
+            "x": 256,
+            "y": 256,
+            "pivot": [
+              0,
+              0
+            ],
+            "scale": 75,
+            "rotation": 30,
+            "opacity": 100,
+            "tracks": {
+              "x": [],
+              "y": [],
+              "scale": [],
+              "rotation": [],
+              "opacity": []
+            }
+          },
+          {
+            "id": "curve",
+            "name": "curve",
+            "type": "path",
+            "parentId": "rig-root",
+            "x": 20,
+            "y": -40,
+            "pivot": [
+              16,
+              -8
+            ],
+            "scale": 100,
+            "rotation": 0,
+            "opacity": 100,
+            "tracks": {
+              "x": [
+                {
+                  "frame": 120,
+                  "value": 20,
+                  "easing": "linear"
+                }
+              ],
+              "y": [],
+              "scale": [],
+              "rotation": [],
+              "opacity": []
+            },
+            "fill": "#1B6C80",
+            "stroke": "#203B42",
+            "strokeWidth": 4,
+            "path": {
+              "closed": true,
+              "vertices": [
+                [
+                  -60,
+                  30
+                ],
+                [
+                  0,
+                  -55
+                ],
+                [
+                  60,
+                  30
+                ]
+              ],
+              "inTangents": [
+                [
+                  -10,
+                  0
+                ],
+                [
+                  -30,
+                  0
+                ],
+                [
+                  0,
+                  -25
+                ]
+              ],
+              "outTangents": [
+                [
+                  0,
+                  -25
+                ],
+                [
+                  30,
+                  0
+                ],
+                [
+                  10,
+                  0
+                ]
+              ]
+            }
+          }
+        ]
+      }
+    },
+    {
+      "id": "scale-overflow",
+      "valid": false,
+      "project": {
+        "version": 2,
+        "name": "V2 corpus",
+        "width": 512,
+        "height": 512,
+        "fps": 60,
+        "durationFrames": 120,
+        "layers": [
+          {
+            "id": "rig-root",
+            "name": "rig-root",
+            "type": "group",
+            "parentId": null,
+            "x": 256,
+            "y": 256,
+            "pivot": [
+              0,
+              0
+            ],
+            "scale": 1000,
+            "rotation": 30,
+            "opacity": 100,
+            "tracks": {
+              "x": [],
+              "y": [],
+              "scale": [],
+              "rotation": [],
+              "opacity": []
+            }
+          },
+          {
+            "id": "curve",
+            "name": "curve",
+            "type": "path",
+            "parentId": "rig-root",
+            "x": 20,
+            "y": -40,
+            "pivot": [
+              16,
+              -8
+            ],
+            "scale": 1000,
+            "rotation": 0,
+            "opacity": 100,
+            "tracks": {
+              "x": [],
+              "y": [],
+              "scale": [],
+              "rotation": [],
+              "opacity": []
+            },
+            "fill": "#1B6C80",
+            "stroke": "#203B42",
+            "strokeWidth": 4,
+            "path": {
+              "closed": true,
+              "vertices": [
+                [
+                  4000,
+                  4000
+                ],
+                [
+                  4000,
+                  -4000
+                ],
+                [
+                  -4000,
+                  4000
+                ]
+              ],
+              "inTangents": [
+                [
+                  -10,
+                  0
+                ],
+                [
+                  -30,
+                  0
+                ],
+                [
+                  0,
+                  -25
+                ]
+              ],
+              "outTangents": [
+                [
+                  0,
+                  -25
+                ],
+                [
+                  30,
+                  0
+                ],
+                [
+                  10,
+                  0
+                ]
+              ]
+            }
+          }
+        ]
+      }
+    },
+    {
+      "id": "open-fill",
+      "valid": false,
+      "project": {
+        "version": 2,
+        "name": "V2 corpus",
+        "width": 512,
+        "height": 512,
+        "fps": 60,
+        "durationFrames": 120,
+        "layers": [
+          {
+            "id": "rig-root",
+            "name": "rig-root",
+            "type": "group",
+            "parentId": null,
+            "x": 256,
+            "y": 256,
+            "pivot": [
+              0,
+              0
+            ],
+            "scale": 75,
+            "rotation": 30,
+            "opacity": 100,
+            "tracks": {
+              "x": [],
+              "y": [],
+              "scale": [],
+              "rotation": [],
+              "opacity": []
+            }
+          },
+          {
+            "id": "curve",
+            "name": "curve",
+            "type": "path",
+            "parentId": "rig-root",
+            "x": 20,
+            "y": -40,
+            "pivot": [
+              16,
+              -8
+            ],
+            "scale": 100,
+            "rotation": 0,
+            "opacity": 100,
+            "tracks": {
+              "x": [],
+              "y": [],
+              "scale": [],
+              "rotation": [],
+              "opacity": []
+            },
+            "fill": "#1B6C80",
+            "stroke": "#203B42",
+            "strokeWidth": 4,
+            "path": {
+              "closed": false,
+              "vertices": [
+                [
+                  -60,
+                  30
+                ],
+                [
+                  60,
+                  30
+                ]
+              ],
+              "inTangents": [
+                [
+                  0,
+                  0
+                ],
+                [
+                  -30,
+                  -90
+                ]
+              ],
+              "outTangents": [
+                [
+                  30,
+                  -90
+                ],
+                [
+                  0,
+                  0
+                ]
+              ]
+            }
+          }
+        ]
+      }
+    },
+    {
+      "id": "duplicate-json-key",
+      "valid": false,
+      "text": "{\"version\":2,\"version\":2,\"name\":\"V2 corpus\",\"width\":512,\"height\":512,\"fps\":60,\"durationFrames\":120,\"layers\":[]}"
+    }
+  ]
+}

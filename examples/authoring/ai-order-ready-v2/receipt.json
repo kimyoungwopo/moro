@@ -1,0 +1,65 @@
+{
+  "ok": true,
+  "version": 2,
+  "provider": "codex",
+  "mocked": false,
+  "prebuiltProjectImported": false,
+  "manuallyModified": false,
+  "projectContextUploaded": false,
+  "entrypoint": "Rig lab -> AI generate v2 -> actual Rust bridge -> official Codex CLI -> unmodified v2 proposal",
+  "actualGenerationCalls": 1,
+  "projectName": "Packed with Care — Shipping Ready",
+  "nodes": 29,
+  "curvedPaths": 3,
+  "groups": 8,
+  "parentedNodes": 20,
+  "rawAIProposalEqualsSavedProject": true,
+  "exportMatchesCore": true,
+  "singleUndoVerified": true,
+  "freshReopenVerified": true,
+  "projectSHA256": "63b1b58ec578f48957dadf921bc045fc0219af5601b0b9a527f543ad526eae7b",
+  "animationSHA256": "89e4029d759b38ea0bc18260f3632df06e4364ba10f71402afffa0592bafe76a",
+  "events": [
+    {
+      "name": "blank-editor-ready",
+      "seconds": 1.551426041
+    },
+    {
+      "name": "visible-brief-entered",
+      "seconds": 13.463511708
+    },
+    {
+      "name": "explicit-one-request-confirmation",
+      "seconds": 14.799553208
+    },
+    {
+      "name": "actual-provider-request",
+      "seconds": 15.926809166000002
+    },
+    {
+      "name": "untouched-ai-response-ready-before-apply",
+      "seconds": 158.445156083
+    },
+    {
+      "name": "independent-proposal-reviewed",
+      "seconds": 164.459958041
+    },
+    {
+      "name": "explicit-apply",
+      "seconds": 165.383979083
+    },
+    {
+      "name": "original-project-and-lottie-downloaded",
+      "seconds": 165.658244208
+    },
+    {
+      "name": "single-undo-restored-blank",
+      "seconds": 171.75039570799999
+    },
+    {
+      "name": "live-flow-verified",
+      "seconds": 181.15590633300002
+    }
+  ],
+  "recordingSeconds": 181.159278916
+}

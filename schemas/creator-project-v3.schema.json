@@ -1,0 +1,1294 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "Moro local editable project v3",
+  "$comment": "Strict runtime parser and validators are authoritative: <=8MiB UTF8, depth <=32, no duplicate JSON keys, descriptor-safe plain data; names <=200 UTF16; frames ordered and duration-relative; equal path array lengths, control sums and open endpoints; same-topology morph keys; <=100 layers, <=2048 base+mask vertices, <=16384 morph-key vertices, <=100 keys/channel, <=10000 total keys; parent depth <=8 edges. Conservative world enclosure multiplies local max scale by 1+abs(tan(maxAbsSkew)), local min scale divided by same factor; min >=0.01 max <=100; origin plus full control hull/stroke/mask radius <=65536. Schema cannot enforce cross-field, graph, aggregate, UTF16, parser or finite-world rules. Export additionally <=2MiB and <=100000 recursive JSON values, depth <=64. No assets/expressions/effects/code.",
+  "description": "All fields required. Exact frozen ProjectV3 variants. Local transforms follow official lottie-web 5.13.0: T(position) R(rotation) R(-axis) H(-tan(skew)) R(axis) S(scaleX,scaleY) T(-pivot). Flat bottom-to-top ordering; groups transform only.",
+  "type": "object",
+  "additionalProperties": false,
+  "required": [
+    "version",
+    "name",
+    "width",
+    "height",
+    "fps",
+    "durationFrames",
+    "layers"
+  ],
+  "properties": {
+    "version": {
+      "const": 3
+    },
+    "name": {
+      "$ref": "#/$defs/name"
+    },
+    "width": {
+      "type": "integer",
+      "minimum": 16,
+      "maximum": 4096
+    },
+    "height": {
+      "type": "integer",
+      "minimum": 16,
+      "maximum": 4096
+    },
+    "fps": {
+      "type": "integer",
+      "minimum": 1,
+      "maximum": 120
+    },
+    "durationFrames": {
+      "type": "integer",
+      "minimum": 2,
+      "maximum": 3600
+    },
+    "layers": {
+      "type": "array",
+      "items": {
+        "oneOf": [
+          {
+            "$ref": "#/$defs/rect"
+          },
+          {
+            "$ref": "#/$defs/ellipse"
+          },
+          {
+            "$ref": "#/$defs/path"
+          },
+          {
+            "$ref": "#/$defs/group"
+          }
+        ]
+      },
+      "minItems": 0,
+      "maxItems": 100
+    }
+  },
+  "$defs": {
+    "name": {
+      "type": "string",
+      "minLength": 1,
+      "maxLength": 200,
+      "pattern": "^[^\\u0000-\\u001f\\u007f-\\u009f]*[^\\s\\uFEFF\\u0000-\\u001f\\u007f-\\u009f][^\\u0000-\\u001f\\u007f-\\u009f]*$",
+      "description": "Runtime additionally limits to 200 UTF-16 code units (JSON Schema maxLength counts Unicode code points)."
+    },
+    "color": {
+      "type": "string",
+      "pattern": "^#[0-9A-Fa-f]{6}$"
+    },
+    "vec2": {
+      "type": "array",
+      "items": {
+        "type": "number",
+        "minimum": -4096,
+        "maximum": 4096
+      },
+      "minItems": 2,
+      "maxItems": 2
+    },
+    "xKey": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "frame",
+        "value",
+        "easing"
+      ],
+      "properties": {
+        "frame": {
+          "type": "integer",
+          "minimum": 0,
+          "maximum": 3599
+        },
+        "value": {
+          "type": "number",
+          "minimum": -8192,
+          "maximum": 8192
+        },
+        "easing": {
+          "$ref": "#/$defs/easing"
+        }
+      }
+    },
+    "yKey": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "frame",
+        "value",
+        "easing"
+      ],
+      "properties": {
+        "frame": {
+          "type": "integer",
+          "minimum": 0,
+          "maximum": 3599
+        },
+        "value": {
+          "type": "number",
+          "minimum": -8192,
+          "maximum": 8192
+        },
+        "easing": {
+          "$ref": "#/$defs/easing"
+        }
+      }
+    },
+    "rotationKey": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "frame",
+        "value",
+        "easing"
+      ],
+      "properties": {
+        "frame": {
+          "type": "integer",
+          "minimum": 0,
+          "maximum": 3599
+        },
+        "value": {
+          "type": "number",
+          "minimum": -3600,
+          "maximum": 3600
+        },
+        "easing": {
+          "$ref": "#/$defs/easing"
+        }
+      }
+    },
+    "opacityKey": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "frame",
+        "value",
+        "easing"
+      ],
+      "properties": {
+        "frame": {
+          "type": "integer",
+          "minimum": 0,
+          "maximum": 3599
+        },
+        "value": {
+          "type": "number",
+          "minimum": 0,
+          "maximum": 100
+        },
+        "easing": {
+          "$ref": "#/$defs/easing"
+        }
+      }
+    },
+    "tracks": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "x",
+        "y",
+        "scaleX",
+        "scaleY",
+        "rotation",
+        "opacity",
+        "skew",
+        "skewAxis"
+      ],
+      "properties": {
+        "x": {
+          "type": "array",
+          "items": {
+            "$ref": "#/$defs/xKey"
+          },
+          "minItems": 0,
+          "maxItems": 100
+        },
+        "y": {
+          "type": "array",
+          "items": {
+            "$ref": "#/$defs/yKey"
+          },
+          "minItems": 0,
+          "maxItems": 100
+        },
+        "scaleX": {
+          "type": "array",
+          "items": {
+            "$ref": "#/$defs/scaleXKey"
+          },
+          "minItems": 0,
+          "maxItems": 100
+        },
+        "scaleY": {
+          "type": "array",
+          "items": {
+            "$ref": "#/$defs/scaleYKey"
+          },
+          "minItems": 0,
+          "maxItems": 100
+        },
+        "rotation": {
+          "type": "array",
+          "items": {
+            "$ref": "#/$defs/rotationKey"
+          },
+          "minItems": 0,
+          "maxItems": 100
+        },
+        "opacity": {
+          "type": "array",
+          "items": {
+            "$ref": "#/$defs/opacityKey"
+          },
+          "minItems": 0,
+          "maxItems": 100
+        },
+        "skew": {
+          "type": "array",
+          "items": {
+            "$ref": "#/$defs/skewKey"
+          },
+          "minItems": 0,
+          "maxItems": 100
+        },
+        "skewAxis": {
+          "type": "array",
+          "items": {
+            "$ref": "#/$defs/skewAxisKey"
+          },
+          "minItems": 0,
+          "maxItems": 100
+        }
+      }
+    },
+    "groupTracks": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "x",
+        "y",
+        "scaleX",
+        "scaleY",
+        "rotation",
+        "opacity",
+        "skew",
+        "skewAxis"
+      ],
+      "properties": {
+        "x": {
+          "type": "array",
+          "items": {
+            "$ref": "#/$defs/xKey"
+          },
+          "minItems": 0,
+          "maxItems": 100
+        },
+        "y": {
+          "type": "array",
+          "items": {
+            "$ref": "#/$defs/yKey"
+          },
+          "minItems": 0,
+          "maxItems": 100
+        },
+        "scaleX": {
+          "type": "array",
+          "items": {
+            "$ref": "#/$defs/scaleXKey"
+          },
+          "minItems": 0,
+          "maxItems": 100
+        },
+        "scaleY": {
+          "type": "array",
+          "items": {
+            "$ref": "#/$defs/scaleYKey"
+          },
+          "minItems": 0,
+          "maxItems": 100
+        },
+        "rotation": {
+          "type": "array",
+          "items": {
+            "$ref": "#/$defs/rotationKey"
+          },
+          "minItems": 0,
+          "maxItems": 100
+        },
+        "opacity": {
+          "type": "array",
+          "items": {
+            "$ref": "#/$defs/opacityKey"
+          },
+          "minItems": 0,
+          "maxItems": 0
+        },
+        "skew": {
+          "type": "array",
+          "items": {
+            "$ref": "#/$defs/skewKey"
+          },
+          "minItems": 0,
+          "maxItems": 100
+        },
+        "skewAxis": {
+          "type": "array",
+          "items": {
+            "$ref": "#/$defs/skewAxisKey"
+          },
+          "minItems": 0,
+          "maxItems": 100
+        }
+      }
+    },
+    "geometry": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "closed",
+        "vertices",
+        "inTangents",
+        "outTangents"
+      ],
+      "properties": {
+        "closed": {
+          "type": "boolean"
+        },
+        "vertices": {
+          "type": "array",
+          "items": {
+            "$ref": "#/$defs/vec2"
+          },
+          "minItems": 2,
+          "maxItems": 256
+        },
+        "inTangents": {
+          "type": "array",
+          "items": {
+            "$ref": "#/$defs/vec2"
+          },
+          "minItems": 2,
+          "maxItems": 256
+        },
+        "outTangents": {
+          "type": "array",
+          "items": {
+            "$ref": "#/$defs/vec2"
+          },
+          "minItems": 2,
+          "maxItems": 256
+        }
+      },
+      "allOf": [
+        {
+          "if": {
+            "properties": {
+              "closed": {
+                "const": true
+              }
+            }
+          },
+          "then": {
+            "properties": {
+              "vertices": {
+                "minItems": 3
+              },
+              "inTangents": {
+                "minItems": 3
+              },
+              "outTangents": {
+                "minItems": 3
+              }
+            }
+          }
+        }
+      ]
+    },
+    "rect": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "id",
+        "name",
+        "type",
+        "parentId",
+        "x",
+        "y",
+        "pivot",
+        "rotation",
+        "opacity",
+        "tracks",
+        "fill",
+        "stroke",
+        "strokeWidth",
+        "width",
+        "height",
+        "cornerRadius",
+        "scaleX",
+        "scaleY",
+        "skew",
+        "skewAxis",
+        "masks",
+        "trim"
+      ],
+      "properties": {
+        "id": {
+          "$ref": "#/$defs/name"
+        },
+        "name": {
+          "$ref": "#/$defs/name"
+        },
+        "type": {
+          "const": "rect"
+        },
+        "parentId": {
+          "anyOf": [
+            {
+              "$ref": "#/$defs/name"
+            },
+            {
+              "type": "null"
+            }
+          ]
+        },
+        "x": {
+          "type": "number",
+          "minimum": -8192,
+          "maximum": 8192
+        },
+        "y": {
+          "type": "number",
+          "minimum": -8192,
+          "maximum": 8192
+        },
+        "pivot": {
+          "$ref": "#/$defs/vec2"
+        },
+        "rotation": {
+          "type": "number",
+          "minimum": -3600,
+          "maximum": 3600
+        },
+        "opacity": {
+          "type": "number",
+          "minimum": 0,
+          "maximum": 100
+        },
+        "tracks": {
+          "$ref": "#/$defs/tracks"
+        },
+        "fill": {
+          "$ref": "#/$defs/color"
+        },
+        "stroke": {
+          "$ref": "#/$defs/color"
+        },
+        "strokeWidth": {
+          "type": "number",
+          "minimum": 0,
+          "maximum": 100
+        },
+        "width": {
+          "type": "number",
+          "minimum": 1,
+          "maximum": 4096
+        },
+        "height": {
+          "type": "number",
+          "minimum": 1,
+          "maximum": 4096
+        },
+        "cornerRadius": {
+          "anyOf": [
+            {
+              "type": "number",
+              "minimum": 0,
+              "maximum": 2048
+            },
+            {
+              "type": "null"
+            }
+          ]
+        },
+        "scaleX": {
+          "type": "number",
+          "minimum": 1,
+          "maximum": 1000
+        },
+        "scaleY": {
+          "type": "number",
+          "minimum": 1,
+          "maximum": 1000
+        },
+        "skew": {
+          "type": "number",
+          "minimum": -75,
+          "maximum": 75
+        },
+        "skewAxis": {
+          "type": "number",
+          "minimum": -3600,
+          "maximum": 3600
+        },
+        "masks": {
+          "type": "array",
+          "items": {
+            "$ref": "#/$defs/mask"
+          },
+          "minItems": 0,
+          "maxItems": 4
+        },
+        "trim": {
+          "type": "null"
+        }
+      }
+    },
+    "ellipse": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "id",
+        "name",
+        "type",
+        "parentId",
+        "x",
+        "y",
+        "pivot",
+        "rotation",
+        "opacity",
+        "tracks",
+        "fill",
+        "stroke",
+        "strokeWidth",
+        "width",
+        "height",
+        "cornerRadius",
+        "scaleX",
+        "scaleY",
+        "skew",
+        "skewAxis",
+        "masks",
+        "trim"
+      ],
+      "properties": {
+        "id": {
+          "$ref": "#/$defs/name"
+        },
+        "name": {
+          "$ref": "#/$defs/name"
+        },
+        "type": {
+          "const": "ellipse"
+        },
+        "parentId": {
+          "anyOf": [
+            {
+              "$ref": "#/$defs/name"
+            },
+            {
+              "type": "null"
+            }
+          ]
+        },
+        "x": {
+          "type": "number",
+          "minimum": -8192,
+          "maximum": 8192
+        },
+        "y": {
+          "type": "number",
+          "minimum": -8192,
+          "maximum": 8192
+        },
+        "pivot": {
+          "$ref": "#/$defs/vec2"
+        },
+        "rotation": {
+          "type": "number",
+          "minimum": -3600,
+          "maximum": 3600
+        },
+        "opacity": {
+          "type": "number",
+          "minimum": 0,
+          "maximum": 100
+        },
+        "tracks": {
+          "$ref": "#/$defs/tracks"
+        },
+        "fill": {
+          "$ref": "#/$defs/color"
+        },
+        "stroke": {
+          "$ref": "#/$defs/color"
+        },
+        "strokeWidth": {
+          "type": "number",
+          "minimum": 0,
+          "maximum": 100
+        },
+        "width": {
+          "type": "number",
+          "minimum": 1,
+          "maximum": 4096
+        },
+        "height": {
+          "type": "number",
+          "minimum": 1,
+          "maximum": 4096
+        },
+        "cornerRadius": {
+          "anyOf": [
+            {
+              "type": "number",
+              "minimum": 0,
+              "maximum": 0
+            },
+            {
+              "type": "null"
+            }
+          ]
+        },
+        "scaleX": {
+          "type": "number",
+          "minimum": 1,
+          "maximum": 1000
+        },
+        "scaleY": {
+          "type": "number",
+          "minimum": 1,
+          "maximum": 1000
+        },
+        "skew": {
+          "type": "number",
+          "minimum": -75,
+          "maximum": 75
+        },
+        "skewAxis": {
+          "type": "number",
+          "minimum": -3600,
+          "maximum": 3600
+        },
+        "masks": {
+          "type": "array",
+          "items": {
+            "$ref": "#/$defs/mask"
+          },
+          "minItems": 0,
+          "maxItems": 4
+        },
+        "trim": {
+          "type": "null"
+        }
+      }
+    },
+    "path": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "id",
+        "name",
+        "type",
+        "parentId",
+        "x",
+        "y",
+        "pivot",
+        "rotation",
+        "opacity",
+        "tracks",
+        "fill",
+        "stroke",
+        "strokeWidth",
+        "path",
+        "scaleX",
+        "scaleY",
+        "skew",
+        "skewAxis",
+        "masks",
+        "trim",
+        "pathKeys"
+      ],
+      "properties": {
+        "id": {
+          "$ref": "#/$defs/name"
+        },
+        "name": {
+          "$ref": "#/$defs/name"
+        },
+        "type": {
+          "const": "path"
+        },
+        "parentId": {
+          "anyOf": [
+            {
+              "$ref": "#/$defs/name"
+            },
+            {
+              "type": "null"
+            }
+          ]
+        },
+        "x": {
+          "type": "number",
+          "minimum": -8192,
+          "maximum": 8192
+        },
+        "y": {
+          "type": "number",
+          "minimum": -8192,
+          "maximum": 8192
+        },
+        "pivot": {
+          "$ref": "#/$defs/vec2"
+        },
+        "rotation": {
+          "type": "number",
+          "minimum": -3600,
+          "maximum": 3600
+        },
+        "opacity": {
+          "type": "number",
+          "minimum": 0,
+          "maximum": 100
+        },
+        "tracks": {
+          "$ref": "#/$defs/tracks"
+        },
+        "fill": {
+          "anyOf": [
+            {
+              "$ref": "#/$defs/color"
+            },
+            {
+              "type": "null"
+            }
+          ]
+        },
+        "stroke": {
+          "$ref": "#/$defs/color"
+        },
+        "strokeWidth": {
+          "type": "number",
+          "minimum": 0,
+          "maximum": 100
+        },
+        "path": {
+          "$ref": "#/$defs/geometry"
+        },
+        "scaleX": {
+          "type": "number",
+          "minimum": 1,
+          "maximum": 1000
+        },
+        "scaleY": {
+          "type": "number",
+          "minimum": 1,
+          "maximum": 1000
+        },
+        "skew": {
+          "type": "number",
+          "minimum": -75,
+          "maximum": 75
+        },
+        "skewAxis": {
+          "type": "number",
+          "minimum": -3600,
+          "maximum": 3600
+        },
+        "masks": {
+          "type": "array",
+          "items": {
+            "$ref": "#/$defs/mask"
+          },
+          "minItems": 0,
+          "maxItems": 4
+        },
+        "trim": {
+          "anyOf": [
+            {
+              "$ref": "#/$defs/trim"
+            },
+            {
+              "type": "null"
+            }
+          ]
+        },
+        "pathKeys": {
+          "type": "array",
+          "items": {
+            "$ref": "#/$defs/pathKey"
+          },
+          "minItems": 0,
+          "maxItems": 100
+        }
+      },
+      "allOf": [
+        {
+          "if": {
+            "properties": {
+              "path": {
+                "properties": {
+                  "closed": {
+                    "const": false
+                  }
+                }
+              }
+            }
+          },
+          "then": {
+            "properties": {
+              "fill": {
+                "type": "null"
+              },
+              "path": {
+                "properties": {
+                  "inTangents": {
+                    "prefixItems": [
+                      {
+                        "const": [
+                          0,
+                          0
+                        ]
+                      }
+                    ]
+                  }
+                }
+              }
+            }
+          }
+        }
+      ]
+    },
+    "group": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "id",
+        "name",
+        "type",
+        "parentId",
+        "x",
+        "y",
+        "pivot",
+        "rotation",
+        "opacity",
+        "tracks",
+        "scaleX",
+        "scaleY",
+        "skew",
+        "skewAxis",
+        "masks",
+        "trim"
+      ],
+      "properties": {
+        "id": {
+          "$ref": "#/$defs/name"
+        },
+        "name": {
+          "$ref": "#/$defs/name"
+        },
+        "type": {
+          "const": "group"
+        },
+        "parentId": {
+          "anyOf": [
+            {
+              "$ref": "#/$defs/name"
+            },
+            {
+              "type": "null"
+            }
+          ]
+        },
+        "x": {
+          "type": "number",
+          "minimum": -8192,
+          "maximum": 8192
+        },
+        "y": {
+          "type": "number",
+          "minimum": -8192,
+          "maximum": 8192
+        },
+        "pivot": {
+          "$ref": "#/$defs/vec2"
+        },
+        "rotation": {
+          "type": "number",
+          "minimum": -3600,
+          "maximum": 3600
+        },
+        "opacity": {
+          "const": 100
+        },
+        "tracks": {
+          "$ref": "#/$defs/groupTracks"
+        },
+        "scaleX": {
+          "type": "number",
+          "minimum": 1,
+          "maximum": 1000
+        },
+        "scaleY": {
+          "type": "number",
+          "minimum": 1,
+          "maximum": 1000
+        },
+        "skew": {
+          "type": "number",
+          "minimum": -75,
+          "maximum": 75
+        },
+        "skewAxis": {
+          "type": "number",
+          "minimum": -3600,
+          "maximum": 3600
+        },
+        "masks": {
+          "type": "array",
+          "items": {
+            "$ref": "#/$defs/mask"
+          },
+          "minItems": 0,
+          "maxItems": 0
+        },
+        "trim": {
+          "type": "null"
+        }
+      }
+    },
+    "easing": {
+      "anyOf": [
+        {
+          "enum": [
+            "linear",
+            "ease-in",
+            "ease-out",
+            "ease-in-out"
+          ]
+        },
+        {
+          "type": "object",
+          "additionalProperties": false,
+          "required": [
+            "type",
+            "x1",
+            "y1",
+            "x2",
+            "y2"
+          ],
+          "properties": {
+            "type": {
+              "const": "cubic-bezier"
+            },
+            "x1": {
+              "type": "number",
+              "minimum": 0,
+              "maximum": 1
+            },
+            "y1": {
+              "type": "number",
+              "minimum": 0,
+              "maximum": 1
+            },
+            "x2": {
+              "type": "number",
+              "minimum": 0,
+              "maximum": 1
+            },
+            "y2": {
+              "type": "number",
+              "minimum": 0,
+              "maximum": 1
+            }
+          }
+        }
+      ]
+    },
+    "scaleXKey": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "frame",
+        "value",
+        "easing"
+      ],
+      "properties": {
+        "frame": {
+          "type": "integer",
+          "minimum": 0,
+          "maximum": 3599
+        },
+        "value": {
+          "type": "number",
+          "minimum": 1,
+          "maximum": 1000
+        },
+        "easing": {
+          "$ref": "#/$defs/easing"
+        }
+      }
+    },
+    "scaleYKey": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "frame",
+        "value",
+        "easing"
+      ],
+      "properties": {
+        "frame": {
+          "type": "integer",
+          "minimum": 0,
+          "maximum": 3599
+        },
+        "value": {
+          "type": "number",
+          "minimum": 1,
+          "maximum": 1000
+        },
+        "easing": {
+          "$ref": "#/$defs/easing"
+        }
+      }
+    },
+    "skewKey": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "frame",
+        "value",
+        "easing"
+      ],
+      "properties": {
+        "frame": {
+          "type": "integer",
+          "minimum": 0,
+          "maximum": 3599
+        },
+        "value": {
+          "type": "number",
+          "minimum": -75,
+          "maximum": 75
+        },
+        "easing": {
+          "$ref": "#/$defs/easing"
+        }
+      }
+    },
+    "skewAxisKey": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "frame",
+        "value",
+        "easing"
+      ],
+      "properties": {
+        "frame": {
+          "type": "integer",
+          "minimum": 0,
+          "maximum": 3599
+        },
+        "value": {
+          "type": "number",
+          "minimum": -3600,
+          "maximum": 3600
+        },
+        "easing": {
+          "$ref": "#/$defs/easing"
+        }
+      }
+    },
+    "startKey": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "frame",
+        "value",
+        "easing"
+      ],
+      "properties": {
+        "frame": {
+          "type": "integer",
+          "minimum": 0,
+          "maximum": 3599
+        },
+        "value": {
+          "type": "number",
+          "minimum": 0,
+          "maximum": 100
+        },
+        "easing": {
+          "$ref": "#/$defs/easing"
+        }
+      }
+    },
+    "endKey": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "frame",
+        "value",
+        "easing"
+      ],
+      "properties": {
+        "frame": {
+          "type": "integer",
+          "minimum": 0,
+          "maximum": 3599
+        },
+        "value": {
+          "type": "number",
+          "minimum": 0,
+          "maximum": 100
+        },
+        "easing": {
+          "$ref": "#/$defs/easing"
+        }
+      }
+    },
+    "offsetKey": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "frame",
+        "value",
+        "easing"
+      ],
+      "properties": {
+        "frame": {
+          "type": "integer",
+          "minimum": 0,
+          "maximum": 3599
+        },
+        "value": {
+          "type": "number",
+          "minimum": -3600,
+          "maximum": 3600
+        },
+        "easing": {
+          "$ref": "#/$defs/easing"
+        }
+      }
+    },
+    "mask": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "name",
+        "mode",
+        "inverted",
+        "opacity",
+        "path"
+      ],
+      "properties": {
+        "name": {
+          "$ref": "#/$defs/name"
+        },
+        "mode": {
+          "enum": [
+            "add",
+            "subtract"
+          ]
+        },
+        "inverted": {
+          "type": "boolean"
+        },
+        "opacity": {
+          "type": "number",
+          "minimum": 0,
+          "maximum": 100
+        },
+        "path": {
+          "$ref": "#/$defs/geometry"
+        }
+      }
+    },
+    "trim": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "start",
+        "end",
+        "offset",
+        "tracks"
+      ],
+      "properties": {
+        "start": {
+          "type": "number",
+          "minimum": 0,
+          "maximum": 100
+        },
+        "end": {
+          "type": "number",
+          "minimum": 0,
+          "maximum": 100
+        },
+        "offset": {
+          "type": "number",
+          "minimum": -3600,
+          "maximum": 3600
+        },
+        "tracks": {
+          "type": "object",
+          "additionalProperties": false,
+          "required": [
+            "start",
+            "end",
+            "offset"
+          ],
+          "properties": {
+            "start": {
+              "type": "array",
+              "items": {
+                "$ref": "#/$defs/startKey"
+              },
+              "minItems": 0,
+              "maxItems": 100
+            },
+            "end": {
+              "type": "array",
+              "items": {
+                "$ref": "#/$defs/endKey"
+              },
+              "minItems": 0,
+              "maxItems": 100
+            },
+            "offset": {
+              "type": "array",
+              "items": {
+                "$ref": "#/$defs/offsetKey"
+              },
+              "minItems": 0,
+              "maxItems": 100
+            }
+          }
+        }
+      }
+    },
+    "pathKey": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "frame",
+        "value",
+        "easing"
+      ],
+      "properties": {
+        "frame": {
+          "type": "integer",
+          "minimum": 0,
+          "maximum": 3599
+        },
+        "value": {
+          "$ref": "#/$defs/geometry"
+        },
+        "easing": {
+          "$ref": "#/$defs/easing"
+        }
+      }
+    }
+  }
+}

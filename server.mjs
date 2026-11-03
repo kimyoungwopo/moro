@@ -9,7 +9,7 @@ http.createServer(async(req,res)=>{
   try {
     const url=new URL(req.url,'http://localhost');
     const pathname=decodeURIComponent(url.pathname);
-    const name=pathname==='/'||pathname==='/docs'?'index.html':pathname.slice(1);
+    const name=pathname==='/'||pathname==='/docs'||pathname==='/create'||pathname==='/rig'||pathname==='/rig/'||pathname==='/studio'||pathname==='/studio/'?'index.html':pathname.slice(1);
     const target=path.resolve(root,name);
     if(!target.startsWith(root+path.sep)&&target!==path.join(root,'index.html')) {res.writeHead(403);return res.end('Forbidden');}
     const data=await readFile(target);

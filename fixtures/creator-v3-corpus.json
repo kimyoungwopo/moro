@@ -1,0 +1,6487 @@
+{
+  "schemaVersion": 1,
+  "cases": [
+    {
+      "id": "empty",
+      "valid": true,
+      "project": {
+        "version": 3,
+        "name": "Untitled",
+        "width": 512,
+        "height": 512,
+        "fps": 30,
+        "durationFrames": 120,
+        "layers": []
+      }
+    },
+    {
+      "id": "advanced-all-features",
+      "valid": true,
+      "project": {
+        "version": 3,
+        "name": "Advanced test",
+        "width": 512,
+        "height": 512,
+        "fps": 30,
+        "durationFrames": 120,
+        "layers": [
+          {
+            "id": "root",
+            "name": "Transform rig",
+            "type": "group",
+            "parentId": null,
+            "x": 20,
+            "y": 0,
+            "pivot": [
+              0,
+              0
+            ],
+            "scaleX": 105,
+            "scaleY": 95,
+            "rotation": 10,
+            "opacity": 100,
+            "skew": -7,
+            "skewAxis": 55,
+            "tracks": {
+              "x": [],
+              "y": [],
+              "scaleX": [],
+              "scaleY": [],
+              "rotation": [],
+              "opacity": [],
+              "skew": [],
+              "skewAxis": []
+            },
+            "masks": [],
+            "trim": null
+          },
+          {
+            "id": "shape",
+            "name": "Morph",
+            "type": "path",
+            "parentId": "root",
+            "x": 240,
+            "y": 240,
+            "pivot": [
+              10,
+              20
+            ],
+            "scaleX": 140,
+            "scaleY": 70,
+            "rotation": 15,
+            "opacity": 100,
+            "skew": 20,
+            "skewAxis": 35,
+            "tracks": {
+              "x": [],
+              "y": [],
+              "scaleX": [
+                {
+                  "frame": 0,
+                  "value": 80,
+                  "easing": {
+                    "type": "cubic-bezier",
+                    "x1": 0.2,
+                    "y1": 0.05,
+                    "x2": 0.65,
+                    "y2": 0.95
+                  }
+                },
+                {
+                  "frame": 110,
+                  "value": 150,
+                  "easing": "linear"
+                }
+              ],
+              "scaleY": [
+                {
+                  "frame": 10,
+                  "value": 125,
+                  "easing": "ease-in"
+                },
+                {
+                  "frame": 90,
+                  "value": 70,
+                  "easing": "linear"
+                }
+              ],
+              "rotation": [],
+              "opacity": [],
+              "skew": [
+                {
+                  "frame": 0,
+                  "value": -18,
+                  "easing": "ease-in-out"
+                },
+                {
+                  "frame": 110,
+                  "value": 30,
+                  "easing": "linear"
+                }
+              ],
+              "skewAxis": []
+            },
+            "masks": [
+              {
+                "name": "Local",
+                "mode": "add",
+                "inverted": false,
+                "opacity": 100,
+                "path": {
+                  "closed": true,
+                  "vertices": [
+                    [
+                      0,
+                      0
+                    ],
+                    [
+                      90,
+                      0
+                    ],
+                    [
+                      50,
+                      80
+                    ]
+                  ],
+                  "inTangents": [
+                    [
+                      0,
+                      0
+                    ],
+                    [
+                      0,
+                      0
+                    ],
+                    [
+                      0,
+                      0
+                    ]
+                  ],
+                  "outTangents": [
+                    [
+                      0,
+                      0
+                    ],
+                    [
+                      0,
+                      0
+                    ],
+                    [
+                      0,
+                      0
+                    ]
+                  ]
+                }
+              },
+              {
+                "name": "Subtract inverted",
+                "mode": "subtract",
+                "inverted": true,
+                "opacity": 75,
+                "path": {
+                  "closed": true,
+                  "vertices": [
+                    [
+                      0,
+                      0
+                    ],
+                    [
+                      90,
+                      0
+                    ],
+                    [
+                      50,
+                      80
+                    ]
+                  ],
+                  "inTangents": [
+                    [
+                      0,
+                      0
+                    ],
+                    [
+                      0,
+                      0
+                    ],
+                    [
+                      0,
+                      0
+                    ]
+                  ],
+                  "outTangents": [
+                    [
+                      0,
+                      0
+                    ],
+                    [
+                      0,
+                      0
+                    ],
+                    [
+                      0,
+                      0
+                    ]
+                  ]
+                }
+              }
+            ],
+            "trim": {
+              "start": 0,
+              "end": 100,
+              "offset": 0,
+              "tracks": {
+                "start": [],
+                "end": [
+                  {
+                    "frame": 0,
+                    "value": 15,
+                    "easing": "ease-out"
+                  },
+                  {
+                    "frame": 110,
+                    "value": 100,
+                    "easing": "linear"
+                  }
+                ],
+                "offset": [
+                  {
+                    "frame": 0,
+                    "value": 0,
+                    "easing": "linear"
+                  },
+                  {
+                    "frame": 110,
+                    "value": 90,
+                    "easing": "linear"
+                  }
+                ]
+              }
+            },
+            "path": {
+              "closed": true,
+              "vertices": [
+                [
+                  0,
+                  0
+                ],
+                [
+                  90,
+                  0
+                ],
+                [
+                  50,
+                  80
+                ]
+              ],
+              "inTangents": [
+                [
+                  0,
+                  0
+                ],
+                [
+                  0,
+                  0
+                ],
+                [
+                  0,
+                  0
+                ]
+              ],
+              "outTangents": [
+                [
+                  0,
+                  0
+                ],
+                [
+                  0,
+                  0
+                ],
+                [
+                  0,
+                  0
+                ]
+              ]
+            },
+            "fill": "#f07932",
+            "stroke": "#182440",
+            "strokeWidth": 3,
+            "pathKeys": [
+              {
+                "frame": 0,
+                "value": {
+                  "closed": true,
+                  "vertices": [
+                    [
+                      0,
+                      0
+                    ],
+                    [
+                      90,
+                      0
+                    ],
+                    [
+                      50,
+                      80
+                    ]
+                  ],
+                  "inTangents": [
+                    [
+                      0,
+                      0
+                    ],
+                    [
+                      0,
+                      0
+                    ],
+                    [
+                      0,
+                      0
+                    ]
+                  ],
+                  "outTangents": [
+                    [
+                      0,
+                      0
+                    ],
+                    [
+                      0,
+                      0
+                    ],
+                    [
+                      0,
+                      0
+                    ]
+                  ]
+                },
+                "easing": {
+                  "type": "cubic-bezier",
+                  "x1": 0.2,
+                  "y1": 0.05,
+                  "x2": 0.65,
+                  "y2": 0.95
+                }
+              },
+              {
+                "frame": 110,
+                "value": {
+                  "closed": true,
+                  "vertices": [
+                    [
+                      10,
+                      5
+                    ],
+                    [
+                      105,
+                      10
+                    ],
+                    [
+                      55,
+                      105
+                    ]
+                  ],
+                  "inTangents": [
+                    [
+                      0,
+                      0
+                    ],
+                    [
+                      0,
+                      0
+                    ],
+                    [
+                      0,
+                      0
+                    ]
+                  ],
+                  "outTangents": [
+                    [
+                      0,
+                      0
+                    ],
+                    [
+                      0,
+                      0
+                    ],
+                    [
+                      0,
+                      0
+                    ]
+                  ]
+                },
+                "easing": "linear"
+              }
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "id": "open-morph",
+      "valid": true,
+      "project": {
+        "version": 3,
+        "name": "Advanced test",
+        "width": 512,
+        "height": 512,
+        "fps": 30,
+        "durationFrames": 120,
+        "layers": [
+          {
+            "id": "shape",
+            "name": "Morph",
+            "type": "path",
+            "parentId": null,
+            "x": 240,
+            "y": 240,
+            "pivot": [
+              10,
+              20
+            ],
+            "scaleX": 140,
+            "scaleY": 70,
+            "rotation": 15,
+            "opacity": 100,
+            "skew": 20,
+            "skewAxis": 35,
+            "tracks": {
+              "x": [],
+              "y": [],
+              "scaleX": [],
+              "scaleY": [],
+              "rotation": [],
+              "opacity": [],
+              "skew": [],
+              "skewAxis": []
+            },
+            "masks": [
+              {
+                "name": "Local",
+                "mode": "add",
+                "inverted": false,
+                "opacity": 100,
+                "path": {
+                  "closed": true,
+                  "vertices": [
+                    [
+                      0,
+                      0
+                    ],
+                    [
+                      90,
+                      0
+                    ],
+                    [
+                      50,
+                      80
+                    ]
+                  ],
+                  "inTangents": [
+                    [
+                      0,
+                      0
+                    ],
+                    [
+                      0,
+                      0
+                    ],
+                    [
+                      0,
+                      0
+                    ]
+                  ],
+                  "outTangents": [
+                    [
+                      0,
+                      0
+                    ],
+                    [
+                      0,
+                      0
+                    ],
+                    [
+                      0,
+                      0
+                    ]
+                  ]
+                }
+              }
+            ],
+            "trim": {
+              "start": 0,
+              "end": 100,
+              "offset": 0,
+              "tracks": {
+                "start": [],
+                "end": [],
+                "offset": []
+              }
+            },
+            "path": {
+              "closed": false,
+              "vertices": [
+                [
+                  0,
+                  0
+                ],
+                [
+                  90,
+                  0
+                ],
+                [
+                  50,
+                  80
+                ]
+              ],
+              "inTangents": [
+                [
+                  0,
+                  0
+                ],
+                [
+                  0,
+                  0
+                ],
+                [
+                  0,
+                  0
+                ]
+              ],
+              "outTangents": [
+                [
+                  0,
+                  0
+                ],
+                [
+                  0,
+                  0
+                ],
+                [
+                  0,
+                  0
+                ]
+              ]
+            },
+            "fill": null,
+            "stroke": "#182440",
+            "strokeWidth": 3,
+            "pathKeys": [
+              {
+                "frame": 0,
+                "value": {
+                  "closed": false,
+                  "vertices": [
+                    [
+                      0,
+                      0
+                    ],
+                    [
+                      90,
+                      0
+                    ],
+                    [
+                      50,
+                      80
+                    ]
+                  ],
+                  "inTangents": [
+                    [
+                      0,
+                      0
+                    ],
+                    [
+                      0,
+                      0
+                    ],
+                    [
+                      0,
+                      0
+                    ]
+                  ],
+                  "outTangents": [
+                    [
+                      0,
+                      0
+                    ],
+                    [
+                      0,
+                      0
+                    ],
+                    [
+                      0,
+                      0
+                    ]
+                  ]
+                },
+                "easing": "linear"
+              },
+              {
+                "frame": 100,
+                "value": {
+                  "closed": false,
+                  "vertices": [
+                    [
+                      5,
+                      0
+                    ],
+                    [
+                      100,
+                      0
+                    ],
+                    [
+                      50,
+                      80
+                    ]
+                  ],
+                  "inTangents": [
+                    [
+                      0,
+                      0
+                    ],
+                    [
+                      0,
+                      0
+                    ],
+                    [
+                      0,
+                      0
+                    ]
+                  ],
+                  "outTangents": [
+                    [
+                      0,
+                      0
+                    ],
+                    [
+                      0,
+                      0
+                    ],
+                    [
+                      0,
+                      0
+                    ]
+                  ]
+                },
+                "easing": "ease-out"
+              }
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "id": "rect-masked",
+      "valid": true,
+      "project": {
+        "version": 3,
+        "name": "Advanced test",
+        "width": 512,
+        "height": 512,
+        "fps": 30,
+        "durationFrames": 120,
+        "layers": [
+          {
+            "id": "shape",
+            "name": "Morph",
+            "type": "rect",
+            "parentId": null,
+            "x": 240,
+            "y": 240,
+            "pivot": [
+              10,
+              20
+            ],
+            "scaleX": 140,
+            "scaleY": 70,
+            "rotation": 15,
+            "opacity": 100,
+            "skew": 20,
+            "skewAxis": 35,
+            "tracks": {
+              "x": [],
+              "y": [],
+              "scaleX": [],
+              "scaleY": [],
+              "rotation": [],
+              "opacity": [],
+              "skew": [],
+              "skewAxis": []
+            },
+            "masks": [
+              {
+                "name": "Local",
+                "mode": "add",
+                "inverted": false,
+                "opacity": 100,
+                "path": {
+                  "closed": true,
+                  "vertices": [
+                    [
+                      0,
+                      0
+                    ],
+                    [
+                      90,
+                      0
+                    ],
+                    [
+                      50,
+                      80
+                    ]
+                  ],
+                  "inTangents": [
+                    [
+                      0,
+                      0
+                    ],
+                    [
+                      0,
+                      0
+                    ],
+                    [
+                      0,
+                      0
+                    ]
+                  ],
+                  "outTangents": [
+                    [
+                      0,
+                      0
+                    ],
+                    [
+                      0,
+                      0
+                    ],
+                    [
+                      0,
+                      0
+                    ]
+                  ]
+                }
+              }
+            ],
+            "trim": null,
+            "fill": "#f07932",
+            "stroke": "#182440",
+            "strokeWidth": 3,
+            "width": 100,
+            "height": 80,
+            "cornerRadius": 20
+          }
+        ]
+      }
+    },
+    {
+      "id": "ellipse-masked",
+      "valid": true,
+      "project": {
+        "version": 3,
+        "name": "Advanced test",
+        "width": 512,
+        "height": 512,
+        "fps": 30,
+        "durationFrames": 120,
+        "layers": [
+          {
+            "id": "shape",
+            "name": "Morph",
+            "type": "ellipse",
+            "parentId": null,
+            "x": 240,
+            "y": 240,
+            "pivot": [
+              10,
+              20
+            ],
+            "scaleX": 140,
+            "scaleY": 70,
+            "rotation": 15,
+            "opacity": 100,
+            "skew": 20,
+            "skewAxis": 35,
+            "tracks": {
+              "x": [],
+              "y": [],
+              "scaleX": [],
+              "scaleY": [],
+              "rotation": [],
+              "opacity": [],
+              "skew": [],
+              "skewAxis": []
+            },
+            "masks": [
+              {
+                "name": "Local",
+                "mode": "add",
+                "inverted": false,
+                "opacity": 100,
+                "path": {
+                  "closed": true,
+                  "vertices": [
+                    [
+                      0,
+                      0
+                    ],
+                    [
+                      90,
+                      0
+                    ],
+                    [
+                      50,
+                      80
+                    ]
+                  ],
+                  "inTangents": [
+                    [
+                      0,
+                      0
+                    ],
+                    [
+                      0,
+                      0
+                    ],
+                    [
+                      0,
+                      0
+                    ]
+                  ],
+                  "outTangents": [
+                    [
+                      0,
+                      0
+                    ],
+                    [
+                      0,
+                      0
+                    ],
+                    [
+                      0,
+                      0
+                    ]
+                  ]
+                }
+              }
+            ],
+            "trim": null,
+            "fill": "#f07932",
+            "stroke": "#182440",
+            "strokeWidth": 3,
+            "width": 100,
+            "height": 80,
+            "cornerRadius": null
+          }
+        ]
+      }
+    },
+    {
+      "id": "v2-version",
+      "valid": false,
+      "project": {
+        "version": 2,
+        "name": "Advanced test",
+        "width": 512,
+        "height": 512,
+        "fps": 30,
+        "durationFrames": 120,
+        "layers": [
+          {
+            "id": "shape",
+            "name": "Morph",
+            "type": "path",
+            "parentId": null,
+            "x": 240,
+            "y": 240,
+            "pivot": [
+              10,
+              20
+            ],
+            "scaleX": 140,
+            "scaleY": 70,
+            "rotation": 15,
+            "opacity": 100,
+            "skew": 20,
+            "skewAxis": 35,
+            "tracks": {
+              "x": [],
+              "y": [],
+              "scaleX": [],
+              "scaleY": [],
+              "rotation": [],
+              "opacity": [],
+              "skew": [],
+              "skewAxis": []
+            },
+            "masks": [
+              {
+                "name": "Local",
+                "mode": "add",
+                "inverted": false,
+                "opacity": 100,
+                "path": {
+                  "closed": true,
+                  "vertices": [
+                    [
+                      0,
+                      0
+                    ],
+                    [
+                      90,
+                      0
+                    ],
+                    [
+                      50,
+                      80
+                    ]
+                  ],
+                  "inTangents": [
+                    [
+                      0,
+                      0
+                    ],
+                    [
+                      0,
+                      0
+                    ],
+                    [
+                      0,
+                      0
+                    ]
+                  ],
+                  "outTangents": [
+                    [
+                      0,
+                      0
+                    ],
+                    [
+                      0,
+                      0
+                    ],
+                    [
+                      0,
+                      0
+                    ]
+                  ]
+                }
+              }
+            ],
+            "trim": {
+              "start": 0,
+              "end": 100,
+              "offset": 0,
+              "tracks": {
+                "start": [],
+                "end": [],
+                "offset": []
+              }
+            },
+            "path": {
+              "closed": true,
+              "vertices": [
+                [
+                  0,
+                  0
+                ],
+                [
+                  90,
+                  0
+                ],
+                [
+                  50,
+                  80
+                ]
+              ],
+              "inTangents": [
+                [
+                  0,
+                  0
+                ],
+                [
+                  0,
+                  0
+                ],
+                [
+                  0,
+                  0
+                ]
+              ],
+              "outTangents": [
+                [
+                  0,
+                  0
+                ],
+                [
+                  0,
+                  0
+                ],
+                [
+                  0,
+                  0
+                ]
+              ]
+            },
+            "fill": "#f07932",
+            "stroke": "#182440",
+            "strokeWidth": 3,
+            "pathKeys": []
+          }
+        ]
+      }
+    },
+    {
+      "id": "unknown-project-field",
+      "valid": false,
+      "project": {
+        "version": 3,
+        "name": "Advanced test",
+        "width": 512,
+        "height": 512,
+        "fps": 30,
+        "durationFrames": 120,
+        "layers": [
+          {
+            "id": "shape",
+            "name": "Morph",
+            "type": "path",
+            "parentId": null,
+            "x": 240,
+            "y": 240,
+            "pivot": [
+              10,
+              20
+            ],
+            "scaleX": 140,
+            "scaleY": 70,
+            "rotation": 15,
+            "opacity": 100,
+            "skew": 20,
+            "skewAxis": 35,
+            "tracks": {
+              "x": [],
+              "y": [],
+              "scaleX": [],
+              "scaleY": [],
+              "rotation": [],
+              "opacity": [],
+              "skew": [],
+              "skewAxis": []
+            },
+            "masks": [
+              {
+                "name": "Local",
+                "mode": "add",
+                "inverted": false,
+                "opacity": 100,
+                "path": {
+                  "closed": true,
+                  "vertices": [
+                    [
+                      0,
+                      0
+                    ],
+                    [
+                      90,
+                      0
+                    ],
+                    [
+                      50,
+                      80
+                    ]
+                  ],
+                  "inTangents": [
+                    [
+                      0,
+                      0
+                    ],
+                    [
+                      0,
+                      0
+                    ],
+                    [
+                      0,
+                      0
+                    ]
+                  ],
+                  "outTangents": [
+                    [
+                      0,
+                      0
+                    ],
+                    [
+                      0,
+                      0
+                    ],
+                    [
+                      0,
+                      0
+                    ]
+                  ]
+                }
+              }
+            ],
+            "trim": {
+              "start": 0,
+              "end": 100,
+              "offset": 0,
+              "tracks": {
+                "start": [],
+                "end": [],
+                "offset": []
+              }
+            },
+            "path": {
+              "closed": true,
+              "vertices": [
+                [
+                  0,
+                  0
+                ],
+                [
+                  90,
+                  0
+                ],
+                [
+                  50,
+                  80
+                ]
+              ],
+              "inTangents": [
+                [
+                  0,
+                  0
+                ],
+                [
+                  0,
+                  0
+                ],
+                [
+                  0,
+                  0
+                ]
+              ],
+              "outTangents": [
+                [
+                  0,
+                  0
+                ],
+                [
+                  0,
+                  0
+                ],
+                [
+                  0,
+                  0
+                ]
+              ]
+            },
+            "fill": "#f07932",
+            "stroke": "#182440",
+            "strokeWidth": 3,
+            "pathKeys": []
+          }
+        ],
+        "assets": []
+      }
+    },
+    {
+      "id": "unknown-layer-field",
+      "valid": false,
+      "project": {
+        "version": 3,
+        "name": "Advanced test",
+        "width": 512,
+        "height": 512,
+        "fps": 30,
+        "durationFrames": 120,
+        "layers": [
+          {
+            "id": "shape",
+            "name": "Morph",
+            "type": "path",
+            "parentId": null,
+            "x": 240,
+            "y": 240,
+            "pivot": [
+              10,
+              20
+            ],
+            "scaleX": 140,
+            "scaleY": 70,
+            "rotation": 15,
+            "opacity": 100,
+            "skew": 20,
+            "skewAxis": 35,
+            "tracks": {
+              "x": [],
+              "y": [],
+              "scaleX": [],
+              "scaleY": [],
+              "rotation": [],
+              "opacity": [],
+              "skew": [],
+              "skewAxis": []
+            },
+            "masks": [
+              {
+                "name": "Local",
+                "mode": "add",
+                "inverted": false,
+                "opacity": 100,
+                "path": {
+                  "closed": true,
+                  "vertices": [
+                    [
+                      0,
+                      0
+                    ],
+                    [
+                      90,
+                      0
+                    ],
+                    [
+                      50,
+                      80
+                    ]
+                  ],
+                  "inTangents": [
+                    [
+                      0,
+                      0
+                    ],
+                    [
+                      0,
+                      0
+                    ],
+                    [
+                      0,
+                      0
+                    ]
+                  ],
+                  "outTangents": [
+                    [
+                      0,
+                      0
+                    ],
+                    [
+                      0,
+                      0
+                    ],
+                    [
+                      0,
+                      0
+                    ]
+                  ]
+                }
+              }
+            ],
+            "trim": {
+              "start": 0,
+              "end": 100,
+              "offset": 0,
+              "tracks": {
+                "start": [],
+                "end": [],
+                "offset": []
+              }
+            },
+            "path": {
+              "closed": true,
+              "vertices": [
+                [
+                  0,
+                  0
+                ],
+                [
+                  90,
+                  0
+                ],
+                [
+                  50,
+                  80
+                ]
+              ],
+              "inTangents": [
+                [
+                  0,
+                  0
+                ],
+                [
+                  0,
+                  0
+                ],
+                [
+                  0,
+                  0
+                ]
+              ],
+              "outTangents": [
+                [
+                  0,
+                  0
+                ],
+                [
+                  0,
+                  0
+                ],
+                [
+                  0,
+                  0
+                ]
+              ]
+            },
+            "fill": "#f07932",
+            "stroke": "#182440",
+            "strokeWidth": 3,
+            "pathKeys": [],
+            "expression": "x"
+          }
+        ]
+      }
+    },
+    {
+      "id": "legacy-scale",
+      "valid": false,
+      "project": {
+        "version": 3,
+        "name": "Advanced test",
+        "width": 512,
+        "height": 512,
+        "fps": 30,
+        "durationFrames": 120,
+        "layers": [
+          {
+            "id": "shape",
+            "name": "Morph",
+            "type": "path",
+            "parentId": null,
+            "x": 240,
+            "y": 240,
+            "pivot": [
+              10,
+              20
+            ],
+            "scaleX": 140,
+            "scaleY": 70,
+            "rotation": 15,
+            "opacity": 100,
+            "skew": 20,
+            "skewAxis": 35,
+            "tracks": {
+              "x": [],
+              "y": [],
+              "scaleX": [],
+              "scaleY": [],
+              "rotation": [],
+              "opacity": [],
+              "skew": [],
+              "skewAxis": []
+            },
+            "masks": [
+              {
+                "name": "Local",
+                "mode": "add",
+                "inverted": false,
+                "opacity": 100,
+                "path": {
+                  "closed": true,
+                  "vertices": [
+                    [
+                      0,
+                      0
+                    ],
+                    [
+                      90,
+                      0
+                    ],
+                    [
+                      50,
+                      80
+                    ]
+                  ],
+                  "inTangents": [
+                    [
+                      0,
+                      0
+                    ],
+                    [
+                      0,
+                      0
+                    ],
+                    [
+                      0,
+                      0
+                    ]
+                  ],
+                  "outTangents": [
+                    [
+                      0,
+                      0
+                    ],
+                    [
+                      0,
+                      0
+                    ],
+                    [
+                      0,
+                      0
+                    ]
+                  ]
+                }
+              }
+            ],
+            "trim": {
+              "start": 0,
+              "end": 100,
+              "offset": 0,
+              "tracks": {
+                "start": [],
+                "end": [],
+                "offset": []
+              }
+            },
+            "path": {
+              "closed": true,
+              "vertices": [
+                [
+                  0,
+                  0
+                ],
+                [
+                  90,
+                  0
+                ],
+                [
+                  50,
+                  80
+                ]
+              ],
+              "inTangents": [
+                [
+                  0,
+                  0
+                ],
+                [
+                  0,
+                  0
+                ],
+                [
+                  0,
+                  0
+                ]
+              ],
+              "outTangents": [
+                [
+                  0,
+                  0
+                ],
+                [
+                  0,
+                  0
+                ],
+                [
+                  0,
+                  0
+                ]
+              ]
+            },
+            "fill": "#f07932",
+            "stroke": "#182440",
+            "strokeWidth": 3,
+            "pathKeys": [],
+            "scale": 100
+          }
+        ]
+      }
+    },
+    {
+      "id": "missing-independent-scale",
+      "valid": false,
+      "project": {
+        "version": 3,
+        "name": "Advanced test",
+        "width": 512,
+        "height": 512,
+        "fps": 30,
+        "durationFrames": 120,
+        "layers": [
+          {
+            "id": "shape",
+            "name": "Morph",
+            "type": "path",
+            "parentId": null,
+            "x": 240,
+            "y": 240,
+            "pivot": [
+              10,
+              20
+            ],
+            "scaleX": 140,
+            "rotation": 15,
+            "opacity": 100,
+            "skew": 20,
+            "skewAxis": 35,
+            "tracks": {
+              "x": [],
+              "y": [],
+              "scaleX": [],
+              "scaleY": [],
+              "rotation": [],
+              "opacity": [],
+              "skew": [],
+              "skewAxis": []
+            },
+            "masks": [
+              {
+                "name": "Local",
+                "mode": "add",
+                "inverted": false,
+                "opacity": 100,
+                "path": {
+                  "closed": true,
+                  "vertices": [
+                    [
+                      0,
+                      0
+                    ],
+                    [
+                      90,
+                      0
+                    ],
+                    [
+                      50,
+                      80
+                    ]
+                  ],
+                  "inTangents": [
+                    [
+                      0,
+                      0
+                    ],
+                    [
+                      0,
+                      0
+                    ],
+                    [
+                      0,
+                      0
+                    ]
+                  ],
+                  "outTangents": [
+                    [
+                      0,
+                      0
+                    ],
+                    [
+                      0,
+                      0
+                    ],
+                    [
+                      0,
+                      0
+                    ]
+                  ]
+                }
+              }
+            ],
+            "trim": {
+              "start": 0,
+              "end": 100,
+              "offset": 0,
+              "tracks": {
+                "start": [],
+                "end": [],
+                "offset": []
+              }
+            },
+            "path": {
+              "closed": true,
+              "vertices": [
+                [
+                  0,
+                  0
+                ],
+                [
+                  90,
+                  0
+                ],
+                [
+                  50,
+                  80
+                ]
+              ],
+              "inTangents": [
+                [
+                  0,
+                  0
+                ],
+                [
+                  0,
+                  0
+                ],
+                [
+                  0,
+                  0
+                ]
+              ],
+              "outTangents": [
+                [
+                  0,
+                  0
+                ],
+                [
+                  0,
+                  0
+                ],
+                [
+                  0,
+                  0
+                ]
+              ]
+            },
+            "fill": "#f07932",
+            "stroke": "#182440",
+            "strokeWidth": 3,
+            "pathKeys": []
+          }
+        ]
+      }
+    },
+    {
+      "id": "unbounded-easing",
+      "valid": false,
+      "project": {
+        "version": 3,
+        "name": "Advanced test",
+        "width": 512,
+        "height": 512,
+        "fps": 30,
+        "durationFrames": 120,
+        "layers": [
+          {
+            "id": "shape",
+            "name": "Morph",
+            "type": "path",
+            "parentId": null,
+            "x": 240,
+            "y": 240,
+            "pivot": [
+              10,
+              20
+            ],
+            "scaleX": 140,
+            "scaleY": 70,
+            "rotation": 15,
+            "opacity": 100,
+            "skew": 20,
+            "skewAxis": 35,
+            "tracks": {
+              "x": [
+                {
+                  "frame": 0,
+                  "value": 0,
+                  "easing": {
+                    "type": "cubic-bezier",
+                    "x1": 0.2,
+                    "y1": 0.05,
+                    "x2": 0.65,
+                    "y2": 1.01
+                  }
+                }
+              ],
+              "y": [],
+              "scaleX": [],
+              "scaleY": [],
+              "rotation": [],
+              "opacity": [],
+              "skew": [],
+              "skewAxis": []
+            },
+            "masks": [
+              {
+                "name": "Local",
+                "mode": "add",
+                "inverted": false,
+                "opacity": 100,
+                "path": {
+                  "closed": true,
+                  "vertices": [
+                    [
+                      0,
+                      0
+                    ],
+                    [
+                      90,
+                      0
+                    ],
+                    [
+                      50,
+                      80
+                    ]
+                  ],
+                  "inTangents": [
+                    [
+                      0,
+                      0
+                    ],
+                    [
+                      0,
+                      0
+                    ],
+                    [
+                      0,
+                      0
+                    ]
+                  ],
+                  "outTangents": [
+                    [
+                      0,
+                      0
+                    ],
+                    [
+                      0,
+                      0
+                    ],
+                    [
+                      0,
+                      0
+                    ]
+                  ]
+                }
+              }
+            ],
+            "trim": {
+              "start": 0,
+              "end": 100,
+              "offset": 0,
+              "tracks": {
+                "start": [],
+                "end": [],
+                "offset": []
+              }
+            },
+            "path": {
+              "closed": true,
+              "vertices": [
+                [
+                  0,
+                  0
+                ],
+                [
+                  90,
+                  0
+                ],
+                [
+                  50,
+                  80
+                ]
+              ],
+              "inTangents": [
+                [
+                  0,
+                  0
+                ],
+                [
+                  0,
+                  0
+                ],
+                [
+                  0,
+                  0
+                ]
+              ],
+              "outTangents": [
+                [
+                  0,
+                  0
+                ],
+                [
+                  0,
+                  0
+                ],
+                [
+                  0,
+                  0
+                ]
+              ]
+            },
+            "fill": "#f07932",
+            "stroke": "#182440",
+            "strokeWidth": 3,
+            "pathKeys": []
+          }
+        ]
+      }
+    },
+    {
+      "id": "easing-extra",
+      "valid": false,
+      "project": {
+        "version": 3,
+        "name": "Advanced test",
+        "width": 512,
+        "height": 512,
+        "fps": 30,
+        "durationFrames": 120,
+        "layers": [
+          {
+            "id": "shape",
+            "name": "Morph",
+            "type": "path",
+            "parentId": null,
+            "x": 240,
+            "y": 240,
+            "pivot": [
+              10,
+              20
+            ],
+            "scaleX": 140,
+            "scaleY": 70,
+            "rotation": 15,
+            "opacity": 100,
+            "skew": 20,
+            "skewAxis": 35,
+            "tracks": {
+              "x": [
+                {
+                  "frame": 0,
+                  "value": 0,
+                  "easing": {
+                    "type": "cubic-bezier",
+                    "x1": 0.2,
+                    "y1": 0.05,
+                    "x2": 0.65,
+                    "y2": 0.95,
+                    "code": "x"
+                  }
+                }
+              ],
+              "y": [],
+              "scaleX": [],
+              "scaleY": [],
+              "rotation": [],
+              "opacity": [],
+              "skew": [],
+              "skewAxis": []
+            },
+            "masks": [
+              {
+                "name": "Local",
+                "mode": "add",
+                "inverted": false,
+                "opacity": 100,
+                "path": {
+                  "closed": true,
+                  "vertices": [
+                    [
+                      0,
+                      0
+                    ],
+                    [
+                      90,
+                      0
+                    ],
+                    [
+                      50,
+                      80
+                    ]
+                  ],
+                  "inTangents": [
+                    [
+                      0,
+                      0
+                    ],
+                    [
+                      0,
+                      0
+                    ],
+                    [
+                      0,
+                      0
+                    ]
+                  ],
+                  "outTangents": [
+                    [
+                      0,
+                      0
+                    ],
+                    [
+                      0,
+                      0
+                    ],
+                    [
+                      0,
+                      0
+                    ]
+                  ]
+                }
+              }
+            ],
+            "trim": {
+              "start": 0,
+              "end": 100,
+              "offset": 0,
+              "tracks": {
+                "start": [],
+                "end": [],
+                "offset": []
+              }
+            },
+            "path": {
+              "closed": true,
+              "vertices": [
+                [
+                  0,
+                  0
+                ],
+                [
+                  90,
+                  0
+                ],
+                [
+                  50,
+                  80
+                ]
+              ],
+              "inTangents": [
+                [
+                  0,
+                  0
+                ],
+                [
+                  0,
+                  0
+                ],
+                [
+                  0,
+                  0
+                ]
+              ],
+              "outTangents": [
+                [
+                  0,
+                  0
+                ],
+                [
+                  0,
+                  0
+                ],
+                [
+                  0,
+                  0
+                ]
+              ]
+            },
+            "fill": "#f07932",
+            "stroke": "#182440",
+            "strokeWidth": 3,
+            "pathKeys": []
+          }
+        ]
+      }
+    },
+    {
+      "id": "easing-unknown",
+      "valid": false,
+      "project": {
+        "version": 3,
+        "name": "Advanced test",
+        "width": 512,
+        "height": 512,
+        "fps": 30,
+        "durationFrames": 120,
+        "layers": [
+          {
+            "id": "shape",
+            "name": "Morph",
+            "type": "path",
+            "parentId": null,
+            "x": 240,
+            "y": 240,
+            "pivot": [
+              10,
+              20
+            ],
+            "scaleX": 140,
+            "scaleY": 70,
+            "rotation": 15,
+            "opacity": 100,
+            "skew": 20,
+            "skewAxis": 35,
+            "tracks": {
+              "x": [
+                {
+                  "frame": 0,
+                  "value": 0,
+                  "easing": "spring"
+                }
+              ],
+              "y": [],
+              "scaleX": [],
+              "scaleY": [],
+              "rotation": [],
+              "opacity": [],
+              "skew": [],
+              "skewAxis": []
+            },
+            "masks": [
+              {
+                "name": "Local",
+                "mode": "add",
+                "inverted": false,
+                "opacity": 100,
+                "path": {
+                  "closed": true,
+                  "vertices": [
+                    [
+                      0,
+                      0
+                    ],
+                    [
+                      90,
+                      0
+                    ],
+                    [
+                      50,
+                      80
+                    ]
+                  ],
+                  "inTangents": [
+                    [
+                      0,
+                      0
+                    ],
+                    [
+                      0,
+                      0
+                    ],
+                    [
+                      0,
+                      0
+                    ]
+                  ],
+                  "outTangents": [
+                    [
+                      0,
+                      0
+                    ],
+                    [
+                      0,
+                      0
+                    ],
+                    [
+                      0,
+                      0
+                    ]
+                  ]
+                }
+              }
+            ],
+            "trim": {
+              "start": 0,
+              "end": 100,
+              "offset": 0,
+              "tracks": {
+                "start": [],
+                "end": [],
+                "offset": []
+              }
+            },
+            "path": {
+              "closed": true,
+              "vertices": [
+                [
+                  0,
+                  0
+                ],
+                [
+                  90,
+                  0
+                ],
+                [
+                  50,
+                  80
+                ]
+              ],
+              "inTangents": [
+                [
+                  0,
+                  0
+                ],
+                [
+                  0,
+                  0
+                ],
+                [
+                  0,
+                  0
+                ]
+              ],
+              "outTangents": [
+                [
+                  0,
+                  0
+                ],
+                [
+                  0,
+                  0
+                ],
+                [
+                  0,
+                  0
+                ]
+              ]
+            },
+            "fill": "#f07932",
+            "stroke": "#182440",
+            "strokeWidth": 3,
+            "pathKeys": []
+          }
+        ]
+      }
+    },
+    {
+      "id": "key-order",
+      "valid": false,
+      "project": {
+        "version": 3,
+        "name": "Advanced test",
+        "width": 512,
+        "height": 512,
+        "fps": 30,
+        "durationFrames": 120,
+        "layers": [
+          {
+            "id": "shape",
+            "name": "Morph",
+            "type": "path",
+            "parentId": null,
+            "x": 240,
+            "y": 240,
+            "pivot": [
+              10,
+              20
+            ],
+            "scaleX": 140,
+            "scaleY": 70,
+            "rotation": 15,
+            "opacity": 100,
+            "skew": 20,
+            "skewAxis": 35,
+            "tracks": {
+              "x": [
+                {
+                  "frame": 2,
+                  "value": 0,
+                  "easing": "linear"
+                },
+                {
+                  "frame": 1,
+                  "value": 1,
+                  "easing": "linear"
+                }
+              ],
+              "y": [],
+              "scaleX": [],
+              "scaleY": [],
+              "rotation": [],
+              "opacity": [],
+              "skew": [],
+              "skewAxis": []
+            },
+            "masks": [
+              {
+                "name": "Local",
+                "mode": "add",
+                "inverted": false,
+                "opacity": 100,
+                "path": {
+                  "closed": true,
+                  "vertices": [
+                    [
+                      0,
+                      0
+                    ],
+                    [
+                      90,
+                      0
+                    ],
+                    [
+                      50,
+                      80
+                    ]
+                  ],
+                  "inTangents": [
+                    [
+                      0,
+                      0
+                    ],
+                    [
+                      0,
+                      0
+                    ],
+                    [
+                      0,
+                      0
+                    ]
+                  ],
+                  "outTangents": [
+                    [
+                      0,
+                      0
+                    ],
+                    [
+                      0,
+                      0
+                    ],
+                    [
+                      0,
+                      0
+                    ]
+                  ]
+                }
+              }
+            ],
+            "trim": {
+              "start": 0,
+              "end": 100,
+              "offset": 0,
+              "tracks": {
+                "start": [],
+                "end": [],
+                "offset": []
+              }
+            },
+            "path": {
+              "closed": true,
+              "vertices": [
+                [
+                  0,
+                  0
+                ],
+                [
+                  90,
+                  0
+                ],
+                [
+                  50,
+                  80
+                ]
+              ],
+              "inTangents": [
+                [
+                  0,
+                  0
+                ],
+                [
+                  0,
+                  0
+                ],
+                [
+                  0,
+                  0
+                ]
+              ],
+              "outTangents": [
+                [
+                  0,
+                  0
+                ],
+                [
+                  0,
+                  0
+                ],
+                [
+                  0,
+                  0
+                ]
+              ]
+            },
+            "fill": "#f07932",
+            "stroke": "#182440",
+            "strokeWidth": 3,
+            "pathKeys": []
+          }
+        ]
+      }
+    },
+    {
+      "id": "frame-at-duration",
+      "valid": false,
+      "project": {
+        "version": 3,
+        "name": "Advanced test",
+        "width": 512,
+        "height": 512,
+        "fps": 30,
+        "durationFrames": 120,
+        "layers": [
+          {
+            "id": "shape",
+            "name": "Morph",
+            "type": "path",
+            "parentId": null,
+            "x": 240,
+            "y": 240,
+            "pivot": [
+              10,
+              20
+            ],
+            "scaleX": 140,
+            "scaleY": 70,
+            "rotation": 15,
+            "opacity": 100,
+            "skew": 20,
+            "skewAxis": 35,
+            "tracks": {
+              "x": [],
+              "y": [],
+              "scaleX": [],
+              "scaleY": [],
+              "rotation": [],
+              "opacity": [],
+              "skew": [
+                {
+                  "frame": 120,
+                  "value": 0,
+                  "easing": "linear"
+                }
+              ],
+              "skewAxis": []
+            },
+            "masks": [
+              {
+                "name": "Local",
+                "mode": "add",
+                "inverted": false,
+                "opacity": 100,
+                "path": {
+                  "closed": true,
+                  "vertices": [
+                    [
+                      0,
+                      0
+                    ],
+                    [
+                      90,
+                      0
+                    ],
+                    [
+                      50,
+                      80
+                    ]
+                  ],
+                  "inTangents": [
+                    [
+                      0,
+                      0
+                    ],
+                    [
+                      0,
+                      0
+                    ],
+                    [
+                      0,
+                      0
+                    ]
+                  ],
+                  "outTangents": [
+                    [
+                      0,
+                      0
+                    ],
+                    [
+                      0,
+                      0
+                    ],
+                    [
+                      0,
+                      0
+                    ]
+                  ]
+                }
+              }
+            ],
+            "trim": {
+              "start": 0,
+              "end": 100,
+              "offset": 0,
+              "tracks": {
+                "start": [],
+                "end": [],
+                "offset": []
+              }
+            },
+            "path": {
+              "closed": true,
+              "vertices": [
+                [
+                  0,
+                  0
+                ],
+                [
+                  90,
+                  0
+                ],
+                [
+                  50,
+                  80
+                ]
+              ],
+              "inTangents": [
+                [
+                  0,
+                  0
+                ],
+                [
+                  0,
+                  0
+                ],
+                [
+                  0,
+                  0
+                ]
+              ],
+              "outTangents": [
+                [
+                  0,
+                  0
+                ],
+                [
+                  0,
+                  0
+                ],
+                [
+                  0,
+                  0
+                ]
+              ]
+            },
+            "fill": "#f07932",
+            "stroke": "#182440",
+            "strokeWidth": 3,
+            "pathKeys": []
+          }
+        ]
+      }
+    },
+    {
+      "id": "topology-count",
+      "valid": false,
+      "project": {
+        "version": 3,
+        "name": "Advanced test",
+        "width": 512,
+        "height": 512,
+        "fps": 30,
+        "durationFrames": 120,
+        "layers": [
+          {
+            "id": "shape",
+            "name": "Morph",
+            "type": "path",
+            "parentId": null,
+            "x": 240,
+            "y": 240,
+            "pivot": [
+              10,
+              20
+            ],
+            "scaleX": 140,
+            "scaleY": 70,
+            "rotation": 15,
+            "opacity": 100,
+            "skew": 20,
+            "skewAxis": 35,
+            "tracks": {
+              "x": [],
+              "y": [],
+              "scaleX": [],
+              "scaleY": [],
+              "rotation": [],
+              "opacity": [],
+              "skew": [],
+              "skewAxis": []
+            },
+            "masks": [
+              {
+                "name": "Local",
+                "mode": "add",
+                "inverted": false,
+                "opacity": 100,
+                "path": {
+                  "closed": true,
+                  "vertices": [
+                    [
+                      0,
+                      0
+                    ],
+                    [
+                      90,
+                      0
+                    ],
+                    [
+                      50,
+                      80
+                    ]
+                  ],
+                  "inTangents": [
+                    [
+                      0,
+                      0
+                    ],
+                    [
+                      0,
+                      0
+                    ],
+                    [
+                      0,
+                      0
+                    ]
+                  ],
+                  "outTangents": [
+                    [
+                      0,
+                      0
+                    ],
+                    [
+                      0,
+                      0
+                    ],
+                    [
+                      0,
+                      0
+                    ]
+                  ]
+                }
+              }
+            ],
+            "trim": {
+              "start": 0,
+              "end": 100,
+              "offset": 0,
+              "tracks": {
+                "start": [],
+                "end": [],
+                "offset": []
+              }
+            },
+            "path": {
+              "closed": true,
+              "vertices": [
+                [
+                  0,
+                  0
+                ],
+                [
+                  90,
+                  0
+                ],
+                [
+                  50,
+                  80
+                ]
+              ],
+              "inTangents": [
+                [
+                  0,
+                  0
+                ],
+                [
+                  0,
+                  0
+                ],
+                [
+                  0,
+                  0
+                ]
+              ],
+              "outTangents": [
+                [
+                  0,
+                  0
+                ],
+                [
+                  0,
+                  0
+                ],
+                [
+                  0,
+                  0
+                ]
+              ]
+            },
+            "fill": "#f07932",
+            "stroke": "#182440",
+            "strokeWidth": 3,
+            "pathKeys": [
+              {
+                "frame": 0,
+                "value": {
+                  "closed": true,
+                  "vertices": [
+                    [
+                      0,
+                      0
+                    ],
+                    [
+                      10,
+                      0
+                    ],
+                    [
+                      0,
+                      10
+                    ],
+                    [
+                      5,
+                      5
+                    ]
+                  ],
+                  "inTangents": [
+                    [
+                      0,
+                      0
+                    ],
+                    [
+                      0,
+                      0
+                    ],
+                    [
+                      0,
+                      0
+                    ]
+                  ],
+                  "outTangents": [
+                    [
+                      0,
+                      0
+                    ],
+                    [
+                      0,
+                      0
+                    ],
+                    [
+                      0,
+                      0
+                    ]
+                  ]
+                },
+                "easing": "linear"
+              }
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "id": "topology-closure",
+      "valid": false,
+      "project": {
+        "version": 3,
+        "name": "Advanced test",
+        "width": 512,
+        "height": 512,
+        "fps": 30,
+        "durationFrames": 120,
+        "layers": [
+          {
+            "id": "shape",
+            "name": "Morph",
+            "type": "path",
+            "parentId": null,
+            "x": 240,
+            "y": 240,
+            "pivot": [
+              10,
+              20
+            ],
+            "scaleX": 140,
+            "scaleY": 70,
+            "rotation": 15,
+            "opacity": 100,
+            "skew": 20,
+            "skewAxis": 35,
+            "tracks": {
+              "x": [],
+              "y": [],
+              "scaleX": [],
+              "scaleY": [],
+              "rotation": [],
+              "opacity": [],
+              "skew": [],
+              "skewAxis": []
+            },
+            "masks": [
+              {
+                "name": "Local",
+                "mode": "add",
+                "inverted": false,
+                "opacity": 100,
+                "path": {
+                  "closed": true,
+                  "vertices": [
+                    [
+                      0,
+                      0
+                    ],
+                    [
+                      90,
+                      0
+                    ],
+                    [
+                      50,
+                      80
+                    ]
+                  ],
+                  "inTangents": [
+                    [
+                      0,
+                      0
+                    ],
+                    [
+                      0,
+                      0
+                    ],
+                    [
+                      0,
+                      0
+                    ]
+                  ],
+                  "outTangents": [
+                    [
+                      0,
+                      0
+                    ],
+                    [
+                      0,
+                      0
+                    ],
+                    [
+                      0,
+                      0
+                    ]
+                  ]
+                }
+              }
+            ],
+            "trim": {
+              "start": 0,
+              "end": 100,
+              "offset": 0,
+              "tracks": {
+                "start": [],
+                "end": [],
+                "offset": []
+              }
+            },
+            "path": {
+              "closed": true,
+              "vertices": [
+                [
+                  0,
+                  0
+                ],
+                [
+                  90,
+                  0
+                ],
+                [
+                  50,
+                  80
+                ]
+              ],
+              "inTangents": [
+                [
+                  0,
+                  0
+                ],
+                [
+                  0,
+                  0
+                ],
+                [
+                  0,
+                  0
+                ]
+              ],
+              "outTangents": [
+                [
+                  0,
+                  0
+                ],
+                [
+                  0,
+                  0
+                ],
+                [
+                  0,
+                  0
+                ]
+              ]
+            },
+            "fill": "#f07932",
+            "stroke": "#182440",
+            "strokeWidth": 3,
+            "pathKeys": [
+              {
+                "frame": 0,
+                "value": {
+                  "closed": false,
+                  "vertices": [
+                    [
+                      0,
+                      0
+                    ],
+                    [
+                      90,
+                      0
+                    ],
+                    [
+                      50,
+                      80
+                    ]
+                  ],
+                  "inTangents": [
+                    [
+                      0,
+                      0
+                    ],
+                    [
+                      0,
+                      0
+                    ],
+                    [
+                      0,
+                      0
+                    ]
+                  ],
+                  "outTangents": [
+                    [
+                      0,
+                      0
+                    ],
+                    [
+                      0,
+                      0
+                    ],
+                    [
+                      0,
+                      0
+                    ]
+                  ]
+                },
+                "easing": "linear"
+              }
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "id": "morph-open-endpoint",
+      "valid": false,
+      "project": {
+        "version": 3,
+        "name": "Advanced test",
+        "width": 512,
+        "height": 512,
+        "fps": 30,
+        "durationFrames": 120,
+        "layers": [
+          {
+            "id": "shape",
+            "name": "Morph",
+            "type": "path",
+            "parentId": null,
+            "x": 240,
+            "y": 240,
+            "pivot": [
+              10,
+              20
+            ],
+            "scaleX": 140,
+            "scaleY": 70,
+            "rotation": 15,
+            "opacity": 100,
+            "skew": 20,
+            "skewAxis": 35,
+            "tracks": {
+              "x": [],
+              "y": [],
+              "scaleX": [],
+              "scaleY": [],
+              "rotation": [],
+              "opacity": [],
+              "skew": [],
+              "skewAxis": []
+            },
+            "masks": [
+              {
+                "name": "Local",
+                "mode": "add",
+                "inverted": false,
+                "opacity": 100,
+                "path": {
+                  "closed": true,
+                  "vertices": [
+                    [
+                      0,
+                      0
+                    ],
+                    [
+                      90,
+                      0
+                    ],
+                    [
+                      50,
+                      80
+                    ]
+                  ],
+                  "inTangents": [
+                    [
+                      0,
+                      0
+                    ],
+                    [
+                      0,
+                      0
+                    ],
+                    [
+                      0,
+                      0
+                    ]
+                  ],
+                  "outTangents": [
+                    [
+                      0,
+                      0
+                    ],
+                    [
+                      0,
+                      0
+                    ],
+                    [
+                      0,
+                      0
+                    ]
+                  ]
+                }
+              }
+            ],
+            "trim": {
+              "start": 0,
+              "end": 100,
+              "offset": 0,
+              "tracks": {
+                "start": [],
+                "end": [],
+                "offset": []
+              }
+            },
+            "path": {
+              "closed": false,
+              "vertices": [
+                [
+                  0,
+                  0
+                ],
+                [
+                  90,
+                  0
+                ],
+                [
+                  50,
+                  80
+                ]
+              ],
+              "inTangents": [
+                [
+                  0,
+                  0
+                ],
+                [
+                  0,
+                  0
+                ],
+                [
+                  0,
+                  0
+                ]
+              ],
+              "outTangents": [
+                [
+                  0,
+                  0
+                ],
+                [
+                  0,
+                  0
+                ],
+                [
+                  0,
+                  0
+                ]
+              ]
+            },
+            "fill": null,
+            "stroke": "#182440",
+            "strokeWidth": 3,
+            "pathKeys": [
+              {
+                "frame": 10,
+                "value": {
+                  "closed": false,
+                  "vertices": [
+                    [
+                      0,
+                      0
+                    ],
+                    [
+                      90,
+                      0
+                    ],
+                    [
+                      50,
+                      80
+                    ]
+                  ],
+                  "inTangents": [
+                    [
+                      0,
+                      0
+                    ],
+                    [
+                      0,
+                      0
+                    ],
+                    [
+                      0,
+                      0
+                    ]
+                  ],
+                  "outTangents": [
+                    [
+                      0,
+                      0
+                    ],
+                    [
+                      0,
+                      0
+                    ],
+                    [
+                      1,
+                      0
+                    ]
+                  ]
+                },
+                "easing": "linear"
+              }
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "id": "mask-unknown",
+      "valid": false,
+      "project": {
+        "version": 3,
+        "name": "Advanced test",
+        "width": 512,
+        "height": 512,
+        "fps": 30,
+        "durationFrames": 120,
+        "layers": [
+          {
+            "id": "shape",
+            "name": "Morph",
+            "type": "path",
+            "parentId": null,
+            "x": 240,
+            "y": 240,
+            "pivot": [
+              10,
+              20
+            ],
+            "scaleX": 140,
+            "scaleY": 70,
+            "rotation": 15,
+            "opacity": 100,
+            "skew": 20,
+            "skewAxis": 35,
+            "tracks": {
+              "x": [],
+              "y": [],
+              "scaleX": [],
+              "scaleY": [],
+              "rotation": [],
+              "opacity": [],
+              "skew": [],
+              "skewAxis": []
+            },
+            "masks": [
+              {
+                "name": "Local",
+                "mode": "intersect",
+                "inverted": false,
+                "opacity": 100,
+                "path": {
+                  "closed": true,
+                  "vertices": [
+                    [
+                      0,
+                      0
+                    ],
+                    [
+                      90,
+                      0
+                    ],
+                    [
+                      50,
+                      80
+                    ]
+                  ],
+                  "inTangents": [
+                    [
+                      0,
+                      0
+                    ],
+                    [
+                      0,
+                      0
+                    ],
+                    [
+                      0,
+                      0
+                    ]
+                  ],
+                  "outTangents": [
+                    [
+                      0,
+                      0
+                    ],
+                    [
+                      0,
+                      0
+                    ],
+                    [
+                      0,
+                      0
+                    ]
+                  ]
+                }
+              }
+            ],
+            "trim": {
+              "start": 0,
+              "end": 100,
+              "offset": 0,
+              "tracks": {
+                "start": [],
+                "end": [],
+                "offset": []
+              }
+            },
+            "path": {
+              "closed": true,
+              "vertices": [
+                [
+                  0,
+                  0
+                ],
+                [
+                  90,
+                  0
+                ],
+                [
+                  50,
+                  80
+                ]
+              ],
+              "inTangents": [
+                [
+                  0,
+                  0
+                ],
+                [
+                  0,
+                  0
+                ],
+                [
+                  0,
+                  0
+                ]
+              ],
+              "outTangents": [
+                [
+                  0,
+                  0
+                ],
+                [
+                  0,
+                  0
+                ],
+                [
+                  0,
+                  0
+                ]
+              ]
+            },
+            "fill": "#f07932",
+            "stroke": "#182440",
+            "strokeWidth": 3,
+            "pathKeys": []
+          }
+        ]
+      }
+    },
+    {
+      "id": "mask-opacity",
+      "valid": false,
+      "project": {
+        "version": 3,
+        "name": "Advanced test",
+        "width": 512,
+        "height": 512,
+        "fps": 30,
+        "durationFrames": 120,
+        "layers": [
+          {
+            "id": "shape",
+            "name": "Morph",
+            "type": "path",
+            "parentId": null,
+            "x": 240,
+            "y": 240,
+            "pivot": [
+              10,
+              20
+            ],
+            "scaleX": 140,
+            "scaleY": 70,
+            "rotation": 15,
+            "opacity": 100,
+            "skew": 20,
+            "skewAxis": 35,
+            "tracks": {
+              "x": [],
+              "y": [],
+              "scaleX": [],
+              "scaleY": [],
+              "rotation": [],
+              "opacity": [],
+              "skew": [],
+              "skewAxis": []
+            },
+            "masks": [
+              {
+                "name": "Local",
+                "mode": "add",
+                "inverted": false,
+                "opacity": 101,
+                "path": {
+                  "closed": true,
+                  "vertices": [
+                    [
+                      0,
+                      0
+                    ],
+                    [
+                      90,
+                      0
+                    ],
+                    [
+                      50,
+                      80
+                    ]
+                  ],
+                  "inTangents": [
+                    [
+                      0,
+                      0
+                    ],
+                    [
+                      0,
+                      0
+                    ],
+                    [
+                      0,
+                      0
+                    ]
+                  ],
+                  "outTangents": [
+                    [
+                      0,
+                      0
+                    ],
+                    [
+                      0,
+                      0
+                    ],
+                    [
+                      0,
+                      0
+                    ]
+                  ]
+                }
+              }
+            ],
+            "trim": {
+              "start": 0,
+              "end": 100,
+              "offset": 0,
+              "tracks": {
+                "start": [],
+                "end": [],
+                "offset": []
+              }
+            },
+            "path": {
+              "closed": true,
+              "vertices": [
+                [
+                  0,
+                  0
+                ],
+                [
+                  90,
+                  0
+                ],
+                [
+                  50,
+                  80
+                ]
+              ],
+              "inTangents": [
+                [
+                  0,
+                  0
+                ],
+                [
+                  0,
+                  0
+                ],
+                [
+                  0,
+                  0
+                ]
+              ],
+              "outTangents": [
+                [
+                  0,
+                  0
+                ],
+                [
+                  0,
+                  0
+                ],
+                [
+                  0,
+                  0
+                ]
+              ]
+            },
+            "fill": "#f07932",
+            "stroke": "#182440",
+            "strokeWidth": 3,
+            "pathKeys": []
+          }
+        ]
+      }
+    },
+    {
+      "id": "mask-animated",
+      "valid": false,
+      "project": {
+        "version": 3,
+        "name": "Advanced test",
+        "width": 512,
+        "height": 512,
+        "fps": 30,
+        "durationFrames": 120,
+        "layers": [
+          {
+            "id": "shape",
+            "name": "Morph",
+            "type": "path",
+            "parentId": null,
+            "x": 240,
+            "y": 240,
+            "pivot": [
+              10,
+              20
+            ],
+            "scaleX": 140,
+            "scaleY": 70,
+            "rotation": 15,
+            "opacity": 100,
+            "skew": 20,
+            "skewAxis": 35,
+            "tracks": {
+              "x": [],
+              "y": [],
+              "scaleX": [],
+              "scaleY": [],
+              "rotation": [],
+              "opacity": [],
+              "skew": [],
+              "skewAxis": []
+            },
+            "masks": [
+              {
+                "name": "Local",
+                "mode": "add",
+                "inverted": false,
+                "opacity": 100,
+                "path": {
+                  "closed": true,
+                  "vertices": [
+                    [
+                      0,
+                      0
+                    ],
+                    [
+                      90,
+                      0
+                    ],
+                    [
+                      50,
+                      80
+                    ]
+                  ],
+                  "inTangents": [
+                    [
+                      0,
+                      0
+                    ],
+                    [
+                      0,
+                      0
+                    ],
+                    [
+                      0,
+                      0
+                    ]
+                  ],
+                  "outTangents": [
+                    [
+                      0,
+                      0
+                    ],
+                    [
+                      0,
+                      0
+                    ],
+                    [
+                      0,
+                      0
+                    ]
+                  ]
+                },
+                "keys": []
+              }
+            ],
+            "trim": {
+              "start": 0,
+              "end": 100,
+              "offset": 0,
+              "tracks": {
+                "start": [],
+                "end": [],
+                "offset": []
+              }
+            },
+            "path": {
+              "closed": true,
+              "vertices": [
+                [
+                  0,
+                  0
+                ],
+                [
+                  90,
+                  0
+                ],
+                [
+                  50,
+                  80
+                ]
+              ],
+              "inTangents": [
+                [
+                  0,
+                  0
+                ],
+                [
+                  0,
+                  0
+                ],
+                [
+                  0,
+                  0
+                ]
+              ],
+              "outTangents": [
+                [
+                  0,
+                  0
+                ],
+                [
+                  0,
+                  0
+                ],
+                [
+                  0,
+                  0
+                ]
+              ]
+            },
+            "fill": "#f07932",
+            "stroke": "#182440",
+            "strokeWidth": 3,
+            "pathKeys": []
+          }
+        ]
+      }
+    },
+    {
+      "id": "five-masks",
+      "valid": false,
+      "project": {
+        "version": 3,
+        "name": "Advanced test",
+        "width": 512,
+        "height": 512,
+        "fps": 30,
+        "durationFrames": 120,
+        "layers": [
+          {
+            "id": "shape",
+            "name": "Morph",
+            "type": "path",
+            "parentId": null,
+            "x": 240,
+            "y": 240,
+            "pivot": [
+              10,
+              20
+            ],
+            "scaleX": 140,
+            "scaleY": 70,
+            "rotation": 15,
+            "opacity": 100,
+            "skew": 20,
+            "skewAxis": 35,
+            "tracks": {
+              "x": [],
+              "y": [],
+              "scaleX": [],
+              "scaleY": [],
+              "rotation": [],
+              "opacity": [],
+              "skew": [],
+              "skewAxis": []
+            },
+            "masks": [
+              {
+                "name": "Local",
+                "mode": "add",
+                "inverted": false,
+                "opacity": 100,
+                "path": {
+                  "closed": true,
+                  "vertices": [
+                    [
+                      0,
+                      0
+                    ],
+                    [
+                      90,
+                      0
+                    ],
+                    [
+                      50,
+                      80
+                    ]
+                  ],
+                  "inTangents": [
+                    [
+                      0,
+                      0
+                    ],
+                    [
+                      0,
+                      0
+                    ],
+                    [
+                      0,
+                      0
+                    ]
+                  ],
+                  "outTangents": [
+                    [
+                      0,
+                      0
+                    ],
+                    [
+                      0,
+                      0
+                    ],
+                    [
+                      0,
+                      0
+                    ]
+                  ]
+                }
+              },
+              {
+                "name": "Local",
+                "mode": "add",
+                "inverted": false,
+                "opacity": 100,
+                "path": {
+                  "closed": true,
+                  "vertices": [
+                    [
+                      0,
+                      0
+                    ],
+                    [
+                      90,
+                      0
+                    ],
+                    [
+                      50,
+                      80
+                    ]
+                  ],
+                  "inTangents": [
+                    [
+                      0,
+                      0
+                    ],
+                    [
+                      0,
+                      0
+                    ],
+                    [
+                      0,
+                      0
+                    ]
+                  ],
+                  "outTangents": [
+                    [
+                      0,
+                      0
+                    ],
+                    [
+                      0,
+                      0
+                    ],
+                    [
+                      0,
+                      0
+                    ]
+                  ]
+                }
+              },
+              {
+                "name": "Local",
+                "mode": "add",
+                "inverted": false,
+                "opacity": 100,
+                "path": {
+                  "closed": true,
+                  "vertices": [
+                    [
+                      0,
+                      0
+                    ],
+                    [
+                      90,
+                      0
+                    ],
+                    [
+                      50,
+                      80
+                    ]
+                  ],
+                  "inTangents": [
+                    [
+                      0,
+                      0
+                    ],
+                    [
+                      0,
+                      0
+                    ],
+                    [
+                      0,
+                      0
+                    ]
+                  ],
+                  "outTangents": [
+                    [
+                      0,
+                      0
+                    ],
+                    [
+                      0,
+                      0
+                    ],
+                    [
+                      0,
+                      0
+                    ]
+                  ]
+                }
+              },
+              {
+                "name": "Local",
+                "mode": "add",
+                "inverted": false,
+                "opacity": 100,
+                "path": {
+                  "closed": true,
+                  "vertices": [
+                    [
+                      0,
+                      0
+                    ],
+                    [
+                      90,
+                      0
+                    ],
+                    [
+                      50,
+                      80
+                    ]
+                  ],
+                  "inTangents": [
+                    [
+                      0,
+                      0
+                    ],
+                    [
+                      0,
+                      0
+                    ],
+                    [
+                      0,
+                      0
+                    ]
+                  ],
+                  "outTangents": [
+                    [
+                      0,
+                      0
+                    ],
+                    [
+                      0,
+                      0
+                    ],
+                    [
+                      0,
+                      0
+                    ]
+                  ]
+                }
+              },
+              {
+                "name": "Local",
+                "mode": "add",
+                "inverted": false,
+                "opacity": 100,
+                "path": {
+                  "closed": true,
+                  "vertices": [
+                    [
+                      0,
+                      0
+                    ],
+                    [
+                      90,
+                      0
+                    ],
+                    [
+                      50,
+                      80
+                    ]
+                  ],
+                  "inTangents": [
+                    [
+                      0,
+                      0
+                    ],
+                    [
+                      0,
+                      0
+                    ],
+                    [
+                      0,
+                      0
+                    ]
+                  ],
+                  "outTangents": [
+                    [
+                      0,
+                      0
+                    ],
+                    [
+                      0,
+                      0
+                    ],
+                    [
+                      0,
+                      0
+                    ]
+                  ]
+                }
+              }
+            ],
+            "trim": {
+              "start": 0,
+              "end": 100,
+              "offset": 0,
+              "tracks": {
+                "start": [],
+                "end": [],
+                "offset": []
+              }
+            },
+            "path": {
+              "closed": true,
+              "vertices": [
+                [
+                  0,
+                  0
+                ],
+                [
+                  90,
+                  0
+                ],
+                [
+                  50,
+                  80
+                ]
+              ],
+              "inTangents": [
+                [
+                  0,
+                  0
+                ],
+                [
+                  0,
+                  0
+                ],
+                [
+                  0,
+                  0
+                ]
+              ],
+              "outTangents": [
+                [
+                  0,
+                  0
+                ],
+                [
+                  0,
+                  0
+                ],
+                [
+                  0,
+                  0
+                ]
+              ]
+            },
+            "fill": "#f07932",
+            "stroke": "#182440",
+            "strokeWidth": 3,
+            "pathKeys": []
+          }
+        ]
+      }
+    },
+    {
+      "id": "mask-control-sum",
+      "valid": false,
+      "project": {
+        "version": 3,
+        "name": "Advanced test",
+        "width": 512,
+        "height": 512,
+        "fps": 30,
+        "durationFrames": 120,
+        "layers": [
+          {
+            "id": "shape",
+            "name": "Morph",
+            "type": "path",
+            "parentId": null,
+            "x": 240,
+            "y": 240,
+            "pivot": [
+              10,
+              20
+            ],
+            "scaleX": 140,
+            "scaleY": 70,
+            "rotation": 15,
+            "opacity": 100,
+            "skew": 20,
+            "skewAxis": 35,
+            "tracks": {
+              "x": [],
+              "y": [],
+              "scaleX": [],
+              "scaleY": [],
+              "rotation": [],
+              "opacity": [],
+              "skew": [],
+              "skewAxis": []
+            },
+            "masks": [
+              {
+                "name": "Local",
+                "mode": "add",
+                "inverted": false,
+                "opacity": 100,
+                "path": {
+                  "closed": true,
+                  "vertices": [
+                    [
+                      4096,
+                      0
+                    ],
+                    [
+                      90,
+                      0
+                    ],
+                    [
+                      50,
+                      80
+                    ]
+                  ],
+                  "inTangents": [
+                    [
+                      0,
+                      0
+                    ],
+                    [
+                      0,
+                      0
+                    ],
+                    [
+                      0,
+                      0
+                    ]
+                  ],
+                  "outTangents": [
+                    [
+                      4096.1,
+                      0
+                    ],
+                    [
+                      0,
+                      0
+                    ],
+                    [
+                      0,
+                      0
+                    ]
+                  ]
+                }
+              }
+            ],
+            "trim": {
+              "start": 0,
+              "end": 100,
+              "offset": 0,
+              "tracks": {
+                "start": [],
+                "end": [],
+                "offset": []
+              }
+            },
+            "path": {
+              "closed": true,
+              "vertices": [
+                [
+                  0,
+                  0
+                ],
+                [
+                  90,
+                  0
+                ],
+                [
+                  50,
+                  80
+                ]
+              ],
+              "inTangents": [
+                [
+                  0,
+                  0
+                ],
+                [
+                  0,
+                  0
+                ],
+                [
+                  0,
+                  0
+                ]
+              ],
+              "outTangents": [
+                [
+                  0,
+                  0
+                ],
+                [
+                  0,
+                  0
+                ],
+                [
+                  0,
+                  0
+                ]
+              ]
+            },
+            "fill": "#f07932",
+            "stroke": "#182440",
+            "strokeWidth": 3,
+            "pathKeys": []
+          }
+        ]
+      }
+    },
+    {
+      "id": "trim-percent",
+      "valid": false,
+      "project": {
+        "version": 3,
+        "name": "Advanced test",
+        "width": 512,
+        "height": 512,
+        "fps": 30,
+        "durationFrames": 120,
+        "layers": [
+          {
+            "id": "shape",
+            "name": "Morph",
+            "type": "path",
+            "parentId": null,
+            "x": 240,
+            "y": 240,
+            "pivot": [
+              10,
+              20
+            ],
+            "scaleX": 140,
+            "scaleY": 70,
+            "rotation": 15,
+            "opacity": 100,
+            "skew": 20,
+            "skewAxis": 35,
+            "tracks": {
+              "x": [],
+              "y": [],
+              "scaleX": [],
+              "scaleY": [],
+              "rotation": [],
+              "opacity": [],
+              "skew": [],
+              "skewAxis": []
+            },
+            "masks": [
+              {
+                "name": "Local",
+                "mode": "add",
+                "inverted": false,
+                "opacity": 100,
+                "path": {
+                  "closed": true,
+                  "vertices": [
+                    [
+                      0,
+                      0
+                    ],
+                    [
+                      90,
+                      0
+                    ],
+                    [
+                      50,
+                      80
+                    ]
+                  ],
+                  "inTangents": [
+                    [
+                      0,
+                      0
+                    ],
+                    [
+                      0,
+                      0
+                    ],
+                    [
+                      0,
+                      0
+                    ]
+                  ],
+                  "outTangents": [
+                    [
+                      0,
+                      0
+                    ],
+                    [
+                      0,
+                      0
+                    ],
+                    [
+                      0,
+                      0
+                    ]
+                  ]
+                }
+              }
+            ],
+            "trim": {
+              "start": -1,
+              "end": 100,
+              "offset": 0,
+              "tracks": {
+                "start": [],
+                "end": [],
+                "offset": []
+              }
+            },
+            "path": {
+              "closed": true,
+              "vertices": [
+                [
+                  0,
+                  0
+                ],
+                [
+                  90,
+                  0
+                ],
+                [
+                  50,
+                  80
+                ]
+              ],
+              "inTangents": [
+                [
+                  0,
+                  0
+                ],
+                [
+                  0,
+                  0
+                ],
+                [
+                  0,
+                  0
+                ]
+              ],
+              "outTangents": [
+                [
+                  0,
+                  0
+                ],
+                [
+                  0,
+                  0
+                ],
+                [
+                  0,
+                  0
+                ]
+              ]
+            },
+            "fill": "#f07932",
+            "stroke": "#182440",
+            "strokeWidth": 3,
+            "pathKeys": []
+          }
+        ]
+      }
+    },
+    {
+      "id": "trim-key-range",
+      "valid": false,
+      "project": {
+        "version": 3,
+        "name": "Advanced test",
+        "width": 512,
+        "height": 512,
+        "fps": 30,
+        "durationFrames": 120,
+        "layers": [
+          {
+            "id": "shape",
+            "name": "Morph",
+            "type": "path",
+            "parentId": null,
+            "x": 240,
+            "y": 240,
+            "pivot": [
+              10,
+              20
+            ],
+            "scaleX": 140,
+            "scaleY": 70,
+            "rotation": 15,
+            "opacity": 100,
+            "skew": 20,
+            "skewAxis": 35,
+            "tracks": {
+              "x": [],
+              "y": [],
+              "scaleX": [],
+              "scaleY": [],
+              "rotation": [],
+              "opacity": [],
+              "skew": [],
+              "skewAxis": []
+            },
+            "masks": [
+              {
+                "name": "Local",
+                "mode": "add",
+                "inverted": false,
+                "opacity": 100,
+                "path": {
+                  "closed": true,
+                  "vertices": [
+                    [
+                      0,
+                      0
+                    ],
+                    [
+                      90,
+                      0
+                    ],
+                    [
+                      50,
+                      80
+                    ]
+                  ],
+                  "inTangents": [
+                    [
+                      0,
+                      0
+                    ],
+                    [
+                      0,
+                      0
+                    ],
+                    [
+                      0,
+                      0
+                    ]
+                  ],
+                  "outTangents": [
+                    [
+                      0,
+                      0
+                    ],
+                    [
+                      0,
+                      0
+                    ],
+                    [
+                      0,
+                      0
+                    ]
+                  ]
+                }
+              }
+            ],
+            "trim": {
+              "start": 0,
+              "end": 100,
+              "offset": 0,
+              "tracks": {
+                "start": [],
+                "end": [
+                  {
+                    "frame": 0,
+                    "value": 101,
+                    "easing": "linear"
+                  }
+                ],
+                "offset": []
+              }
+            },
+            "path": {
+              "closed": true,
+              "vertices": [
+                [
+                  0,
+                  0
+                ],
+                [
+                  90,
+                  0
+                ],
+                [
+                  50,
+                  80
+                ]
+              ],
+              "inTangents": [
+                [
+                  0,
+                  0
+                ],
+                [
+                  0,
+                  0
+                ],
+                [
+                  0,
+                  0
+                ]
+              ],
+              "outTangents": [
+                [
+                  0,
+                  0
+                ],
+                [
+                  0,
+                  0
+                ],
+                [
+                  0,
+                  0
+                ]
+              ]
+            },
+            "fill": "#f07932",
+            "stroke": "#182440",
+            "strokeWidth": 3,
+            "pathKeys": []
+          }
+        ]
+      }
+    },
+    {
+      "id": "duplicate-id",
+      "valid": false,
+      "project": {
+        "version": 3,
+        "name": "Advanced test",
+        "width": 512,
+        "height": 512,
+        "fps": 30,
+        "durationFrames": 120,
+        "layers": [
+          {
+            "id": "shape",
+            "name": "Morph",
+            "type": "path",
+            "parentId": null,
+            "x": 240,
+            "y": 240,
+            "pivot": [
+              10,
+              20
+            ],
+            "scaleX": 140,
+            "scaleY": 70,
+            "rotation": 15,
+            "opacity": 100,
+            "skew": 20,
+            "skewAxis": 35,
+            "tracks": {
+              "x": [],
+              "y": [],
+              "scaleX": [],
+              "scaleY": [],
+              "rotation": [],
+              "opacity": [],
+              "skew": [],
+              "skewAxis": []
+            },
+            "masks": [
+              {
+                "name": "Local",
+                "mode": "add",
+                "inverted": false,
+                "opacity": 100,
+                "path": {
+                  "closed": true,
+                  "vertices": [
+                    [
+                      0,
+                      0
+                    ],
+                    [
+                      90,
+                      0
+                    ],
+                    [
+                      50,
+                      80
+                    ]
+                  ],
+                  "inTangents": [
+                    [
+                      0,
+                      0
+                    ],
+                    [
+                      0,
+                      0
+                    ],
+                    [
+                      0,
+                      0
+                    ]
+                  ],
+                  "outTangents": [
+                    [
+                      0,
+                      0
+                    ],
+                    [
+                      0,
+                      0
+                    ],
+                    [
+                      0,
+                      0
+                    ]
+                  ]
+                }
+              }
+            ],
+            "trim": {
+              "start": 0,
+              "end": 100,
+              "offset": 0,
+              "tracks": {
+                "start": [],
+                "end": [],
+                "offset": []
+              }
+            },
+            "path": {
+              "closed": true,
+              "vertices": [
+                [
+                  0,
+                  0
+                ],
+                [
+                  90,
+                  0
+                ],
+                [
+                  50,
+                  80
+                ]
+              ],
+              "inTangents": [
+                [
+                  0,
+                  0
+                ],
+                [
+                  0,
+                  0
+                ],
+                [
+                  0,
+                  0
+                ]
+              ],
+              "outTangents": [
+                [
+                  0,
+                  0
+                ],
+                [
+                  0,
+                  0
+                ],
+                [
+                  0,
+                  0
+                ]
+              ]
+            },
+            "fill": "#f07932",
+            "stroke": "#182440",
+            "strokeWidth": 3,
+            "pathKeys": []
+          },
+          {
+            "id": "shape",
+            "name": "Morph",
+            "type": "path",
+            "parentId": null,
+            "x": 240,
+            "y": 240,
+            "pivot": [
+              10,
+              20
+            ],
+            "scaleX": 140,
+            "scaleY": 70,
+            "rotation": 15,
+            "opacity": 100,
+            "skew": 20,
+            "skewAxis": 35,
+            "tracks": {
+              "x": [],
+              "y": [],
+              "scaleX": [],
+              "scaleY": [],
+              "rotation": [],
+              "opacity": [],
+              "skew": [],
+              "skewAxis": []
+            },
+            "masks": [
+              {
+                "name": "Local",
+                "mode": "add",
+                "inverted": false,
+                "opacity": 100,
+                "path": {
+                  "closed": true,
+                  "vertices": [
+                    [
+                      0,
+                      0
+                    ],
+                    [
+                      90,
+                      0
+                    ],
+                    [
+                      50,
+                      80
+                    ]
+                  ],
+                  "inTangents": [
+                    [
+                      0,
+                      0
+                    ],
+                    [
+                      0,
+                      0
+                    ],
+                    [
+                      0,
+                      0
+                    ]
+                  ],
+                  "outTangents": [
+                    [
+                      0,
+                      0
+                    ],
+                    [
+                      0,
+                      0
+                    ],
+                    [
+                      0,
+                      0
+                    ]
+                  ]
+                }
+              }
+            ],
+            "trim": {
+              "start": 0,
+              "end": 100,
+              "offset": 0,
+              "tracks": {
+                "start": [],
+                "end": [],
+                "offset": []
+              }
+            },
+            "path": {
+              "closed": true,
+              "vertices": [
+                [
+                  0,
+                  0
+                ],
+                [
+                  90,
+                  0
+                ],
+                [
+                  50,
+                  80
+                ]
+              ],
+              "inTangents": [
+                [
+                  0,
+                  0
+                ],
+                [
+                  0,
+                  0
+                ],
+                [
+                  0,
+                  0
+                ]
+              ],
+              "outTangents": [
+                [
+                  0,
+                  0
+                ],
+                [
+                  0,
+                  0
+                ],
+                [
+                  0,
+                  0
+                ]
+              ]
+            },
+            "fill": "#f07932",
+            "stroke": "#182440",
+            "strokeWidth": 3,
+            "pathKeys": []
+          }
+        ]
+      }
+    },
+    {
+      "id": "parent-cycle",
+      "valid": false,
+      "project": {
+        "version": 3,
+        "name": "Advanced test",
+        "width": 512,
+        "height": 512,
+        "fps": 30,
+        "durationFrames": 120,
+        "layers": [
+          {
+            "id": "shape",
+            "name": "Morph",
+            "type": "path",
+            "parentId": "shape",
+            "x": 240,
+            "y": 240,
+            "pivot": [
+              10,
+              20
+            ],
+            "scaleX": 140,
+            "scaleY": 70,
+            "rotation": 15,
+            "opacity": 100,
+            "skew": 20,
+            "skewAxis": 35,
+            "tracks": {
+              "x": [],
+              "y": [],
+              "scaleX": [],
+              "scaleY": [],
+              "rotation": [],
+              "opacity": [],
+              "skew": [],
+              "skewAxis": []
+            },
+            "masks": [
+              {
+                "name": "Local",
+                "mode": "add",
+                "inverted": false,
+                "opacity": 100,
+                "path": {
+                  "closed": true,
+                  "vertices": [
+                    [
+                      0,
+                      0
+                    ],
+                    [
+                      90,
+                      0
+                    ],
+                    [
+                      50,
+                      80
+                    ]
+                  ],
+                  "inTangents": [
+                    [
+                      0,
+                      0
+                    ],
+                    [
+                      0,
+                      0
+                    ],
+                    [
+                      0,
+                      0
+                    ]
+                  ],
+                  "outTangents": [
+                    [
+                      0,
+                      0
+                    ],
+                    [
+                      0,
+                      0
+                    ],
+                    [
+                      0,
+                      0
+                    ]
+                  ]
+                }
+              }
+            ],
+            "trim": {
+              "start": 0,
+              "end": 100,
+              "offset": 0,
+              "tracks": {
+                "start": [],
+                "end": [],
+                "offset": []
+              }
+            },
+            "path": {
+              "closed": true,
+              "vertices": [
+                [
+                  0,
+                  0
+                ],
+                [
+                  90,
+                  0
+                ],
+                [
+                  50,
+                  80
+                ]
+              ],
+              "inTangents": [
+                [
+                  0,
+                  0
+                ],
+                [
+                  0,
+                  0
+                ],
+                [
+                  0,
+                  0
+                ]
+              ],
+              "outTangents": [
+                [
+                  0,
+                  0
+                ],
+                [
+                  0,
+                  0
+                ],
+                [
+                  0,
+                  0
+                ]
+              ]
+            },
+            "fill": "#f07932",
+            "stroke": "#182440",
+            "strokeWidth": 3,
+            "pathKeys": []
+          }
+        ]
+      }
+    },
+    {
+      "id": "missing-parent",
+      "valid": false,
+      "project": {
+        "version": 3,
+        "name": "Advanced test",
+        "width": 512,
+        "height": 512,
+        "fps": 30,
+        "durationFrames": 120,
+        "layers": [
+          {
+            "id": "shape",
+            "name": "Morph",
+            "type": "path",
+            "parentId": "absent",
+            "x": 240,
+            "y": 240,
+            "pivot": [
+              10,
+              20
+            ],
+            "scaleX": 140,
+            "scaleY": 70,
+            "rotation": 15,
+            "opacity": 100,
+            "skew": 20,
+            "skewAxis": 35,
+            "tracks": {
+              "x": [],
+              "y": [],
+              "scaleX": [],
+              "scaleY": [],
+              "rotation": [],
+              "opacity": [],
+              "skew": [],
+              "skewAxis": []
+            },
+            "masks": [
+              {
+                "name": "Local",
+                "mode": "add",
+                "inverted": false,
+                "opacity": 100,
+                "path": {
+                  "closed": true,
+                  "vertices": [
+                    [
+                      0,
+                      0
+                    ],
+                    [
+                      90,
+                      0
+                    ],
+                    [
+                      50,
+                      80
+                    ]
+                  ],
+                  "inTangents": [
+                    [
+                      0,
+                      0
+                    ],
+                    [
+                      0,
+                      0
+                    ],
+                    [
+                      0,
+                      0
+                    ]
+                  ],
+                  "outTangents": [
+                    [
+                      0,
+                      0
+                    ],
+                    [
+                      0,
+                      0
+                    ],
+                    [
+                      0,
+                      0
+                    ]
+                  ]
+                }
+              }
+            ],
+            "trim": {
+              "start": 0,
+              "end": 100,
+              "offset": 0,
+              "tracks": {
+                "start": [],
+                "end": [],
+                "offset": []
+              }
+            },
+            "path": {
+              "closed": true,
+              "vertices": [
+                [
+                  0,
+                  0
+                ],
+                [
+                  90,
+                  0
+                ],
+                [
+                  50,
+                  80
+                ]
+              ],
+              "inTangents": [
+                [
+                  0,
+                  0
+                ],
+                [
+                  0,
+                  0
+                ],
+                [
+                  0,
+                  0
+                ]
+              ],
+              "outTangents": [
+                [
+                  0,
+                  0
+                ],
+                [
+                  0,
+                  0
+                ],
+                [
+                  0,
+                  0
+                ]
+              ]
+            },
+            "fill": "#f07932",
+            "stroke": "#182440",
+            "strokeWidth": 3,
+            "pathKeys": []
+          }
+        ]
+      }
+    },
+    {
+      "id": "parent-not-group",
+      "valid": false,
+      "project": {
+        "version": 3,
+        "name": "Advanced test",
+        "width": 512,
+        "height": 512,
+        "fps": 30,
+        "durationFrames": 120,
+        "layers": [
+          {
+            "id": "shape",
+            "name": "Morph",
+            "type": "path",
+            "parentId": null,
+            "x": 240,
+            "y": 240,
+            "pivot": [
+              10,
+              20
+            ],
+            "scaleX": 140,
+            "scaleY": 70,
+            "rotation": 15,
+            "opacity": 100,
+            "skew": 20,
+            "skewAxis": 35,
+            "tracks": {
+              "x": [],
+              "y": [],
+              "scaleX": [],
+              "scaleY": [],
+              "rotation": [],
+              "opacity": [],
+              "skew": [],
+              "skewAxis": []
+            },
+            "masks": [
+              {
+                "name": "Local",
+                "mode": "add",
+                "inverted": false,
+                "opacity": 100,
+                "path": {
+                  "closed": true,
+                  "vertices": [
+                    [
+                      0,
+                      0
+                    ],
+                    [
+                      90,
+                      0
+                    ],
+                    [
+                      50,
+                      80
+                    ]
+                  ],
+                  "inTangents": [
+                    [
+                      0,
+                      0
+                    ],
+                    [
+                      0,
+                      0
+                    ],
+                    [
+                      0,
+                      0
+                    ]
+                  ],
+                  "outTangents": [
+                    [
+                      0,
+                      0
+                    ],
+                    [
+                      0,
+                      0
+                    ],
+                    [
+                      0,
+                      0
+                    ]
+                  ]
+                }
+              }
+            ],
+            "trim": {
+              "start": 0,
+              "end": 100,
+              "offset": 0,
+              "tracks": {
+                "start": [],
+                "end": [],
+                "offset": []
+              }
+            },
+            "path": {
+              "closed": true,
+              "vertices": [
+                [
+                  0,
+                  0
+                ],
+                [
+                  90,
+                  0
+                ],
+                [
+                  50,
+                  80
+                ]
+              ],
+              "inTangents": [
+                [
+                  0,
+                  0
+                ],
+                [
+                  0,
+                  0
+                ],
+                [
+                  0,
+                  0
+                ]
+              ],
+              "outTangents": [
+                [
+                  0,
+                  0
+                ],
+                [
+                  0,
+                  0
+                ],
+                [
+                  0,
+                  0
+                ]
+              ]
+            },
+            "fill": "#f07932",
+            "stroke": "#182440",
+            "strokeWidth": 3,
+            "pathKeys": []
+          },
+          {
+            "id": "other",
+            "name": "Morph",
+            "type": "path",
+            "parentId": "shape",
+            "x": 240,
+            "y": 240,
+            "pivot": [
+              10,
+              20
+            ],
+            "scaleX": 140,
+            "scaleY": 70,
+            "rotation": 15,
+            "opacity": 100,
+            "skew": 20,
+            "skewAxis": 35,
+            "tracks": {
+              "x": [],
+              "y": [],
+              "scaleX": [],
+              "scaleY": [],
+              "rotation": [],
+              "opacity": [],
+              "skew": [],
+              "skewAxis": []
+            },
+            "masks": [
+              {
+                "name": "Local",
+                "mode": "add",
+                "inverted": false,
+                "opacity": 100,
+                "path": {
+                  "closed": true,
+                  "vertices": [
+                    [
+                      0,
+                      0
+                    ],
+                    [
+                      90,
+                      0
+                    ],
+                    [
+                      50,
+                      80
+                    ]
+                  ],
+                  "inTangents": [
+                    [
+                      0,
+                      0
+                    ],
+                    [
+                      0,
+                      0
+                    ],
+                    [
+                      0,
+                      0
+                    ]
+                  ],
+                  "outTangents": [
+                    [
+                      0,
+                      0
+                    ],
+                    [
+                      0,
+                      0
+                    ],
+                    [
+                      0,
+                      0
+                    ]
+                  ]
+                }
+              }
+            ],
+            "trim": {
+              "start": 0,
+              "end": 100,
+              "offset": 0,
+              "tracks": {
+                "start": [],
+                "end": [],
+                "offset": []
+              }
+            },
+            "path": {
+              "closed": true,
+              "vertices": [
+                [
+                  0,
+                  0
+                ],
+                [
+                  90,
+                  0
+                ],
+                [
+                  50,
+                  80
+                ]
+              ],
+              "inTangents": [
+                [
+                  0,
+                  0
+                ],
+                [
+                  0,
+                  0
+                ],
+                [
+                  0,
+                  0
+                ]
+              ],
+              "outTangents": [
+                [
+                  0,
+                  0
+                ],
+                [
+                  0,
+                  0
+                ],
+                [
+                  0,
+                  0
+                ]
+              ]
+            },
+            "fill": "#f07932",
+            "stroke": "#182440",
+            "strokeWidth": 3,
+            "pathKeys": []
+          }
+        ]
+      }
+    },
+    {
+      "id": "group-clipping",
+      "valid": false,
+      "project": {
+        "version": 3,
+        "name": "Advanced test",
+        "width": 512,
+        "height": 512,
+        "fps": 30,
+        "durationFrames": 120,
+        "layers": [
+          {
+            "id": "shape",
+            "name": "Morph",
+            "type": "path",
+            "parentId": null,
+            "x": 240,
+            "y": 240,
+            "pivot": [
+              10,
+              20
+            ],
+            "scaleX": 140,
+            "scaleY": 70,
+            "rotation": 15,
+            "opacity": 100,
+            "skew": 20,
+            "skewAxis": 35,
+            "tracks": {
+              "x": [],
+              "y": [],
+              "scaleX": [],
+              "scaleY": [],
+              "rotation": [],
+              "opacity": [],
+              "skew": [],
+              "skewAxis": []
+            },
+            "masks": [
+              {
+                "name": "Local",
+                "mode": "add",
+                "inverted": false,
+                "opacity": 100,
+                "path": {
+                  "closed": true,
+                  "vertices": [
+                    [
+                      0,
+                      0
+                    ],
+                    [
+                      90,
+                      0
+                    ],
+                    [
+                      50,
+                      80
+                    ]
+                  ],
+                  "inTangents": [
+                    [
+                      0,
+                      0
+                    ],
+                    [
+                      0,
+                      0
+                    ],
+                    [
+                      0,
+                      0
+                    ]
+                  ],
+                  "outTangents": [
+                    [
+                      0,
+                      0
+                    ],
+                    [
+                      0,
+                      0
+                    ],
+                    [
+                      0,
+                      0
+                    ]
+                  ]
+                }
+              }
+            ],
+            "trim": {
+              "start": 0,
+              "end": 100,
+              "offset": 0,
+              "tracks": {
+                "start": [],
+                "end": [],
+                "offset": []
+              }
+            },
+            "path": {
+              "closed": true,
+              "vertices": [
+                [
+                  0,
+                  0
+                ],
+                [
+                  90,
+                  0
+                ],
+                [
+                  50,
+                  80
+                ]
+              ],
+              "inTangents": [
+                [
+                  0,
+                  0
+                ],
+                [
+                  0,
+                  0
+                ],
+                [
+                  0,
+                  0
+                ]
+              ],
+              "outTangents": [
+                [
+                  0,
+                  0
+                ],
+                [
+                  0,
+                  0
+                ],
+                [
+                  0,
+                  0
+                ]
+              ]
+            },
+            "fill": "#f07932",
+            "stroke": "#182440",
+            "strokeWidth": 3,
+            "pathKeys": []
+          },
+          {
+            "id": "root",
+            "name": "Transform rig",
+            "type": "group",
+            "parentId": null,
+            "x": 20,
+            "y": 0,
+            "pivot": [
+              0,
+              0
+            ],
+            "scaleX": 105,
+            "scaleY": 95,
+            "rotation": 10,
+            "opacity": 100,
+            "skew": -7,
+            "skewAxis": 55,
+            "tracks": {
+              "x": [],
+              "y": [],
+              "scaleX": [],
+              "scaleY": [],
+              "rotation": [],
+              "opacity": [],
+              "skew": [],
+              "skewAxis": []
+            },
+            "masks": [
+              {
+                "name": "Local",
+                "mode": "add",
+                "inverted": false,
+                "opacity": 100,
+                "path": {
+                  "closed": true,
+                  "vertices": [
+                    [
+                      0,
+                      0
+                    ],
+                    [
+                      90,
+                      0
+                    ],
+                    [
+                      50,
+                      80
+                    ]
+                  ],
+                  "inTangents": [
+                    [
+                      0,
+                      0
+                    ],
+                    [
+                      0,
+                      0
+                    ],
+                    [
+                      0,
+                      0
+                    ]
+                  ],
+                  "outTangents": [
+                    [
+                      0,
+                      0
+                    ],
+                    [
+                      0,
+                      0
+                    ],
+                    [
+                      0,
+                      0
+                    ]
+                  ]
+                }
+              }
+            ],
+            "trim": null
+          }
+        ]
+      }
+    },
+    {
+      "id": "group-opacity",
+      "valid": false,
+      "project": {
+        "version": 3,
+        "name": "Advanced test",
+        "width": 512,
+        "height": 512,
+        "fps": 30,
+        "durationFrames": 120,
+        "layers": [
+          {
+            "id": "shape",
+            "name": "Morph",
+            "type": "path",
+            "parentId": null,
+            "x": 240,
+            "y": 240,
+            "pivot": [
+              10,
+              20
+            ],
+            "scaleX": 140,
+            "scaleY": 70,
+            "rotation": 15,
+            "opacity": 100,
+            "skew": 20,
+            "skewAxis": 35,
+            "tracks": {
+              "x": [],
+              "y": [],
+              "scaleX": [],
+              "scaleY": [],
+              "rotation": [],
+              "opacity": [],
+              "skew": [],
+              "skewAxis": []
+            },
+            "masks": [
+              {
+                "name": "Local",
+                "mode": "add",
+                "inverted": false,
+                "opacity": 100,
+                "path": {
+                  "closed": true,
+                  "vertices": [
+                    [
+                      0,
+                      0
+                    ],
+                    [
+                      90,
+                      0
+                    ],
+                    [
+                      50,
+                      80
+                    ]
+                  ],
+                  "inTangents": [
+                    [
+                      0,
+                      0
+                    ],
+                    [
+                      0,
+                      0
+                    ],
+                    [
+                      0,
+                      0
+                    ]
+                  ],
+                  "outTangents": [
+                    [
+                      0,
+                      0
+                    ],
+                    [
+                      0,
+                      0
+                    ],
+                    [
+                      0,
+                      0
+                    ]
+                  ]
+                }
+              }
+            ],
+            "trim": {
+              "start": 0,
+              "end": 100,
+              "offset": 0,
+              "tracks": {
+                "start": [],
+                "end": [],
+                "offset": []
+              }
+            },
+            "path": {
+              "closed": true,
+              "vertices": [
+                [
+                  0,
+                  0
+                ],
+                [
+                  90,
+                  0
+                ],
+                [
+                  50,
+                  80
+                ]
+              ],
+              "inTangents": [
+                [
+                  0,
+                  0
+                ],
+                [
+                  0,
+                  0
+                ],
+                [
+                  0,
+                  0
+                ]
+              ],
+              "outTangents": [
+                [
+                  0,
+                  0
+                ],
+                [
+                  0,
+                  0
+                ],
+                [
+                  0,
+                  0
+                ]
+              ]
+            },
+            "fill": "#f07932",
+            "stroke": "#182440",
+            "strokeWidth": 3,
+            "pathKeys": []
+          },
+          {
+            "id": "root",
+            "name": "Transform rig",
+            "type": "group",
+            "parentId": null,
+            "x": 20,
+            "y": 0,
+            "pivot": [
+              0,
+              0
+            ],
+            "scaleX": 105,
+            "scaleY": 95,
+            "rotation": 10,
+            "opacity": 90,
+            "skew": -7,
+            "skewAxis": 55,
+            "tracks": {
+              "x": [],
+              "y": [],
+              "scaleX": [],
+              "scaleY": [],
+              "rotation": [],
+              "opacity": [],
+              "skew": [],
+              "skewAxis": []
+            },
+            "masks": [],
+            "trim": null
+          }
+        ]
+      }
+    },
+    {
+      "id": "scale-range",
+      "valid": false,
+      "project": {
+        "version": 3,
+        "name": "Advanced test",
+        "width": 512,
+        "height": 512,
+        "fps": 30,
+        "durationFrames": 120,
+        "layers": [
+          {
+            "id": "shape",
+            "name": "Morph",
+            "type": "path",
+            "parentId": null,
+            "x": 240,
+            "y": 240,
+            "pivot": [
+              10,
+              20
+            ],
+            "scaleX": 0,
+            "scaleY": 70,
+            "rotation": 15,
+            "opacity": 100,
+            "skew": 20,
+            "skewAxis": 35,
+            "tracks": {
+              "x": [],
+              "y": [],
+              "scaleX": [],
+              "scaleY": [],
+              "rotation": [],
+              "opacity": [],
+              "skew": [],
+              "skewAxis": []
+            },
+            "masks": [
+              {
+                "name": "Local",
+                "mode": "add",
+                "inverted": false,
+                "opacity": 100,
+                "path": {
+                  "closed": true,
+                  "vertices": [
+                    [
+                      0,
+                      0
+                    ],
+                    [
+                      90,
+                      0
+                    ],
+                    [
+                      50,
+                      80
+                    ]
+                  ],
+                  "inTangents": [
+                    [
+                      0,
+                      0
+                    ],
+                    [
+                      0,
+                      0
+                    ],
+                    [
+                      0,
+                      0
+                    ]
+                  ],
+                  "outTangents": [
+                    [
+                      0,
+                      0
+                    ],
+                    [
+                      0,
+                      0
+                    ],
+                    [
+                      0,
+                      0
+                    ]
+                  ]
+                }
+              }
+            ],
+            "trim": {
+              "start": 0,
+              "end": 100,
+              "offset": 0,
+              "tracks": {
+                "start": [],
+                "end": [],
+                "offset": []
+              }
+            },
+            "path": {
+              "closed": true,
+              "vertices": [
+                [
+                  0,
+                  0
+                ],
+                [
+                  90,
+                  0
+                ],
+                [
+                  50,
+                  80
+                ]
+              ],
+              "inTangents": [
+                [
+                  0,
+                  0
+                ],
+                [
+                  0,
+                  0
+                ],
+                [
+                  0,
+                  0
+                ]
+              ],
+              "outTangents": [
+                [
+                  0,
+                  0
+                ],
+                [
+                  0,
+                  0
+                ],
+                [
+                  0,
+                  0
+                ]
+              ]
+            },
+            "fill": "#f07932",
+            "stroke": "#182440",
+            "strokeWidth": 3,
+            "pathKeys": []
+          }
+        ]
+      }
+    },
+    {
+      "id": "skew-range",
+      "valid": false,
+      "project": {
+        "version": 3,
+        "name": "Advanced test",
+        "width": 512,
+        "height": 512,
+        "fps": 30,
+        "durationFrames": 120,
+        "layers": [
+          {
+            "id": "shape",
+            "name": "Morph",
+            "type": "path",
+            "parentId": null,
+            "x": 240,
+            "y": 240,
+            "pivot": [
+              10,
+              20
+            ],
+            "scaleX": 140,
+            "scaleY": 70,
+            "rotation": 15,
+            "opacity": 100,
+            "skew": 76,
+            "skewAxis": 35,
+            "tracks": {
+              "x": [],
+              "y": [],
+              "scaleX": [],
+              "scaleY": [],
+              "rotation": [],
+              "opacity": [],
+              "skew": [],
+              "skewAxis": []
+            },
+            "masks": [
+              {
+                "name": "Local",
+                "mode": "add",
+                "inverted": false,
+                "opacity": 100,
+                "path": {
+                  "closed": true,
+                  "vertices": [
+                    [
+                      0,
+                      0
+                    ],
+                    [
+                      90,
+                      0
+                    ],
+                    [
+                      50,
+                      80
+                    ]
+                  ],
+                  "inTangents": [
+                    [
+                      0,
+                      0
+                    ],
+                    [
+                      0,
+                      0
+                    ],
+                    [
+                      0,
+                      0
+                    ]
+                  ],
+                  "outTangents": [
+                    [
+                      0,
+                      0
+                    ],
+                    [
+                      0,
+                      0
+                    ],
+                    [
+                      0,
+                      0
+                    ]
+                  ]
+                }
+              }
+            ],
+            "trim": {
+              "start": 0,
+              "end": 100,
+              "offset": 0,
+              "tracks": {
+                "start": [],
+                "end": [],
+                "offset": []
+              }
+            },
+            "path": {
+              "closed": true,
+              "vertices": [
+                [
+                  0,
+                  0
+                ],
+                [
+                  90,
+                  0
+                ],
+                [
+                  50,
+                  80
+                ]
+              ],
+              "inTangents": [
+                [
+                  0,
+                  0
+                ],
+                [
+                  0,
+                  0
+                ],
+                [
+                  0,
+                  0
+                ]
+              ],
+              "outTangents": [
+                [
+                  0,
+                  0
+                ],
+                [
+                  0,
+                  0
+                ],
+                [
+                  0,
+                  0
+                ]
+              ]
+            },
+            "fill": "#f07932",
+            "stroke": "#182440",
+            "strokeWidth": 3,
+            "pathKeys": []
+          }
+        ]
+      }
+    },
+    {
+      "id": "axis-range",
+      "valid": false,
+      "project": {
+        "version": 3,
+        "name": "Advanced test",
+        "width": 512,
+        "height": 512,
+        "fps": 30,
+        "durationFrames": 120,
+        "layers": [
+          {
+            "id": "shape",
+            "name": "Morph",
+            "type": "path",
+            "parentId": null,
+            "x": 240,
+            "y": 240,
+            "pivot": [
+              10,
+              20
+            ],
+            "scaleX": 140,
+            "scaleY": 70,
+            "rotation": 15,
+            "opacity": 100,
+            "skew": 20,
+            "skewAxis": 3601,
+            "tracks": {
+              "x": [],
+              "y": [],
+              "scaleX": [],
+              "scaleY": [],
+              "rotation": [],
+              "opacity": [],
+              "skew": [],
+              "skewAxis": []
+            },
+            "masks": [
+              {
+                "name": "Local",
+                "mode": "add",
+                "inverted": false,
+                "opacity": 100,
+                "path": {
+                  "closed": true,
+                  "vertices": [
+                    [
+                      0,
+                      0
+                    ],
+                    [
+                      90,
+                      0
+                    ],
+                    [
+                      50,
+                      80
+                    ]
+                  ],
+                  "inTangents": [
+                    [
+                      0,
+                      0
+                    ],
+                    [
+                      0,
+                      0
+                    ],
+                    [
+                      0,
+                      0
+                    ]
+                  ],
+                  "outTangents": [
+                    [
+                      0,
+                      0
+                    ],
+                    [
+                      0,
+                      0
+                    ],
+                    [
+                      0,
+                      0
+                    ]
+                  ]
+                }
+              }
+            ],
+            "trim": {
+              "start": 0,
+              "end": 100,
+              "offset": 0,
+              "tracks": {
+                "start": [],
+                "end": [],
+                "offset": []
+              }
+            },
+            "path": {
+              "closed": true,
+              "vertices": [
+                [
+                  0,
+                  0
+                ],
+                [
+                  90,
+                  0
+                ],
+                [
+                  50,
+                  80
+                ]
+              ],
+              "inTangents": [
+                [
+                  0,
+                  0
+                ],
+                [
+                  0,
+                  0
+                ],
+                [
+                  0,
+                  0
+                ]
+              ],
+              "outTangents": [
+                [
+                  0,
+                  0
+                ],
+                [
+                  0,
+                  0
+                ],
+                [
+                  0,
+                  0
+                ]
+              ]
+            },
+            "fill": "#f07932",
+            "stroke": "#182440",
+            "strokeWidth": 3,
+            "pathKeys": []
+          }
+        ]
+      }
+    },
+    {
+      "id": "world-mask-extent",
+      "valid": false,
+      "project": {
+        "version": 3,
+        "name": "Advanced test",
+        "width": 512,
+        "height": 512,
+        "fps": 30,
+        "durationFrames": 120,
+        "layers": [
+          {
+            "id": "shape",
+            "name": "Morph",
+            "type": "path",
+            "parentId": null,
+            "x": 240,
+            "y": 240,
+            "pivot": [
+              10,
+              20
+            ],
+            "scaleX": 1000,
+            "scaleY": 1000,
+            "rotation": 15,
+            "opacity": 100,
+            "skew": 75,
+            "skewAxis": 35,
+            "tracks": {
+              "x": [],
+              "y": [],
+              "scaleX": [],
+              "scaleY": [],
+              "rotation": [],
+              "opacity": [],
+              "skew": [],
+              "skewAxis": []
+            },
+            "masks": [
+              {
+                "name": "Local",
+                "mode": "add",
+                "inverted": false,
+                "opacity": 100,
+                "path": {
+                  "closed": true,
+                  "vertices": [
+                    [
+                      4096,
+                      4096
+                    ],
+                    [
+                      90,
+                      0
+                    ],
+                    [
+                      50,
+                      80
+                    ]
+                  ],
+                  "inTangents": [
+                    [
+                      0,
+                      0
+                    ],
+                    [
+                      0,
+                      0
+                    ],
+                    [
+                      0,
+                      0
+                    ]
+                  ],
+                  "outTangents": [
+                    [
+                      0,
+                      0
+                    ],
+                    [
+                      0,
+                      0
+                    ],
+                    [
+                      0,
+                      0
+                    ]
+                  ]
+                }
+              }
+            ],
+            "trim": {
+              "start": 0,
+              "end": 100,
+              "offset": 0,
+              "tracks": {
+                "start": [],
+                "end": [],
+                "offset": []
+              }
+            },
+            "path": {
+              "closed": true,
+              "vertices": [
+                [
+                  0,
+                  0
+                ],
+                [
+                  90,
+                  0
+                ],
+                [
+                  50,
+                  80
+                ]
+              ],
+              "inTangents": [
+                [
+                  0,
+                  0
+                ],
+                [
+                  0,
+                  0
+                ],
+                [
+                  0,
+                  0
+                ]
+              ],
+              "outTangents": [
+                [
+                  0,
+                  0
+                ],
+                [
+                  0,
+                  0
+                ],
+                [
+                  0,
+                  0
+                ]
+              ]
+            },
+            "fill": "#f07932",
+            "stroke": "#182440",
+            "strokeWidth": 3,
+            "pathKeys": []
+          }
+        ]
+      }
+    },
+    {
+      "id": "world-min-singular",
+      "valid": false,
+      "project": {
+        "version": 3,
+        "name": "Advanced test",
+        "width": 512,
+        "height": 512,
+        "fps": 30,
+        "durationFrames": 120,
+        "layers": [
+          {
+            "id": "root",
+            "name": "Transform rig",
+            "type": "group",
+            "parentId": null,
+            "x": 20,
+            "y": 0,
+            "pivot": [
+              0,
+              0
+            ],
+            "scaleX": 105,
+            "scaleY": 1,
+            "rotation": 10,
+            "opacity": 100,
+            "skew": -7,
+            "skewAxis": 55,
+            "tracks": {
+              "x": [],
+              "y": [],
+              "scaleX": [],
+              "scaleY": [],
+              "rotation": [],
+              "opacity": [],
+              "skew": [],
+              "skewAxis": []
+            },
+            "masks": [],
+            "trim": null
+          },
+          {
+            "id": "shape",
+            "name": "Morph",
+            "type": "path",
+            "parentId": "root",
+            "x": 240,
+            "y": 240,
+            "pivot": [
+              10,
+              20
+            ],
+            "scaleX": 140,
+            "scaleY": 1,
+            "rotation": 15,
+            "opacity": 100,
+            "skew": 20,
+            "skewAxis": 35,
+            "tracks": {
+              "x": [],
+              "y": [],
+              "scaleX": [],
+              "scaleY": [],
+              "rotation": [],
+              "opacity": [],
+              "skew": [],
+              "skewAxis": []
+            },
+            "masks": [
+              {
+                "name": "Local",
+                "mode": "add",
+                "inverted": false,
+                "opacity": 100,
+                "path": {
+                  "closed": true,
+                  "vertices": [
+                    [
+                      0,
+                      0
+                    ],
+                    [
+                      90,
+                      0
+                    ],
+                    [
+                      50,
+                      80
+                    ]
+                  ],
+                  "inTangents": [
+                    [
+                      0,
+                      0
+                    ],
+                    [
+                      0,
+                      0
+                    ],
+                    [
+                      0,
+                      0
+                    ]
+                  ],
+                  "outTangents": [
+                    [
+                      0,
+                      0
+                    ],
+                    [
+                      0,
+                      0
+                    ],
+                    [
+                      0,
+                      0
+                    ]
+                  ]
+                }
+              }
+            ],
+            "trim": {
+              "start": 0,
+              "end": 100,
+              "offset": 0,
+              "tracks": {
+                "start": [],
+                "end": [],
+                "offset": []
+              }
+            },
+            "path": {
+              "closed": true,
+              "vertices": [
+                [
+                  0,
+                  0
+                ],
+                [
+                  90,
+                  0
+                ],
+                [
+                  50,
+                  80
+                ]
+              ],
+              "inTangents": [
+                [
+                  0,
+                  0
+                ],
+                [
+                  0,
+                  0
+                ],
+                [
+                  0,
+                  0
+                ]
+              ],
+              "outTangents": [
+                [
+                  0,
+                  0
+                ],
+                [
+                  0,
+                  0
+                ],
+                [
+                  0,
+                  0
+                ]
+              ]
+            },
+            "fill": "#f07932",
+            "stroke": "#182440",
+            "strokeWidth": 3,
+            "pathKeys": []
+          }
+        ]
+      }
+    }
+  ]
+}

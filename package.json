@@ -1,7 +1,7 @@
 {
   "name": "moro-workbench",
   "version": "0.1.0",
-  "description": "Local-first Lottie recoloring workbench with JSON and React export.",
+  "description": "Local-first Lottie shape authoring and recoloring with editable projects and real JSON export.",
   "private": true,
   "license": "MIT",
   "type": "module",
@@ -13,7 +13,7 @@
     "build": "vite build",
     "preview": "vite preview --host 127.0.0.1 --port 4173 --strictPort",
     "serve": "node server.mjs",
-    "lint": "eslint apps/web/src packages examples/react/src tests vite.config.ts",
+    "lint": "eslint apps/web/src packages examples/react/src tests e2e playwright.config.ts vite.config.ts",
     "typecheck": "tsc --noEmit && tsc --noEmit -p examples/react/tsconfig.json",
     "test": "vitest run",
     "example:generate": "node scripts/generate-react-example.mjs",
@@ -23,8 +23,20 @@
     "skill:check": "node scripts/sync-skill.mjs --check",
     "skill:install": "node scripts/install-skill.mjs",
     "samples:generate": "node scripts/generate-samples.mjs",
-    "check": "npm run lint && npm run typecheck && npm test && npm run build && npm run example:build && npm run skill:check && npm run test:distribution",
-    "test:distribution": "node --test scripts/distribution.test.mjs"
+    "samples:showcase": "node scripts/generate-showcase.mjs",
+    "check": "npm run lint && npm run typecheck && npm test && npm run build && npm run example:build && npm run skill:check && npm run test:distribution && npm run test:guidance && npm run agent:check",
+    "agent:check": "node scripts/check-authoring.mjs",
+    "creator:export": "node scripts/moro-create.mjs",
+    "harness:preflight": "cargo run --manifest-path bridge/Cargo.toml --locked --bin moro-harness -- preflight",
+    "harness:run": "cargo run --manifest-path bridge/Cargo.toml --locked --bin moro-harness -- run",
+    "harness:report": "cargo run --manifest-path bridge/Cargo.toml --locked --bin moro-harness -- report",
+    "harness:adopt": "cargo run --manifest-path bridge/Cargo.toml --locked --bin moro-harness -- adopt",
+    "ai:build": "cargo build --manifest-path bridge/Cargo.toml --locked --bin moro-ai-bridge",
+    "ai:test": "cargo test --manifest-path bridge/Cargo.toml --locked",
+    "ai:serve": "bridge/target/debug/moro-ai-bridge --web-root dist --port 4174",
+    "test:guidance": "node --test scripts/check-authoring.test.mjs",
+    "test:distribution": "node --test scripts/distribution.test.mjs",
+    "test:e2e": "tsc --noEmit -p e2e/tsconfig.json && playwright test"
   },
   "dependencies": {
     "@fontsource/ibm-plex-mono": "5.3.0",
@@ -35,6 +47,7 @@
   },
   "devDependencies": {
     "@eslint/js": "10.0.1",
+    "@playwright/test": "1.64.1",
     "@types/node": "24.10.0",
     "@types/react": "19.3.0",
     "@types/react-dom": "19.3.0",

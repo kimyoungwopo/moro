@@ -1,0 +1,63 @@
+/* Shared connection controls only: no editor/global selectors. */
+.moro-claude-auth,
+.moro-claude-auth-dialog {
+  box-sizing: border-box;
+  min-width: 0;
+  color: #243438;
+  background: #f5f7f5;
+  border: 1px solid #b4c3bf;
+  border-radius: 12px;
+  padding: 14px;
+  font: 400 13px/1.65 system-ui, sans-serif;
+  overflow-wrap: anywhere;
+  text-align: left;
+}
+.moro-claude-auth { width: 100%; margin: 12px 0; }
+.moro-claude-auth p,
+.moro-claude-auth-dialog p { margin: 0 0 10px; font: inherit; color: inherit; }
+.moro-claude-auth-dialog h2 { margin: 0 0 12px; font: 650 19px/1.4 system-ui, sans-serif; color: inherit; }
+.moro-claude-auth-actions { display: flex; flex-wrap: wrap; gap: 8px; min-width: 0; }
+.moro-claude-auth button,
+.moro-claude-auth-dialog button {
+  box-sizing: border-box;
+  min-height: 44px;
+  min-width: 0;
+  max-width: 100%;
+  padding: 10px 12px;
+  border: 1px solid #677f77;
+  border-radius: 8px;
+  background: #fff;
+  color: #243438;
+  font: 600 13px/1.5 system-ui, sans-serif;
+  white-space: normal;
+  cursor: pointer;
+  touch-action: manipulation;
+}
+.moro-claude-auth button:disabled,
+.moro-claude-auth-dialog button:disabled { opacity: .55; cursor: not-allowed; }
+.moro-claude-auth button:focus-visible,
+.moro-claude-auth-dialog button:focus-visible,
+.moro-claude-auth-dialog input:focus-visible { outline: 3px solid #007362; outline-offset: 3px; }
+.moro-claude-auth-dialog {
+  width: min(520px, calc(100vw - 24px));
+  max-width: calc(100vw - 24px);
+  max-height: calc(100dvh - 24px);
+  overflow-y: auto;
+  overscroll-behavior: contain;
+  margin: auto;
+}
+.moro-claude-auth-dialog::backdrop { background: rgb(20 32 31 / 55%); }
+.moro-claude-auth-dialog .moro-claude-auth-consent {
+  display: flex;
+  align-items: flex-start;
+  gap: 10px;
+  min-height: 44px;
+  margin: 14px 0;
+  cursor: pointer;
+}
+.moro-claude-auth-consent input[type='checkbox'] { flex: 0 0 auto; width: 20px; height: 20px; margin: 2px 0 0; accent-color: #007362; }
+.moro-claude-auth-manual { margin-top: 12px; }
+.moro-claude-auth-manual code { display: block; margin-bottom: 10px; color: #243438; font: 12px/1.6 ui-monospace, monospace; white-space: pre-wrap; overflow-wrap: anywhere; }
+@media (max-width: 390px) {
+  .moro-claude-auth-actions > button { flex: 1 1 100%; }
+}

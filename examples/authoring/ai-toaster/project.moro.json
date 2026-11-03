@@ -1,0 +1,562 @@
+{
+  "durationFrames": 240,
+  "fps": 60,
+  "height": 768,
+  "layers": [
+    {
+      "cornerRadius": 12,
+      "fill": "#253448",
+      "height": 40,
+      "id": "foot-left",
+      "name": "왼쪽 남색 다리",
+      "opacity": 100,
+      "rotation": 0,
+      "scale": 100,
+      "stroke": "#253448",
+      "strokeWidth": 0,
+      "tracks": {
+        "opacity": [],
+        "rotation": [],
+        "scale": [],
+        "x": [],
+        "y": []
+      },
+      "type": "rect",
+      "width": 48,
+      "x": 258,
+      "y": 660
+    },
+    {
+      "cornerRadius": 12,
+      "fill": "#253448",
+      "height": 40,
+      "id": "foot-right",
+      "name": "오른쪽 남색 다리",
+      "opacity": 100,
+      "rotation": 0,
+      "scale": 100,
+      "stroke": "#253448",
+      "strokeWidth": 0,
+      "tracks": {
+        "opacity": [],
+        "rotation": [],
+        "scale": [],
+        "x": [],
+        "y": []
+      },
+      "type": "rect",
+      "width": 48,
+      "x": 510,
+      "y": 660
+    },
+    {
+      "cornerRadius": 56,
+      "fill": "#F3E3C7",
+      "height": 268,
+      "id": "toaster-back",
+      "name": "크림색 토스터 뒤쪽과 상단",
+      "opacity": 100,
+      "rotation": 0,
+      "scale": 100,
+      "stroke": "#F3E3C7",
+      "strokeWidth": 0,
+      "tracks": {
+        "opacity": [],
+        "rotation": [],
+        "scale": [],
+        "x": [],
+        "y": []
+      },
+      "type": "rect",
+      "width": 396,
+      "x": 384,
+      "y": 520
+    },
+    {
+      "cornerRadius": 13,
+      "fill": "#253448",
+      "height": 26,
+      "id": "bread-slot",
+      "name": "얇고 어두운 상단 슬롯",
+      "opacity": 100,
+      "rotation": 0,
+      "scale": 100,
+      "stroke": "#253448",
+      "strokeWidth": 0,
+      "tracks": {
+        "opacity": [],
+        "rotation": [],
+        "scale": [],
+        "x": [],
+        "y": []
+      },
+      "type": "rect",
+      "width": 292,
+      "x": 384,
+      "y": 412
+    },
+    {
+      "cornerRadius": 48,
+      "fill": "#B87438",
+      "height": 220,
+      "id": "toast-crust",
+      "name": "식빵의 노릇한 껍질",
+      "opacity": 100,
+      "rotation": 0,
+      "scale": 100,
+      "stroke": "#B87438",
+      "strokeWidth": 0,
+      "tracks": {
+        "opacity": [],
+        "rotation": [],
+        "scale": [],
+        "x": [],
+        "y": [
+          {
+            "easing": "linear",
+            "frame": 0,
+            "value": 452
+          },
+          {
+            "easing": "ease-in-out",
+            "frame": 30,
+            "value": 452
+          },
+          {
+            "easing": "ease-out",
+            "frame": 54,
+            "value": 478
+          },
+          {
+            "easing": "ease-in-out",
+            "frame": 82,
+            "value": 220
+          },
+          {
+            "easing": "linear",
+            "frame": 100,
+            "value": 240
+          },
+          {
+            "easing": "ease-in-out",
+            "frame": 132,
+            "value": 240
+          },
+          {
+            "easing": "linear",
+            "frame": 188,
+            "value": 452
+          },
+          {
+            "easing": "linear",
+            "frame": 239,
+            "value": 452
+          }
+        ]
+      },
+      "type": "rect",
+      "width": 202,
+      "x": 384,
+      "y": 452
+    },
+    {
+      "cornerRadius": 34,
+      "fill": "#FFF0CF",
+      "height": 190,
+      "id": "toast-crumb",
+      "name": "식빵의 크림색 속살",
+      "opacity": 100,
+      "rotation": 0,
+      "scale": 100,
+      "stroke": "#FFF0CF",
+      "strokeWidth": 0,
+      "tracks": {
+        "opacity": [],
+        "rotation": [],
+        "scale": [],
+        "x": [],
+        "y": [
+          {
+            "easing": "linear",
+            "frame": 0,
+            "value": 452
+          },
+          {
+            "easing": "ease-in-out",
+            "frame": 30,
+            "value": 452
+          },
+          {
+            "easing": "ease-out",
+            "frame": 54,
+            "value": 478
+          },
+          {
+            "easing": "ease-in-out",
+            "frame": 82,
+            "value": 220
+          },
+          {
+            "easing": "linear",
+            "frame": 100,
+            "value": 240
+          },
+          {
+            "easing": "ease-in-out",
+            "frame": 132,
+            "value": 240
+          },
+          {
+            "easing": "linear",
+            "frame": 188,
+            "value": 452
+          },
+          {
+            "easing": "linear",
+            "frame": 239,
+            "value": 452
+          }
+        ]
+      },
+      "type": "rect",
+      "width": 172,
+      "x": 384,
+      "y": 452
+    },
+    {
+      "cornerRadius": 48,
+      "fill": "#F3E3C7",
+      "height": 240,
+      "id": "toaster-front",
+      "name": "식빵 하단을 가리는 크림색 전면",
+      "opacity": 100,
+      "rotation": 0,
+      "scale": 100,
+      "stroke": "#F3E3C7",
+      "strokeWidth": 0,
+      "tracks": {
+        "opacity": [],
+        "rotation": [],
+        "scale": [],
+        "x": [],
+        "y": []
+      },
+      "type": "rect",
+      "width": 396,
+      "x": 384,
+      "y": 534
+    },
+    {
+      "cornerRadius": 34,
+      "fill": "#E9A47E",
+      "height": 180,
+      "id": "apricot-panel",
+      "name": "살구색 전면 패널",
+      "opacity": 100,
+      "rotation": 0,
+      "scale": 100,
+      "stroke": "#E9A47E",
+      "strokeWidth": 0,
+      "tracks": {
+        "opacity": [],
+        "rotation": [],
+        "scale": [],
+        "x": [],
+        "y": []
+      },
+      "type": "rect",
+      "width": 348,
+      "x": 384,
+      "y": 537
+    },
+    {
+      "cornerRadius": 5,
+      "fill": "#253448",
+      "height": 14,
+      "id": "handle-stem",
+      "name": "손잡이 연결부",
+      "opacity": 100,
+      "rotation": 0,
+      "scale": 100,
+      "stroke": "#253448",
+      "strokeWidth": 0,
+      "tracks": {
+        "opacity": [],
+        "rotation": [],
+        "scale": [],
+        "x": [],
+        "y": []
+      },
+      "type": "rect",
+      "width": 30,
+      "x": 582,
+      "y": 490
+    },
+    {
+      "cornerRadius": 10,
+      "fill": "#253448",
+      "height": 28,
+      "id": "handle",
+      "name": "작은 남색 손잡이",
+      "opacity": 100,
+      "rotation": 0,
+      "scale": 100,
+      "stroke": "#253448",
+      "strokeWidth": 0,
+      "tracks": {
+        "opacity": [],
+        "rotation": [],
+        "scale": [],
+        "x": [],
+        "y": []
+      },
+      "type": "rect",
+      "width": 34,
+      "x": 603,
+      "y": 490
+    },
+    {
+      "cornerRadius": 5,
+      "fill": "#E7BC57",
+      "height": 25,
+      "id": "warm-wisp-left",
+      "name": "첫 번째 작은 노란 온기",
+      "opacity": 0,
+      "rotation": -24,
+      "scale": 100,
+      "stroke": "#E7BC57",
+      "strokeWidth": 0,
+      "tracks": {
+        "opacity": [
+          {
+            "easing": "linear",
+            "frame": 0,
+            "value": 0
+          },
+          {
+            "easing": "ease-out",
+            "frame": 89,
+            "value": 0
+          },
+          {
+            "easing": "linear",
+            "frame": 95,
+            "value": 100
+          },
+          {
+            "easing": "ease-in",
+            "frame": 100,
+            "value": 100
+          },
+          {
+            "easing": "linear",
+            "frame": 113,
+            "value": 0
+          },
+          {
+            "easing": "linear",
+            "frame": 239,
+            "value": 0
+          }
+        ],
+        "rotation": [],
+        "scale": [],
+        "x": [],
+        "y": [
+          {
+            "easing": "linear",
+            "frame": 0,
+            "value": 107
+          },
+          {
+            "easing": "ease-out",
+            "frame": 89,
+            "value": 107
+          },
+          {
+            "easing": "linear",
+            "frame": 113,
+            "value": 87
+          },
+          {
+            "easing": "linear",
+            "frame": 132,
+            "value": 107
+          },
+          {
+            "easing": "linear",
+            "frame": 239,
+            "value": 107
+          }
+        ]
+      },
+      "type": "rect",
+      "width": 10,
+      "x": 296,
+      "y": 107
+    },
+    {
+      "cornerRadius": 5,
+      "fill": "#E7BC57",
+      "height": 28,
+      "id": "warm-wisp-center",
+      "name": "두 번째 작은 노란 온기",
+      "opacity": 0,
+      "rotation": 0,
+      "scale": 100,
+      "stroke": "#E7BC57",
+      "strokeWidth": 0,
+      "tracks": {
+        "opacity": [
+          {
+            "easing": "linear",
+            "frame": 0,
+            "value": 0
+          },
+          {
+            "easing": "ease-out",
+            "frame": 96,
+            "value": 0
+          },
+          {
+            "easing": "linear",
+            "frame": 102,
+            "value": 100
+          },
+          {
+            "easing": "ease-in",
+            "frame": 107,
+            "value": 100
+          },
+          {
+            "easing": "linear",
+            "frame": 120,
+            "value": 0
+          },
+          {
+            "easing": "linear",
+            "frame": 239,
+            "value": 0
+          }
+        ],
+        "rotation": [],
+        "scale": [],
+        "x": [],
+        "y": [
+          {
+            "easing": "linear",
+            "frame": 0,
+            "value": 90
+          },
+          {
+            "easing": "ease-out",
+            "frame": 96,
+            "value": 90
+          },
+          {
+            "easing": "linear",
+            "frame": 120,
+            "value": 70
+          },
+          {
+            "easing": "linear",
+            "frame": 139,
+            "value": 90
+          },
+          {
+            "easing": "linear",
+            "frame": 239,
+            "value": 90
+          }
+        ]
+      },
+      "type": "rect",
+      "width": 10,
+      "x": 384,
+      "y": 90
+    },
+    {
+      "cornerRadius": 5,
+      "fill": "#E7BC57",
+      "height": 25,
+      "id": "warm-wisp-right",
+      "name": "세 번째 작은 노란 온기",
+      "opacity": 0,
+      "rotation": 24,
+      "scale": 100,
+      "stroke": "#E7BC57",
+      "strokeWidth": 0,
+      "tracks": {
+        "opacity": [
+          {
+            "easing": "linear",
+            "frame": 0,
+            "value": 0
+          },
+          {
+            "easing": "ease-out",
+            "frame": 103,
+            "value": 0
+          },
+          {
+            "easing": "linear",
+            "frame": 109,
+            "value": 100
+          },
+          {
+            "easing": "ease-in",
+            "frame": 114,
+            "value": 100
+          },
+          {
+            "easing": "linear",
+            "frame": 127,
+            "value": 0
+          },
+          {
+            "easing": "linear",
+            "frame": 239,
+            "value": 0
+          }
+        ],
+        "rotation": [],
+        "scale": [],
+        "x": [],
+        "y": [
+          {
+            "easing": "linear",
+            "frame": 0,
+            "value": 107
+          },
+          {
+            "easing": "ease-out",
+            "frame": 103,
+            "value": 107
+          },
+          {
+            "easing": "linear",
+            "frame": 127,
+            "value": 87
+          },
+          {
+            "easing": "linear",
+            "frame": 146,
+            "value": 107
+          },
+          {
+            "easing": "linear",
+            "frame": 239,
+            "value": 107
+          }
+        ]
+      },
+      "type": "rect",
+      "width": 10,
+      "x": 472,
+      "y": 107
+    }
+  ],
+  "name": "톡, 아침이 왔다",
+  "version": 1,
+  "width": 768
+}

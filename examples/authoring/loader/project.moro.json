@@ -1,0 +1,142 @@
+{
+  "version": 1,
+  "name": "Three-dot waiting loop",
+  "width": 512,
+  "height": 512,
+  "fps": 60,
+  "durationFrames": 120,
+  "layers": [
+    {
+      "id": "dot-1",
+      "name": "Waiting dot 1",
+      "type": "ellipse",
+      "x": 208,
+      "y": 272,
+      "width": 24,
+      "height": 24,
+      "fill": "#1B6C80",
+      "stroke": "#203B42",
+      "strokeWidth": 0,
+      "rotation": 0,
+      "opacity": 100,
+      "scale": 100,
+      "tracks": {
+        "y": [
+          {
+            "frame": 0,
+            "value": 272,
+            "easing": "linear"
+          },
+          {
+            "frame": 10,
+            "value": 272,
+            "easing": "ease-in-out"
+          },
+          {
+            "frame": 26,
+            "value": 240,
+            "easing": "ease-in-out"
+          },
+          {
+            "frame": 52,
+            "value": 272,
+            "easing": "linear"
+          },
+          {
+            "frame": 119,
+            "value": 272,
+            "easing": "linear"
+          }
+        ]
+      }
+    },
+    {
+      "id": "dot-2",
+      "name": "Waiting dot 2",
+      "type": "ellipse",
+      "x": 256,
+      "y": 272,
+      "width": 24,
+      "height": 24,
+      "fill": "#1B6C80",
+      "stroke": "#203B42",
+      "strokeWidth": 0,
+      "rotation": 0,
+      "opacity": 100,
+      "scale": 100,
+      "tracks": {
+        "y": [
+          {
+            "frame": 0,
+            "value": 272,
+            "easing": "linear"
+          },
+          {
+            "frame": 22,
+            "value": 272,
+            "easing": "ease-in-out"
+          },
+          {
+            "frame": 38,
+            "value": 240,
+            "easing": "ease-in-out"
+          },
+          {
+            "frame": 64,
+            "value": 272,
+            "easing": "linear"
+          },
+          {
+            "frame": 119,
+            "value": 272,
+            "easing": "linear"
+          }
+        ]
+      }
+    },
+    {
+      "id": "dot-3",
+      "name": "Waiting dot 3",
+      "type": "ellipse",
+      "x": 304,
+      "y": 272,
+      "width": 24,
+      "height": 24,
+      "fill": "#1B6C80",
+      "stroke": "#203B42",
+      "strokeWidth": 0,
+      "rotation": 0,
+      "opacity": 100,
+      "scale": 100,
+      "tracks": {
+        "y": [
+          {
+            "frame": 0,
+            "value": 272,
+            "easing": "linear"
+          },
+          {
+            "frame": 34,
+            "value": 272,
+            "easing": "ease-in-out"
+          },
+          {
+            "frame": 50,
+            "value": 240,
+            "easing": "ease-in-out"
+          },
+          {
+            "frame": 76,
+            "value": 272,
+            "easing": "linear"
+          },
+          {
+            "frame": 119,
+            "value": 272,
+            "easing": "linear"
+          }
+        ]
+      }
+    }
+  ]
+}

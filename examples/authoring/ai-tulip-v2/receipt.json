@@ -1,0 +1,65 @@
+{
+  "ok": true,
+  "version": 2,
+  "provider": "codex",
+  "mocked": false,
+  "prebuiltProjectImported": false,
+  "manuallyModified": false,
+  "projectContextUploaded": false,
+  "entrypoint": "Rig lab -> AI generate v2 -> actual Rust bridge -> official Codex CLI -> unmodified v2 proposal",
+  "actualGenerationCalls": 1,
+  "projectName": "Morning Tulip — Gentle Greeting Loop",
+  "nodes": 15,
+  "curvedPaths": 9,
+  "groups": 5,
+  "parentedNodes": 13,
+  "rawAIProposalEqualsSavedProject": true,
+  "exportMatchesCore": true,
+  "singleUndoVerified": true,
+  "freshReopenVerified": true,
+  "projectSHA256": "ff4c012c95d6002f493e6ab0170c1cf11b256eb45eb2722b8ebd084cdc86dcf9",
+  "animationSHA256": "02cac144e0ce4f536b85794a6b1d732615dec9fc75e788d8f2342fe5ecbaa355",
+  "events": [
+    {
+      "name": "blank-editor-ready",
+      "seconds": 2.035061167
+    },
+    {
+      "name": "visible-brief-entered",
+      "seconds": 8.354005374999998
+    },
+    {
+      "name": "explicit-one-request-confirmation",
+      "seconds": 9.766103332999998
+    },
+    {
+      "name": "actual-provider-request",
+      "seconds": 10.940714582999998
+    },
+    {
+      "name": "untouched-ai-response-ready-before-apply",
+      "seconds": 83.22137825
+    },
+    {
+      "name": "independent-proposal-reviewed",
+      "seconds": 88.21506595800001
+    },
+    {
+      "name": "explicit-apply",
+      "seconds": 89.185756625
+    },
+    {
+      "name": "original-project-and-lottie-downloaded",
+      "seconds": 89.38986041700001
+    },
+    {
+      "name": "single-undo-restored-blank",
+      "seconds": 94.81263820800001
+    },
+    {
+      "name": "live-flow-verified",
+      "seconds": 102.32033874999999
+    }
+  ],
+  "recordingSeconds": 102.3209685
+}

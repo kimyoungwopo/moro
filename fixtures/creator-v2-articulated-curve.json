@@ -1,0 +1,258 @@
+{
+  "version": 2,
+  "name": "Non-human articulated curve — engine proof, not AI art",
+  "width": 512,
+  "height": 512,
+  "fps": 60,
+  "durationFrames": 120,
+  "layers": [
+    {
+      "id": "shoulder",
+      "name": "shoulder",
+      "type": "group",
+      "parentId": null,
+      "x": 240,
+      "y": 330,
+      "pivot": [
+        0,
+        0
+      ],
+      "scale": 100,
+      "rotation": 0,
+      "opacity": 100,
+      "tracks": {
+        "x": [],
+        "y": [],
+        "scale": [],
+        "rotation": [
+          {
+            "frame": 0,
+            "value": -15,
+            "easing": "ease-in-out"
+          },
+          {
+            "frame": 50,
+            "value": 25,
+            "easing": "ease-in-out"
+          },
+          {
+            "frame": 119,
+            "value": -15,
+            "easing": "linear"
+          }
+        ],
+        "opacity": []
+      }
+    },
+    {
+      "id": "upper-curve",
+      "name": "upper-curve",
+      "type": "path",
+      "parentId": "shoulder",
+      "x": 0,
+      "y": 0,
+      "pivot": [
+        0,
+        0
+      ],
+      "scale": 100,
+      "rotation": 0,
+      "opacity": 100,
+      "tracks": {
+        "x": [],
+        "y": [],
+        "scale": [],
+        "rotation": [],
+        "opacity": []
+      },
+      "fill": null,
+      "stroke": "#1B6C80",
+      "strokeWidth": 18,
+      "path": {
+        "closed": false,
+        "vertices": [
+          [
+            0,
+            0
+          ],
+          [
+            120,
+            0
+          ]
+        ],
+        "inTangents": [
+          [
+            0,
+            0
+          ],
+          [
+            -30,
+            -20
+          ]
+        ],
+        "outTangents": [
+          [
+            30,
+            20
+          ],
+          [
+            0,
+            0
+          ]
+        ]
+      }
+    },
+    {
+      "id": "elbow",
+      "name": "elbow",
+      "type": "group",
+      "parentId": "shoulder",
+      "x": 120,
+      "y": 0,
+      "pivot": [
+        0,
+        0
+      ],
+      "scale": 100,
+      "rotation": 0,
+      "opacity": 100,
+      "tracks": {
+        "x": [],
+        "y": [],
+        "scale": [],
+        "rotation": [
+          {
+            "frame": 0,
+            "value": 20,
+            "easing": "ease-in-out"
+          },
+          {
+            "frame": 60,
+            "value": -30,
+            "easing": "ease-in-out"
+          },
+          {
+            "frame": 119,
+            "value": 20,
+            "easing": "linear"
+          }
+        ],
+        "opacity": []
+      }
+    },
+    {
+      "id": "lower-curve",
+      "name": "lower-curve",
+      "type": "path",
+      "parentId": "elbow",
+      "x": 0,
+      "y": 0,
+      "pivot": [
+        0,
+        0
+      ],
+      "scale": 100,
+      "rotation": 0,
+      "opacity": 100,
+      "tracks": {
+        "x": [],
+        "y": [],
+        "scale": [],
+        "rotation": [],
+        "opacity": []
+      },
+      "fill": null,
+      "stroke": "#D79A4E",
+      "strokeWidth": 16,
+      "path": {
+        "closed": false,
+        "vertices": [
+          [
+            0,
+            0
+          ],
+          [
+            0,
+            -100
+          ],
+          [
+            70,
+            -140
+          ]
+        ],
+        "inTangents": [
+          [
+            0,
+            0
+          ],
+          [
+            -25,
+            30
+          ],
+          [
+            -30,
+            0
+          ]
+        ],
+        "outTangents": [
+          [
+            35,
+            -30
+          ],
+          [
+            25,
+            -30
+          ],
+          [
+            0,
+            0
+          ]
+        ]
+      }
+    },
+    {
+      "id": "pivot-tip",
+      "name": "pivot-tip",
+      "type": "ellipse",
+      "parentId": "elbow",
+      "x": 70,
+      "y": -140,
+      "pivot": [
+        6,
+        -10
+      ],
+      "scale": 100,
+      "rotation": 0,
+      "opacity": 100,
+      "tracks": {
+        "x": [],
+        "y": [],
+        "scale": [],
+        "rotation": [
+          {
+            "frame": 0,
+            "value": 0,
+            "easing": "ease-in-out"
+          },
+          {
+            "frame": 60,
+            "value": -20,
+            "easing": "ease-in-out"
+          },
+          {
+            "frame": 119,
+            "value": 0,
+            "easing": "linear"
+          }
+        ],
+        "opacity": []
+      },
+      "width": 38,
+      "height": 20,
+      "cornerRadius": null,
+      "fill": "#C46B57",
+      "stroke": "#203B42",
+      "strokeWidth": 3
+    }
+  ]
+}

@@ -23,6 +23,10 @@ for(const entry of ['server.mjs','skill/scripts/serve.mjs'])test(`${entry} serve
   const js=await fetch(server.url+asset);assert.equal(js.status,200);assert.match(js.headers.get('content-type'),/javascript/);assert.ok((await js.text()).length>1000);
   const cssPath=/href="([^"]+\.css)"/.exec(html)?.[1];assert.ok(cssPath);const css=await(await fetch(server.url+cssPath)).text();const font=/url\(([^)]+\.woff2)\)/.exec(css)?.[1];assert.ok(font);const fontResponse=await fetch(server.url+font);assert.equal(fontResponse.status,200);assert.equal(fontResponse.headers.get('content-type'),'font/woff2');
   assert.equal((await fetch(server.url+'/docs')).status,200);
+  assert.equal((await fetch(server.url+'/create')).status,200);
+  assert.equal((await fetch(server.url+'/rig')).status,200);
+  assert.equal((await fetch(server.url+'/studio')).status,200);
+  assert.equal((await fetch(server.url+'/studio/')).status,200);
   assert.equal((await fetch(server.url+'/%2e%2e%2fpackage.json')).status,403);
   assert.equal((await fetch(server.url+'/missing.json')).status,404);
  } finally {server.close();}

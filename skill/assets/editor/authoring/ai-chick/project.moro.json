@@ -1,0 +1,677 @@
+{
+  "durationFrames": 240,
+  "fps": 60,
+  "height": 768,
+  "layers": [
+    {
+      "cornerRadius": null,
+      "fill": "#F59A38",
+      "height": 44,
+      "id": "foot-left",
+      "name": "Left orange foot",
+      "opacity": 100,
+      "rotation": -8,
+      "scale": 100,
+      "stroke": "#F59A38",
+      "strokeWidth": 0,
+      "tracks": {
+        "opacity": [],
+        "rotation": [],
+        "scale": [],
+        "x": [],
+        "y": []
+      },
+      "type": "ellipse",
+      "width": 100,
+      "x": 312,
+      "y": 611
+    },
+    {
+      "cornerRadius": null,
+      "fill": "#F59A38",
+      "height": 44,
+      "id": "foot-right",
+      "name": "Right orange foot",
+      "opacity": 100,
+      "rotation": 8,
+      "scale": 100,
+      "stroke": "#F59A38",
+      "strokeWidth": 0,
+      "tracks": {
+        "opacity": [],
+        "rotation": [],
+        "scale": [],
+        "x": [],
+        "y": []
+      },
+      "type": "ellipse",
+      "width": 100,
+      "x": 456,
+      "y": 611
+    },
+    {
+      "cornerRadius": 17,
+      "fill": "#FFD65A",
+      "height": 96,
+      "id": "crest-left",
+      "name": "Small left crest feather",
+      "opacity": 100,
+      "rotation": -25,
+      "scale": 100,
+      "stroke": "#FFD65A",
+      "strokeWidth": 0,
+      "tracks": {
+        "opacity": [],
+        "rotation": [],
+        "scale": [],
+        "x": [],
+        "y": []
+      },
+      "type": "rect",
+      "width": 34,
+      "x": 366,
+      "y": 204
+    },
+    {
+      "cornerRadius": 15,
+      "fill": "#FFD65A",
+      "height": 77,
+      "id": "crest-right",
+      "name": "Small right crest feather",
+      "opacity": 100,
+      "rotation": 18,
+      "scale": 100,
+      "stroke": "#FFD65A",
+      "strokeWidth": 0,
+      "tracks": {
+        "opacity": [],
+        "rotation": [],
+        "scale": [],
+        "x": [],
+        "y": []
+      },
+      "type": "rect",
+      "width": 30,
+      "x": 397,
+      "y": 209
+    },
+    {
+      "cornerRadius": null,
+      "fill": "#F4BE3E",
+      "height": 208,
+      "id": "wing-left",
+      "name": "Resting wing",
+      "opacity": 100,
+      "rotation": 20,
+      "scale": 100,
+      "stroke": "#F4BE3E",
+      "strokeWidth": 0,
+      "tracks": {
+        "opacity": [],
+        "rotation": [],
+        "scale": [],
+        "x": [],
+        "y": []
+      },
+      "type": "ellipse",
+      "width": 116,
+      "x": 218,
+      "y": 430
+    },
+    {
+      "cornerRadius": null,
+      "fill": "#F4BE3E",
+      "height": 208,
+      "id": "wing-right",
+      "name": "Greeting wing — lift, two gentle waves, return",
+      "opacity": 100,
+      "rotation": -20,
+      "scale": 100,
+      "stroke": "#F4BE3E",
+      "strokeWidth": 0,
+      "tracks": {
+        "opacity": [],
+        "rotation": [
+          {
+            "easing": "linear",
+            "frame": 0,
+            "value": -20
+          },
+          {
+            "easing": "ease-in-out",
+            "frame": 24,
+            "value": -20
+          },
+          {
+            "easing": "ease-in-out",
+            "frame": 56,
+            "value": 45
+          },
+          {
+            "easing": "ease-in-out",
+            "frame": 78,
+            "value": 65
+          },
+          {
+            "easing": "linear",
+            "frame": 100,
+            "value": 45
+          },
+          {
+            "easing": "ease-in-out",
+            "frame": 112,
+            "value": 45
+          },
+          {
+            "easing": "ease-in-out",
+            "frame": 134,
+            "value": 65
+          },
+          {
+            "easing": "ease-in-out",
+            "frame": 156,
+            "value": 45
+          },
+          {
+            "easing": "linear",
+            "frame": 192,
+            "value": -20
+          },
+          {
+            "easing": "linear",
+            "frame": 239,
+            "value": -20
+          }
+        ],
+        "scale": [],
+        "x": [
+          {
+            "easing": "linear",
+            "frame": 0,
+            "value": 550
+          },
+          {
+            "easing": "ease-in-out",
+            "frame": 24,
+            "value": 550
+          },
+          {
+            "easing": "linear",
+            "frame": 56,
+            "value": 566
+          },
+          {
+            "easing": "ease-in-out",
+            "frame": 156,
+            "value": 566
+          },
+          {
+            "easing": "linear",
+            "frame": 192,
+            "value": 550
+          },
+          {
+            "easing": "linear",
+            "frame": 239,
+            "value": 550
+          }
+        ],
+        "y": [
+          {
+            "easing": "linear",
+            "frame": 0,
+            "value": 430
+          },
+          {
+            "easing": "ease-in-out",
+            "frame": 24,
+            "value": 430
+          },
+          {
+            "easing": "linear",
+            "frame": 56,
+            "value": 350
+          },
+          {
+            "easing": "ease-in-out",
+            "frame": 156,
+            "value": 350
+          },
+          {
+            "easing": "linear",
+            "frame": 192,
+            "value": 430
+          },
+          {
+            "easing": "linear",
+            "frame": 239,
+            "value": 430
+          }
+        ]
+      },
+      "type": "ellipse",
+      "width": 116,
+      "x": 550,
+      "y": 430
+    },
+    {
+      "cornerRadius": null,
+      "fill": "#FFD65A",
+      "height": 420,
+      "id": "body",
+      "name": "Plump yellow body and face",
+      "opacity": 100,
+      "rotation": 0,
+      "scale": 100,
+      "stroke": "#FFD65A",
+      "strokeWidth": 0,
+      "tracks": {
+        "opacity": [],
+        "rotation": [],
+        "scale": [],
+        "x": [],
+        "y": []
+      },
+      "type": "ellipse",
+      "width": 398,
+      "x": 384,
+      "y": 408
+    },
+    {
+      "cornerRadius": null,
+      "fill": "#F3A08D",
+      "height": 32,
+      "id": "cheek-left",
+      "name": "Soft coral left cheek",
+      "opacity": 100,
+      "rotation": 0,
+      "scale": 100,
+      "stroke": "#F3A08D",
+      "strokeWidth": 0,
+      "tracks": {
+        "opacity": [],
+        "rotation": [],
+        "scale": [],
+        "x": [],
+        "y": []
+      },
+      "type": "ellipse",
+      "width": 54,
+      "x": 290,
+      "y": 395
+    },
+    {
+      "cornerRadius": null,
+      "fill": "#F3A08D",
+      "height": 32,
+      "id": "cheek-right",
+      "name": "Soft coral right cheek",
+      "opacity": 100,
+      "rotation": 0,
+      "scale": 100,
+      "stroke": "#F3A08D",
+      "strokeWidth": 0,
+      "tracks": {
+        "opacity": [],
+        "rotation": [],
+        "scale": [],
+        "x": [],
+        "y": []
+      },
+      "type": "ellipse",
+      "width": 54,
+      "x": 478,
+      "y": 395
+    },
+    {
+      "cornerRadius": null,
+      "fill": "#EF9135",
+      "height": 42,
+      "id": "beak",
+      "name": "Short orange beak",
+      "opacity": 100,
+      "rotation": 0,
+      "scale": 100,
+      "stroke": "#EF9135",
+      "strokeWidth": 0,
+      "tracks": {
+        "opacity": [],
+        "rotation": [],
+        "scale": [],
+        "x": [],
+        "y": []
+      },
+      "type": "ellipse",
+      "width": 68,
+      "x": 384,
+      "y": 403
+    },
+    {
+      "cornerRadius": null,
+      "fill": "#243249",
+      "height": 40,
+      "id": "eye-left-open",
+      "name": "Left navy eye",
+      "opacity": 100,
+      "rotation": 0,
+      "scale": 100,
+      "stroke": "#243249",
+      "strokeWidth": 0,
+      "tracks": {
+        "opacity": [
+          {
+            "easing": "linear",
+            "frame": 0,
+            "value": 100
+          },
+          {
+            "easing": "linear",
+            "frame": 105,
+            "value": 100
+          },
+          {
+            "easing": "linear",
+            "frame": 106,
+            "value": 0
+          },
+          {
+            "easing": "linear",
+            "frame": 114,
+            "value": 0
+          },
+          {
+            "easing": "linear",
+            "frame": 115,
+            "value": 100
+          },
+          {
+            "easing": "linear",
+            "frame": 239,
+            "value": 100
+          }
+        ],
+        "rotation": [],
+        "scale": [],
+        "x": [],
+        "y": []
+      },
+      "type": "ellipse",
+      "width": 28,
+      "x": 325,
+      "y": 346
+    },
+    {
+      "cornerRadius": null,
+      "fill": "#243249",
+      "height": 40,
+      "id": "eye-right-open",
+      "name": "Right navy eye",
+      "opacity": 100,
+      "rotation": 0,
+      "scale": 100,
+      "stroke": "#243249",
+      "strokeWidth": 0,
+      "tracks": {
+        "opacity": [
+          {
+            "easing": "linear",
+            "frame": 0,
+            "value": 100
+          },
+          {
+            "easing": "linear",
+            "frame": 105,
+            "value": 100
+          },
+          {
+            "easing": "linear",
+            "frame": 106,
+            "value": 0
+          },
+          {
+            "easing": "linear",
+            "frame": 114,
+            "value": 0
+          },
+          {
+            "easing": "linear",
+            "frame": 115,
+            "value": 100
+          },
+          {
+            "easing": "linear",
+            "frame": 239,
+            "value": 100
+          }
+        ],
+        "rotation": [],
+        "scale": [],
+        "x": [],
+        "y": []
+      },
+      "type": "ellipse",
+      "width": 28,
+      "x": 443,
+      "y": 346
+    },
+    {
+      "cornerRadius": null,
+      "fill": "#FFFFFF",
+      "height": 8,
+      "id": "eye-left-highlight",
+      "name": "Tiny left eye highlight",
+      "opacity": 100,
+      "rotation": 0,
+      "scale": 100,
+      "stroke": "#FFFFFF",
+      "strokeWidth": 0,
+      "tracks": {
+        "opacity": [
+          {
+            "easing": "linear",
+            "frame": 0,
+            "value": 100
+          },
+          {
+            "easing": "linear",
+            "frame": 105,
+            "value": 100
+          },
+          {
+            "easing": "linear",
+            "frame": 106,
+            "value": 0
+          },
+          {
+            "easing": "linear",
+            "frame": 114,
+            "value": 0
+          },
+          {
+            "easing": "linear",
+            "frame": 115,
+            "value": 100
+          },
+          {
+            "easing": "linear",
+            "frame": 239,
+            "value": 100
+          }
+        ],
+        "rotation": [],
+        "scale": [],
+        "x": [],
+        "y": []
+      },
+      "type": "ellipse",
+      "width": 8,
+      "x": 321,
+      "y": 338
+    },
+    {
+      "cornerRadius": null,
+      "fill": "#FFFFFF",
+      "height": 8,
+      "id": "eye-right-highlight",
+      "name": "Tiny right eye highlight",
+      "opacity": 100,
+      "rotation": 0,
+      "scale": 100,
+      "stroke": "#FFFFFF",
+      "strokeWidth": 0,
+      "tracks": {
+        "opacity": [
+          {
+            "easing": "linear",
+            "frame": 0,
+            "value": 100
+          },
+          {
+            "easing": "linear",
+            "frame": 105,
+            "value": 100
+          },
+          {
+            "easing": "linear",
+            "frame": 106,
+            "value": 0
+          },
+          {
+            "easing": "linear",
+            "frame": 114,
+            "value": 0
+          },
+          {
+            "easing": "linear",
+            "frame": 115,
+            "value": 100
+          },
+          {
+            "easing": "linear",
+            "frame": 239,
+            "value": 100
+          }
+        ],
+        "rotation": [],
+        "scale": [],
+        "x": [],
+        "y": []
+      },
+      "type": "ellipse",
+      "width": 8,
+      "x": 439,
+      "y": 338
+    },
+    {
+      "cornerRadius": 3.5,
+      "fill": "#243249",
+      "height": 7,
+      "id": "eye-left-closed",
+      "name": "Left horizontal blink",
+      "opacity": 0,
+      "rotation": 0,
+      "scale": 100,
+      "stroke": "#243249",
+      "strokeWidth": 0,
+      "tracks": {
+        "opacity": [
+          {
+            "easing": "linear",
+            "frame": 0,
+            "value": 0
+          },
+          {
+            "easing": "linear",
+            "frame": 105,
+            "value": 0
+          },
+          {
+            "easing": "linear",
+            "frame": 106,
+            "value": 100
+          },
+          {
+            "easing": "linear",
+            "frame": 114,
+            "value": 100
+          },
+          {
+            "easing": "linear",
+            "frame": 115,
+            "value": 0
+          },
+          {
+            "easing": "linear",
+            "frame": 239,
+            "value": 0
+          }
+        ],
+        "rotation": [],
+        "scale": [],
+        "x": [],
+        "y": []
+      },
+      "type": "rect",
+      "width": 32,
+      "x": 325,
+      "y": 349
+    },
+    {
+      "cornerRadius": 3.5,
+      "fill": "#243249",
+      "height": 7,
+      "id": "eye-right-closed",
+      "name": "Right horizontal blink",
+      "opacity": 0,
+      "rotation": 0,
+      "scale": 100,
+      "stroke": "#243249",
+      "strokeWidth": 0,
+      "tracks": {
+        "opacity": [
+          {
+            "easing": "linear",
+            "frame": 0,
+            "value": 0
+          },
+          {
+            "easing": "linear",
+            "frame": 105,
+            "value": 0
+          },
+          {
+            "easing": "linear",
+            "frame": 106,
+            "value": 100
+          },
+          {
+            "easing": "linear",
+            "frame": 114,
+            "value": 100
+          },
+          {
+            "easing": "linear",
+            "frame": 115,
+            "value": 0
+          },
+          {
+            "easing": "linear",
+            "frame": 239,
+            "value": 0
+          }
+        ],
+        "rotation": [],
+        "scale": [],
+        "x": [],
+        "y": []
+      },
+      "type": "rect",
+      "width": 32,
+      "x": 443,
+      "y": 349
+    }
+  ],
+  "name": "Sunny Chick — Two Waves and a Blink",
+  "version": 1,
+  "width": 768
+}

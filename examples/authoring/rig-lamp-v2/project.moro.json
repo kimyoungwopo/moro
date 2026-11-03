@@ -1,0 +1,404 @@
+{
+  "version": 2,
+  "name": "Articulated desk lamp - manual v2",
+  "width": 512,
+  "height": 512,
+  "fps": 60,
+  "durationFrames": 240,
+  "layers": [
+    {
+      "id": "layer-1",
+      "name": "Base",
+      "parentId": null,
+      "x": 256,
+      "y": 421,
+      "pivot": [
+        0,
+        0
+      ],
+      "scale": 100,
+      "rotation": 0,
+      "opacity": 100,
+      "tracks": {
+        "x": [],
+        "y": [],
+        "scale": [],
+        "rotation": [],
+        "opacity": []
+      },
+      "type": "ellipse",
+      "fill": "#203B42",
+      "stroke": "#203B42",
+      "strokeWidth": 0,
+      "width": 184,
+      "height": 28,
+      "cornerRadius": null
+    },
+    {
+      "id": "layer-2",
+      "name": "Shoulder rig",
+      "parentId": null,
+      "x": 256,
+      "y": 410,
+      "pivot": [
+        0,
+        0
+      ],
+      "scale": 100,
+      "rotation": 0,
+      "opacity": 100,
+      "tracks": {
+        "x": [],
+        "y": [],
+        "scale": [],
+        "rotation": [
+          {
+            "frame": 0,
+            "value": -12,
+            "easing": "ease-in-out"
+          },
+          {
+            "frame": 70,
+            "value": -30,
+            "easing": "ease-in-out"
+          },
+          {
+            "frame": 130,
+            "value": 4,
+            "easing": "ease-in-out"
+          },
+          {
+            "frame": 180,
+            "value": -12,
+            "easing": "ease-in-out"
+          },
+          {
+            "frame": 239,
+            "value": -12,
+            "easing": "ease-in-out"
+          }
+        ],
+        "opacity": []
+      },
+      "type": "group"
+    },
+    {
+      "id": "layer-3",
+      "name": "Upper arm",
+      "parentId": "layer-2",
+      "x": 0,
+      "y": 0,
+      "pivot": [
+        0,
+        65
+      ],
+      "scale": 100,
+      "rotation": 0,
+      "opacity": 100,
+      "tracks": {
+        "x": [],
+        "y": [],
+        "scale": [],
+        "rotation": [],
+        "opacity": []
+      },
+      "type": "rect",
+      "fill": "#203B42",
+      "stroke": "#203B42",
+      "strokeWidth": 0,
+      "width": 22,
+      "height": 150,
+      "cornerRadius": 11
+    },
+    {
+      "id": "layer-4",
+      "name": "Elbow rig",
+      "parentId": "layer-2",
+      "x": 0,
+      "y": -140,
+      "pivot": [
+        0,
+        0
+      ],
+      "scale": 100,
+      "rotation": 0,
+      "opacity": 100,
+      "tracks": {
+        "x": [],
+        "y": [],
+        "scale": [],
+        "rotation": [
+          {
+            "frame": 0,
+            "value": 12,
+            "easing": "ease-in-out"
+          },
+          {
+            "frame": 70,
+            "value": 45,
+            "easing": "ease-in-out"
+          },
+          {
+            "frame": 130,
+            "value": -18,
+            "easing": "ease-in-out"
+          },
+          {
+            "frame": 180,
+            "value": 12,
+            "easing": "ease-in-out"
+          },
+          {
+            "frame": 239,
+            "value": 12,
+            "easing": "ease-in-out"
+          }
+        ],
+        "opacity": []
+      },
+      "type": "group"
+    },
+    {
+      "id": "layer-5",
+      "name": "Forearm",
+      "parentId": "layer-4",
+      "x": 0,
+      "y": 0,
+      "pivot": [
+        -60,
+        0
+      ],
+      "scale": 100,
+      "rotation": 0,
+      "opacity": 100,
+      "tracks": {
+        "x": [],
+        "y": [],
+        "scale": [],
+        "rotation": [],
+        "opacity": []
+      },
+      "type": "rect",
+      "fill": "#1B6C80",
+      "stroke": "#203B42",
+      "strokeWidth": 0,
+      "width": 140,
+      "height": 18,
+      "cornerRadius": 9
+    },
+    {
+      "id": "layer-6",
+      "name": "Elbow joint",
+      "parentId": "layer-4",
+      "x": 0,
+      "y": 0,
+      "pivot": [
+        0,
+        0
+      ],
+      "scale": 100,
+      "rotation": 0,
+      "opacity": 100,
+      "tracks": {
+        "x": [],
+        "y": [],
+        "scale": [],
+        "rotation": [],
+        "opacity": []
+      },
+      "type": "ellipse",
+      "fill": "#D79A4E",
+      "stroke": "#203B42",
+      "strokeWidth": 4,
+      "width": 28,
+      "height": 28,
+      "cornerRadius": null
+    },
+    {
+      "id": "layer-7",
+      "name": "Shoulder joint",
+      "parentId": "layer-2",
+      "x": 0,
+      "y": 0,
+      "pivot": [
+        0,
+        0
+      ],
+      "scale": 100,
+      "rotation": 0,
+      "opacity": 100,
+      "tracks": {
+        "x": [],
+        "y": [],
+        "scale": [],
+        "rotation": [],
+        "opacity": []
+      },
+      "type": "ellipse",
+      "fill": "#D79A4E",
+      "stroke": "#203B42",
+      "strokeWidth": 4,
+      "width": 30,
+      "height": 30,
+      "cornerRadius": null
+    },
+    {
+      "id": "layer-8",
+      "name": "Shade rig",
+      "parentId": "layer-4",
+      "x": 126,
+      "y": 0,
+      "pivot": [
+        0,
+        0
+      ],
+      "scale": 100,
+      "rotation": 0,
+      "opacity": 100,
+      "tracks": {
+        "x": [],
+        "y": [],
+        "scale": [],
+        "rotation": [
+          {
+            "frame": 0,
+            "value": 0,
+            "easing": "ease-in-out"
+          },
+          {
+            "frame": 70,
+            "value": -15,
+            "easing": "ease-in-out"
+          },
+          {
+            "frame": 130,
+            "value": 14,
+            "easing": "ease-in-out"
+          },
+          {
+            "frame": 180,
+            "value": 0,
+            "easing": "ease-in-out"
+          },
+          {
+            "frame": 239,
+            "value": 0,
+            "easing": "ease-in-out"
+          }
+        ],
+        "opacity": []
+      },
+      "type": "group"
+    },
+    {
+      "id": "layer-9",
+      "name": "Warm bulb",
+      "parentId": "layer-8",
+      "x": 0,
+      "y": 58,
+      "pivot": [
+        0,
+        0
+      ],
+      "scale": 100,
+      "rotation": 0,
+      "opacity": 100,
+      "tracks": {
+        "x": [],
+        "y": [],
+        "scale": [],
+        "rotation": [],
+        "opacity": []
+      },
+      "type": "ellipse",
+      "fill": "#D79A4E",
+      "stroke": "#203B42",
+      "strokeWidth": 0,
+      "width": 84,
+      "height": 16,
+      "cornerRadius": null
+    },
+    {
+      "id": "layer-10",
+      "name": "Cubic lampshade",
+      "parentId": "layer-8",
+      "x": 0,
+      "y": 0,
+      "pivot": [
+        0,
+        -24
+      ],
+      "scale": 100,
+      "rotation": 0,
+      "opacity": 100,
+      "tracks": {
+        "x": [],
+        "y": [],
+        "scale": [],
+        "rotation": [],
+        "opacity": []
+      },
+      "type": "path",
+      "fill": "#1B6C80",
+      "stroke": "#203B42",
+      "strokeWidth": 3,
+      "path": {
+        "closed": true,
+        "vertices": [
+          [
+            -28,
+            -24
+          ],
+          [
+            28,
+            -24
+          ],
+          [
+            55,
+            34
+          ],
+          [
+            -55,
+            34
+          ]
+        ],
+        "inTangents": [
+          [
+            -8,
+            18
+          ],
+          [
+            -16,
+            -8
+          ],
+          [
+            -8,
+            -18
+          ],
+          [
+            28,
+            8
+          ]
+        ],
+        "outTangents": [
+          [
+            16,
+            -8
+          ],
+          [
+            8,
+            18
+          ],
+          [
+            -28,
+            8
+          ],
+          [
+            8,
+            -18
+          ]
+        ]
+      }
+    }
+  ]
+}

@@ -1,0 +1,101 @@
+{
+  "theme": {
+    "extend": {
+      "colors": {
+        "ground": "#f2f7f7",
+        "surface": "#ffffff",
+        "raised": "#f4f6f8",
+        "preview": "#f8fafb",
+        "selected": "#e5edef",
+        "sample-hover": "#e9eff0",
+        "text": "#131416",
+        "muted": "#5d5f60",
+        "border": "#e8eaec",
+        "control": "#cdced1",
+        "accent": "#1b6c80",
+        "primary-hover": "#33373a",
+        "preview-dark": "#20262b",
+        "warning": "#92400e",
+        "warning-surface": "#fffbeb",
+        "error": "#c4242a",
+        "error-surface": "#ffedea"
+      },
+      "fontFamily": {
+        "display": [
+          "IBM Plex Sans, -apple-system, BlinkMacSystemFont, Apple SD Gothic Neo, Malgun Gothic, sans-serif"
+        ],
+        "headline": [
+          "IBM Plex Sans, -apple-system, BlinkMacSystemFont, Apple SD Gothic Neo, Malgun Gothic, sans-serif"
+        ],
+        "title": [
+          "IBM Plex Sans, -apple-system, BlinkMacSystemFont, Apple SD Gothic Neo, Malgun Gothic, sans-serif"
+        ],
+        "body": [
+          "IBM Plex Sans, -apple-system, BlinkMacSystemFont, Apple SD Gothic Neo, Malgun Gothic, sans-serif"
+        ],
+        "label": [
+          "IBM Plex Sans, -apple-system, BlinkMacSystemFont, Apple SD Gothic Neo, Malgun Gothic, sans-serif"
+        ],
+        "hex": [
+          "IBM Plex Mono, monospace"
+        ]
+      },
+      "fontSize": {
+        "display": [
+          "36px",
+          {
+            "lineHeight": "44px",
+            "letterSpacing": "-1px",
+            "fontWeight": "500"
+          }
+        ],
+        "headline": [
+          "22px",
+          {
+            "lineHeight": "28px",
+            "letterSpacing": "-0.4px",
+            "fontWeight": "500"
+          }
+        ],
+        "title": [
+          "16px",
+          {
+            "lineHeight": "24px",
+            "fontWeight": "500"
+          }
+        ],
+        "body": [
+          "14px",
+          {
+            "fontWeight": "400"
+          }
+        ],
+        "label": [
+          "12px",
+          {}
+        ],
+        "hex": [
+          "12px",
+          {
+            "lineHeight": "18px"
+          }
+        ]
+      },
+      "borderRadius": {
+        "sheet": "16px",
+        "dialog": "12px",
+        "group": "8px",
+        "control": "6px",
+        "badge": "4px"
+      },
+      "spacing": {
+        "compact": "4px",
+        "control-gap": "8px",
+        "row-gap": "12px",
+        "group": "16px",
+        "tablet": "20px",
+        "section": "24px"
+      }
+    }
+  }
+}

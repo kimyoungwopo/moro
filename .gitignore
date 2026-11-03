@@ -10,3 +10,9 @@ coverage/
 .local-backups/
 dist/
 examples/react/dist/
+e2e/.results/
+playwright-report/
+test-results/
+artifacts/
+bridge/target/
+.moro-ai/

@@ -1,0 +1,13 @@
+import type { Keyframe, Property } from '../index';
+export type { Property, Easing, Keyframe } from '../index';
+export type Vec2 = [number, number];
+export type Matrix = [number, number, number, number, number, number];
+export type Bounds = { minX:number; minY:number; maxX:number; maxY:number };
+export type PathGeometry = {closed:boolean;vertices:Vec2[];inTangents:Vec2[];outTangents:Vec2[]};
+export type CommonV2 = {id:string;name:string;parentId:string|null;x:number;y:number;pivot:Vec2;scale:number;rotation:number;opacity:number;tracks:Record<Property,Keyframe[]>};
+export type PrimitiveV2 = CommonV2 & {type:'rect'|'ellipse';width:number;height:number;cornerRadius:number|null;fill:string;stroke:string;strokeWidth:number};
+export type PathV2 = CommonV2 & {type:'path';path:PathGeometry;fill:string|null;stroke:string;strokeWidth:number};
+export type GroupV2 = CommonV2 & {type:'group'};
+export type LayerV2 = PrimitiveV2 | PathV2 | GroupV2;
+export type ProjectV2 = {version:2;name:string;width:number;height:number;fps:number;durationFrames:number;layers:LayerV2[]};
+export type LayerPatchV2 = Partial<Omit<PrimitiveV2,'id'|'type'|'tracks'>> | Partial<Omit<PathV2,'id'|'type'|'tracks'>> | Partial<Omit<GroupV2,'id'|'type'|'tracks'>>;
