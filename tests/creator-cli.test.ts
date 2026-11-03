@@ -2,13 +2,13 @@ import { afterEach, describe, expect, it } from 'vitest';
 import { mkdtempSync, readFileSync, writeFileSync, existsSync, rmSync, symlinkSync } from 'node:fs';
 import { spawnSync } from 'node:child_process';
 import { join, resolve } from 'node:path';
-import { homedir } from 'node:os';
+import { tmpdir } from 'node:os';
 import { addLayer, createProject, serializeProject, setKeyframe } from '../packages/creator-core/src/index';
 const dirs:string[]=[];
 afterEach(()=>{ for(const dir of dirs.splice(0)) rmSync(dir,{recursive:true,force:true}); });
 const run=(...args:string[])=>spawnSync(process.execPath,[resolve('scripts/moro-create.mjs'),...args],{encoding:'utf8',timeout:15000});
 function fixture() {
-  const dir=mkdtempSync(join(homedir(),'.hermes/cache/scratch/moro-cli-')); dirs.push(dir);
+  const dir=mkdtempSync(join(tmpdir(),'moro-cli-')); dirs.push(dir);
   let p=addLayer(createProject(),'ellipse'); const id=p.layers[0].id;
   p=setKeyframe(p,id,'x',0,100,'ease-in-out'); p=setKeyframe(p,id,'x',60,400);
   const input=join(dir,'project.moro.json'),out=join(dir,'animation.json'); writeFileSync(input,serializeProject(p)); return {dir,input,out};
