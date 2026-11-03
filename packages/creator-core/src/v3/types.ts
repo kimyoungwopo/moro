@@ -1,0 +1,15 @@
+export type Vec2V3 = [number, number];
+export type MatrixV3 = [number, number, number, number, number, number];
+export type PropertyV3 = 'x'|'y'|'scaleX'|'scaleY'|'rotation'|'opacity'|'skew'|'skewAxis';
+export type EasingV3 = 'linear'|'ease-in'|'ease-out'|'ease-in-out'|{type:'cubic-bezier';x1:number;y1:number;x2:number;y2:number};
+export type KeyframeV3 = {frame:number;value:number;easing:EasingV3};
+export type PathGeometryV3 = {closed:boolean;vertices:Vec2V3[];inTangents:Vec2V3[];outTangents:Vec2V3[]};
+export type PathKeyV3 = {frame:number;value:PathGeometryV3;easing:EasingV3};
+export type MaskV3 = {name:string;mode:'add'|'subtract';inverted:boolean;opacity:number;path:PathGeometryV3};
+export type TrimV3 = {start:number;end:number;offset:number;tracks:Record<'start'|'end'|'offset',KeyframeV3[]>};
+export type CommonV3 = {id:string;name:string;parentId:string|null;x:number;y:number;pivot:Vec2V3;scaleX:number;scaleY:number;rotation:number;opacity:number;skew:number;skewAxis:number;tracks:Record<PropertyV3,KeyframeV3[]>;masks:MaskV3[];trim:TrimV3|null};
+export type GroupV3 = CommonV3 & {type:'group'};
+export type PrimitiveV3 = CommonV3 & {type:'rect'|'ellipse';width:number;height:number;cornerRadius:number|null;fill:string;stroke:string;strokeWidth:number};
+export type PathV3 = CommonV3 & {type:'path';path:PathGeometryV3;fill:string|null;stroke:string;strokeWidth:number;pathKeys:PathKeyV3[]};
+export type LayerV3 = GroupV3|PrimitiveV3|PathV3;
+export type ProjectV3 = {version:3;name:string;width:number;height:number;fps:number;durationFrames:number;layers:LayerV3[]};

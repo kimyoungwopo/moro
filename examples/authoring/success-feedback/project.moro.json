@@ -1,0 +1,181 @@
+{
+  "version": 1,
+  "name": "Two-bar success feedback",
+  "width": 512,
+  "height": 512,
+  "fps": 60,
+  "durationFrames": 120,
+  "layers": [
+    {
+      "id": "plate",
+      "name": "Confirmation plate",
+      "type": "ellipse",
+      "x": 256,
+      "y": 256,
+      "width": 200,
+      "height": 200,
+      "fill": "#E1F0EC",
+      "stroke": "#203B42",
+      "strokeWidth": 0,
+      "rotation": 0,
+      "opacity": 100,
+      "scale": 100,
+      "tracks": {
+        "scale": [
+          {
+            "frame": 0,
+            "value": 92,
+            "easing": "ease-out"
+          },
+          {
+            "frame": 18,
+            "value": 106,
+            "easing": "ease-in-out"
+          },
+          {
+            "frame": 32,
+            "value": 100,
+            "easing": "linear"
+          },
+          {
+            "frame": 119,
+            "value": 100,
+            "easing": "linear"
+          }
+        ]
+      }
+    },
+    {
+      "id": "check-short",
+      "name": "Short check bar",
+      "type": "rect",
+      "x": 232,
+      "y": 266,
+      "width": 48,
+      "height": 12,
+      "fill": "#1B6C80",
+      "stroke": "#203B42",
+      "strokeWidth": 0,
+      "rotation": 45,
+      "opacity": 100,
+      "scale": 100,
+      "tracks": {
+        "opacity": [
+          {
+            "frame": 0,
+            "value": 0,
+            "easing": "linear"
+          },
+          {
+            "frame": 18,
+            "value": 0,
+            "easing": "ease-out"
+          },
+          {
+            "frame": 30,
+            "value": 100,
+            "easing": "linear"
+          },
+          {
+            "frame": 119,
+            "value": 100,
+            "easing": "linear"
+          }
+        ],
+        "scale": [
+          {
+            "frame": 0,
+            "value": 88,
+            "easing": "linear"
+          },
+          {
+            "frame": 18,
+            "value": 88,
+            "easing": "ease-out"
+          },
+          {
+            "frame": 36,
+            "value": 106,
+            "easing": "ease-in-out"
+          },
+          {
+            "frame": 48,
+            "value": 100,
+            "easing": "linear"
+          },
+          {
+            "frame": 119,
+            "value": 100,
+            "easing": "linear"
+          }
+        ]
+      }
+    },
+    {
+      "id": "check-long",
+      "name": "Long check bar",
+      "type": "rect",
+      "x": 274,
+      "y": 258,
+      "width": 72,
+      "height": 12,
+      "fill": "#1B6C80",
+      "stroke": "#203B42",
+      "strokeWidth": 0,
+      "rotation": -45,
+      "opacity": 100,
+      "scale": 100,
+      "tracks": {
+        "opacity": [
+          {
+            "frame": 0,
+            "value": 0,
+            "easing": "linear"
+          },
+          {
+            "frame": 30,
+            "value": 0,
+            "easing": "ease-out"
+          },
+          {
+            "frame": 42,
+            "value": 100,
+            "easing": "linear"
+          },
+          {
+            "frame": 119,
+            "value": 100,
+            "easing": "linear"
+          }
+        ],
+        "scale": [
+          {
+            "frame": 0,
+            "value": 88,
+            "easing": "linear"
+          },
+          {
+            "frame": 30,
+            "value": 88,
+            "easing": "ease-out"
+          },
+          {
+            "frame": 50,
+            "value": 106,
+            "easing": "ease-in-out"
+          },
+          {
+            "frame": 64,
+            "value": 100,
+            "easing": "linear"
+          },
+          {
+            "frame": 119,
+            "value": 100,
+            "easing": "linear"
+          }
+        ]
+      }
+    }
+  ]
+}

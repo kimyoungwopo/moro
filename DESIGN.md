@@ -186,7 +186,7 @@ All focusable buttons, links, inputs, selects and summaries receive a teal outli
 
 ### Navigation
 
-The library has three sample rows with static (48px) thumbnails, name and short description. Selected rows use the selected mist surface. Colors/Playback and export format use understated text tabs with a near-black underline (2px), arrow/Home/End keyboard selection and a divider. Mobile comparison uses filled segment buttons. Docs/support and language sit below library metadata. No GitHub link is fabricated while a public repository is absent.
+The library has five sample rows, with two featured showcase compositions followed by the three essentials; rows with static (48px) thumbnails, name and short description. Selected rows use the selected mist surface. Colors/Playback and export format use understated text tabs with a near-black underline (2px), arrow/Home/End keyboard selection and a divider. Mobile comparison uses filled segment buttons. Docs/support and language sit below library metadata. The confirmed public Moro repository is linked from the library and Export footer; there is no Star gate or forced promotion.
 
 ### Containers and feedback
 
@@ -212,6 +212,12 @@ Background selection changes the preview only. Compare shares one frame clock; i
 ### Don't:
 - **Don't** add decorative gradients, glass, glow, dot grids or routine panel entrance motion; the transparency checkerboard is functional.
 - **Don't** turn the workbench into a promotional landing page or a grid of nested dashboard cards.
-- **Don't** restore the superseded layer editor, timeline/keyframe lane or SVG editing controls.
-- **Don't** imply cloud saving, accounts, remote AI generation or a public GitHub destination.
+- **Don't** restore the superseded palette-workbench layer editor. The separately approved `/create` authoring route has its own inspector, timeline and AI proposal flow; preserve that separation.
+- **Don't** imply cloud saving or a Moro login requirement. Optional BYO-AI sends the consented brief and visible target-size context to the user's official CLI/provider; local storage does not mean offline inference. Link only the confirmed public GitHub repository; never fabricate Star counts.
 - **Don't** claim universal 16px mobile typography, complete Korean translation or verified physical-device keyboard behavior.
+
+## Animation authoring quality
+
+This root file preserves the implemented app's visual tokens; do not inject this full UI audit into a data-only animation planner. The actual bounded generation design system is [motion design rules](skills/lottie-authoring/references/design-system.md), the timing/causality source is [MOTION.md](MOTION.md), and connected rounded checks/readable badges use [compact feedback construction](skills/lottie-authoring/recipes/compact-feedback.md). Rust includes those exact sources in the provider input; subprocess transmission is tested. A document existing in the repository does not mean an isolated CLI reads it.
+
+For compact UI feedback, the selected final display size—not canvas512 alone—determines the3px meaningful stroke,10px simple/12px checked badge and24px product hero defaults. These are this project's chosen visual defaults, not universal standards or proof of artistic acceptance. Keep old documents square unless radius is explicitly authored; never round the full-canvas background as a side effect. Compare actual target-size renders and continuous motion before accepting a result.

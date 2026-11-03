@@ -12,7 +12,10 @@ jobs:
           node-version: '24'
           cache: npm
       - run: npm ci
+      # Unit tests also launch Playwright; install before npm run check.
+      - run: npx playwright install --with-deps chromium
       - run: npm run check
+      - run: npm run test:e2e
       - run: npm audit --audit-level=high
       - run: npm ci && npm run build
         working-directory: examples/react

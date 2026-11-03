@@ -1,0 +1,2782 @@
+{
+  "durationFrames": 300,
+  "fps": 60,
+  "height": 512,
+  "layers": [
+    {
+      "id": "shadow",
+      "masks": [],
+      "name": "조용한 접지 그림자",
+      "opacity": 100,
+      "parentId": null,
+      "pivot": [
+        0,
+        0
+      ],
+      "rotation": 0,
+      "scaleX": 100,
+      "scaleY": 100,
+      "skew": 0,
+      "skewAxis": 0,
+      "tracks": {
+        "opacity": [],
+        "rotation": [],
+        "scaleX": [],
+        "scaleY": [],
+        "skew": [],
+        "skewAxis": [],
+        "x": [],
+        "y": []
+      },
+      "trim": null,
+      "type": "group",
+      "x": 256,
+      "y": 391
+    },
+    {
+      "cornerRadius": null,
+      "fill": "#E8ECF4",
+      "height": 24,
+      "id": "shadow-shape",
+      "masks": [],
+      "name": "접지 타원",
+      "opacity": 45,
+      "parentId": "shadow",
+      "pivot": [
+        0,
+        0
+      ],
+      "rotation": 0,
+      "scaleX": 100,
+      "scaleY": 100,
+      "skew": 0,
+      "skewAxis": 0,
+      "stroke": "#E8ECF4",
+      "strokeWidth": 0,
+      "tracks": {
+        "opacity": [],
+        "rotation": [],
+        "scaleX": [],
+        "scaleY": [],
+        "skew": [],
+        "skewAxis": [],
+        "x": [],
+        "y": []
+      },
+      "trim": null,
+      "type": "ellipse",
+      "width": 250,
+      "x": 0,
+      "y": 0
+    },
+    {
+      "fill": "#FFF2CF",
+      "id": "rear-flap",
+      "masks": [],
+      "name": "뒤쪽 덮개 · 고정 연결선",
+      "opacity": 100,
+      "parentId": null,
+      "path": {
+        "closed": true,
+        "inTangents": [
+          [
+            0,
+            0
+          ],
+          [
+            0,
+            0
+          ],
+          [
+            0,
+            0
+          ],
+          [
+            0,
+            0
+          ]
+        ],
+        "outTangents": [
+          [
+            0,
+            0
+          ],
+          [
+            0,
+            0
+          ],
+          [
+            0,
+            0
+          ],
+          [
+            0,
+            0
+          ]
+        ],
+        "vertices": [
+          [
+            155,
+            254
+          ],
+          [
+            256,
+            215
+          ],
+          [
+            235,
+            176
+          ],
+          [
+            134,
+            215
+          ]
+        ]
+      },
+      "pathKeys": [
+        {
+          "easing": {
+            "type": "cubic-bezier",
+            "x1": 0.42,
+            "x2": 0.72,
+            "y1": 0,
+            "y2": 1
+          },
+          "frame": 102,
+          "value": {
+            "closed": true,
+            "inTangents": [
+              [
+                0,
+                0
+              ],
+              [
+                0,
+                0
+              ],
+              [
+                0,
+                0
+              ],
+              [
+                0,
+                0
+              ]
+            ],
+            "outTangents": [
+              [
+                0,
+                0
+              ],
+              [
+                0,
+                0
+              ],
+              [
+                0,
+                0
+              ],
+              [
+                0,
+                0
+              ]
+            ],
+            "vertices": [
+              [
+                155,
+                254
+              ],
+              [
+                256,
+                215
+              ],
+              [
+                235,
+                176
+              ],
+              [
+                134,
+                215
+              ]
+            ]
+          }
+        },
+        {
+          "easing": {
+            "type": "cubic-bezier",
+            "x1": 0.22,
+            "x2": 0.38,
+            "y1": 0,
+            "y2": 1
+          },
+          "frame": 114,
+          "value": {
+            "closed": true,
+            "inTangents": [
+              [
+                0,
+                0
+              ],
+              [
+                0,
+                0
+              ],
+              [
+                0,
+                0
+              ],
+              [
+                0,
+                0
+              ]
+            ],
+            "outTangents": [
+              [
+                0,
+                0
+              ],
+              [
+                0,
+                0
+              ],
+              [
+                0,
+                0
+              ],
+              [
+                0,
+                0
+              ]
+            ],
+            "vertices": [
+              [
+                155,
+                254
+              ],
+              [
+                256,
+                215
+              ],
+              [
+                256,
+                164
+              ],
+              [
+                155,
+                203
+              ]
+            ]
+          }
+        },
+        {
+          "easing": "linear",
+          "frame": 126,
+          "value": {
+            "closed": true,
+            "inTangents": [
+              [
+                0,
+                0
+              ],
+              [
+                0,
+                0
+              ],
+              [
+                0,
+                0
+              ],
+              [
+                0,
+                0
+              ]
+            ],
+            "outTangents": [
+              [
+                0,
+                0
+              ],
+              [
+                0,
+                0
+              ],
+              [
+                0,
+                0
+              ],
+              [
+                0,
+                0
+              ]
+            ],
+            "vertices": [
+              [
+                155,
+                254
+              ],
+              [
+                256,
+                215
+              ],
+              [
+                305.5,
+                234.5
+              ],
+              [
+                204.5,
+                275.5
+              ]
+            ]
+          }
+        }
+      ],
+      "pivot": [
+        0,
+        0
+      ],
+      "rotation": 0,
+      "scaleX": 100,
+      "scaleY": 100,
+      "skew": 0,
+      "skewAxis": 0,
+      "stroke": "#172B4D",
+      "strokeWidth": 4,
+      "tracks": {
+        "opacity": [],
+        "rotation": [],
+        "scaleX": [],
+        "scaleY": [],
+        "skew": [],
+        "skewAxis": [],
+        "x": [],
+        "y": [
+          {
+            "easing": {
+              "type": "cubic-bezier",
+              "x1": 0.2,
+              "x2": 0.36,
+              "y1": 0,
+              "y2": 1
+            },
+            "frame": 0,
+            "value": 8
+          },
+          {
+            "easing": "linear",
+            "frame": 30,
+            "value": 0
+          },
+          {
+            "easing": "ease-out",
+            "frame": 168,
+            "value": 0
+          },
+          {
+            "easing": "ease-in-out",
+            "frame": 176,
+            "value": 3
+          },
+          {
+            "easing": "linear",
+            "frame": 190,
+            "value": 0
+          }
+        ]
+      },
+      "trim": null,
+      "type": "path",
+      "x": 0,
+      "y": 0
+    },
+    {
+      "fill": "#F3C85F",
+      "id": "rear-right-flap",
+      "masks": [],
+      "name": "오른쪽 뒤 덮개 · 고정 연결선",
+      "opacity": 100,
+      "parentId": null,
+      "path": {
+        "closed": true,
+        "inTangents": [
+          [
+            0,
+            0
+          ],
+          [
+            0,
+            0
+          ],
+          [
+            0,
+            0
+          ],
+          [
+            0,
+            0
+          ]
+        ],
+        "outTangents": [
+          [
+            0,
+            0
+          ],
+          [
+            0,
+            0
+          ],
+          [
+            0,
+            0
+          ],
+          [
+            0,
+            0
+          ]
+        ],
+        "vertices": [
+          [
+            256,
+            215
+          ],
+          [
+            355,
+            254
+          ],
+          [
+            381,
+            216
+          ],
+          [
+            282,
+            177
+          ]
+        ]
+      },
+      "pathKeys": [
+        {
+          "easing": {
+            "type": "cubic-bezier",
+            "x1": 0.42,
+            "x2": 0.72,
+            "y1": 0,
+            "y2": 1
+          },
+          "frame": 114,
+          "value": {
+            "closed": true,
+            "inTangents": [
+              [
+                0,
+                0
+              ],
+              [
+                0,
+                0
+              ],
+              [
+                0,
+                0
+              ],
+              [
+                0,
+                0
+              ]
+            ],
+            "outTangents": [
+              [
+                0,
+                0
+              ],
+              [
+                0,
+                0
+              ],
+              [
+                0,
+                0
+              ],
+              [
+                0,
+                0
+              ]
+            ],
+            "vertices": [
+              [
+                256,
+                215
+              ],
+              [
+                355,
+                254
+              ],
+              [
+                381,
+                216
+              ],
+              [
+                282,
+                177
+              ]
+            ]
+          }
+        },
+        {
+          "easing": {
+            "type": "cubic-bezier",
+            "x1": 0.22,
+            "x2": 0.38,
+            "y1": 0,
+            "y2": 1
+          },
+          "frame": 126,
+          "value": {
+            "closed": true,
+            "inTangents": [
+              [
+                0,
+                0
+              ],
+              [
+                0,
+                0
+              ],
+              [
+                0,
+                0
+              ],
+              [
+                0,
+                0
+              ]
+            ],
+            "outTangents": [
+              [
+                0,
+                0
+              ],
+              [
+                0,
+                0
+              ],
+              [
+                0,
+                0
+              ],
+              [
+                0,
+                0
+              ]
+            ],
+            "vertices": [
+              [
+                256,
+                215
+              ],
+              [
+                355,
+                254
+              ],
+              [
+                355,
+                203
+              ],
+              [
+                256,
+                164
+              ]
+            ]
+          }
+        },
+        {
+          "easing": "linear",
+          "frame": 138,
+          "value": {
+            "closed": true,
+            "inTangents": [
+              [
+                0,
+                0
+              ],
+              [
+                0,
+                0
+              ],
+              [
+                0,
+                0
+              ],
+              [
+                0,
+                0
+              ]
+            ],
+            "outTangents": [
+              [
+                0,
+                0
+              ],
+              [
+                0,
+                0
+              ],
+              [
+                0,
+                0
+              ],
+              [
+                0,
+                0
+              ]
+            ],
+            "vertices": [
+              [
+                256,
+                215
+              ],
+              [
+                355,
+                254
+              ],
+              [
+                304.5,
+                275.5
+              ],
+              [
+                205.5,
+                234.5
+              ]
+            ]
+          }
+        }
+      ],
+      "pivot": [
+        0,
+        0
+      ],
+      "rotation": 0,
+      "scaleX": 100,
+      "scaleY": 100,
+      "skew": 0,
+      "skewAxis": 0,
+      "stroke": "#172B4D",
+      "strokeWidth": 4,
+      "tracks": {
+        "opacity": [],
+        "rotation": [],
+        "scaleX": [],
+        "scaleY": [],
+        "skew": [],
+        "skewAxis": [],
+        "x": [],
+        "y": [
+          {
+            "easing": {
+              "type": "cubic-bezier",
+              "x1": 0.2,
+              "x2": 0.36,
+              "y1": 0,
+              "y2": 1
+            },
+            "frame": 0,
+            "value": 8
+          },
+          {
+            "easing": "linear",
+            "frame": 30,
+            "value": 0
+          },
+          {
+            "easing": "ease-out",
+            "frame": 168,
+            "value": 0
+          },
+          {
+            "easing": "ease-in-out",
+            "frame": 176,
+            "value": 3
+          },
+          {
+            "easing": "linear",
+            "frame": 190,
+            "value": 0
+          }
+        ]
+      },
+      "trim": null,
+      "type": "path",
+      "x": 0,
+      "y": 0
+    },
+    {
+      "fill": "#172B4D",
+      "id": "box-interior",
+      "masks": [],
+      "name": "상자 내부 · 포장물 대비",
+      "opacity": 100,
+      "parentId": null,
+      "path": {
+        "closed": true,
+        "inTangents": [
+          [
+            0,
+            0
+          ],
+          [
+            0,
+            0
+          ],
+          [
+            0,
+            0
+          ],
+          [
+            0,
+            0
+          ]
+        ],
+        "outTangents": [
+          [
+            0,
+            0
+          ],
+          [
+            0,
+            0
+          ],
+          [
+            0,
+            0
+          ],
+          [
+            0,
+            0
+          ]
+        ],
+        "vertices": [
+          [
+            155,
+            254
+          ],
+          [
+            256,
+            215
+          ],
+          [
+            355,
+            254
+          ],
+          [
+            254,
+            297
+          ]
+        ]
+      },
+      "pathKeys": [],
+      "pivot": [
+        0,
+        0
+      ],
+      "rotation": 0,
+      "scaleX": 100,
+      "scaleY": 100,
+      "skew": 0,
+      "skewAxis": 0,
+      "stroke": "#172B4D",
+      "strokeWidth": 4,
+      "tracks": {
+        "opacity": [
+          {
+            "easing": "linear",
+            "frame": 0,
+            "value": 100
+          },
+          {
+            "easing": "linear",
+            "frame": 114,
+            "value": 100
+          },
+          {
+            "easing": "linear",
+            "frame": 115,
+            "value": 0
+          }
+        ],
+        "rotation": [],
+        "scaleX": [],
+        "scaleY": [],
+        "skew": [],
+        "skewAxis": [],
+        "x": [],
+        "y": [
+          {
+            "easing": {
+              "type": "cubic-bezier",
+              "x1": 0.2,
+              "x2": 0.36,
+              "y1": 0,
+              "y2": 1
+            },
+            "frame": 0,
+            "value": 8
+          },
+          {
+            "easing": "linear",
+            "frame": 30,
+            "value": 0
+          },
+          {
+            "easing": "ease-out",
+            "frame": 168,
+            "value": 0
+          },
+          {
+            "easing": "ease-in-out",
+            "frame": 176,
+            "value": 3
+          },
+          {
+            "easing": "linear",
+            "frame": 190,
+            "value": 0
+          }
+        ]
+      },
+      "trim": null,
+      "type": "path",
+      "x": 0,
+      "y": 0
+    },
+    {
+      "id": "parcel-blue",
+      "masks": [],
+      "name": "첫 번째 포장물 · 납작한 블루 상자",
+      "opacity": 100,
+      "parentId": null,
+      "pivot": [
+        0,
+        0
+      ],
+      "rotation": -12,
+      "scaleX": 100,
+      "scaleY": 100,
+      "skew": 0,
+      "skewAxis": 0,
+      "tracks": {
+        "opacity": [],
+        "rotation": [
+          {
+            "easing": "linear",
+            "frame": 0,
+            "value": -12
+          },
+          {
+            "easing": {
+              "type": "cubic-bezier",
+              "x1": 0.3,
+              "x2": 0.55,
+              "y1": 0,
+              "y2": 1
+            },
+            "frame": 30,
+            "value": -12
+          },
+          {
+            "easing": "linear",
+            "frame": 66,
+            "value": 0
+          }
+        ],
+        "scaleX": [],
+        "scaleY": [],
+        "skew": [],
+        "skewAxis": [],
+        "x": [
+          {
+            "easing": "linear",
+            "frame": 0,
+            "value": 178
+          },
+          {
+            "easing": "ease-in-out",
+            "frame": 30,
+            "value": 178
+          },
+          {
+            "easing": "ease-out",
+            "frame": 48,
+            "value": 216
+          },
+          {
+            "easing": "linear",
+            "frame": 66,
+            "value": 230
+          }
+        ],
+        "y": [
+          {
+            "easing": "linear",
+            "frame": 0,
+            "value": 171
+          },
+          {
+            "easing": {
+              "type": "cubic-bezier",
+              "x1": 0.42,
+              "x2": 0.75,
+              "y1": 0,
+              "y2": 0.4
+            },
+            "frame": 30,
+            "value": 171
+          },
+          {
+            "easing": {
+              "type": "cubic-bezier",
+              "x1": 0.28,
+              "x2": 0.5,
+              "y1": 0.35,
+              "y2": 1
+            },
+            "frame": 48,
+            "value": 225
+          },
+          {
+            "easing": "linear",
+            "frame": 66,
+            "value": 330
+          }
+        ]
+      },
+      "trim": null,
+      "type": "group",
+      "x": 178,
+      "y": 171
+    },
+    {
+      "cornerRadius": 8,
+      "fill": "#2874F0",
+      "height": 62,
+      "id": "parcel-blue-body",
+      "masks": [],
+      "name": "블루 포장물 본체",
+      "opacity": 100,
+      "parentId": "parcel-blue",
+      "pivot": [
+        0,
+        0
+      ],
+      "rotation": 0,
+      "scaleX": 100,
+      "scaleY": 100,
+      "skew": 0,
+      "skewAxis": 0,
+      "stroke": "#172B4D",
+      "strokeWidth": 4,
+      "tracks": {
+        "opacity": [],
+        "rotation": [],
+        "scaleX": [],
+        "scaleY": [],
+        "skew": [],
+        "skewAxis": [],
+        "x": [],
+        "y": []
+      },
+      "trim": null,
+      "type": "rect",
+      "width": 53,
+      "x": 0,
+      "y": 0
+    },
+    {
+      "cornerRadius": 0,
+      "fill": "#FFF2CF",
+      "height": 58,
+      "id": "parcel-blue-band",
+      "masks": [],
+      "name": "블루 포장물 크림 띠",
+      "opacity": 100,
+      "parentId": "parcel-blue",
+      "pivot": [
+        0,
+        0
+      ],
+      "rotation": 0,
+      "scaleX": 100,
+      "scaleY": 100,
+      "skew": 0,
+      "skewAxis": 0,
+      "stroke": "#FFF2CF",
+      "strokeWidth": 0,
+      "tracks": {
+        "opacity": [],
+        "rotation": [],
+        "scaleX": [],
+        "scaleY": [],
+        "skew": [],
+        "skewAxis": [],
+        "x": [],
+        "y": []
+      },
+      "trim": null,
+      "type": "rect",
+      "width": 10,
+      "x": 0,
+      "y": 0
+    },
+    {
+      "id": "parcel-pouch",
+      "masks": [],
+      "name": "두 번째 포장물 · 크림 완충 파우치",
+      "opacity": 100,
+      "parentId": null,
+      "pivot": [
+        0,
+        0
+      ],
+      "rotation": 7,
+      "scaleX": 100,
+      "scaleY": 100,
+      "skew": 0,
+      "skewAxis": 0,
+      "tracks": {
+        "opacity": [],
+        "rotation": [
+          {
+            "easing": "linear",
+            "frame": 0,
+            "value": 7
+          },
+          {
+            "easing": "ease-in-out",
+            "frame": 48,
+            "value": 7
+          },
+          {
+            "easing": "linear",
+            "frame": 88,
+            "value": 0
+          }
+        ],
+        "scaleX": [],
+        "scaleY": [],
+        "skew": [],
+        "skewAxis": [],
+        "x": [
+          {
+            "easing": "linear",
+            "frame": 0,
+            "value": 260
+          },
+          {
+            "easing": "ease-in-out",
+            "frame": 48,
+            "value": 260
+          },
+          {
+            "easing": "ease-in-out",
+            "frame": 68,
+            "value": 250
+          },
+          {
+            "easing": "linear",
+            "frame": 88,
+            "value": 256
+          }
+        ],
+        "y": [
+          {
+            "easing": "linear",
+            "frame": 0,
+            "value": 126
+          },
+          {
+            "easing": {
+              "type": "cubic-bezier",
+              "x1": 0.42,
+              "x2": 0.75,
+              "y1": 0,
+              "y2": 0.4
+            },
+            "frame": 48,
+            "value": 126
+          },
+          {
+            "easing": "ease-out",
+            "frame": 68,
+            "value": 210
+          },
+          {
+            "easing": "linear",
+            "frame": 88,
+            "value": 330
+          }
+        ]
+      },
+      "trim": null,
+      "type": "group",
+      "x": 260,
+      "y": 126
+    },
+    {
+      "fill": "#FFF2CF",
+      "id": "pouch-body",
+      "masks": [],
+      "name": "둥근 완충 파우치 외곽",
+      "opacity": 100,
+      "parentId": "parcel-pouch",
+      "path": {
+        "closed": true,
+        "inTangents": [
+          [
+            -6,
+            0
+          ],
+          [
+            0,
+            0
+          ],
+          [
+            0,
+            -8
+          ],
+          [
+            9,
+            0
+          ],
+          [
+            0,
+            0
+          ],
+          [
+            0,
+            9
+          ]
+        ],
+        "outTangents": [
+          [
+            0,
+            0
+          ],
+          [
+            6,
+            0
+          ],
+          [
+            0,
+            9
+          ],
+          [
+            0,
+            0
+          ],
+          [
+            -9,
+            0
+          ],
+          [
+            0,
+            -8
+          ]
+        ],
+        "vertices": [
+          [
+            -19,
+            -31
+          ],
+          [
+            19,
+            -31
+          ],
+          [
+            28,
+            -17
+          ],
+          [
+            24,
+            31
+          ],
+          [
+            -24,
+            31
+          ],
+          [
+            -28,
+            -17
+          ]
+        ]
+      },
+      "pathKeys": [],
+      "pivot": [
+        0,
+        0
+      ],
+      "rotation": 0,
+      "scaleX": 100,
+      "scaleY": 100,
+      "skew": 0,
+      "skewAxis": 0,
+      "stroke": "#172B4D",
+      "strokeWidth": 4,
+      "tracks": {
+        "opacity": [],
+        "rotation": [],
+        "scaleX": [],
+        "scaleY": [],
+        "skew": [],
+        "skewAxis": [],
+        "x": [],
+        "y": []
+      },
+      "trim": null,
+      "type": "path",
+      "x": 0,
+      "y": 0
+    },
+    {
+      "fill": null,
+      "id": "pouch-seal",
+      "masks": [],
+      "name": "파우치 밀봉선",
+      "opacity": 100,
+      "parentId": "parcel-pouch",
+      "path": {
+        "closed": false,
+        "inTangents": [
+          [
+            0,
+            0
+          ],
+          [
+            0,
+            0
+          ]
+        ],
+        "outTangents": [
+          [
+            0,
+            0
+          ],
+          [
+            0,
+            0
+          ]
+        ],
+        "vertices": [
+          [
+            -17,
+            -18
+          ],
+          [
+            17,
+            -18
+          ]
+        ]
+      },
+      "pathKeys": [],
+      "pivot": [
+        0,
+        0
+      ],
+      "rotation": 0,
+      "scaleX": 100,
+      "scaleY": 100,
+      "skew": 0,
+      "skewAxis": 0,
+      "stroke": "#172B4D",
+      "strokeWidth": 4,
+      "tracks": {
+        "opacity": [],
+        "rotation": [],
+        "scaleX": [],
+        "scaleY": [],
+        "skew": [],
+        "skewAxis": [],
+        "x": [],
+        "y": []
+      },
+      "trim": null,
+      "type": "path",
+      "x": 0,
+      "y": 0
+    },
+    {
+      "id": "parcel-yellow",
+      "masks": [],
+      "name": "세 번째 포장물 · 작은 노랑 케이스",
+      "opacity": 100,
+      "parentId": null,
+      "pivot": [
+        0,
+        0
+      ],
+      "rotation": 15,
+      "scaleX": 100,
+      "scaleY": 100,
+      "skew": 0,
+      "skewAxis": 0,
+      "tracks": {
+        "opacity": [],
+        "rotation": [
+          {
+            "easing": "linear",
+            "frame": 0,
+            "value": 15
+          },
+          {
+            "easing": "ease-in-out",
+            "frame": 70,
+            "value": 15
+          },
+          {
+            "easing": "linear",
+            "frame": 108,
+            "value": 0
+          }
+        ],
+        "scaleX": [],
+        "scaleY": [],
+        "skew": [],
+        "skewAxis": [],
+        "x": [
+          {
+            "easing": "linear",
+            "frame": 0,
+            "value": 335
+          },
+          {
+            "easing": "ease-in-out",
+            "frame": 70,
+            "value": 335
+          },
+          {
+            "easing": "ease-out",
+            "frame": 88,
+            "value": 295
+          },
+          {
+            "easing": "linear",
+            "frame": 108,
+            "value": 284
+          }
+        ],
+        "y": [
+          {
+            "easing": "linear",
+            "frame": 0,
+            "value": 175
+          },
+          {
+            "easing": "ease-in",
+            "frame": 70,
+            "value": 175
+          },
+          {
+            "easing": {
+              "type": "cubic-bezier",
+              "x1": 0.28,
+              "x2": 0.5,
+              "y1": 0.35,
+              "y2": 1
+            },
+            "frame": 88,
+            "value": 222
+          },
+          {
+            "easing": "linear",
+            "frame": 108,
+            "value": 330
+          }
+        ]
+      },
+      "trim": null,
+      "type": "group",
+      "x": 335,
+      "y": 175
+    },
+    {
+      "cornerRadius": 12,
+      "fill": "#FFD565",
+      "height": 43,
+      "id": "yellow-case",
+      "masks": [],
+      "name": "노랑 케이스 본체",
+      "opacity": 100,
+      "parentId": "parcel-yellow",
+      "pivot": [
+        0,
+        0
+      ],
+      "rotation": 0,
+      "scaleX": 100,
+      "scaleY": 100,
+      "skew": 0,
+      "skewAxis": 0,
+      "stroke": "#172B4D",
+      "strokeWidth": 4,
+      "tracks": {
+        "opacity": [],
+        "rotation": [],
+        "scaleX": [],
+        "scaleY": [],
+        "skew": [],
+        "skewAxis": [],
+        "x": [],
+        "y": []
+      },
+      "trim": null,
+      "type": "rect",
+      "width": 55,
+      "x": 0,
+      "y": 0
+    },
+    {
+      "fill": null,
+      "id": "yellow-case-seam",
+      "masks": [],
+      "name": "케이스 이음선",
+      "opacity": 100,
+      "parentId": "parcel-yellow",
+      "path": {
+        "closed": false,
+        "inTangents": [
+          [
+            0,
+            0
+          ],
+          [
+            0,
+            0
+          ]
+        ],
+        "outTangents": [
+          [
+            0,
+            0
+          ],
+          [
+            0,
+            0
+          ]
+        ],
+        "vertices": [
+          [
+            -26,
+            -5
+          ],
+          [
+            26,
+            -5
+          ]
+        ]
+      },
+      "pathKeys": [],
+      "pivot": [
+        0,
+        0
+      ],
+      "rotation": 0,
+      "scaleX": 100,
+      "scaleY": 100,
+      "skew": 0,
+      "skewAxis": 0,
+      "stroke": "#172B4D",
+      "strokeWidth": 4,
+      "tracks": {
+        "opacity": [],
+        "rotation": [],
+        "scaleX": [],
+        "scaleY": [],
+        "skew": [],
+        "skewAxis": [],
+        "x": [],
+        "y": []
+      },
+      "trim": null,
+      "type": "path",
+      "x": 0,
+      "y": 0
+    },
+    {
+      "fill": "#FFD565",
+      "id": "box-front",
+      "masks": [],
+      "name": "상자 앞면 · 포장물 가림 면",
+      "opacity": 100,
+      "parentId": null,
+      "path": {
+        "closed": true,
+        "inTangents": [
+          [
+            0,
+            0
+          ],
+          [
+            0,
+            0
+          ],
+          [
+            0,
+            0
+          ],
+          [
+            0,
+            0
+          ]
+        ],
+        "outTangents": [
+          [
+            0,
+            0
+          ],
+          [
+            0,
+            0
+          ],
+          [
+            0,
+            0
+          ],
+          [
+            0,
+            0
+          ]
+        ],
+        "vertices": [
+          [
+            155,
+            254
+          ],
+          [
+            254,
+            297
+          ],
+          [
+            254,
+            384
+          ],
+          [
+            155,
+            341
+          ]
+        ]
+      },
+      "pathKeys": [],
+      "pivot": [
+        0,
+        0
+      ],
+      "rotation": 0,
+      "scaleX": 100,
+      "scaleY": 100,
+      "skew": 0,
+      "skewAxis": 0,
+      "stroke": "#172B4D",
+      "strokeWidth": 4,
+      "tracks": {
+        "opacity": [],
+        "rotation": [],
+        "scaleX": [],
+        "scaleY": [],
+        "skew": [],
+        "skewAxis": [],
+        "x": [],
+        "y": [
+          {
+            "easing": {
+              "type": "cubic-bezier",
+              "x1": 0.2,
+              "x2": 0.36,
+              "y1": 0,
+              "y2": 1
+            },
+            "frame": 0,
+            "value": 8
+          },
+          {
+            "easing": "linear",
+            "frame": 30,
+            "value": 0
+          },
+          {
+            "easing": "ease-out",
+            "frame": 168,
+            "value": 0
+          },
+          {
+            "easing": "ease-in-out",
+            "frame": 176,
+            "value": 3
+          },
+          {
+            "easing": "linear",
+            "frame": 190,
+            "value": 0
+          }
+        ]
+      },
+      "trim": null,
+      "type": "path",
+      "x": 0,
+      "y": 0
+    },
+    {
+      "fill": "#E8B34B",
+      "id": "box-side",
+      "masks": [],
+      "name": "상자 오른쪽 면 · 포장물 가림 면",
+      "opacity": 100,
+      "parentId": null,
+      "path": {
+        "closed": true,
+        "inTangents": [
+          [
+            0,
+            0
+          ],
+          [
+            0,
+            0
+          ],
+          [
+            0,
+            0
+          ],
+          [
+            0,
+            0
+          ]
+        ],
+        "outTangents": [
+          [
+            0,
+            0
+          ],
+          [
+            0,
+            0
+          ],
+          [
+            0,
+            0
+          ],
+          [
+            0,
+            0
+          ]
+        ],
+        "vertices": [
+          [
+            254,
+            297
+          ],
+          [
+            355,
+            254
+          ],
+          [
+            355,
+            341
+          ],
+          [
+            254,
+            384
+          ]
+        ]
+      },
+      "pathKeys": [],
+      "pivot": [
+        0,
+        0
+      ],
+      "rotation": 0,
+      "scaleX": 100,
+      "scaleY": 100,
+      "skew": 0,
+      "skewAxis": 0,
+      "stroke": "#172B4D",
+      "strokeWidth": 4,
+      "tracks": {
+        "opacity": [],
+        "rotation": [],
+        "scaleX": [],
+        "scaleY": [],
+        "skew": [],
+        "skewAxis": [],
+        "x": [],
+        "y": [
+          {
+            "easing": {
+              "type": "cubic-bezier",
+              "x1": 0.2,
+              "x2": 0.36,
+              "y1": 0,
+              "y2": 1
+            },
+            "frame": 0,
+            "value": 8
+          },
+          {
+            "easing": "linear",
+            "frame": 30,
+            "value": 0
+          },
+          {
+            "easing": "ease-out",
+            "frame": 168,
+            "value": 0
+          },
+          {
+            "easing": "ease-in-out",
+            "frame": 176,
+            "value": 3
+          },
+          {
+            "easing": "linear",
+            "frame": 190,
+            "value": 0
+          }
+        ]
+      },
+      "trim": null,
+      "type": "path",
+      "x": 0,
+      "y": 0
+    },
+    {
+      "fill": "#FFF2CF",
+      "id": "front-flap",
+      "masks": [],
+      "name": "앞 덮개 · 앞면 윗변에 연결",
+      "opacity": 100,
+      "parentId": null,
+      "path": {
+        "closed": true,
+        "inTangents": [
+          [
+            0,
+            0
+          ],
+          [
+            0,
+            0
+          ],
+          [
+            0,
+            0
+          ],
+          [
+            0,
+            0
+          ]
+        ],
+        "outTangents": [
+          [
+            0,
+            0
+          ],
+          [
+            0,
+            0
+          ],
+          [
+            0,
+            0
+          ],
+          [
+            0,
+            0
+          ]
+        ],
+        "vertices": [
+          [
+            155,
+            254
+          ],
+          [
+            254,
+            297
+          ],
+          [
+            221,
+            327
+          ],
+          [
+            122,
+            284
+          ]
+        ]
+      },
+      "pathKeys": [
+        {
+          "easing": {
+            "type": "cubic-bezier",
+            "x1": 0.42,
+            "x2": 0.72,
+            "y1": 0,
+            "y2": 1
+          },
+          "frame": 132,
+          "value": {
+            "closed": true,
+            "inTangents": [
+              [
+                0,
+                0
+              ],
+              [
+                0,
+                0
+              ],
+              [
+                0,
+                0
+              ],
+              [
+                0,
+                0
+              ]
+            ],
+            "outTangents": [
+              [
+                0,
+                0
+              ],
+              [
+                0,
+                0
+              ],
+              [
+                0,
+                0
+              ],
+              [
+                0,
+                0
+              ]
+            ],
+            "vertices": [
+              [
+                155,
+                254
+              ],
+              [
+                254,
+                297
+              ],
+              [
+                221,
+                327
+              ],
+              [
+                122,
+                284
+              ]
+            ]
+          }
+        },
+        {
+          "easing": {
+            "type": "cubic-bezier",
+            "x1": 0.22,
+            "x2": 0.38,
+            "y1": 0,
+            "y2": 1
+          },
+          "frame": 144,
+          "value": {
+            "closed": true,
+            "inTangents": [
+              [
+                0,
+                0
+              ],
+              [
+                0,
+                0
+              ],
+              [
+                0,
+                0
+              ],
+              [
+                0,
+                0
+              ]
+            ],
+            "outTangents": [
+              [
+                0,
+                0
+              ],
+              [
+                0,
+                0
+              ],
+              [
+                0,
+                0
+              ],
+              [
+                0,
+                0
+              ]
+            ],
+            "vertices": [
+              [
+                155,
+                254
+              ],
+              [
+                254,
+                297
+              ],
+              [
+                254,
+                245
+              ],
+              [
+                155,
+                202
+              ]
+            ]
+          }
+        },
+        {
+          "easing": "linear",
+          "frame": 156,
+          "value": {
+            "closed": true,
+            "inTangents": [
+              [
+                0,
+                0
+              ],
+              [
+                0,
+                0
+              ],
+              [
+                0,
+                0
+              ],
+              [
+                0,
+                0
+              ]
+            ],
+            "outTangents": [
+              [
+                0,
+                0
+              ],
+              [
+                0,
+                0
+              ],
+              [
+                0,
+                0
+              ],
+              [
+                0,
+                0
+              ]
+            ],
+            "vertices": [
+              [
+                155,
+                254
+              ],
+              [
+                254,
+                297
+              ],
+              [
+                304.5,
+                275.5
+              ],
+              [
+                205.5,
+                234.5
+              ]
+            ]
+          }
+        }
+      ],
+      "pivot": [
+        0,
+        0
+      ],
+      "rotation": 0,
+      "scaleX": 100,
+      "scaleY": 100,
+      "skew": 0,
+      "skewAxis": 0,
+      "stroke": "#172B4D",
+      "strokeWidth": 4,
+      "tracks": {
+        "opacity": [],
+        "rotation": [],
+        "scaleX": [],
+        "scaleY": [],
+        "skew": [],
+        "skewAxis": [],
+        "x": [],
+        "y": [
+          {
+            "easing": {
+              "type": "cubic-bezier",
+              "x1": 0.2,
+              "x2": 0.36,
+              "y1": 0,
+              "y2": 1
+            },
+            "frame": 0,
+            "value": 8
+          },
+          {
+            "easing": "linear",
+            "frame": 30,
+            "value": 0
+          },
+          {
+            "easing": "ease-out",
+            "frame": 168,
+            "value": 0
+          },
+          {
+            "easing": "ease-in-out",
+            "frame": 176,
+            "value": 3
+          },
+          {
+            "easing": "linear",
+            "frame": 190,
+            "value": 0
+          }
+        ]
+      },
+      "trim": null,
+      "type": "path",
+      "x": 0,
+      "y": 0
+    },
+    {
+      "fill": "#FFE7A4",
+      "id": "side-flap",
+      "masks": [],
+      "name": "옆 덮개 · 옆면 윗변에 연결",
+      "opacity": 100,
+      "parentId": null,
+      "path": {
+        "closed": true,
+        "inTangents": [
+          [
+            0,
+            0
+          ],
+          [
+            0,
+            0
+          ],
+          [
+            0,
+            0
+          ],
+          [
+            0,
+            0
+          ]
+        ],
+        "outTangents": [
+          [
+            0,
+            0
+          ],
+          [
+            0,
+            0
+          ],
+          [
+            0,
+            0
+          ],
+          [
+            0,
+            0
+          ]
+        ],
+        "vertices": [
+          [
+            254,
+            297
+          ],
+          [
+            355,
+            254
+          ],
+          [
+            386,
+            283
+          ],
+          [
+            285,
+            326
+          ]
+        ]
+      },
+      "pathKeys": [
+        {
+          "easing": {
+            "type": "cubic-bezier",
+            "x1": 0.42,
+            "x2": 0.72,
+            "y1": 0,
+            "y2": 1
+          },
+          "frame": 144,
+          "value": {
+            "closed": true,
+            "inTangents": [
+              [
+                0,
+                0
+              ],
+              [
+                0,
+                0
+              ],
+              [
+                0,
+                0
+              ],
+              [
+                0,
+                0
+              ]
+            ],
+            "outTangents": [
+              [
+                0,
+                0
+              ],
+              [
+                0,
+                0
+              ],
+              [
+                0,
+                0
+              ],
+              [
+                0,
+                0
+              ]
+            ],
+            "vertices": [
+              [
+                254,
+                297
+              ],
+              [
+                355,
+                254
+              ],
+              [
+                386,
+                283
+              ],
+              [
+                285,
+                326
+              ]
+            ]
+          }
+        },
+        {
+          "easing": {
+            "type": "cubic-bezier",
+            "x1": 0.22,
+            "x2": 0.38,
+            "y1": 0,
+            "y2": 1
+          },
+          "frame": 156,
+          "value": {
+            "closed": true,
+            "inTangents": [
+              [
+                0,
+                0
+              ],
+              [
+                0,
+                0
+              ],
+              [
+                0,
+                0
+              ],
+              [
+                0,
+                0
+              ]
+            ],
+            "outTangents": [
+              [
+                0,
+                0
+              ],
+              [
+                0,
+                0
+              ],
+              [
+                0,
+                0
+              ],
+              [
+                0,
+                0
+              ]
+            ],
+            "vertices": [
+              [
+                254,
+                297
+              ],
+              [
+                355,
+                254
+              ],
+              [
+                355,
+                202
+              ],
+              [
+                254,
+                245
+              ]
+            ]
+          }
+        },
+        {
+          "easing": "linear",
+          "frame": 168,
+          "value": {
+            "closed": true,
+            "inTangents": [
+              [
+                0,
+                0
+              ],
+              [
+                0,
+                0
+              ],
+              [
+                0,
+                0
+              ],
+              [
+                0,
+                0
+              ]
+            ],
+            "outTangents": [
+              [
+                0,
+                0
+              ],
+              [
+                0,
+                0
+              ],
+              [
+                0,
+                0
+              ],
+              [
+                0,
+                0
+              ]
+            ],
+            "vertices": [
+              [
+                254,
+                297
+              ],
+              [
+                355,
+                254
+              ],
+              [
+                305.5,
+                234.5
+              ],
+              [
+                204.5,
+                275.5
+              ]
+            ]
+          }
+        }
+      ],
+      "pivot": [
+        0,
+        0
+      ],
+      "rotation": 0,
+      "scaleX": 100,
+      "scaleY": 100,
+      "skew": 0,
+      "skewAxis": 0,
+      "stroke": "#172B4D",
+      "strokeWidth": 4,
+      "tracks": {
+        "opacity": [],
+        "rotation": [],
+        "scaleX": [],
+        "scaleY": [],
+        "skew": [],
+        "skewAxis": [],
+        "x": [],
+        "y": [
+          {
+            "easing": {
+              "type": "cubic-bezier",
+              "x1": 0.2,
+              "x2": 0.36,
+              "y1": 0,
+              "y2": 1
+            },
+            "frame": 0,
+            "value": 8
+          },
+          {
+            "easing": "linear",
+            "frame": 30,
+            "value": 0
+          },
+          {
+            "easing": "ease-out",
+            "frame": 168,
+            "value": 0
+          },
+          {
+            "easing": "ease-in-out",
+            "frame": 176,
+            "value": 3
+          },
+          {
+            "easing": "linear",
+            "frame": 190,
+            "value": 0
+          }
+        ]
+      },
+      "trim": null,
+      "type": "path",
+      "x": 0,
+      "y": 0
+    },
+    {
+      "id": "ready-badge",
+      "masks": [],
+      "name": "배송 준비 완료 배지",
+      "opacity": 100,
+      "parentId": null,
+      "pivot": [
+        0,
+        0
+      ],
+      "rotation": 0,
+      "scaleX": 100,
+      "scaleY": 100,
+      "skew": 0,
+      "skewAxis": 0,
+      "tracks": {
+        "opacity": [],
+        "rotation": [],
+        "scaleX": [
+          {
+            "easing": "linear",
+            "frame": 0,
+            "value": 82
+          },
+          {
+            "easing": "ease-out",
+            "frame": 174,
+            "value": 82
+          },
+          {
+            "easing": {
+              "type": "cubic-bezier",
+              "x1": 0.3,
+              "x2": 0.5,
+              "y1": 0,
+              "y2": 1
+            },
+            "frame": 198,
+            "value": 106
+          },
+          {
+            "easing": "linear",
+            "frame": 216,
+            "value": 100
+          },
+          {
+            "easing": "linear",
+            "frame": 299,
+            "value": 100
+          }
+        ],
+        "scaleY": [
+          {
+            "easing": "linear",
+            "frame": 0,
+            "value": 82
+          },
+          {
+            "easing": "ease-out",
+            "frame": 174,
+            "value": 82
+          },
+          {
+            "easing": {
+              "type": "cubic-bezier",
+              "x1": 0.3,
+              "x2": 0.5,
+              "y1": 0,
+              "y2": 1
+            },
+            "frame": 198,
+            "value": 106
+          },
+          {
+            "easing": "linear",
+            "frame": 216,
+            "value": 100
+          },
+          {
+            "easing": "linear",
+            "frame": 299,
+            "value": 100
+          }
+        ],
+        "skew": [],
+        "skewAxis": [],
+        "x": [],
+        "y": [
+          {
+            "easing": "linear",
+            "frame": 0,
+            "value": 362
+          },
+          {
+            "easing": "ease-out",
+            "frame": 174,
+            "value": 362
+          },
+          {
+            "easing": "linear",
+            "frame": 204,
+            "value": 350
+          },
+          {
+            "easing": "linear",
+            "frame": 299,
+            "value": 350
+          }
+        ]
+      },
+      "trim": null,
+      "type": "group",
+      "x": 359,
+      "y": 350
+    },
+    {
+      "cornerRadius": null,
+      "fill": "#FFF2CF",
+      "height": 104,
+      "id": "badge-rim",
+      "masks": [],
+      "name": "완료 배지 크림 테두리",
+      "opacity": 100,
+      "parentId": "ready-badge",
+      "pivot": [
+        0,
+        0
+      ],
+      "rotation": 0,
+      "scaleX": 100,
+      "scaleY": 100,
+      "skew": 0,
+      "skewAxis": 0,
+      "stroke": "#172B4D",
+      "strokeWidth": 4,
+      "tracks": {
+        "opacity": [
+          {
+            "easing": "linear",
+            "frame": 0,
+            "value": 0
+          },
+          {
+            "easing": "ease-out",
+            "frame": 174,
+            "value": 0
+          },
+          {
+            "easing": "linear",
+            "frame": 186,
+            "value": 100
+          }
+        ],
+        "rotation": [],
+        "scaleX": [],
+        "scaleY": [],
+        "skew": [],
+        "skewAxis": [],
+        "x": [],
+        "y": []
+      },
+      "trim": null,
+      "type": "ellipse",
+      "width": 104,
+      "x": 0,
+      "y": 0
+    },
+    {
+      "cornerRadius": null,
+      "fill": "#2874F0",
+      "height": 86,
+      "id": "badge-face",
+      "masks": [],
+      "name": "선명한 블루 완료 면",
+      "opacity": 100,
+      "parentId": "ready-badge",
+      "pivot": [
+        0,
+        0
+      ],
+      "rotation": 0,
+      "scaleX": 100,
+      "scaleY": 100,
+      "skew": 0,
+      "skewAxis": 0,
+      "stroke": "#2874F0",
+      "strokeWidth": 0,
+      "tracks": {
+        "opacity": [
+          {
+            "easing": "linear",
+            "frame": 0,
+            "value": 0
+          },
+          {
+            "easing": "ease-out",
+            "frame": 174,
+            "value": 0
+          },
+          {
+            "easing": "linear",
+            "frame": 186,
+            "value": 100
+          }
+        ],
+        "rotation": [],
+        "scaleX": [],
+        "scaleY": [],
+        "skew": [],
+        "skewAxis": [],
+        "x": [],
+        "y": []
+      },
+      "trim": null,
+      "type": "ellipse",
+      "width": 86,
+      "x": 0,
+      "y": 0
+    },
+    {
+      "fill": "#FFF2CF",
+      "id": "ready-check",
+      "masks": [],
+      "name": "큰 완료 체크",
+      "opacity": 100,
+      "parentId": "ready-badge",
+      "path": {
+        "closed": true,
+        "inTangents": [
+          [
+            0,
+            0
+          ],
+          [
+            0,
+            0
+          ],
+          [
+            0,
+            0
+          ],
+          [
+            0,
+            0
+          ],
+          [
+            0,
+            0
+          ],
+          [
+            0,
+            0
+          ]
+        ],
+        "outTangents": [
+          [
+            0,
+            0
+          ],
+          [
+            0,
+            0
+          ],
+          [
+            0,
+            0
+          ],
+          [
+            0,
+            0
+          ],
+          [
+            0,
+            0
+          ],
+          [
+            0,
+            0
+          ]
+        ],
+        "vertices": [
+          [
+            -25,
+            1
+          ],
+          [
+            -16,
+            -8
+          ],
+          [
+            -5,
+            4
+          ],
+          [
+            18,
+            -20
+          ],
+          [
+            27,
+            -11
+          ],
+          [
+            -5,
+            23
+          ]
+        ]
+      },
+      "pathKeys": [],
+      "pivot": [
+        0,
+        0
+      ],
+      "rotation": 0,
+      "scaleX": 100,
+      "scaleY": 100,
+      "skew": 0,
+      "skewAxis": 0,
+      "stroke": "#FFF2CF",
+      "strokeWidth": 0,
+      "tracks": {
+        "opacity": [
+          {
+            "easing": "linear",
+            "frame": 0,
+            "value": 0
+          },
+          {
+            "easing": "ease-out",
+            "frame": 188,
+            "value": 0
+          },
+          {
+            "easing": "linear",
+            "frame": 202,
+            "value": 100
+          }
+        ],
+        "rotation": [],
+        "scaleX": [
+          {
+            "easing": "linear",
+            "frame": 0,
+            "value": 85
+          },
+          {
+            "easing": {
+              "type": "cubic-bezier",
+              "x1": 0.2,
+              "x2": 0.36,
+              "y1": 0,
+              "y2": 1
+            },
+            "frame": 188,
+            "value": 85
+          },
+          {
+            "easing": "linear",
+            "frame": 208,
+            "value": 100
+          }
+        ],
+        "scaleY": [
+          {
+            "easing": "linear",
+            "frame": 0,
+            "value": 85
+          },
+          {
+            "easing": {
+              "type": "cubic-bezier",
+              "x1": 0.2,
+              "x2": 0.36,
+              "y1": 0,
+              "y2": 1
+            },
+            "frame": 188,
+            "value": 85
+          },
+          {
+            "easing": "linear",
+            "frame": 208,
+            "value": 100
+          }
+        ],
+        "skew": [],
+        "skewAxis": [],
+        "x": [],
+        "y": []
+      },
+      "trim": null,
+      "type": "path",
+      "x": 0,
+      "y": 0
+    }
+  ],
+  "name": "안전 포장 · 배송 준비 완료 · 최종 모션",
+  "version": 3,
+  "width": 512
+}

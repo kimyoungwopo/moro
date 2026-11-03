@@ -1,0 +1,36 @@
+[package]
+name = "moro-ai-bridge"
+version = "0.1.0"
+edition = "2024"
+rust-version = "1.85"
+default-run = "moro-ai-bridge"
+
+[[bin]]
+name = "moro-harness"
+path = "src/bin/moro-harness.rs"
+
+[[bin]]
+name = "moro-validate-v2"
+path = "src/bin/moro-validate-v2.rs"
+
+[dependencies]
+serde = { version = "1", features = ["derive"] }
+serde_json = "1"
+tiny_http = "0.12"
+libc = "0.2"
+
+[[bin]]
+name = "moro-ai-bridge"
+path = "src/main.rs"
+
+[[bin]]
+name = "fake-harness-cli-fixture"
+path = "tests/support/fake_harness_cli.rs"
+test = false
+bench = false
+
+[[bin]]
+name = "fake-cli-protocol-fixture"
+path = "tests/support/fake_cli.rs"
+test = false
+bench = false

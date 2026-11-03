@@ -1,0 +1,2237 @@
+{
+  "durationFrames": 300,
+  "fps": 60,
+  "height": 512,
+  "layers": [
+    {
+      "id": "ground",
+      "name": "Soft grounding shadow",
+      "opacity": 100,
+      "parentId": null,
+      "pivot": [
+        0,
+        0
+      ],
+      "rotation": 0,
+      "scale": 100,
+      "tracks": {
+        "opacity": [],
+        "rotation": [],
+        "scale": [
+          {
+            "easing": "ease-out",
+            "frame": 0,
+            "value": 88
+          },
+          {
+            "easing": "ease-in-out",
+            "frame": 36,
+            "value": 100
+          }
+        ],
+        "x": [],
+        "y": []
+      },
+      "type": "group",
+      "x": 256,
+      "y": 434
+    },
+    {
+      "cornerRadius": null,
+      "fill": "#172B4D",
+      "height": 22,
+      "id": "shadow",
+      "name": "Quiet elliptical contact shadow",
+      "opacity": 12,
+      "parentId": "ground",
+      "pivot": [
+        0,
+        0
+      ],
+      "rotation": 0,
+      "scale": 100,
+      "stroke": "#172B4D",
+      "strokeWidth": 0,
+      "tracks": {
+        "opacity": [],
+        "rotation": [],
+        "scale": [],
+        "x": [],
+        "y": []
+      },
+      "type": "ellipse",
+      "width": 232,
+      "x": 0,
+      "y": 0
+    },
+    {
+      "id": "parcel",
+      "name": "Parcel assembly and landing response",
+      "opacity": 100,
+      "parentId": null,
+      "pivot": [
+        0,
+        132
+      ],
+      "rotation": 0,
+      "scale": 100,
+      "tracks": {
+        "opacity": [],
+        "rotation": [
+          {
+            "easing": "ease-out",
+            "frame": 0,
+            "value": -4
+          },
+          {
+            "easing": "ease-in-out",
+            "frame": 15,
+            "value": 1.5
+          },
+          {
+            "easing": "ease-out",
+            "frame": 36,
+            "value": 0
+          },
+          {
+            "easing": "ease-in",
+            "frame": 162,
+            "value": 0
+          },
+          {
+            "easing": "ease-out",
+            "frame": 173,
+            "value": -1.5
+          },
+          {
+            "easing": "ease-in-out",
+            "frame": 185,
+            "value": 0.7
+          },
+          {
+            "easing": "linear",
+            "frame": 204,
+            "value": 0
+          }
+        ],
+        "scale": [
+          {
+            "easing": "ease-in",
+            "frame": 0,
+            "value": 97
+          },
+          {
+            "easing": "ease-out",
+            "frame": 10,
+            "value": 94
+          },
+          {
+            "easing": "ease-in-out",
+            "frame": 23,
+            "value": 102
+          },
+          {
+            "easing": "ease-out",
+            "frame": 36,
+            "value": 100
+          },
+          {
+            "easing": "ease-in",
+            "frame": 162,
+            "value": 100
+          },
+          {
+            "easing": "ease-out",
+            "frame": 171,
+            "value": 97
+          },
+          {
+            "easing": "ease-in-out",
+            "frame": 183,
+            "value": 102
+          },
+          {
+            "easing": "linear",
+            "frame": 204,
+            "value": 100
+          }
+        ],
+        "x": [],
+        "y": [
+          {
+            "easing": "ease-out",
+            "frame": 0,
+            "value": 418
+          },
+          {
+            "easing": "ease-in-out",
+            "frame": 12,
+            "value": 424
+          },
+          {
+            "easing": "ease-out",
+            "frame": 25,
+            "value": 421
+          },
+          {
+            "easing": "linear",
+            "frame": 36,
+            "value": 424
+          }
+        ]
+      },
+      "type": "group",
+      "x": 256,
+      "y": 424
+    },
+    {
+      "fill": "#172B4D",
+      "id": "interior",
+      "name": "Deep open parcel interior",
+      "opacity": 100,
+      "parentId": "parcel",
+      "path": {
+        "closed": true,
+        "inTangents": [
+          [
+            0,
+            0
+          ],
+          [
+            0,
+            0
+          ],
+          [
+            0,
+            0
+          ],
+          [
+            0,
+            0
+          ]
+        ],
+        "outTangents": [
+          [
+            0,
+            0
+          ],
+          [
+            0,
+            0
+          ],
+          [
+            0,
+            0
+          ],
+          [
+            0,
+            0
+          ]
+        ],
+        "vertices": [
+          [
+            -112,
+            -35
+          ],
+          [
+            -32,
+            -82
+          ],
+          [
+            114,
+            -32
+          ],
+          [
+            32,
+            22
+          ]
+        ]
+      },
+      "pivot": [
+        0,
+        0
+      ],
+      "rotation": 0,
+      "scale": 100,
+      "stroke": "#172B4D",
+      "strokeWidth": 4,
+      "tracks": {
+        "opacity": [],
+        "rotation": [],
+        "scale": [],
+        "x": [],
+        "y": []
+      },
+      "type": "path",
+      "x": 0,
+      "y": 0
+    },
+    {
+      "id": "cream-item",
+      "name": "First cream parcel curved entry",
+      "opacity": 100,
+      "parentId": "parcel",
+      "pivot": [
+        0,
+        0
+      ],
+      "rotation": -24,
+      "scale": 100,
+      "tracks": {
+        "opacity": [],
+        "rotation": [
+          {
+            "easing": "ease-in-out",
+            "frame": 30,
+            "value": -24
+          },
+          {
+            "easing": "ease-in",
+            "frame": 48,
+            "value": -12
+          },
+          {
+            "easing": "ease-out",
+            "frame": 70,
+            "value": 12
+          }
+        ],
+        "scale": [
+          {
+            "easing": "ease-out",
+            "frame": 30,
+            "value": 88
+          },
+          {
+            "easing": "ease-in",
+            "frame": 43,
+            "value": 100
+          },
+          {
+            "easing": "ease-out",
+            "frame": 72,
+            "value": 80
+          }
+        ],
+        "x": [
+          {
+            "easing": "ease-out",
+            "frame": 30,
+            "value": -144
+          },
+          {
+            "easing": "ease-in-out",
+            "frame": 47,
+            "value": -104
+          },
+          {
+            "easing": "ease-in",
+            "frame": 60,
+            "value": -66
+          },
+          {
+            "easing": "ease-out",
+            "frame": 74,
+            "value": -37
+          }
+        ],
+        "y": [
+          {
+            "easing": "ease-out",
+            "frame": 30,
+            "value": -155
+          },
+          {
+            "easing": "ease-in",
+            "frame": 47,
+            "value": -176
+          },
+          {
+            "easing": "ease-in",
+            "frame": 60,
+            "value": -118
+          },
+          {
+            "easing": "ease-out",
+            "frame": 74,
+            "value": 40
+          }
+        ]
+      },
+      "type": "group",
+      "x": -144,
+      "y": -155
+    },
+    {
+      "cornerRadius": 9,
+      "fill": "#FFF3D7",
+      "height": 72,
+      "id": "cream-body",
+      "name": "Cream merchandise sleeve",
+      "opacity": 0,
+      "parentId": "cream-item",
+      "pivot": [
+        0,
+        0
+      ],
+      "rotation": 0,
+      "scale": 100,
+      "stroke": "#172B4D",
+      "strokeWidth": 4,
+      "tracks": {
+        "opacity": [
+          {
+            "easing": "linear",
+            "frame": 29,
+            "value": 0
+          },
+          {
+            "easing": "ease-out",
+            "frame": 36,
+            "value": 100
+          },
+          {
+            "easing": "linear",
+            "frame": 73,
+            "value": 100
+          },
+          {
+            "easing": "linear",
+            "frame": 74,
+            "value": 0
+          }
+        ],
+        "rotation": [],
+        "scale": [],
+        "x": [],
+        "y": []
+      },
+      "type": "rect",
+      "width": 52,
+      "x": 0,
+      "y": 0
+    },
+    {
+      "cornerRadius": 3,
+      "fill": "#F7C74C",
+      "height": 16,
+      "id": "cream-band",
+      "name": "Warm sleeve band",
+      "opacity": 0,
+      "parentId": "cream-item",
+      "pivot": [
+        0,
+        0
+      ],
+      "rotation": 0,
+      "scale": 100,
+      "stroke": "#F7C74C",
+      "strokeWidth": 0,
+      "tracks": {
+        "opacity": [
+          {
+            "easing": "linear",
+            "frame": 29,
+            "value": 0
+          },
+          {
+            "easing": "ease-out",
+            "frame": 36,
+            "value": 100
+          },
+          {
+            "easing": "linear",
+            "frame": 73,
+            "value": 100
+          },
+          {
+            "easing": "linear",
+            "frame": 74,
+            "value": 0
+          }
+        ],
+        "rotation": [],
+        "scale": [],
+        "x": [],
+        "y": []
+      },
+      "type": "rect",
+      "width": 44,
+      "x": 0,
+      "y": 9
+    },
+    {
+      "id": "blue-item",
+      "name": "Second blue card descending arc",
+      "opacity": 100,
+      "parentId": "parcel",
+      "pivot": [
+        0,
+        0
+      ],
+      "rotation": 9,
+      "scale": 100,
+      "tracks": {
+        "opacity": [],
+        "rotation": [
+          {
+            "easing": "ease-in-out",
+            "frame": 45,
+            "value": 9
+          },
+          {
+            "easing": "ease-in",
+            "frame": 63,
+            "value": -8
+          },
+          {
+            "easing": "ease-out",
+            "frame": 89,
+            "value": 5
+          }
+        ],
+        "scale": [
+          {
+            "easing": "ease-out",
+            "frame": 45,
+            "value": 90
+          },
+          {
+            "easing": "ease-in",
+            "frame": 57,
+            "value": 100
+          },
+          {
+            "easing": "ease-out",
+            "frame": 91,
+            "value": 80
+          }
+        ],
+        "x": [
+          {
+            "easing": "ease-in-out",
+            "frame": 45,
+            "value": -12
+          },
+          {
+            "easing": "ease-in",
+            "frame": 64,
+            "value": 9
+          },
+          {
+            "easing": "ease-out",
+            "frame": 92,
+            "value": 3
+          }
+        ],
+        "y": [
+          {
+            "easing": "ease-out",
+            "frame": 45,
+            "value": -190
+          },
+          {
+            "easing": "ease-in",
+            "frame": 59,
+            "value": -207
+          },
+          {
+            "easing": "ease-in",
+            "frame": 77,
+            "value": -105
+          },
+          {
+            "easing": "ease-out",
+            "frame": 92,
+            "value": 48
+          }
+        ]
+      },
+      "type": "group",
+      "x": -12,
+      "y": -190
+    },
+    {
+      "cornerRadius": 8,
+      "fill": "#2864F0",
+      "height": 81,
+      "id": "blue-body",
+      "name": "Blue product card",
+      "opacity": 0,
+      "parentId": "blue-item",
+      "pivot": [
+        0,
+        0
+      ],
+      "rotation": 0,
+      "scale": 100,
+      "stroke": "#172B4D",
+      "strokeWidth": 4,
+      "tracks": {
+        "opacity": [
+          {
+            "easing": "linear",
+            "frame": 44,
+            "value": 0
+          },
+          {
+            "easing": "ease-out",
+            "frame": 51,
+            "value": 100
+          },
+          {
+            "easing": "linear",
+            "frame": 91,
+            "value": 100
+          },
+          {
+            "easing": "linear",
+            "frame": 92,
+            "value": 0
+          }
+        ],
+        "rotation": [],
+        "scale": [],
+        "x": [],
+        "y": []
+      },
+      "type": "rect",
+      "width": 57,
+      "x": 0,
+      "y": 0
+    },
+    {
+      "cornerRadius": 5,
+      "fill": "#FFF3D7",
+      "height": 29,
+      "id": "blue-inset",
+      "name": "Blank cream card inset",
+      "opacity": 0,
+      "parentId": "blue-item",
+      "pivot": [
+        0,
+        0
+      ],
+      "rotation": 0,
+      "scale": 100,
+      "stroke": "#FFF3D7",
+      "strokeWidth": 0,
+      "tracks": {
+        "opacity": [
+          {
+            "easing": "linear",
+            "frame": 44,
+            "value": 0
+          },
+          {
+            "easing": "ease-out",
+            "frame": 51,
+            "value": 100
+          },
+          {
+            "easing": "linear",
+            "frame": 91,
+            "value": 100
+          },
+          {
+            "easing": "linear",
+            "frame": 92,
+            "value": 0
+          }
+        ],
+        "rotation": [],
+        "scale": [],
+        "x": [],
+        "y": []
+      },
+      "type": "rect",
+      "width": 37,
+      "x": 0,
+      "y": -8
+    },
+    {
+      "id": "yellow-item",
+      "name": "Third compact package right fan entry",
+      "opacity": 100,
+      "parentId": "parcel",
+      "pivot": [
+        0,
+        0
+      ],
+      "rotation": 26,
+      "scale": 100,
+      "tracks": {
+        "opacity": [],
+        "rotation": [
+          {
+            "easing": "ease-in-out",
+            "frame": 62,
+            "value": 26
+          },
+          {
+            "easing": "ease-in",
+            "frame": 80,
+            "value": 12
+          },
+          {
+            "easing": "ease-out",
+            "frame": 105,
+            "value": -10
+          }
+        ],
+        "scale": [
+          {
+            "easing": "ease-out",
+            "frame": 62,
+            "value": 88
+          },
+          {
+            "easing": "ease-in",
+            "frame": 74,
+            "value": 100
+          },
+          {
+            "easing": "ease-out",
+            "frame": 108,
+            "value": 80
+          }
+        ],
+        "x": [
+          {
+            "easing": "ease-out",
+            "frame": 62,
+            "value": 143
+          },
+          {
+            "easing": "ease-in-out",
+            "frame": 79,
+            "value": 109
+          },
+          {
+            "easing": "ease-in",
+            "frame": 94,
+            "value": 65
+          },
+          {
+            "easing": "ease-out",
+            "frame": 108,
+            "value": 34
+          }
+        ],
+        "y": [
+          {
+            "easing": "ease-out",
+            "frame": 62,
+            "value": -161
+          },
+          {
+            "easing": "ease-in",
+            "frame": 79,
+            "value": -181
+          },
+          {
+            "easing": "ease-in",
+            "frame": 94,
+            "value": -105
+          },
+          {
+            "easing": "ease-out",
+            "frame": 108,
+            "value": 51
+          }
+        ]
+      },
+      "type": "group",
+      "x": 143,
+      "y": -161
+    },
+    {
+      "cornerRadius": 10,
+      "fill": "#F7C74C",
+      "height": 54,
+      "id": "yellow-body",
+      "name": "Compact golden package",
+      "opacity": 0,
+      "parentId": "yellow-item",
+      "pivot": [
+        0,
+        0
+      ],
+      "rotation": 0,
+      "scale": 100,
+      "stroke": "#172B4D",
+      "strokeWidth": 4,
+      "tracks": {
+        "opacity": [
+          {
+            "easing": "linear",
+            "frame": 61,
+            "value": 0
+          },
+          {
+            "easing": "ease-out",
+            "frame": 68,
+            "value": 100
+          },
+          {
+            "easing": "linear",
+            "frame": 107,
+            "value": 100
+          },
+          {
+            "easing": "linear",
+            "frame": 108,
+            "value": 0
+          }
+        ],
+        "rotation": [],
+        "scale": [],
+        "x": [],
+        "y": []
+      },
+      "type": "rect",
+      "width": 66,
+      "x": 0,
+      "y": 0
+    },
+    {
+      "cornerRadius": 2,
+      "fill": "#FFF3D7",
+      "height": 46,
+      "id": "yellow-wrap",
+      "name": "Cream package wrap",
+      "opacity": 0,
+      "parentId": "yellow-item",
+      "pivot": [
+        0,
+        0
+      ],
+      "rotation": 0,
+      "scale": 100,
+      "stroke": "#FFF3D7",
+      "strokeWidth": 0,
+      "tracks": {
+        "opacity": [
+          {
+            "easing": "linear",
+            "frame": 61,
+            "value": 0
+          },
+          {
+            "easing": "ease-out",
+            "frame": 68,
+            "value": 100
+          },
+          {
+            "easing": "linear",
+            "frame": 107,
+            "value": 100
+          },
+          {
+            "easing": "linear",
+            "frame": 108,
+            "value": 0
+          }
+        ],
+        "rotation": [],
+        "scale": [],
+        "x": [],
+        "y": []
+      },
+      "type": "rect",
+      "width": 15,
+      "x": -5,
+      "y": 0
+    },
+    {
+      "id": "left-hinge",
+      "name": "Left lid anchored at folded edge midpoint",
+      "opacity": 100,
+      "parentId": "parcel",
+      "pivot": [
+        -72,
+        -58.5
+      ],
+      "rotation": -155,
+      "scale": 100,
+      "tracks": {
+        "opacity": [],
+        "rotation": [
+          {
+            "easing": "ease-in-out",
+            "frame": 0,
+            "value": -155
+          },
+          {
+            "easing": "ease-in-out",
+            "frame": 102,
+            "value": -155
+          },
+          {
+            "easing": "ease-in",
+            "frame": 110,
+            "value": -162
+          },
+          {
+            "easing": "ease-out",
+            "frame": 135,
+            "value": 4
+          },
+          {
+            "easing": "linear",
+            "frame": 144,
+            "value": 0
+          }
+        ],
+        "scale": [],
+        "x": [],
+        "y": []
+      },
+      "type": "group",
+      "x": -72,
+      "y": -58.5
+    },
+    {
+      "fill": "#FFF3D7",
+      "id": "left-lid",
+      "name": "Cream first closing lid",
+      "opacity": 100,
+      "parentId": "left-hinge",
+      "path": {
+        "closed": true,
+        "inTangents": [
+          [
+            0,
+            0
+          ],
+          [
+            0,
+            0
+          ],
+          [
+            0,
+            0
+          ],
+          [
+            0,
+            0
+          ]
+        ],
+        "outTangents": [
+          [
+            0,
+            0
+          ],
+          [
+            0,
+            0
+          ],
+          [
+            0,
+            0
+          ],
+          [
+            0,
+            0
+          ]
+        ],
+        "vertices": [
+          [
+            -112,
+            -35
+          ],
+          [
+            -32,
+            -82
+          ],
+          [
+            41,
+            -57
+          ],
+          [
+            -40,
+            -6.5
+          ]
+        ]
+      },
+      "pivot": [
+        0,
+        0
+      ],
+      "rotation": 0,
+      "scale": 100,
+      "stroke": "#172B4D",
+      "strokeWidth": 4,
+      "tracks": {
+        "opacity": [],
+        "rotation": [],
+        "scale": [],
+        "x": [],
+        "y": []
+      },
+      "type": "path",
+      "x": 0,
+      "y": 0
+    },
+    {
+      "id": "right-hinge",
+      "name": "Right lid anchored at folded edge midpoint",
+      "opacity": 100,
+      "parentId": "parcel",
+      "pivot": [
+        73,
+        -5
+      ],
+      "rotation": 155,
+      "scale": 100,
+      "tracks": {
+        "opacity": [],
+        "rotation": [
+          {
+            "easing": "ease-in-out",
+            "frame": 0,
+            "value": 155
+          },
+          {
+            "easing": "ease-in-out",
+            "frame": 121,
+            "value": 155
+          },
+          {
+            "easing": "ease-in",
+            "frame": 129,
+            "value": 161
+          },
+          {
+            "easing": "ease-out",
+            "frame": 155,
+            "value": -3
+          },
+          {
+            "easing": "linear",
+            "frame": 168,
+            "value": 0
+          }
+        ],
+        "scale": [],
+        "x": [],
+        "y": []
+      },
+      "type": "group",
+      "x": 73,
+      "y": -5
+    },
+    {
+      "fill": "#F7C74C",
+      "id": "right-lid",
+      "name": "Golden second closing lid",
+      "opacity": 100,
+      "parentId": "right-hinge",
+      "path": {
+        "closed": true,
+        "inTangents": [
+          [
+            0,
+            0
+          ],
+          [
+            0,
+            0
+          ],
+          [
+            0,
+            0
+          ],
+          [
+            0,
+            0
+          ]
+        ],
+        "outTangents": [
+          [
+            0,
+            0
+          ],
+          [
+            0,
+            0
+          ],
+          [
+            0,
+            0
+          ],
+          [
+            0,
+            0
+          ]
+        ],
+        "vertices": [
+          [
+            32,
+            22
+          ],
+          [
+            114,
+            -32
+          ],
+          [
+            41,
+            -57
+          ],
+          [
+            -40,
+            -6.5
+          ]
+        ]
+      },
+      "pivot": [
+        0,
+        0
+      ],
+      "rotation": 0,
+      "scale": 100,
+      "stroke": "#172B4D",
+      "strokeWidth": 4,
+      "tracks": {
+        "opacity": [],
+        "rotation": [],
+        "scale": [],
+        "x": [],
+        "y": []
+      },
+      "type": "path",
+      "x": 0,
+      "y": 0
+    },
+    {
+      "fill": "#F7C74C",
+      "id": "front-face",
+      "name": "Warm front wall concealing packed contents",
+      "opacity": 100,
+      "parentId": "parcel",
+      "path": {
+        "closed": true,
+        "inTangents": [
+          [
+            0,
+            0
+          ],
+          [
+            0,
+            0
+          ],
+          [
+            0,
+            0
+          ],
+          [
+            7,
+            3
+          ],
+          [
+            0,
+            7
+          ]
+        ],
+        "outTangents": [
+          [
+            0,
+            0
+          ],
+          [
+            0,
+            0
+          ],
+          [
+            0,
+            7
+          ],
+          [
+            -7,
+            -3
+          ],
+          [
+            0,
+            0
+          ]
+        ],
+        "vertices": [
+          [
+            -112,
+            -35
+          ],
+          [
+            32,
+            22
+          ],
+          [
+            32,
+            120
+          ],
+          [
+            22,
+            128
+          ],
+          [
+            -112,
+            75
+          ]
+        ]
+      },
+      "pivot": [
+        0,
+        0
+      ],
+      "rotation": 0,
+      "scale": 100,
+      "stroke": "#172B4D",
+      "strokeWidth": 4,
+      "tracks": {
+        "opacity": [],
+        "rotation": [],
+        "scale": [],
+        "x": [],
+        "y": []
+      },
+      "type": "path",
+      "x": 0,
+      "y": 0
+    },
+    {
+      "fill": "#2864F0",
+      "id": "side-face",
+      "name": "Blue three-quarter side wall",
+      "opacity": 100,
+      "parentId": "parcel",
+      "path": {
+        "closed": true,
+        "inTangents": [
+          [
+            0,
+            0
+          ],
+          [
+            0,
+            0
+          ],
+          [
+            0,
+            0
+          ],
+          [
+            5,
+            -3
+          ],
+          [
+            0,
+            6
+          ]
+        ],
+        "outTangents": [
+          [
+            0,
+            0
+          ],
+          [
+            0,
+            0
+          ],
+          [
+            0,
+            6
+          ],
+          [
+            -5,
+            3
+          ],
+          [
+            0,
+            0
+          ]
+        ],
+        "vertices": [
+          [
+            32,
+            22
+          ],
+          [
+            114,
+            -32
+          ],
+          [
+            114,
+            70
+          ],
+          [
+            108,
+            82
+          ],
+          [
+            32,
+            132
+          ]
+        ]
+      },
+      "pivot": [
+        0,
+        0
+      ],
+      "rotation": 0,
+      "scale": 100,
+      "stroke": "#172B4D",
+      "strokeWidth": 4,
+      "tracks": {
+        "opacity": [],
+        "rotation": [],
+        "scale": [],
+        "x": [],
+        "y": []
+      },
+      "type": "path",
+      "x": 0,
+      "y": 0
+    },
+    {
+      "fill": "#2864F0",
+      "id": "sealing-strip",
+      "name": "Blue seal connecting the closed lids",
+      "opacity": 0,
+      "parentId": "parcel",
+      "path": {
+        "closed": true,
+        "inTangents": [
+          [
+            0,
+            0
+          ],
+          [
+            0,
+            0
+          ],
+          [
+            0,
+            0
+          ],
+          [
+            0,
+            0
+          ]
+        ],
+        "outTangents": [
+          [
+            0,
+            0
+          ],
+          [
+            0,
+            0
+          ],
+          [
+            0,
+            0
+          ],
+          [
+            0,
+            0
+          ]
+        ],
+        "vertices": [
+          [
+            -48,
+            -10
+          ],
+          [
+            33,
+            -60
+          ],
+          [
+            49,
+            -54
+          ],
+          [
+            -32,
+            -3
+          ]
+        ]
+      },
+      "pivot": [
+        0,
+        0
+      ],
+      "rotation": 0,
+      "scale": 100,
+      "stroke": "#172B4D",
+      "strokeWidth": 2,
+      "tracks": {
+        "opacity": [
+          {
+            "easing": "linear",
+            "frame": 163,
+            "value": 0
+          },
+          {
+            "easing": "ease-out",
+            "frame": 173,
+            "value": 100
+          }
+        ],
+        "rotation": [],
+        "scale": [],
+        "x": [],
+        "y": []
+      },
+      "type": "path",
+      "x": 0,
+      "y": 0
+    },
+    {
+      "id": "completion",
+      "name": "Ready badge anticipation overshoot and permanent hold",
+      "opacity": 100,
+      "parentId": null,
+      "pivot": [
+        0,
+        0
+      ],
+      "rotation": 0,
+      "scale": 100,
+      "tracks": {
+        "opacity": [],
+        "rotation": [
+          {
+            "easing": "ease-in",
+            "frame": 164,
+            "value": -12
+          },
+          {
+            "easing": "ease-out",
+            "frame": 174,
+            "value": -18
+          },
+          {
+            "easing": "ease-in-out",
+            "frame": 190,
+            "value": 5
+          },
+          {
+            "easing": "ease-out",
+            "frame": 205,
+            "value": -1
+          },
+          {
+            "easing": "linear",
+            "frame": 216,
+            "value": 0
+          },
+          {
+            "easing": "linear",
+            "frame": 299,
+            "value": 0
+          }
+        ],
+        "scale": [
+          {
+            "easing": "ease-out",
+            "frame": 164,
+            "value": 38
+          },
+          {
+            "easing": "ease-in",
+            "frame": 171,
+            "value": 49
+          },
+          {
+            "easing": "ease-out",
+            "frame": 176,
+            "value": 42
+          },
+          {
+            "easing": "ease-in-out",
+            "frame": 190,
+            "value": 112
+          },
+          {
+            "easing": "ease-out",
+            "frame": 205,
+            "value": 97
+          },
+          {
+            "easing": "linear",
+            "frame": 216,
+            "value": 100
+          },
+          {
+            "easing": "linear",
+            "frame": 299,
+            "value": 100
+          }
+        ],
+        "x": [
+          {
+            "easing": "ease-in-out",
+            "frame": 164,
+            "value": 346
+          },
+          {
+            "easing": "ease-out",
+            "frame": 190,
+            "value": 365
+          },
+          {
+            "easing": "linear",
+            "frame": 216,
+            "value": 361
+          }
+        ],
+        "y": [
+          {
+            "easing": "ease-in",
+            "frame": 164,
+            "value": 229
+          },
+          {
+            "easing": "ease-out",
+            "frame": 176,
+            "value": 235
+          },
+          {
+            "easing": "ease-in-out",
+            "frame": 190,
+            "value": 194
+          },
+          {
+            "easing": "ease-out",
+            "frame": 205,
+            "value": 204
+          },
+          {
+            "easing": "linear",
+            "frame": 216,
+            "value": 201
+          },
+          {
+            "easing": "linear",
+            "frame": 299,
+            "value": 201
+          }
+        ]
+      },
+      "type": "group",
+      "x": 361,
+      "y": 201
+    },
+    {
+      "cornerRadius": null,
+      "fill": "#2864F0",
+      "height": 104,
+      "id": "badge-disc",
+      "name": "Large navy edged completion disc",
+      "opacity": 0,
+      "parentId": "completion",
+      "pivot": [
+        0,
+        0
+      ],
+      "rotation": 0,
+      "scale": 100,
+      "stroke": "#172B4D",
+      "strokeWidth": 4,
+      "tracks": {
+        "opacity": [
+          {
+            "easing": "linear",
+            "frame": 163,
+            "value": 0
+          },
+          {
+            "easing": "ease-out",
+            "frame": 171,
+            "value": 100
+          },
+          {
+            "easing": "linear",
+            "frame": 299,
+            "value": 100
+          }
+        ],
+        "rotation": [],
+        "scale": [],
+        "x": [],
+        "y": []
+      },
+      "type": "ellipse",
+      "width": 104,
+      "x": 0,
+      "y": 0
+    },
+    {
+      "fill": null,
+      "id": "connected-check",
+      "name": "Single connected cream check",
+      "opacity": 0,
+      "parentId": "completion",
+      "path": {
+        "closed": false,
+        "inTangents": [
+          [
+            0,
+            0
+          ],
+          [
+            -4,
+            -4
+          ],
+          [
+            -3,
+            3
+          ],
+          [
+            0,
+            0
+          ]
+        ],
+        "outTangents": [
+          [
+            0,
+            0
+          ],
+          [
+            3,
+            3
+          ],
+          [
+            4,
+            -4
+          ],
+          [
+            0,
+            0
+          ]
+        ],
+        "vertices": [
+          [
+            -25,
+            0
+          ],
+          [
+            -10,
+            15
+          ],
+          [
+            -3,
+            15
+          ],
+          [
+            27,
+            -17
+          ]
+        ]
+      },
+      "pivot": [
+        0,
+        0
+      ],
+      "rotation": 0,
+      "scale": 100,
+      "stroke": "#FFF3D7",
+      "strokeWidth": 10,
+      "tracks": {
+        "opacity": [
+          {
+            "easing": "linear",
+            "frame": 175,
+            "value": 0
+          },
+          {
+            "easing": "ease-out",
+            "frame": 183,
+            "value": 100
+          },
+          {
+            "easing": "linear",
+            "frame": 299,
+            "value": 100
+          }
+        ],
+        "rotation": [],
+        "scale": [
+          {
+            "easing": "ease-out",
+            "frame": 176,
+            "value": 73
+          },
+          {
+            "easing": "ease-in-out",
+            "frame": 192,
+            "value": 105
+          },
+          {
+            "easing": "linear",
+            "frame": 207,
+            "value": 100
+          }
+        ],
+        "x": [],
+        "y": []
+      },
+      "type": "path",
+      "x": 0,
+      "y": 0
+    },
+    {
+      "cornerRadius": 2,
+      "fill": "#F7C74C",
+      "height": 17,
+      "id": "confetti-1",
+      "name": "Golden upper left ribbon",
+      "opacity": 0,
+      "parentId": null,
+      "pivot": [
+        0,
+        0
+      ],
+      "rotation": -20,
+      "scale": 100,
+      "stroke": "#F7C74C",
+      "strokeWidth": 0,
+      "tracks": {
+        "opacity": [
+          {
+            "easing": "linear",
+            "frame": 180,
+            "value": 0
+          },
+          {
+            "easing": "ease-out",
+            "frame": 184,
+            "value": 100
+          },
+          {
+            "easing": "ease-in",
+            "frame": 201,
+            "value": 100
+          },
+          {
+            "easing": "linear",
+            "frame": 215,
+            "value": 0
+          }
+        ],
+        "rotation": [
+          {
+            "easing": "linear",
+            "frame": 180,
+            "value": -20
+          },
+          {
+            "easing": "linear",
+            "frame": 215,
+            "value": -165
+          }
+        ],
+        "scale": [],
+        "x": [
+          {
+            "easing": "ease-out",
+            "frame": 180,
+            "value": 326
+          },
+          {
+            "easing": "linear",
+            "frame": 197,
+            "value": 279
+          },
+          {
+            "easing": "linear",
+            "frame": 215,
+            "value": 260
+          }
+        ],
+        "y": [
+          {
+            "easing": "ease-out",
+            "frame": 180,
+            "value": 179
+          },
+          {
+            "easing": "ease-in",
+            "frame": 195,
+            "value": 112
+          },
+          {
+            "easing": "linear",
+            "frame": 215,
+            "value": 147
+          }
+        ]
+      },
+      "type": "rect",
+      "width": 7,
+      "x": 326,
+      "y": 179
+    },
+    {
+      "cornerRadius": 2,
+      "fill": "#2864F0",
+      "height": 12,
+      "id": "confetti-2",
+      "name": "Blue high ribbon",
+      "opacity": 0,
+      "parentId": null,
+      "pivot": [
+        0,
+        0
+      ],
+      "rotation": 15,
+      "scale": 100,
+      "stroke": "#2864F0",
+      "strokeWidth": 0,
+      "tracks": {
+        "opacity": [
+          {
+            "easing": "linear",
+            "frame": 182,
+            "value": 0
+          },
+          {
+            "easing": "ease-out",
+            "frame": 186,
+            "value": 100
+          },
+          {
+            "easing": "ease-in",
+            "frame": 204,
+            "value": 100
+          },
+          {
+            "easing": "linear",
+            "frame": 216,
+            "value": 0
+          }
+        ],
+        "rotation": [
+          {
+            "easing": "linear",
+            "frame": 182,
+            "value": 15
+          },
+          {
+            "easing": "linear",
+            "frame": 216,
+            "value": 195
+          }
+        ],
+        "scale": [],
+        "x": [
+          {
+            "easing": "ease-out",
+            "frame": 182,
+            "value": 351
+          },
+          {
+            "easing": "linear",
+            "frame": 198,
+            "value": 335
+          },
+          {
+            "easing": "linear",
+            "frame": 216,
+            "value": 328
+          }
+        ],
+        "y": [
+          {
+            "easing": "ease-out",
+            "frame": 182,
+            "value": 165
+          },
+          {
+            "easing": "ease-in",
+            "frame": 198,
+            "value": 83
+          },
+          {
+            "easing": "linear",
+            "frame": 216,
+            "value": 117
+          }
+        ]
+      },
+      "type": "rect",
+      "width": 8,
+      "x": 351,
+      "y": 165
+    },
+    {
+      "cornerRadius": 2,
+      "fill": "#F7C74C",
+      "height": 18,
+      "id": "confetti-3",
+      "name": "Golden right rising ribbon",
+      "opacity": 0,
+      "parentId": null,
+      "pivot": [
+        0,
+        0
+      ],
+      "rotation": 35,
+      "scale": 100,
+      "stroke": "#F7C74C",
+      "strokeWidth": 0,
+      "tracks": {
+        "opacity": [
+          {
+            "easing": "linear",
+            "frame": 183,
+            "value": 0
+          },
+          {
+            "easing": "ease-out",
+            "frame": 187,
+            "value": 100
+          },
+          {
+            "easing": "ease-in",
+            "frame": 203,
+            "value": 100
+          },
+          {
+            "easing": "linear",
+            "frame": 216,
+            "value": 0
+          }
+        ],
+        "rotation": [
+          {
+            "easing": "linear",
+            "frame": 183,
+            "value": 35
+          },
+          {
+            "easing": "linear",
+            "frame": 216,
+            "value": 160
+          }
+        ],
+        "scale": [],
+        "x": [
+          {
+            "easing": "ease-out",
+            "frame": 183,
+            "value": 383
+          },
+          {
+            "easing": "linear",
+            "frame": 198,
+            "value": 421
+          },
+          {
+            "easing": "linear",
+            "frame": 216,
+            "value": 439
+          }
+        ],
+        "y": [
+          {
+            "easing": "ease-out",
+            "frame": 183,
+            "value": 166
+          },
+          {
+            "easing": "ease-in",
+            "frame": 198,
+            "value": 101
+          },
+          {
+            "easing": "linear",
+            "frame": 216,
+            "value": 145
+          }
+        ]
+      },
+      "type": "rect",
+      "width": 6,
+      "x": 383,
+      "y": 166
+    },
+    {
+      "cornerRadius": 2,
+      "fill": "#172B4D",
+      "height": 10,
+      "id": "confetti-4",
+      "name": "Navy outward tumbling piece",
+      "opacity": 0,
+      "parentId": null,
+      "pivot": [
+        0,
+        0
+      ],
+      "rotation": 5,
+      "scale": 100,
+      "stroke": "#172B4D",
+      "strokeWidth": 0,
+      "tracks": {
+        "opacity": [
+          {
+            "easing": "linear",
+            "frame": 185,
+            "value": 0
+          },
+          {
+            "easing": "ease-out",
+            "frame": 189,
+            "value": 100
+          },
+          {
+            "easing": "ease-in",
+            "frame": 201,
+            "value": 100
+          },
+          {
+            "easing": "linear",
+            "frame": 214,
+            "value": 0
+          }
+        ],
+        "rotation": [
+          {
+            "easing": "linear",
+            "frame": 185,
+            "value": 5
+          },
+          {
+            "easing": "linear",
+            "frame": 214,
+            "value": 225
+          }
+        ],
+        "scale": [],
+        "x": [
+          {
+            "easing": "ease-out",
+            "frame": 185,
+            "value": 401
+          },
+          {
+            "easing": "linear",
+            "frame": 198,
+            "value": 448
+          },
+          {
+            "easing": "linear",
+            "frame": 214,
+            "value": 462
+          }
+        ],
+        "y": [
+          {
+            "easing": "ease-out",
+            "frame": 185,
+            "value": 194
+          },
+          {
+            "easing": "ease-in",
+            "frame": 196,
+            "value": 167
+          },
+          {
+            "easing": "linear",
+            "frame": 214,
+            "value": 211
+          }
+        ]
+      },
+      "type": "rect",
+      "width": 7,
+      "x": 401,
+      "y": 194
+    },
+    {
+      "cornerRadius": 2,
+      "fill": "#2864F0",
+      "height": 14,
+      "id": "confetti-5",
+      "name": "Blue left falling ribbon",
+      "opacity": 0,
+      "parentId": null,
+      "pivot": [
+        0,
+        0
+      ],
+      "rotation": -35,
+      "scale": 100,
+      "stroke": "#2864F0",
+      "strokeWidth": 0,
+      "tracks": {
+        "opacity": [
+          {
+            "easing": "linear",
+            "frame": 181,
+            "value": 0
+          },
+          {
+            "easing": "ease-out",
+            "frame": 185,
+            "value": 100
+          },
+          {
+            "easing": "ease-in",
+            "frame": 199,
+            "value": 100
+          },
+          {
+            "easing": "linear",
+            "frame": 212,
+            "value": 0
+          }
+        ],
+        "rotation": [
+          {
+            "easing": "linear",
+            "frame": 181,
+            "value": -35
+          },
+          {
+            "easing": "linear",
+            "frame": 212,
+            "value": -210
+          }
+        ],
+        "scale": [],
+        "x": [
+          {
+            "easing": "ease-out",
+            "frame": 181,
+            "value": 319
+          },
+          {
+            "easing": "linear",
+            "frame": 195,
+            "value": 269
+          },
+          {
+            "easing": "linear",
+            "frame": 212,
+            "value": 244
+          }
+        ],
+        "y": [
+          {
+            "easing": "ease-out",
+            "frame": 181,
+            "value": 199
+          },
+          {
+            "easing": "ease-in",
+            "frame": 194,
+            "value": 167
+          },
+          {
+            "easing": "linear",
+            "frame": 212,
+            "value": 207
+          }
+        ]
+      },
+      "type": "rect",
+      "width": 6,
+      "x": 319,
+      "y": 199
+    },
+    {
+      "cornerRadius": 2,
+      "fill": "#F7C74C",
+      "height": 11,
+      "id": "confetti-6",
+      "name": "Low golden final ribbon",
+      "opacity": 0,
+      "parentId": null,
+      "pivot": [
+        0,
+        0
+      ],
+      "rotation": 25,
+      "scale": 100,
+      "stroke": "#F7C74C",
+      "strokeWidth": 0,
+      "tracks": {
+        "opacity": [
+          {
+            "easing": "linear",
+            "frame": 187,
+            "value": 0
+          },
+          {
+            "easing": "ease-out",
+            "frame": 191,
+            "value": 100
+          },
+          {
+            "easing": "ease-in",
+            "frame": 203,
+            "value": 100
+          },
+          {
+            "easing": "linear",
+            "frame": 216,
+            "value": 0
+          }
+        ],
+        "rotation": [
+          {
+            "easing": "linear",
+            "frame": 187,
+            "value": 25
+          },
+          {
+            "easing": "linear",
+            "frame": 216,
+            "value": -120
+          }
+        ],
+        "scale": [],
+        "x": [
+          {
+            "easing": "ease-out",
+            "frame": 187,
+            "value": 397
+          },
+          {
+            "easing": "linear",
+            "frame": 201,
+            "value": 435
+          },
+          {
+            "easing": "linear",
+            "frame": 216,
+            "value": 447
+          }
+        ],
+        "y": [
+          {
+            "easing": "ease-out",
+            "frame": 187,
+            "value": 225
+          },
+          {
+            "easing": "ease-in",
+            "frame": 198,
+            "value": 214
+          },
+          {
+            "easing": "linear",
+            "frame": 216,
+            "value": 258
+          }
+        ]
+      },
+      "type": "rect",
+      "width": 8,
+      "x": 397,
+      "y": 225
+    }
+  ],
+  "name": "Packed with Care — Shipping Ready",
+  "version": 2,
+  "width": 512
+}

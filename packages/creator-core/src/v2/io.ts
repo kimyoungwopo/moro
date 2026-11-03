@@ -1,0 +1,21 @@
+import type {Json,Obj} from '../../../document-core/src';
+import type {LayerV2,ProjectV2,Property} from './types';
+import {curves,fail,validateProjectV2} from './validate';
+const MAX_BYTES=8*1024*1024;
+function size(text:string,max=MAX_BYTES){if(typeof text!=='string'||text.length>max||new TextEncoder().encode(text).length>max)fail('size limit');}
+// Pre-decode grammar walk: strings are decoded individually so escaped names
+// cannot bypass duplicate detection. Container recursion is capped before entry.
+function strictJSON(text:string):unknown{let i=0;const ws=()=>{while(i<text.length&&/[\x20\n\r\t]/.test(text[i]))i++;};
+ function string():string{const start=i++;while(i<text.length){const ch=text[i++];if(ch==='"'){try{return JSON.parse(text.slice(start,i)) as string;}catch{fail('JSON string');}}if(ch==='\\')i++;}return fail('JSON string');}
+ function value(depth:number):void{ws();const ch=text[i];if(ch==='{'||ch==='['){if(depth>=32)fail('JSON depth limit');i++;ws();const object=ch==='{',end=object?'}':']',keys=new Set<string>();if(text[i]===end){i++;return;}while(i<text.length){if(object){if(text[i]!=='"')fail('JSON object key');const key=string();if(keys.has(key))fail('duplicate JSON key');keys.add(key);ws();if(text[i++]!==':')fail('JSON colon');}value(depth+1);ws();if(text[i]===end){i++;return;}if(text[i++]!==',')fail('JSON separator');ws();}fail('JSON container');}
+ if(ch==='"'){string();return;}const m=/^(?:true|false|null|-?(?:0|[1-9]\d*)(?:\.\d+)?(?:[eE][+-]?\d+)?)/.exec(text.slice(i));if(!m)fail('JSON value');i+=m[0].length;}
+ value(0);ws();if(i!==text.length)fail('JSON trailing content');return JSON.parse(text);}
+export function parseProjectV2(text:string):ProjectV2{size(text);const p:unknown=strictJSON(text);validateProjectV2(p);return p;}
+export function serializeProjectV2(project:ProjectV2):string{validateProjectV2(project);const text=JSON.stringify(project,null,2)+'\n';size(text);return text;}
+function constant(k:Json):Obj{return {a:0,k};}
+function animated(l:LayerV2,prop:Property):Obj{const keys=l.tracks[prop],scale=prop==='scale',vector=(v:number)=>scale?[v,v,100]:[v];if(keys.length<2){const v=keys[0]?.value??l[prop];return constant(scale?vector(v):v);}return {a:1,k:keys.map((key,index):Obj=>{const out:Obj={t:key.frame,s:vector(key.value)},next=keys[index+1];if(next){const [x1,y1,x2,y2]=curves[key.easing],n=scale?3:1;out.e=vector(next.value);out.o={x:Array(n).fill(x1),y:Array(n).fill(y1)};out.i={x:Array(n).fill(x2),y:Array(n).fill(y2)};}return out;})};}
+function color(hex:string){return [1,3,5].map(i=>parseInt(hex.slice(i,i+2),16)/255).concat(1);}
+export function exportLottieV2(project:ProjectV2):Obj{validateProjectV2(project);const reversed=[...project.layers].reverse(),ids=new Map(reversed.map((l,i)=>[l.id,i+1]));const out:Obj={v:'5.13.0',nm:project.name,ddd:0,w:project.width,h:project.height,fr:project.fps,ip:0,op:project.durationFrames,assets:[],markers:[],layers:reversed.map((l):Obj=>{
+ const node:Obj={ddd:0,ind:ids.get(l.id)!,ty:l.type==='group'?3:4,nm:l.name,sr:1,st:0,ip:0,op:project.durationFrames,bm:0,ao:0,ks:{a:constant([...l.pivot,0]),p:{s:true,x:animated(l,'x'),y:animated(l,'y')},s:animated(l,'scale'),r:animated(l,'rotation'),o:animated(l,'opacity')}};if(l.parentId!==null)node.parent=ids.get(l.parentId)!;if(l.type==='group')return node;
+ const shapes:Obj[]=[l.type==='path'?{ty:'sh',d:1,ks:constant({v:l.path.vertices,i:l.path.inTangents,o:l.path.outTangents,c:l.path.closed}),nm:'Curve'}:{ty:l.type==='rect'?'rc':'el',d:1,p:constant([0,0]),s:constant([l.width,l.height]),...(l.type==='rect'?{r:constant(l.cornerRadius??0)}:{}),nm:l.type==='rect'?'Rectangle':'Ellipse'}];
+ if(l.fill!==null)shapes.push({ty:'fl',c:constant(color(l.fill)),o:constant(100),r:1,bm:0,nm:'Fill'});shapes.push({ty:'st',c:constant(color(l.stroke)),o:constant(100),w:constant(l.strokeWidth),lc:l.type==='path'?2:1,lj:l.type==='path'?2:1,ml:4,bm:0,nm:'Stroke'});node.shapes=shapes;return node;})};size(JSON.stringify(out),2*1024*1024);let nodes=0;function scan(value:Json,depth:number){if(++nodes>100000||depth>64)fail('Lottie complexity limit');if(value&&typeof value==='object')for(const child of Object.values(value))scan(child,depth+1);}scan(out,0);return structuredClone(out);}

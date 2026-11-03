@@ -1,0 +1,181 @@
+{
+  "durationFrames": 180,
+  "fps": 60,
+  "height": 512,
+  "layers": [
+    {
+      "cornerRadius": 0,
+      "fill": "#FFFFFF",
+      "height": 512,
+      "id": "background",
+      "name": "White Background",
+      "opacity": 100,
+      "rotation": 0,
+      "scale": 100,
+      "stroke": "#FFFFFF",
+      "strokeWidth": 0,
+      "tracks": {
+        "opacity": [],
+        "rotation": [],
+        "scale": [],
+        "x": [],
+        "y": []
+      },
+      "type": "rect",
+      "width": 512,
+      "x": 256,
+      "y": 256
+    },
+    {
+      "cornerRadius": null,
+      "fill": "#E8F1EE",
+      "height": 352,
+      "id": "success-plate",
+      "name": "Mint Plate · Entrance and Settle",
+      "opacity": 100,
+      "rotation": 0,
+      "scale": 100,
+      "stroke": "#E8F1EE",
+      "strokeWidth": 0,
+      "tracks": {
+        "opacity": [
+          {
+            "easing": "ease-out",
+            "frame": 0,
+            "value": 0
+          },
+          {
+            "easing": "linear",
+            "frame": 24,
+            "value": 100
+          },
+          {
+            "easing": "linear",
+            "frame": 179,
+            "value": 100
+          }
+        ],
+        "rotation": [],
+        "scale": [
+          {
+            "easing": "ease-out",
+            "frame": 0,
+            "value": 94
+          },
+          {
+            "easing": "ease-in-out",
+            "frame": 30,
+            "value": 102
+          },
+          {
+            "easing": "linear",
+            "frame": 48,
+            "value": 100
+          },
+          {
+            "easing": "linear",
+            "frame": 179,
+            "value": 100
+          }
+        ],
+        "x": [],
+        "y": []
+      },
+      "type": "ellipse",
+      "width": 352,
+      "x": 256,
+      "y": 256
+    },
+    {
+      "cornerRadius": 12,
+      "fill": "#1B6C80",
+      "height": 24,
+      "id": "check-short",
+      "name": "Check · Short Joined Capsule",
+      "opacity": 100,
+      "rotation": 45,
+      "scale": 100,
+      "stroke": "#1B6C80",
+      "strokeWidth": 0,
+      "tracks": {
+        "opacity": [
+          {
+            "easing": "linear",
+            "frame": 0,
+            "value": 0
+          },
+          {
+            "easing": "ease-out",
+            "frame": 48,
+            "value": 0
+          },
+          {
+            "easing": "linear",
+            "frame": 66,
+            "value": 100
+          },
+          {
+            "easing": "linear",
+            "frame": 179,
+            "value": 100
+          }
+        ],
+        "rotation": [],
+        "scale": [],
+        "x": [],
+        "y": []
+      },
+      "type": "rect",
+      "width": 114.509668,
+      "x": 200,
+      "y": 284
+    },
+    {
+      "cornerRadius": 12,
+      "fill": "#1B6C80",
+      "height": 24,
+      "id": "check-long",
+      "name": "Check · Long Joined Capsule",
+      "opacity": 100,
+      "rotation": -45,
+      "scale": 100,
+      "stroke": "#1B6C80",
+      "strokeWidth": 0,
+      "tracks": {
+        "opacity": [
+          {
+            "easing": "linear",
+            "frame": 0,
+            "value": 0
+          },
+          {
+            "easing": "ease-out",
+            "frame": 48,
+            "value": 0
+          },
+          {
+            "easing": "linear",
+            "frame": 66,
+            "value": 100
+          },
+          {
+            "easing": "linear",
+            "frame": 179,
+            "value": 100
+          }
+        ],
+        "rotation": [],
+        "scale": [],
+        "x": [],
+        "y": []
+      },
+      "type": "rect",
+      "width": 199.362482,
+      "x": 294,
+      "y": 254
+    }
+  ],
+  "name": "결제 완료 · Quiet Confirmation",
+  "version": 1,
+  "width": 512
+}

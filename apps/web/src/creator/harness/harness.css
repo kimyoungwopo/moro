@@ -1,0 +1,11 @@
+/* Quality lab only: reuse Creator AI tokens and paused, reduced-motion-aware preview. */
+.cr-harness,.cr-harness *{box-sizing:border-box}
+.cr-harness .cr-harness-grid{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:12px}
+.cr-harness .cr-harness-grid select{min-width:0}
+.cr-harness .cr-harness-verbatim{white-space:pre-wrap;overflow-wrap:anywhere}
+.cr-harness .cr-harness-delta{border-top:1px solid var(--cr-border,#e8eaec);margin-top:16px;padding-top:8px}
+.cr-harness .cr-harness-evidence{padding-left:22px}
+.cr-harness li{line-height:1.6;overflow-wrap:anywhere}
+.cr-harness summary{cursor:pointer;min-height:44px;align-content:center}
+.cr-harness .cr-ai-proposal{min-width:0}
+@media(max-width:540px){.cr-harness .cr-harness-grid{grid-template-columns:minmax(0,1fr)}.cr-harness .cr-ai-heading{flex-wrap:wrap}}

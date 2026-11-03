@@ -1,0 +1,419 @@
+{
+  "durationFrames": 240,
+  "fps": 60,
+  "height": 512,
+  "layers": [
+    {
+      "cornerRadius": 0,
+      "fill": "#FFFFFF",
+      "height": 512,
+      "id": "background",
+      "name": "White background",
+      "opacity": 100,
+      "rotation": 0,
+      "scale": 100,
+      "stroke": "#FFFFFF",
+      "strokeWidth": 0,
+      "tracks": {
+        "opacity": [],
+        "rotation": [],
+        "scale": [],
+        "x": [],
+        "y": []
+      },
+      "type": "rect",
+      "width": 512,
+      "x": 256,
+      "y": 256
+    },
+    {
+      "cornerRadius": 8,
+      "fill": "#E8F1EE",
+      "height": 32,
+      "id": "source-card",
+      "name": "Quiet source card",
+      "opacity": 100,
+      "rotation": 0,
+      "scale": 100,
+      "stroke": "#E8F1EE",
+      "strokeWidth": 0,
+      "tracks": {
+        "opacity": [],
+        "rotation": [],
+        "scale": [],
+        "x": [],
+        "y": []
+      },
+      "type": "rect",
+      "width": 192,
+      "x": 128,
+      "y": 356
+    },
+    {
+      "cornerRadius": 8,
+      "fill": "#203B42",
+      "height": 24,
+      "id": "receiving-tray",
+      "name": "Receiving platform · contact surface y340",
+      "opacity": 100,
+      "rotation": 0,
+      "scale": 100,
+      "stroke": "#203B42",
+      "strokeWidth": 0,
+      "tracks": {
+        "opacity": [],
+        "rotation": [],
+        "scale": [],
+        "x": [],
+        "y": []
+      },
+      "type": "rect",
+      "width": 224,
+      "x": 360,
+      "y": 352
+    },
+    {
+      "cornerRadius": 16,
+      "fill": "#1B6C80",
+      "height": 192,
+      "id": "product",
+      "name": "Product · lift 18–40 · transfer 40–82 · contact 100 · hidden reset 198–218",
+      "opacity": 100,
+      "rotation": 0,
+      "scale": 100,
+      "stroke": "#1B6C80",
+      "strokeWidth": 0,
+      "tracks": {
+        "opacity": [
+          {
+            "easing": "linear",
+            "frame": 0,
+            "value": 100
+          },
+          {
+            "easing": "ease-in-out",
+            "frame": 184,
+            "value": 100
+          },
+          {
+            "easing": "linear",
+            "frame": 198,
+            "value": 0
+          },
+          {
+            "easing": "ease-in-out",
+            "frame": 218,
+            "value": 0
+          },
+          {
+            "easing": "linear",
+            "frame": 234,
+            "value": 100
+          },
+          {
+            "easing": "linear",
+            "frame": 239,
+            "value": 100
+          }
+        ],
+        "rotation": [
+          {
+            "easing": "linear",
+            "frame": 0,
+            "value": 0
+          },
+          {
+            "easing": "ease-in-out",
+            "frame": 18,
+            "value": 0
+          },
+          {
+            "easing": "linear",
+            "frame": 40,
+            "value": -3
+          },
+          {
+            "easing": "ease-in-out",
+            "frame": 65,
+            "value": -3
+          },
+          {
+            "easing": "linear",
+            "frame": 90,
+            "value": 0
+          },
+          {
+            "easing": "linear",
+            "frame": 239,
+            "value": 0
+          }
+        ],
+        "scale": [],
+        "x": [
+          {
+            "easing": "linear",
+            "frame": 0,
+            "value": 128
+          },
+          {
+            "easing": "ease-in-out",
+            "frame": 40,
+            "value": 128
+          },
+          {
+            "easing": "linear",
+            "frame": 82,
+            "value": 360
+          },
+          {
+            "easing": "ease-in-out",
+            "frame": 198,
+            "value": 360
+          },
+          {
+            "easing": "linear",
+            "frame": 212,
+            "value": 128
+          },
+          {
+            "easing": "linear",
+            "frame": 239,
+            "value": 128
+          }
+        ],
+        "y": [
+          {
+            "easing": "linear",
+            "frame": 0,
+            "value": 244
+          },
+          {
+            "easing": "ease-in-out",
+            "frame": 18,
+            "value": 244
+          },
+          {
+            "easing": "linear",
+            "frame": 40,
+            "value": 212
+          },
+          {
+            "easing": "ease-in-out",
+            "frame": 82,
+            "value": 212
+          },
+          {
+            "easing": "linear",
+            "frame": 100,
+            "value": 244
+          },
+          {
+            "easing": "linear",
+            "frame": 239,
+            "value": 244
+          }
+        ]
+      },
+      "type": "rect",
+      "width": 192,
+      "x": 128,
+      "y": 244
+    },
+    {
+      "cornerRadius": null,
+      "fill": "#E8F1EE",
+      "height": 96,
+      "id": "confirmation-plate",
+      "name": "Completion plate · appears after contact",
+      "opacity": 0,
+      "rotation": 0,
+      "scale": 100,
+      "stroke": "#E8F1EE",
+      "strokeWidth": 0,
+      "tracks": {
+        "opacity": [
+          {
+            "easing": "linear",
+            "frame": 0,
+            "value": 0
+          },
+          {
+            "easing": "ease-out",
+            "frame": 104,
+            "value": 0
+          },
+          {
+            "easing": "linear",
+            "frame": 116,
+            "value": 100
+          },
+          {
+            "easing": "ease-in-out",
+            "frame": 184,
+            "value": 100
+          },
+          {
+            "easing": "linear",
+            "frame": 198,
+            "value": 0
+          },
+          {
+            "easing": "linear",
+            "frame": 239,
+            "value": 0
+          }
+        ],
+        "rotation": [],
+        "scale": [
+          {
+            "easing": "linear",
+            "frame": 0,
+            "value": 92
+          },
+          {
+            "easing": "ease-out",
+            "frame": 104,
+            "value": 92
+          },
+          {
+            "easing": "linear",
+            "frame": 116,
+            "value": 100
+          },
+          {
+            "easing": "ease-in-out",
+            "frame": 198,
+            "value": 100
+          },
+          {
+            "easing": "linear",
+            "frame": 212,
+            "value": 92
+          },
+          {
+            "easing": "linear",
+            "frame": 239,
+            "value": 92
+          }
+        ],
+        "x": [],
+        "y": []
+      },
+      "type": "ellipse",
+      "width": 96,
+      "x": 360,
+      "y": 80
+    },
+    {
+      "cornerRadius": 12,
+      "fill": "#1B6C80",
+      "height": 24,
+      "id": "check-short",
+      "name": "Check · A338,80 to J354,96",
+      "opacity": 0,
+      "rotation": 45,
+      "scale": 100,
+      "stroke": "#1B6C80",
+      "strokeWidth": 0,
+      "tracks": {
+        "opacity": [
+          {
+            "easing": "linear",
+            "frame": 0,
+            "value": 0
+          },
+          {
+            "easing": "ease-out",
+            "frame": 116,
+            "value": 0
+          },
+          {
+            "easing": "linear",
+            "frame": 124,
+            "value": 100
+          },
+          {
+            "easing": "ease-in-out",
+            "frame": 184,
+            "value": 100
+          },
+          {
+            "easing": "linear",
+            "frame": 198,
+            "value": 0
+          },
+          {
+            "easing": "linear",
+            "frame": 239,
+            "value": 0
+          }
+        ],
+        "rotation": [],
+        "scale": [],
+        "x": [],
+        "y": []
+      },
+      "type": "rect",
+      "width": 46.627417,
+      "x": 346,
+      "y": 88
+    },
+    {
+      "cornerRadius": 12,
+      "fill": "#1B6C80",
+      "height": 24,
+      "id": "check-long",
+      "name": "Check · J354,96 to B382,64 · recognition hold 124–184",
+      "opacity": 0,
+      "rotation": -48.814075,
+      "scale": 100,
+      "stroke": "#1B6C80",
+      "strokeWidth": 0,
+      "tracks": {
+        "opacity": [
+          {
+            "easing": "linear",
+            "frame": 0,
+            "value": 0
+          },
+          {
+            "easing": "ease-out",
+            "frame": 116,
+            "value": 0
+          },
+          {
+            "easing": "linear",
+            "frame": 124,
+            "value": 100
+          },
+          {
+            "easing": "ease-in-out",
+            "frame": 184,
+            "value": 100
+          },
+          {
+            "easing": "linear",
+            "frame": 198,
+            "value": 0
+          },
+          {
+            "easing": "linear",
+            "frame": 239,
+            "value": 0
+          }
+        ],
+        "rotation": [],
+        "scale": [],
+        "x": [],
+        "y": []
+      },
+      "type": "rect",
+      "width": 66.520583,
+      "x": 368,
+      "y": 80
+    }
+  ],
+  "name": "상품 담기 · Lift, Land, Confirm",
+  "version": 1,
+  "width": 512
+}

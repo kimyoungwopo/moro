@@ -1,0 +1,397 @@
+{
+  "version": 3,
+  "name": "Advanced test",
+  "width": 512,
+  "height": 512,
+  "fps": 30,
+  "durationFrames": 120,
+  "layers": [
+    {
+      "id": "root",
+      "name": "Transform rig",
+      "type": "group",
+      "parentId": null,
+      "x": 20,
+      "y": 0,
+      "pivot": [
+        0,
+        0
+      ],
+      "scaleX": 105,
+      "scaleY": 95,
+      "rotation": 10,
+      "opacity": 100,
+      "skew": -7,
+      "skewAxis": 55,
+      "tracks": {
+        "x": [],
+        "y": [],
+        "scaleX": [],
+        "scaleY": [],
+        "rotation": [],
+        "opacity": [],
+        "skew": [],
+        "skewAxis": []
+      },
+      "masks": [],
+      "trim": null
+    },
+    {
+      "id": "shape",
+      "name": "Morph",
+      "type": "path",
+      "parentId": "root",
+      "x": 240,
+      "y": 240,
+      "pivot": [
+        10,
+        20
+      ],
+      "scaleX": 140,
+      "scaleY": 70,
+      "rotation": 15,
+      "opacity": 100,
+      "skew": 20,
+      "skewAxis": 35,
+      "tracks": {
+        "x": [],
+        "y": [],
+        "scaleX": [
+          {
+            "frame": 0,
+            "value": 80,
+            "easing": {
+              "type": "cubic-bezier",
+              "x1": 0.2,
+              "y1": 0.05,
+              "x2": 0.65,
+              "y2": 0.95
+            }
+          },
+          {
+            "frame": 110,
+            "value": 150,
+            "easing": "linear"
+          }
+        ],
+        "scaleY": [
+          {
+            "frame": 10,
+            "value": 125,
+            "easing": "ease-in"
+          },
+          {
+            "frame": 90,
+            "value": 70,
+            "easing": "linear"
+          }
+        ],
+        "rotation": [],
+        "opacity": [],
+        "skew": [
+          {
+            "frame": 0,
+            "value": -18,
+            "easing": "ease-in-out"
+          },
+          {
+            "frame": 110,
+            "value": 30,
+            "easing": "linear"
+          }
+        ],
+        "skewAxis": []
+      },
+      "masks": [
+        {
+          "name": "Local",
+          "mode": "add",
+          "inverted": false,
+          "opacity": 100,
+          "path": {
+            "closed": true,
+            "vertices": [
+              [
+                0,
+                0
+              ],
+              [
+                90,
+                0
+              ],
+              [
+                50,
+                80
+              ]
+            ],
+            "inTangents": [
+              [
+                0,
+                0
+              ],
+              [
+                0,
+                0
+              ],
+              [
+                0,
+                0
+              ]
+            ],
+            "outTangents": [
+              [
+                0,
+                0
+              ],
+              [
+                0,
+                0
+              ],
+              [
+                0,
+                0
+              ]
+            ]
+          }
+        },
+        {
+          "name": "Subtract inverted",
+          "mode": "subtract",
+          "inverted": true,
+          "opacity": 75,
+          "path": {
+            "closed": true,
+            "vertices": [
+              [
+                0,
+                0
+              ],
+              [
+                90,
+                0
+              ],
+              [
+                50,
+                80
+              ]
+            ],
+            "inTangents": [
+              [
+                0,
+                0
+              ],
+              [
+                0,
+                0
+              ],
+              [
+                0,
+                0
+              ]
+            ],
+            "outTangents": [
+              [
+                0,
+                0
+              ],
+              [
+                0,
+                0
+              ],
+              [
+                0,
+                0
+              ]
+            ]
+          }
+        }
+      ],
+      "trim": {
+        "start": 0,
+        "end": 100,
+        "offset": 0,
+        "tracks": {
+          "start": [],
+          "end": [
+            {
+              "frame": 0,
+              "value": 15,
+              "easing": "ease-out"
+            },
+            {
+              "frame": 110,
+              "value": 100,
+              "easing": "linear"
+            }
+          ],
+          "offset": [
+            {
+              "frame": 0,
+              "value": 0,
+              "easing": "linear"
+            },
+            {
+              "frame": 110,
+              "value": 90,
+              "easing": "linear"
+            }
+          ]
+        }
+      },
+      "path": {
+        "closed": true,
+        "vertices": [
+          [
+            0,
+            0
+          ],
+          [
+            90,
+            0
+          ],
+          [
+            50,
+            80
+          ]
+        ],
+        "inTangents": [
+          [
+            0,
+            0
+          ],
+          [
+            0,
+            0
+          ],
+          [
+            0,
+            0
+          ]
+        ],
+        "outTangents": [
+          [
+            0,
+            0
+          ],
+          [
+            0,
+            0
+          ],
+          [
+            0,
+            0
+          ]
+        ]
+      },
+      "fill": "#f07932",
+      "stroke": "#182440",
+      "strokeWidth": 3,
+      "pathKeys": [
+        {
+          "frame": 0,
+          "value": {
+            "closed": true,
+            "vertices": [
+              [
+                0,
+                0
+              ],
+              [
+                90,
+                0
+              ],
+              [
+                50,
+                80
+              ]
+            ],
+            "inTangents": [
+              [
+                0,
+                0
+              ],
+              [
+                0,
+                0
+              ],
+              [
+                0,
+                0
+              ]
+            ],
+            "outTangents": [
+              [
+                0,
+                0
+              ],
+              [
+                0,
+                0
+              ],
+              [
+                0,
+                0
+              ]
+            ]
+          },
+          "easing": {
+            "type": "cubic-bezier",
+            "x1": 0.2,
+            "y1": 0.05,
+            "x2": 0.65,
+            "y2": 0.95
+          }
+        },
+        {
+          "frame": 110,
+          "value": {
+            "closed": true,
+            "vertices": [
+              [
+                10,
+                5
+              ],
+              [
+                105,
+                10
+              ],
+              [
+                55,
+                105
+              ]
+            ],
+            "inTangents": [
+              [
+                0,
+                0
+              ],
+              [
+                0,
+                0
+              ],
+              [
+                0,
+                0
+              ]
+            ],
+            "outTangents": [
+              [
+                0,
+                0
+              ],
+              [
+                0,
+                0
+              ],
+              [
+                0,
+                0
+              ]
+            ]
+          },
+          "easing": "linear"
+        }
+      ]
+    }
+  ]
+}

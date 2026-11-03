@@ -1,0 +1,1368 @@
+{
+  "durationFrames": 240,
+  "fps": 60,
+  "height": 768,
+  "layers": [
+    {
+      "cornerRadius": 0,
+      "fill": "#F5BC42",
+      "height": 64,
+      "id": "gold-left-ribbon",
+      "name": "금색 리본 · 왼쪽 높이",
+      "opacity": 0,
+      "rotation": -28,
+      "scale": 100,
+      "stroke": "#F5BC42",
+      "strokeWidth": 0,
+      "tracks": {
+        "opacity": [
+          {
+            "easing": "linear",
+            "frame": 0,
+            "value": 0
+          },
+          {
+            "easing": "linear",
+            "frame": 8,
+            "value": 0
+          },
+          {
+            "easing": "linear",
+            "frame": 11,
+            "value": 100
+          },
+          {
+            "easing": "ease-in",
+            "frame": 166,
+            "value": 100
+          },
+          {
+            "easing": "linear",
+            "frame": 202,
+            "value": 0
+          }
+        ],
+        "rotation": [
+          {
+            "easing": "linear",
+            "frame": 8,
+            "value": -28
+          },
+          {
+            "easing": "linear",
+            "frame": 202,
+            "value": 518
+          }
+        ],
+        "scale": [],
+        "x": [
+          {
+            "easing": "linear",
+            "frame": 8,
+            "value": 88
+          },
+          {
+            "easing": "linear",
+            "frame": 66,
+            "value": 218
+          },
+          {
+            "easing": "ease-out",
+            "frame": 180,
+            "value": 382
+          },
+          {
+            "easing": "linear",
+            "frame": 202,
+            "value": 402
+          }
+        ],
+        "y": [
+          {
+            "easing": "ease-out",
+            "frame": 8,
+            "value": 672
+          },
+          {
+            "easing": "ease-in",
+            "frame": 66,
+            "value": 106
+          },
+          {
+            "easing": "linear",
+            "frame": 202,
+            "value": 708
+          }
+        ]
+      },
+      "type": "rect",
+      "width": 12,
+      "x": 88,
+      "y": 672
+    },
+    {
+      "cornerRadius": 0,
+      "fill": "#FF796B",
+      "height": 58,
+      "id": "coral-right-ribbon",
+      "name": "코랄 리본 · 오른쪽 높이",
+      "opacity": 0,
+      "rotation": 32,
+      "scale": 100,
+      "stroke": "#FF796B",
+      "strokeWidth": 0,
+      "tracks": {
+        "opacity": [
+          {
+            "easing": "linear",
+            "frame": 0,
+            "value": 0
+          },
+          {
+            "easing": "linear",
+            "frame": 11,
+            "value": 0
+          },
+          {
+            "easing": "linear",
+            "frame": 14,
+            "value": 100
+          },
+          {
+            "easing": "ease-in",
+            "frame": 170,
+            "value": 100
+          },
+          {
+            "easing": "linear",
+            "frame": 208,
+            "value": 0
+          }
+        ],
+        "rotation": [
+          {
+            "easing": "linear",
+            "frame": 11,
+            "value": 32
+          },
+          {
+            "easing": "linear",
+            "frame": 208,
+            "value": -462
+          }
+        ],
+        "scale": [],
+        "x": [
+          {
+            "easing": "linear",
+            "frame": 11,
+            "value": 680
+          },
+          {
+            "easing": "linear",
+            "frame": 74,
+            "value": 528
+          },
+          {
+            "easing": "ease-out",
+            "frame": 182,
+            "value": 354
+          },
+          {
+            "easing": "linear",
+            "frame": 208,
+            "value": 329
+          }
+        ],
+        "y": [
+          {
+            "easing": "ease-out",
+            "frame": 11,
+            "value": 668
+          },
+          {
+            "easing": "ease-in",
+            "frame": 74,
+            "value": 130
+          },
+          {
+            "easing": "linear",
+            "frame": 208,
+            "value": 710
+          }
+        ]
+      },
+      "type": "rect",
+      "width": 14,
+      "x": 680,
+      "y": 668
+    },
+    {
+      "cornerRadius": 0,
+      "fill": "#9B72E8",
+      "height": 15,
+      "id": "purple-left-confetti",
+      "name": "보라 색종이 · 넓은 교차",
+      "opacity": 0,
+      "rotation": -18,
+      "scale": 100,
+      "stroke": "#9B72E8",
+      "strokeWidth": 0,
+      "tracks": {
+        "opacity": [
+          {
+            "easing": "linear",
+            "frame": 0,
+            "value": 0
+          },
+          {
+            "easing": "linear",
+            "frame": 10,
+            "value": 0
+          },
+          {
+            "easing": "linear",
+            "frame": 12,
+            "value": 100
+          },
+          {
+            "easing": "ease-in",
+            "frame": 136,
+            "value": 100
+          },
+          {
+            "easing": "linear",
+            "frame": 166,
+            "value": 0
+          }
+        ],
+        "rotation": [
+          {
+            "easing": "linear",
+            "frame": 10,
+            "value": -18
+          },
+          {
+            "easing": "linear",
+            "frame": 166,
+            "value": 706
+          }
+        ],
+        "scale": [],
+        "x": [
+          {
+            "easing": "linear",
+            "frame": 10,
+            "value": 98
+          },
+          {
+            "easing": "linear",
+            "frame": 58,
+            "value": 331
+          },
+          {
+            "easing": "ease-out",
+            "frame": 146,
+            "value": 637
+          },
+          {
+            "easing": "linear",
+            "frame": 166,
+            "value": 678
+          }
+        ],
+        "y": [
+          {
+            "easing": "ease-out",
+            "frame": 10,
+            "value": 678
+          },
+          {
+            "easing": "ease-in",
+            "frame": 58,
+            "value": 258
+          },
+          {
+            "easing": "linear",
+            "frame": 166,
+            "value": 710
+          }
+        ]
+      },
+      "type": "rect",
+      "width": 25,
+      "x": 98,
+      "y": 678
+    },
+    {
+      "cornerRadius": 0,
+      "fill": "#65D9B3",
+      "height": 26,
+      "id": "mint-right-confetti",
+      "name": "민트 색종이 · 넓은 교차",
+      "opacity": 0,
+      "rotation": 24,
+      "scale": 100,
+      "stroke": "#65D9B3",
+      "strokeWidth": 0,
+      "tracks": {
+        "opacity": [
+          {
+            "easing": "linear",
+            "frame": 0,
+            "value": 0
+          },
+          {
+            "easing": "linear",
+            "frame": 8,
+            "value": 0
+          },
+          {
+            "easing": "linear",
+            "frame": 10,
+            "value": 100
+          },
+          {
+            "easing": "ease-in",
+            "frame": 141,
+            "value": 100
+          },
+          {
+            "easing": "linear",
+            "frame": 174,
+            "value": 0
+          }
+        ],
+        "rotation": [
+          {
+            "easing": "linear",
+            "frame": 8,
+            "value": 24
+          },
+          {
+            "easing": "linear",
+            "frame": 174,
+            "value": -592
+          }
+        ],
+        "scale": [],
+        "x": [
+          {
+            "easing": "linear",
+            "frame": 8,
+            "value": 670
+          },
+          {
+            "easing": "linear",
+            "frame": 62,
+            "value": 418
+          },
+          {
+            "easing": "ease-out",
+            "frame": 152,
+            "value": 128
+          },
+          {
+            "easing": "linear",
+            "frame": 174,
+            "value": 94
+          }
+        ],
+        "y": [
+          {
+            "easing": "ease-out",
+            "frame": 8,
+            "value": 680
+          },
+          {
+            "easing": "ease-in",
+            "frame": 62,
+            "value": 224
+          },
+          {
+            "easing": "linear",
+            "frame": 174,
+            "value": 704
+          }
+        ]
+      },
+      "type": "rect",
+      "width": 18,
+      "x": 670,
+      "y": 680
+    },
+    {
+      "cornerRadius": 0,
+      "fill": "#4C9BE8",
+      "height": 50,
+      "id": "blue-left-ribbon",
+      "name": "파랑 리본 · 왼쪽 바깥",
+      "opacity": 0,
+      "rotation": -12,
+      "scale": 100,
+      "stroke": "#4C9BE8",
+      "strokeWidth": 0,
+      "tracks": {
+        "opacity": [
+          {
+            "easing": "linear",
+            "frame": 0,
+            "value": 0
+          },
+          {
+            "easing": "linear",
+            "frame": 15,
+            "value": 0
+          },
+          {
+            "easing": "linear",
+            "frame": 18,
+            "value": 100
+          },
+          {
+            "easing": "ease-in",
+            "frame": 151,
+            "value": 100
+          },
+          {
+            "easing": "linear",
+            "frame": 187,
+            "value": 0
+          }
+        ],
+        "rotation": [
+          {
+            "easing": "linear",
+            "frame": 15,
+            "value": -12
+          },
+          {
+            "easing": "linear",
+            "frame": 187,
+            "value": -398
+          }
+        ],
+        "scale": [],
+        "x": [
+          {
+            "easing": "linear",
+            "frame": 15,
+            "value": 82
+          },
+          {
+            "easing": "ease-in-out",
+            "frame": 69,
+            "value": 112
+          },
+          {
+            "easing": "ease-in-out",
+            "frame": 120,
+            "value": 92
+          },
+          {
+            "easing": "linear",
+            "frame": 187,
+            "value": 143
+          }
+        ],
+        "y": [
+          {
+            "easing": "ease-out",
+            "frame": 15,
+            "value": 666
+          },
+          {
+            "easing": "ease-in",
+            "frame": 69,
+            "value": 198
+          },
+          {
+            "easing": "linear",
+            "frame": 187,
+            "value": 710
+          }
+        ]
+      },
+      "type": "rect",
+      "width": 11,
+      "x": 82,
+      "y": 666
+    },
+    {
+      "cornerRadius": 0,
+      "fill": "#9B72E8",
+      "height": 62,
+      "id": "purple-right-ribbon",
+      "name": "보라 리본 · 오른쪽 바깥",
+      "opacity": 0,
+      "rotation": 15,
+      "scale": 100,
+      "stroke": "#9B72E8",
+      "strokeWidth": 0,
+      "tracks": {
+        "opacity": [
+          {
+            "easing": "linear",
+            "frame": 0,
+            "value": 0
+          },
+          {
+            "easing": "linear",
+            "frame": 18,
+            "value": 0
+          },
+          {
+            "easing": "linear",
+            "frame": 21,
+            "value": 100
+          },
+          {
+            "easing": "ease-in",
+            "frame": 164,
+            "value": 100
+          },
+          {
+            "easing": "linear",
+            "frame": 201,
+            "value": 0
+          }
+        ],
+        "rotation": [
+          {
+            "easing": "linear",
+            "frame": 18,
+            "value": 15
+          },
+          {
+            "easing": "linear",
+            "frame": 201,
+            "value": 447
+          }
+        ],
+        "scale": [],
+        "x": [
+          {
+            "easing": "linear",
+            "frame": 18,
+            "value": 686
+          },
+          {
+            "easing": "ease-in-out",
+            "frame": 78,
+            "value": 648
+          },
+          {
+            "easing": "ease-in-out",
+            "frame": 132,
+            "value": 680
+          },
+          {
+            "easing": "linear",
+            "frame": 201,
+            "value": 626
+          }
+        ],
+        "y": [
+          {
+            "easing": "ease-out",
+            "frame": 18,
+            "value": 674
+          },
+          {
+            "easing": "ease-in",
+            "frame": 78,
+            "value": 162
+          },
+          {
+            "easing": "linear",
+            "frame": 201,
+            "value": 708
+          }
+        ]
+      },
+      "type": "rect",
+      "width": 12,
+      "x": 686,
+      "y": 674
+    },
+    {
+      "cornerRadius": 0,
+      "fill": "#FF796B",
+      "height": 28,
+      "id": "coral-left-confetti",
+      "name": "코랄 색종이 · 중앙 높이",
+      "opacity": 0,
+      "rotation": -38,
+      "scale": 100,
+      "stroke": "#FF796B",
+      "strokeWidth": 0,
+      "tracks": {
+        "opacity": [
+          {
+            "easing": "linear",
+            "frame": 0,
+            "value": 0
+          },
+          {
+            "easing": "linear",
+            "frame": 19,
+            "value": 0
+          },
+          {
+            "easing": "linear",
+            "frame": 21,
+            "value": 100
+          },
+          {
+            "easing": "ease-in",
+            "frame": 176,
+            "value": 100
+          },
+          {
+            "easing": "linear",
+            "frame": 214,
+            "value": 0
+          }
+        ],
+        "rotation": [
+          {
+            "easing": "linear",
+            "frame": 19,
+            "value": -38
+          },
+          {
+            "easing": "linear",
+            "frame": 214,
+            "value": 792
+          }
+        ],
+        "scale": [],
+        "x": [
+          {
+            "easing": "linear",
+            "frame": 19,
+            "value": 94
+          },
+          {
+            "easing": "linear",
+            "frame": 84,
+            "value": 304
+          },
+          {
+            "easing": "ease-out",
+            "frame": 188,
+            "value": 535
+          },
+          {
+            "easing": "linear",
+            "frame": 214,
+            "value": 566
+          }
+        ],
+        "y": [
+          {
+            "easing": "ease-out",
+            "frame": 19,
+            "value": 670
+          },
+          {
+            "easing": "ease-in",
+            "frame": 84,
+            "value": 78
+          },
+          {
+            "easing": "linear",
+            "frame": 214,
+            "value": 708
+          }
+        ]
+      },
+      "type": "rect",
+      "width": 21,
+      "x": 94,
+      "y": 670
+    },
+    {
+      "cornerRadius": 0,
+      "fill": "#F5BC42",
+      "height": 17,
+      "id": "gold-right-confetti",
+      "name": "금색 색종이 · 중앙 높이",
+      "opacity": 0,
+      "rotation": 42,
+      "scale": 100,
+      "stroke": "#F5BC42",
+      "strokeWidth": 0,
+      "tracks": {
+        "opacity": [
+          {
+            "easing": "linear",
+            "frame": 0,
+            "value": 0
+          },
+          {
+            "easing": "linear",
+            "frame": 23,
+            "value": 0
+          },
+          {
+            "easing": "linear",
+            "frame": 25,
+            "value": 100
+          },
+          {
+            "easing": "ease-in",
+            "frame": 180,
+            "value": 100
+          },
+          {
+            "easing": "linear",
+            "frame": 218,
+            "value": 0
+          }
+        ],
+        "rotation": [
+          {
+            "easing": "linear",
+            "frame": 23,
+            "value": 42
+          },
+          {
+            "easing": "linear",
+            "frame": 218,
+            "value": -734
+          }
+        ],
+        "scale": [],
+        "x": [
+          {
+            "easing": "linear",
+            "frame": 23,
+            "value": 676
+          },
+          {
+            "easing": "linear",
+            "frame": 88,
+            "value": 452
+          },
+          {
+            "easing": "ease-out",
+            "frame": 190,
+            "value": 214
+          },
+          {
+            "easing": "linear",
+            "frame": 218,
+            "value": 183
+          }
+        ],
+        "y": [
+          {
+            "easing": "ease-out",
+            "frame": 23,
+            "value": 672
+          },
+          {
+            "easing": "ease-in",
+            "frame": 88,
+            "value": 94
+          },
+          {
+            "easing": "linear",
+            "frame": 218,
+            "value": 712
+          }
+        ]
+      },
+      "type": "rect",
+      "width": 27,
+      "x": 676,
+      "y": 672
+    },
+    {
+      "cornerRadius": null,
+      "fill": "#65D9B3",
+      "height": 14,
+      "id": "mint-left-oval",
+      "name": "민트 타원 색종이 · 낮은 확산",
+      "opacity": 0,
+      "rotation": -25,
+      "scale": 100,
+      "stroke": "#65D9B3",
+      "strokeWidth": 0,
+      "tracks": {
+        "opacity": [
+          {
+            "easing": "linear",
+            "frame": 0,
+            "value": 0
+          },
+          {
+            "easing": "linear",
+            "frame": 13,
+            "value": 0
+          },
+          {
+            "easing": "linear",
+            "frame": 15,
+            "value": 100
+          },
+          {
+            "easing": "ease-in",
+            "frame": 118,
+            "value": 100
+          },
+          {
+            "easing": "linear",
+            "frame": 148,
+            "value": 0
+          }
+        ],
+        "rotation": [
+          {
+            "easing": "linear",
+            "frame": 13,
+            "value": -25
+          },
+          {
+            "easing": "linear",
+            "frame": 148,
+            "value": 425
+          }
+        ],
+        "scale": [],
+        "x": [
+          {
+            "easing": "linear",
+            "frame": 13,
+            "value": 102
+          },
+          {
+            "easing": "linear",
+            "frame": 49,
+            "value": 302
+          },
+          {
+            "easing": "ease-out",
+            "frame": 124,
+            "value": 586
+          },
+          {
+            "easing": "linear",
+            "frame": 148,
+            "value": 634
+          }
+        ],
+        "y": [
+          {
+            "easing": "ease-out",
+            "frame": 13,
+            "value": 682
+          },
+          {
+            "easing": "ease-in",
+            "frame": 49,
+            "value": 352
+          },
+          {
+            "easing": "linear",
+            "frame": 148,
+            "value": 714
+          }
+        ]
+      },
+      "type": "ellipse",
+      "width": 23,
+      "x": 102,
+      "y": 682
+    },
+    {
+      "cornerRadius": null,
+      "fill": "#4C9BE8",
+      "height": 25,
+      "id": "blue-right-oval",
+      "name": "파랑 타원 색종이 · 낮은 확산",
+      "opacity": 0,
+      "rotation": 18,
+      "scale": 100,
+      "stroke": "#4C9BE8",
+      "strokeWidth": 0,
+      "tracks": {
+        "opacity": [
+          {
+            "easing": "linear",
+            "frame": 0,
+            "value": 0
+          },
+          {
+            "easing": "linear",
+            "frame": 16,
+            "value": 0
+          },
+          {
+            "easing": "linear",
+            "frame": 18,
+            "value": 100
+          },
+          {
+            "easing": "ease-in",
+            "frame": 126,
+            "value": 100
+          },
+          {
+            "easing": "linear",
+            "frame": 157,
+            "value": 0
+          }
+        ],
+        "rotation": [
+          {
+            "easing": "linear",
+            "frame": 16,
+            "value": 18
+          },
+          {
+            "easing": "linear",
+            "frame": 157,
+            "value": -506
+          }
+        ],
+        "scale": [],
+        "x": [
+          {
+            "easing": "linear",
+            "frame": 16,
+            "value": 664
+          },
+          {
+            "easing": "linear",
+            "frame": 54,
+            "value": 478
+          },
+          {
+            "easing": "ease-out",
+            "frame": 132,
+            "value": 201
+          },
+          {
+            "easing": "linear",
+            "frame": 157,
+            "value": 159
+          }
+        ],
+        "y": [
+          {
+            "easing": "ease-out",
+            "frame": 16,
+            "value": 680
+          },
+          {
+            "easing": "ease-in",
+            "frame": 54,
+            "value": 318
+          },
+          {
+            "easing": "linear",
+            "frame": 157,
+            "value": 710
+          }
+        ]
+      },
+      "type": "ellipse",
+      "width": 17,
+      "x": 664,
+      "y": 680
+    },
+    {
+      "cornerRadius": 0,
+      "fill": "#FFD568",
+      "height": 19,
+      "id": "gold-left-confetti",
+      "name": "금색 색종이 · 늦은 부채꼴",
+      "opacity": 0,
+      "rotation": 10,
+      "scale": 100,
+      "stroke": "#FFD568",
+      "strokeWidth": 0,
+      "tracks": {
+        "opacity": [
+          {
+            "easing": "linear",
+            "frame": 0,
+            "value": 0
+          },
+          {
+            "easing": "linear",
+            "frame": 26,
+            "value": 0
+          },
+          {
+            "easing": "linear",
+            "frame": 28,
+            "value": 100
+          },
+          {
+            "easing": "ease-in",
+            "frame": 150,
+            "value": 100
+          },
+          {
+            "easing": "linear",
+            "frame": 183,
+            "value": 0
+          }
+        ],
+        "rotation": [
+          {
+            "easing": "linear",
+            "frame": 26,
+            "value": 10
+          },
+          {
+            "easing": "linear",
+            "frame": 183,
+            "value": -630
+          }
+        ],
+        "scale": [],
+        "x": [
+          {
+            "easing": "linear",
+            "frame": 26,
+            "value": 84
+          },
+          {
+            "easing": "linear",
+            "frame": 72,
+            "value": 164
+          },
+          {
+            "easing": "ease-out",
+            "frame": 158,
+            "value": 272
+          },
+          {
+            "easing": "linear",
+            "frame": 183,
+            "value": 288
+          }
+        ],
+        "y": [
+          {
+            "easing": "ease-out",
+            "frame": 26,
+            "value": 678
+          },
+          {
+            "easing": "ease-in",
+            "frame": 72,
+            "value": 286
+          },
+          {
+            "easing": "linear",
+            "frame": 183,
+            "value": 712
+          }
+        ]
+      },
+      "type": "rect",
+      "width": 19,
+      "x": 84,
+      "y": 678
+    },
+    {
+      "cornerRadius": 0,
+      "fill": "#FF9281",
+      "height": 18,
+      "id": "coral-right-confetti",
+      "name": "코랄 색종이 · 늦은 부채꼴",
+      "opacity": 0,
+      "rotation": -8,
+      "scale": 100,
+      "stroke": "#FF9281",
+      "strokeWidth": 0,
+      "tracks": {
+        "opacity": [
+          {
+            "easing": "linear",
+            "frame": 0,
+            "value": 0
+          },
+          {
+            "easing": "linear",
+            "frame": 29,
+            "value": 0
+          },
+          {
+            "easing": "linear",
+            "frame": 31,
+            "value": 100
+          },
+          {
+            "easing": "ease-in",
+            "frame": 158,
+            "value": 100
+          },
+          {
+            "easing": "linear",
+            "frame": 193,
+            "value": 0
+          }
+        ],
+        "rotation": [
+          {
+            "easing": "linear",
+            "frame": 29,
+            "value": -8
+          },
+          {
+            "easing": "linear",
+            "frame": 193,
+            "value": 682
+          }
+        ],
+        "scale": [],
+        "x": [
+          {
+            "easing": "linear",
+            "frame": 29,
+            "value": 684
+          },
+          {
+            "easing": "linear",
+            "frame": 79,
+            "value": 596
+          },
+          {
+            "easing": "ease-out",
+            "frame": 165,
+            "value": 493
+          },
+          {
+            "easing": "linear",
+            "frame": 193,
+            "value": 472
+          }
+        ],
+        "y": [
+          {
+            "easing": "ease-out",
+            "frame": 29,
+            "value": 676
+          },
+          {
+            "easing": "ease-in",
+            "frame": 79,
+            "value": 246
+          },
+          {
+            "easing": "linear",
+            "frame": 193,
+            "value": 710
+          }
+        ]
+      },
+      "type": "rect",
+      "width": 23,
+      "x": 684,
+      "y": 676
+    },
+    {
+      "cornerRadius": 0,
+      "fill": "#65D9B3",
+      "height": 54,
+      "id": "mint-left-ribbon",
+      "name": "민트 리본 · 마지막 교차",
+      "opacity": 0,
+      "rotation": -40,
+      "scale": 100,
+      "stroke": "#65D9B3",
+      "strokeWidth": 0,
+      "tracks": {
+        "opacity": [
+          {
+            "easing": "linear",
+            "frame": 0,
+            "value": 0
+          },
+          {
+            "easing": "linear",
+            "frame": 31,
+            "value": 0
+          },
+          {
+            "easing": "linear",
+            "frame": 34,
+            "value": 100
+          },
+          {
+            "easing": "ease-in",
+            "frame": 172,
+            "value": 100
+          },
+          {
+            "easing": "linear",
+            "frame": 210,
+            "value": 0
+          }
+        ],
+        "rotation": [
+          {
+            "easing": "linear",
+            "frame": 31,
+            "value": -40
+          },
+          {
+            "easing": "linear",
+            "frame": 210,
+            "value": 388
+          }
+        ],
+        "scale": [],
+        "x": [
+          {
+            "easing": "linear",
+            "frame": 31,
+            "value": 100
+          },
+          {
+            "easing": "linear",
+            "frame": 86,
+            "value": 358
+          },
+          {
+            "easing": "ease-out",
+            "frame": 179,
+            "value": 621
+          },
+          {
+            "easing": "linear",
+            "frame": 210,
+            "value": 661
+          }
+        ],
+        "y": [
+          {
+            "easing": "ease-out",
+            "frame": 31,
+            "value": 674
+          },
+          {
+            "easing": "ease-in",
+            "frame": 86,
+            "value": 176
+          },
+          {
+            "easing": "linear",
+            "frame": 210,
+            "value": 708
+          }
+        ]
+      },
+      "type": "rect",
+      "width": 10,
+      "x": 100,
+      "y": 674
+    },
+    {
+      "cornerRadius": 0,
+      "fill": "#4C9BE8",
+      "height": 13,
+      "id": "blue-right-confetti",
+      "name": "파랑 색종이 · 마지막 교차",
+      "opacity": 0,
+      "rotation": 36,
+      "scale": 100,
+      "stroke": "#4C9BE8",
+      "strokeWidth": 0,
+      "tracks": {
+        "opacity": [
+          {
+            "easing": "linear",
+            "frame": 0,
+            "value": 0
+          },
+          {
+            "easing": "linear",
+            "frame": 34,
+            "value": 0
+          },
+          {
+            "easing": "linear",
+            "frame": 36,
+            "value": 100
+          },
+          {
+            "easing": "ease-in",
+            "frame": 182,
+            "value": 100
+          },
+          {
+            "easing": "linear",
+            "frame": 222,
+            "value": 0
+          }
+        ],
+        "rotation": [
+          {
+            "easing": "linear",
+            "frame": 34,
+            "value": 36
+          },
+          {
+            "easing": "linear",
+            "frame": 222,
+            "value": -828
+          }
+        ],
+        "scale": [],
+        "x": [
+          {
+            "easing": "linear",
+            "frame": 34,
+            "value": 666
+          },
+          {
+            "easing": "linear",
+            "frame": 93,
+            "value": 374
+          },
+          {
+            "easing": "ease-out",
+            "frame": 184,
+            "value": 139
+          },
+          {
+            "easing": "linear",
+            "frame": 222,
+            "value": 105
+          }
+        ],
+        "y": [
+          {
+            "easing": "ease-out",
+            "frame": 34,
+            "value": 670
+          },
+          {
+            "easing": "ease-in",
+            "frame": 93,
+            "value": 146
+          },
+          {
+            "easing": "linear",
+            "frame": 222,
+            "value": 710
+          }
+        ]
+      },
+      "type": "rect",
+      "width": 28,
+      "x": 666,
+      "y": 670
+    }
+  ],
+  "name": "양쪽에서 터지는 축하 컨페티",
+  "version": 1,
+  "width": 768
+}

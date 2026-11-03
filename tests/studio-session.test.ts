@@ -1,0 +1,62 @@
+import {describe,it,expect,vi} from 'vitest';
+import {readFileSync} from 'node:fs';
+import {createDocument,commitDocument,undoDocument} from '../apps/web/src/studio/document';
+import {DirectorClient,DirectorSession,type DirectorProposal,type Stage} from '../apps/web/src/studio/session';
+import {parseProjectV3,type ProjectV3} from '../packages/creator-core/src/v3';
+const project={version:3,name:'fixture only',width:256,height:256,fps:30,durationFrames:60,layers:[]} as ProjectV3;
+const proposal=(stage:Stage):DirectorProposal=>({version:1,stage,summary:'명시적 테스트 fixture',review:{focalPoint:'중심',silhouette:'형태',material:'색',choreography:'전개',limitations:'fixture only'},poses:(stage==='style'?[0]:[0,20,40]).map(frame=>({frame,label:`포즈 ${frame}`})),project});
+const fixture=()=>{const requests:Record<string,unknown>[]=[];let current:Stage='style';const fetcher=vi.fn(async(path:RequestInfo|URL,init?:RequestInit)=>{
+ if(String(path).endsWith('/cancel'))return new Response(JSON.stringify({ok:true,job:{id:'fixture',status:'cancelled'}}));
+ if(init?.method==='POST'){const body=JSON.parse(String(init.body));requests.push(body);current=body.stage;return new Response(JSON.stringify({ok:true,job:{id:'fixture',status:'running',provider:'codex',kind:'director'}}));}
+ return new Response(JSON.stringify({ok:true,job:{id:'fixture',status:'succeeded',provider:'codex',kind:'director',proposal:proposal(current)}}));
+});return {fetcher,requests};};
+describe('Director request consent boundary (fixtures only)',()=>{
+ it('blocks valid prior above native 64 KiB even when HTTP body fits 128 KiB',async()=>{const {fetcher}=fixture();const prior=proposal('style');const base=JSON.parse(readFileSync('fixtures/director-v3-advanced.json','utf8')).layers[2];prior.project=parseProjectV3(JSON.stringify({...project,layers:Array.from({length:70},(_,index)=>({...structuredClone(base),id:`context-${index}`,name:'한'.repeat(200)}))}));const before=JSON.stringify(prior);expect(new TextEncoder().encode(before).length).toBeGreaterThan(65536);expect(new TextEncoder().encode(JSON.stringify({provider:'codex',prompt:'책',consent:true,stage:'poses',approved:prior,contextConsent:true})).length).toBeLessThan(131072);await expect(new DirectorClient(fetcher).start('codex','책',true,'poses',prior,true)).rejects.toThrow(/크기|64|65536/);expect(fetcher).not.toHaveBeenCalled();expect(JSON.stringify(prior)).toBe(before);});
+ it('does not send a brief without per-call consent',async()=>{const {fetcher}=fixture();await expect(new DirectorClient(fetcher).start('codex','책',false,'style',null,false)).rejects.toThrow();expect(fetcher).not.toHaveBeenCalled();});
+ it('requires independent previous proposal context consent and sends only exact allowed keys',async()=>{const {fetcher,requests}=fixture();const client=new DirectorClient(fetcher);await expect(client.start('codex','책',true,'poses',proposal('style'),false)).rejects.toThrow();expect(fetcher).not.toHaveBeenCalled();await client.start('codex','책',true,'poses',proposal('style'),true);expect(Object.keys(requests[0]).sort()).toEqual(['approved','consent','contextConsent','prompt','provider','stage']);});
+ it('blocks oversize UTF8 approved context before POST without truncation',async()=>{const {fetcher}=fixture();const prior=proposal('style');prior.summary='한'.repeat(50000);const original=JSON.stringify(prior);await expect(new DirectorClient(fetcher).start('codex','책',true,'poses',prior,true)).rejects.toThrow(/크기|128|131072/);expect(fetcher).not.toHaveBeenCalled();expect(JSON.stringify(prior)).toBe(original);});
+ it('separates acceptance, subsequent calls, independent preview, and one Apply',async()=>{const {fetcher,requests}=fixture();let revision=0;const session=new DirectorSession(new DirectorClient(fetcher),(v)=>v as DirectorProposal,()=>revision,()=>{});const commit=vi.fn(()=>{revision++;return true;});
+ await session.generate('codex','책',true,false);expect(session.state.stage).toBe('style');expect(requests).toHaveLength(1);expect(session.apply(commit)).toBe(false);
+ session.accept();expect(session.state.stage).toBe('poses');expect(requests).toHaveLength(1);await session.generate('codex','책',true,true);session.accept();await session.generate('codex','책',true,true);expect(session.state.stage).toBe('motion');expect(session.apply(commit)).toBe(false);session.markPreviewed();expect(session.apply(commit)).toBe(true);expect(session.apply(commit)).toBe(false);expect(commit).toHaveBeenCalledTimes(1);
+ });
+ it('blocks stale approval even after edit then Undo returns same bytes',async()=>{const {fetcher}=fixture();let revision=0;const session=new DirectorSession(new DirectorClient(fetcher),v=>v as DirectorProposal,()=>revision,()=>{});await session.generate('codex','책',true,false);revision+=2;session.accept();expect(session.state.phase).toBe('stale');expect(session.state.approved).toBe(null);});
+ it('invalid response never reaches review or commits and does not retry',async()=>{const {fetcher,requests}=fixture();const session=new DirectorSession(new DirectorClient(fetcher),()=>{throw Error('fixture malformed');},()=>0,()=>{});const commit=vi.fn(()=>true);await session.generate('codex','책',true,false);expect(session.state.phase).toBe('failed');expect(session.state.proposal).toBeUndefined();expect(session.apply(commit)).toBe(false);expect(commit).not.toHaveBeenCalled();expect(requests).toHaveLength(1);});
+ it('no-op Apply leaves the review candidate and emits no applied state',async()=>{const {fetcher}=fixture();const session=new DirectorSession(new DirectorClient(fetcher),v=>v as DirectorProposal,()=>0,()=>{});await session.generate('codex','책',true,false);session.accept();await session.generate('codex','책',true,true);session.accept();await session.generate('codex','책',true,true);session.markPreviewed();expect(session.apply(()=>false)).toBe(false);expect(session.state.phase).toBe('review');expect(session.state.message).toContain('변경 사항이 없어요');});
+ it('edits during generation keep admission locked and reject late candidate',async()=>{let revision=0;let resolve!:(value:Response)=>void;let posts=0;const fetcher=vi.fn(async(_path:RequestInfo|URL,init?:RequestInit)=>{if(init?.method==='POST'){posts++;return new Response(JSON.stringify({ok:true,job:{id:'fixture',status:'running',provider:'codex',kind:'director'}}));}return new Promise<Response>(r=>{resolve=r;});});const session=new DirectorSession(new DirectorClient(fetcher),v=>v as DirectorProposal,()=>revision,()=>{});const running=session.generate('codex','책',true,false);await vi.waitFor(()=>expect(resolve).toBeTypeOf('function'));revision++;session.invalidate();expect(session.state.active).toBe(true);await session.generate('codex','책',true,false);expect(posts).toBe(1);resolve(new Response(JSON.stringify({ok:true,job:{id:'fixture',kind:'director',provider:'codex',status:'succeeded',proposal:proposal('style')}})));await running;expect(session.state.phase).toBe('stale');expect(session.state.active).toBe(false);expect(session.state.proposal).toBeUndefined();});
+ it('settles a cancelled pending start rejection and admits only the next explicit generation',async()=>{
+  let reject!:(reason:Error)=>void;
+  const {fetcher}=fixture(),client=new DirectorClient(fetcher);
+  const start=vi.spyOn(client,'start').mockImplementationOnce(()=>new Promise<string>((_resolve,rejectStart)=>{reject=rejectStart;}));
+  const cancel=vi.spyOn(client,'cancel'),validate=vi.fn(v=>v as DirectorProposal);
+  let history=commitDocument(createDocument(project),{...project,name:'edited fixture'});
+  const before=JSON.stringify(history),emit=vi.fn();
+  const session=new DirectorSession(client,validate,()=>history.revision,emit);
+  const commit=vi.fn((value:ProjectV3)=>{history=commitDocument(history,value);return true;});
+  const running=session.generate('codex','책',true,false);
+  await session.cancel();
+  expect(session.state).toMatchObject({active:true,phase:'cancelling'});
+  await session.generate('codex','책',true,false);expect(start).toHaveBeenCalledTimes(1);
+  reject(Error('fixture start rejected after cancel'));await running;
+  expect(session.state).toMatchObject({active:false,phase:'cancelled',previewed:false});
+  expect(session.state.proposal).toBeUndefined();expect(session.state.message).toContain('취소');
+  expect(cancel).not.toHaveBeenCalled();expect(validate).not.toHaveBeenCalled();
+  expect(session.apply(commit)).toBe(false);expect(commit).not.toHaveBeenCalled();
+  expect(JSON.stringify(history)).toBe(before);expect(undoDocument(history).present).toEqual(project);
+  expect(start).toHaveBeenCalledTimes(1);
+  await session.generate('codex','다시 요청',true,false);
+  expect(start).toHaveBeenCalledTimes(2);expect(session.state).toMatchObject({active:false,phase:'review'});
+  expect(JSON.stringify(history)).toBe(before);session.dispose();
+ });
+ it('does not settle or emit a pending start rejection after disposal',async()=>{
+  let reject!:(reason:Error)=>void;
+  const {fetcher}=fixture(),client=new DirectorClient(fetcher),emit=vi.fn();
+  const start=vi.spyOn(client,'start').mockImplementation(()=>new Promise<string>((_resolve,rejectStart)=>{reject=rejectStart;}));
+  const session=new DirectorSession(client,v=>v as DirectorProposal,()=>0,emit);
+  const running=session.generate('codex','책',true,false);session.dispose();
+  const disposedState=session.state,emissions=emit.mock.calls.length;
+  reject(Error('fixture disposed start rejected'));await running;
+  expect(session.state).toBe(disposedState);expect(emit).toHaveBeenCalledTimes(emissions);
+  await session.generate('codex','책',true,false);expect(start).toHaveBeenCalledTimes(1);
+ });
+ it('cancel before admission receipt prevents late response entering review',async()=>{let resolve!:(value:Response)=>void;const fetcher=vi.fn((path:RequestInfo|URL)=>String(path).endsWith('/cancel')?Promise.resolve(new Response(JSON.stringify({ok:true,job:{id:'fixture',status:'cancelled'}}))):new Promise<Response>(r=>{resolve=r;}));const session=new DirectorSession(new DirectorClient(fetcher),v=>v as DirectorProposal,()=>0,()=>{});const running=session.generate('codex','책',true,false);await session.cancel();resolve(new Response(JSON.stringify({ok:true,job:{id:'fixture',status:'running',provider:'codex',kind:'director'}})));await running;expect(session.state.phase).toBe('cancelled');expect(session.state.proposal).toBeUndefined();expect(fetcher).toHaveBeenCalledTimes(2);});
+});

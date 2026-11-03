@@ -1,0 +1,45 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "CreatorProject v1 AI proposal",
+  "type": "object",
+  "additionalProperties": false,
+  "required": ["version", "name", "width", "height", "fps", "durationFrames", "layers"],
+  "properties": {
+    "version": {"type": "integer", "const": 1},
+    "name": {"$ref": "#/$defs/name"},
+    "width": {"type": "integer", "minimum": 16, "maximum": 4096},
+    "height": {"type": "integer", "minimum": 16, "maximum": 4096},
+    "fps": {"type": "integer", "minimum": 1, "maximum": 120},
+    "durationFrames": {"type": "integer", "minimum": 2, "maximum": 3600},
+    "layers": {"type": "array", "maxItems": 20, "items": {"$ref": "#/$defs/layer"}}
+  },
+  "$defs": {
+    "name": {"type": "string", "minLength": 1, "maxLength": 200, "pattern": "^[^\\u0000-\\u001F\\u007F-\\u009F]+$"},
+    "color": {"type": "string", "pattern": "^#[a-fA-F0-9]{6}$"},
+    "easing": {"type": "string", "enum": ["linear", "ease-in", "ease-out", "ease-in-out"]},
+    "positionKey": {"type": "object", "additionalProperties": false, "required": ["frame", "value", "easing"], "properties": {"frame": {"type": "integer", "minimum": 0, "maximum": 3599}, "value": {"type": "number", "description": "Animated center coordinate in canvas pixels, using the same center-based x/y semantics as static positions, not a top-left edge.", "minimum": -8192, "maximum": 8192}, "easing": {"$ref": "#/$defs/easing"}}},
+    "scaleKey": {"type": "object", "additionalProperties": false, "required": ["frame", "value", "easing"], "properties": {"frame": {"type": "integer", "minimum": 0, "maximum": 3599}, "value": {"type": "number", "description": "Uniform scale in percent: 100 is original size; 1 means one percent, NOT a normalized multiplier. Use 100 for a normal visible shape.", "minimum": 1, "maximum": 1000}, "easing": {"$ref": "#/$defs/easing"}}},
+    "rotationKey": {"type": "object", "additionalProperties": false, "required": ["frame", "value", "easing"], "properties": {"frame": {"type": "integer", "minimum": 0, "maximum": 3599}, "value": {"type": "number", "minimum": -3600, "maximum": 3600}, "easing": {"$ref": "#/$defs/easing"}}},
+    "opacityKey": {"type": "object", "additionalProperties": false, "required": ["frame", "value", "easing"], "properties": {"frame": {"type": "integer", "minimum": 0, "maximum": 3599}, "value": {"type": "number", "description": "Opacity in percent: 100 is fully opaque; 0 is invisible; 1 is only one percent visible, NOT fully opaque. Use 100 unless fading is requested.", "minimum": 0, "maximum": 100}, "easing": {"$ref": "#/$defs/easing"}}},
+    "tracks": {"type": "object", "additionalProperties": false, "required": ["x", "y", "scale", "rotation", "opacity"], "properties": {
+      "x": {"type": "array", "maxItems": 100, "items": {"$ref": "#/$defs/positionKey"}},
+      "y": {"type": "array", "maxItems": 100, "items": {"$ref": "#/$defs/positionKey"}},
+      "scale": {"type": "array", "maxItems": 100, "items": {"$ref": "#/$defs/scaleKey"}},
+      "rotation": {"type": "array", "maxItems": 100, "items": {"$ref": "#/$defs/rotationKey"}},
+      "opacity": {"type": "array", "maxItems": 100, "items": {"$ref": "#/$defs/opacityKey"}}
+    }},
+    "layer": {"type": "object", "additionalProperties": false, "required": ["id", "name", "type", "x", "y", "width", "height", "cornerRadius", "fill", "stroke", "strokeWidth", "rotation", "opacity", "scale", "tracks"], "properties": {
+      "id": {"$ref": "#/$defs/name"}, "name": {"$ref": "#/$defs/name"},
+      "type": {"type": "string", "enum": ["rect", "ellipse"]},
+      "x": {"type": "number", "description": "Horizontal CENTER coordinate in canvas pixels, never the left edge. A full512px background has center x256, not0. A centered shape on512x512 uses x256/y256.", "minimum": -8192, "maximum": 8192}, "y": {"type": "number", "description": "Vertical CENTER coordinate in canvas pixels, never the top edge. A full512px background has center y256, not0. A centered shape on512x512 uses x256/y256.", "minimum": -8192, "maximum": 8192},
+      "width": {"type": "number", "minimum": 1, "maximum": 4096}, "height": {"type": "number", "minimum": 1, "maximum": 4096},
+      "cornerRadius": {"type": ["number", "null"], "description": "Rectangle corner radius in canvas pixels, static only (not an animation track). Must be finite and between 0 and min(width,height)/2. Use null for square rectangles or an ellipse; ellipse accepts only null or 0.", "minimum": 0, "maximum": 2048},
+      "fill": {"$ref": "#/$defs/color"}, "stroke": {"$ref": "#/$defs/color"},
+      "strokeWidth": {"type": "number", "minimum": 0, "maximum": 100},
+      "rotation": {"type": "number", "minimum": -3600, "maximum": 3600},
+      "opacity": {"type": "number", "description": "Opacity percent, NOT a 0-to-1 fraction. Set 100 for a fully opaque visible shape; 0 hides it.", "minimum": 0, "maximum": 100},
+      "scale": {"type": "number", "description": "Uniform scale percent, NOT a normalized multiplier. Set 100 for original width/height; 1 makes a nearly invisible one-percent-size shape.", "minimum": 1, "maximum": 1000},
+      "tracks": {"$ref": "#/$defs/tracks"}
+    }}
+  }
+}
